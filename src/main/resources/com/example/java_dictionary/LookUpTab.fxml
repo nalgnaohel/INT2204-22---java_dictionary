@@ -17,7 +17,7 @@
                <children>
                   <ImageView accessibleRole="BUTTON" fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@icon/Arrow%20-%20Left%20Square.png" />
+                        <Image url="@icon/arrow-left.png" />
                      </image>
                      <HBox.margin>
                         <Insets left="20.0" top="25.0" />
@@ -25,7 +25,7 @@
                   </ImageView>
                   <ImageView accessibleRole="BUTTON" fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@icon/Arrow%20-%20Left%20Square-1.png" />
+                        <Image url="@icon/arrow-right.png" />
                      </image>
                      <HBox.margin>
                         <Insets left="5.0" top="25.0" />

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
@@ -8,19 +10,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_dictionary.Controller">
    <children>
       <VBox id="left_panel" prefHeight="700.0" prefWidth="220.0" stylesheets="@stylesheet.css">
          <children>
-            <HBox id="lookup" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="194.0" styleClass="tab-selected" stylesheets="@stylesheet.css">
+            <HBox id="lookupTab" fx:id="lookupTab" accessibleRole="BUTTON" accessibleRoleDescription="Button" accessibleText="Button" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@stylesheet.css">
                <VBox.margin>
                   <Insets left="10.0" top="100.0" />
                </VBox.margin>
                <children>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView id="search-image" accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
                         <Insets left="13.0" />
                      </HBox.margin>
@@ -28,17 +28,19 @@
                         <Image url="@icon/lookup-white.png" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Look up">
-                     <HBox.margin>
-                        <Insets left="10.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font name="Barlow Bold" size="15.0" />
-                     </font>
-                  </Text>
+                  <Button fx:id="lookupButton" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="158.0" text="Look up">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
                </children>
+               <effect>
+                  <ColorAdjust brightness="-0.39" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
             </HBox>
-            <HBox id="game" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@stylesheet.css">
+            <HBox id="translateTab" fx:id="translateTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@stylesheet.css">
                <children>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
@@ -48,14 +50,10 @@
                         <Image url="@icon/translate.png" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Translate">
-                     <HBox.margin>
-                        <Insets left="10.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font name="Barlow Bold" size="15.0" />
-                     </font>
-                  </Text>
+                  <Button fx:id="translateButton" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Translate">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
                </children>
                <VBox.margin>
                   <Insets left="10.0" top="10.0" />
@@ -64,7 +62,7 @@
                   <ColorAdjust brightness="-0.39" />
                </effect>
             </HBox>
-            <HBox id="game" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@stylesheet.css">
+            <HBox id="translateTab" fx:id="translateTab1" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@stylesheet.css">
                <children>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
@@ -73,19 +71,15 @@
                      <image>
                         <Image url="@icon/game.png" />
                      </image>
-                     <effect>
-                        <ColorAdjust brightness="-0.37" />
-                     </effect>
                   </ImageView>
-                  <Text fill="#aeaeae" strokeType="OUTSIDE" strokeWidth="0.0" text="Game">
-                     <HBox.margin>
-                        <Insets left="10.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font name="Barlow Bold" size="15.0" />
-                     </font>
-                  </Text>
+                  <Button fx:id="gameButton" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Game">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
                </children>
+               <effect>
+                  <ColorAdjust brightness="-0.39" />
+               </effect>
                <VBox.margin>
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
@@ -95,7 +89,7 @@
                   <Insets left="17.0" top="15.0" />
                </VBox.margin>
             </Separator>
-            <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@stylesheet.css">
+            <HBox id="translateTab" fx:id="translateTab2" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@stylesheet.css">
                <children>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
@@ -104,24 +98,20 @@
                      <image>
                         <Image url="@icon/Import.png" />
                      </image>
-                     <effect>
-                        <ColorAdjust brightness="-0.37" />
-                     </effect>
                   </ImageView>
-                  <Text fill="#aeaeae" strokeType="OUTSIDE" strokeWidth="0.0" text="Import">
-                     <HBox.margin>
-                        <Insets left="10.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font name="Barlow Bold" size="15.0" />
-                     </font>
-                  </Text>
+                  <Button fx:id="exportButton" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Import">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
                </children>
+               <effect>
+                  <ColorAdjust brightness="-0.39" />
+               </effect>
                <VBox.margin>
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
             </HBox>
-            <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@stylesheet.css">
+            <HBox id="translateTab" fx:id="translateTab3" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@stylesheet.css">
                <children>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
@@ -130,19 +120,15 @@
                      <image>
                         <Image url="@icon/export.png" />
                      </image>
-                     <effect>
-                        <ColorAdjust brightness="-0.37" />
-                     </effect>
                   </ImageView>
-                  <Text fill="#aeaeae" strokeType="OUTSIDE" strokeWidth="0.0" text="Export">
-                     <HBox.margin>
-                        <Insets left="10.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font name="Barlow Bold" size="15.0" />
-                     </font>
-                  </Text>
+                  <Button fx:id="importButton" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Export">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
                </children>
+               <effect>
+                  <ColorAdjust brightness="-0.39" />
+               </effect>
                <VBox.margin>
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
