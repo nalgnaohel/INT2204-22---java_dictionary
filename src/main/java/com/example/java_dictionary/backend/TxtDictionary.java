@@ -1,28 +1,20 @@
-package com.example.java_dictionary;
+package com.example.java_dictionary.backend;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
-public class Main extends Application {
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("dictionary.fxml"));
-        Parent root = fxmlLoader.load();
-        Scene scene = new Scene(root);
-        stage.setTitle("Dictionary App");
-        stage.setScene(scene);
-        stage.show();
-    }
-    public static void main(String[] args) {
-        //ArrayList<Word> wordsList = new ArrayList<Word>();
-        launch();
-        /*
+public class TxtDictionary {
+    private ArrayList<Word> wordsList = new ArrayList<Word>();
+
+    /**
+     * Import data
+     * @param path - file path
+     */
+    public void importDataFromFile(String path) {
         try {
-            FileReader fr = new FileReader("src/main/resources/data/dictionaries.txt");
+            FileReader fr = new FileReader(path);
             BufferedReader br = new BufferedReader(fr);
             String engWord = br.readLine();
             engWord = engWord.replace("|", "");
@@ -48,10 +40,20 @@ public class Main extends Application {
         } catch (Exception e) {
             System.out.println("Something went wrong: " + e);
         }
-        for (int i = 0; i < 10; i++) {
-            Word curWord = wordsList.get(i);
-            System.out.println(curWord.getWordTarget());
-            System.out.println(curWord.getWordMeaning());
-        }*/
     }
+
+    /**
+     * Export words.
+     */
+
+    /**
+     * Return all the words in our list.
+     */
+    public ArrayList<Word> getWordsList() {
+        return wordsList;
+    }
+
+    /**
+     *
+     */
 }
