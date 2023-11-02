@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.LookUpTabController">
    <children>
       <VBox prefHeight="700.0" prefWidth="650.0">
          <children>
@@ -41,7 +41,7 @@
                               <Insets left="10.0" top="8.0" />
                            </HBox.margin>
                         </ImageView>
-                        <TextField prefHeight="31.0" prefWidth="469.0" promptText="Search word or phrase" style="-fx-border-color: white; -fx-background-color: white;">
+                        <TextField fx:id="searchbox" prefHeight="31.0" prefWidth="469.0" promptText="Search word or phrase" style="-fx-border-color: white; -fx-background-color: white;">
                            <HBox.margin>
                               <Insets left="4.0" top="1.0" />
                            </HBox.margin>

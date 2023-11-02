@@ -15,7 +15,7 @@
    <children>
       <VBox id="left_panel" prefHeight="700.0" prefWidth="220.0" stylesheets="@../css/stylesheet.css">
          <children>
-            <HBox id="lookupTab" fx:id="lookupTab" accessibleRole="BUTTON" accessibleRoleDescription="Button" accessibleText="Button" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
+            <HBox id="lookupTab" accessibleRole="BUTTON" accessibleRoleDescription="Button" accessibleText="Button" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
                <VBox.margin>
                   <Insets left="10.0" top="100.0" />
                </VBox.margin>
@@ -40,7 +40,7 @@
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
             </HBox>
-            <HBox id="translateTab" fx:id="translateTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
+            <HBox id="translateTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
                <children>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
@@ -62,7 +62,7 @@
                   <ColorAdjust brightness="-0.39" />
                </effect>
             </HBox>
-            <HBox id="translateTab" fx:id="translateTab1" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
+            <HBox id="translateTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
                <children>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
@@ -89,7 +89,7 @@
                   <Insets left="17.0" top="15.0" />
                </VBox.margin>
             </Separator>
-            <HBox id="translateTab" fx:id="translateTab2" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
+            <HBox id="translateTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
                <children>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
@@ -111,7 +111,7 @@
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
             </HBox>
-            <HBox id="translateTab" fx:id="translateTab3" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
+            <HBox id="translateTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
                <children>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
@@ -135,6 +135,6 @@
             </HBox>
          </children>
       </VBox>
-      <AnchorPane layoutX="218.0" prefHeight="700.0" prefWidth="900.0" />
+      <AnchorPane fx:id="contentArea" layoutX="220.0" prefHeight="700.0" prefWidth="900.0" />
    </children>
 </AnchorPane>
