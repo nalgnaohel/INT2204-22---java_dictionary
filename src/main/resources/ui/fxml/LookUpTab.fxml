@@ -17,7 +17,7 @@
                <children>
                   <ImageView accessibleRole="BUTTON" fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@icon/arrow-left.png" />
+                        <Image url="@../icon/arrow-left.png" />
                      </image>
                      <HBox.margin>
                         <Insets left="20.0" top="25.0" />
@@ -25,7 +25,7 @@
                   </ImageView>
                   <ImageView accessibleRole="BUTTON" fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@icon/arrow-right.png" />
+                        <Image url="@../icon/arrow-right.png" />
                      </image>
                      <HBox.margin>
                         <Insets left="5.0" top="25.0" />
@@ -35,7 +35,7 @@
                      <children>
                         <ImageView fitHeight="23.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 50%;">
                            <image>
-                              <Image url="@icon/Search.png" />
+                              <Image url="@../icon/Search.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="10.0" top="8.0" />

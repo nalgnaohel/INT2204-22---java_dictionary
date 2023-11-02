@@ -1,4 +1,4 @@
-package com.example.java_dictionary;
+package ui.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.effect.ColorAdjust;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.fxml.Initializable;
@@ -39,6 +40,13 @@ public class Controller implements Initializable {
         if (!b.equals(currentButton)) {
             b.getParent().getStyleClass().clear();
             b.getParent().getStyleClass().add("tab-dragged");
+
+            // Tạo đối tượng ColorAdjust, Sét đặt giá trị cho brightness (Độ sáng)
+            ColorAdjust colorAdjust = new ColorAdjust();
+            colorAdjust.setBrightness(-0.39);
+            // Áp dụng ColorAdjust
+            b.getParent().getChildrenUnmodifiable().get(0).setEffect(colorAdjust);
+            b.getParent().getChildrenUnmodifiable().get(1).setEffect(colorAdjust);
         }
     }
 
@@ -48,6 +56,11 @@ public class Controller implements Initializable {
         if (!b.equals(currentButton)) {
             b.getParent().getStyleClass().clear();
             b.getParent().getStyleClass().add("tab-menu");
+
+            ColorAdjust colorAdjust = new ColorAdjust();
+            colorAdjust.setBrightness(0);
+            b.getParent().getChildrenUnmodifiable().get(0).setEffect(colorAdjust);
+            b.getParent().getChildrenUnmodifiable().get(1).setEffect(colorAdjust);
         }
     }
 
@@ -55,11 +68,15 @@ public class Controller implements Initializable {
     protected void ButtonClick(ActionEvent event) {
         if (currentButton != null) {
             currentButton.getParent().getStyleClass().clear();
+            currentButton.getParent().getChildrenUnmodifiable().get(0).setEffect(null);
+            currentButton.getParent().getChildrenUnmodifiable().get(1).setEffect(null);
             currentButton.getParent().getStyleClass().add("tab-menu");
         }
 
         currentButton = (Button) event.getSource();
         currentButton.getParent().getStyleClass().clear();
+        currentButton.getParent().getChildrenUnmodifiable().get(0).setEffect(null);
+        currentButton.getParent().getChildrenUnmodifiable().get(1).setEffect(null);
         currentButton.getParent().getStyleClass().add("tab-selected");
     }
 

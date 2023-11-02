@@ -1,4 +1,4 @@
-package com.example.java_dictionary;
+package ui.controller;
 
 public class LookUpTabController {
 }

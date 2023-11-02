@@ -5,6 +5,8 @@ module com.example.java_dictionary {
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.example.java_dictionary to javafx.fxml;
-    exports com.example.java_dictionary;
+    opens ui to javafx.fxml;
+    exports ui;
+    exports ui.controller;
+    opens ui.controller to javafx.fxml;
 }
