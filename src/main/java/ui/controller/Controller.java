@@ -4,17 +4,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.effect.ColorAdjust;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.HBox;
-import javafx.fxml.Initializable;
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class Controller {
 
     @FXML
     private Button lookupButton;
@@ -27,11 +21,6 @@ public class Controller implements Initializable {
     @FXML
     private Button exportButton;
     private Button currentButton;
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-    }
 
     @FXML
     protected void onMouseEntered(MouseEvent event) {
