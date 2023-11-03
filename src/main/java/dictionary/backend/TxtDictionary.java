@@ -5,8 +5,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class TxtDictionary {
-    private ArrayList<Word> wordsList = new ArrayList<Word>();
+public class TxtDictionary extends Dictionary{
+    private final ArrayList<Word> wordsList = new ArrayList<Word>();
 
     /**
      * Import data
@@ -54,6 +54,51 @@ public class TxtDictionary {
     }
 
     /**
-     *
+     * insert
      */
+    @Override
+    public String lookUpWord(String target) {
+        for (Word word : wordsList) {
+            if (word.getWordTarget().equals(target)) {
+                return word.getWordMeaning();
+            }
+        }
+        return "Not found!";
+    }
+
+    @Override
+    public boolean insertWord(final String target, String meaning) {
+        for (Word word : wordsList) {
+            if (word.getWordTarget().equals(target)) {
+                return false;
+            }
+        }
+        Word w = new Word(target, meaning);
+        wordsList.add(w);
+        Trie.insert(target);
+        return true;
+    }
+
+    @Override
+    public boolean deleteWord(final String target) {
+        for (Word word : wordsList) {
+            if (word.getWordTarget().equals(target)) {
+                wordsList.remove(word);
+                Trie.delete(target);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean updateWordMeaning(final String target, String meaning) {
+        for (Word word : wordsList) {
+            if (word.getWordTarget().equals(target)) {
+                word.setWordMeaning(meaning);
+                return true;
+            }
+        }
+        return false;
+    }
 }
