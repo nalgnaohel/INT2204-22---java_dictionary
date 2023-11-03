@@ -1,4 +1,4 @@
-package com.example.java_dictionary.backend;
+package dictionary.backend;
 
 public class Word {
     private final String wordTarget;

@@ -1,4 +1,4 @@
-package com.example.java_dictionary.backend;
+package dictionary.backend;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
