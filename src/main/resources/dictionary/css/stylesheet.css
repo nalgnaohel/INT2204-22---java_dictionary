@@ -1,0 +1,36 @@
+.button {
+    -fx-background-color: 0%;
+    -fx-text-fill: white;
+    -fx-text-alignment: left;
+    -fx-alignment: left;
+    -fx-font-family: Barlow;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+
+.tab-selected {
+    -fx-border-radius: 9px;
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+    -fx-background-color: linear-gradient(to bottom right, #2CB3FF -1.54%, #5EFFC5 152.46%);
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.16), 10, 0, 0, 0);
+}
+
+.tab-dragged {
+    -fx-border-radius: 9px;
+    -fx-border-width: 2px;
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0, 0, 0);
+
+}
+
+.tab-menu {
+    -fx-border-radius: 9px;
+    -fx-background-radius: 10px;
+}
+
+#left_panel {
+    -fx-background-color: white;
+}

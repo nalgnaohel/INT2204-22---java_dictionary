@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.LookUpTabController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="650.0">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="851.0">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/arrow-left.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" top="25.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView accessibleRole="BUTTON" fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/arrow-right.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="5.0" top="25.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="36.0" prefWidth="519.0" style="-fx-border-color: white; -fx-border-radius: 10; -fx-background-color: white; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="23.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 50%;">
+                           <image>
+                              <Image url="@../icon/Search.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="8.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField fx:id="searchbox" prefHeight="31.0" prefWidth="469.0" promptText="Search word or phrase" style="-fx-border-color: white; -fx-background-color: white;">
+                           <HBox.margin>
+                              <Insets left="4.0" top="1.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="MyriadPro-Regular" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="15.0" top="23.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="606.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox layoutX="650.0" prefHeight="700.0" prefWidth="250.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="227.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets top="75.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
