@@ -20,15 +20,17 @@
                   <Insets left="10.0" top="100.0" />
                </VBox.margin>
                <children>
-                  <ImageView id="search-image" accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="13.0" />
-                     </HBox.margin>
-                     <image>
-                        <Image url="@../icon/lookup-white.png" />
-                     </image>
-                  </ImageView>
-                  <Button fx:id="lookupButton" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="158.0" text="Look up">
+                  <Button fx:id="lookupButton" graphicTextGap="15.0" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="199.0" text="Look up">
+                     <graphic>
+                        <ImageView id="search-image" accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="13.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../icon/lookup-white.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
@@ -42,15 +44,17 @@
             </HBox>
             <HBox id="translateTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
                <children>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="13.0" />
-                     </HBox.margin>
-                     <image>
-                        <Image url="@../icon/translate.png" />
-                     </image>
-                  </ImageView>
-                  <Button fx:id="translateButton" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Translate">
+                  <Button fx:id="translateButton" graphicTextGap="15.0" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Translate">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="13.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../icon/translate.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
@@ -62,17 +66,19 @@
                   <ColorAdjust brightness="-0.39" />
                </effect>
             </HBox>
-            <HBox id="translateTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
+            <HBox id="gameTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
                <children>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="13.0" />
-                     </HBox.margin>
-                     <image>
-                        <Image url="@../icon/game.png" />
-                     </image>
-                  </ImageView>
-                  <Button fx:id="gameButton" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Game">
+                  <Button fx:id="gameButton" graphicTextGap="15.0" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Game">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="13.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../icon/game.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
@@ -89,17 +95,19 @@
                   <Insets left="17.0" top="15.0" />
                </VBox.margin>
             </Separator>
-            <HBox id="translateTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
+            <HBox id="importTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
                <children>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="13.0" />
-                     </HBox.margin>
-                     <image>
-                        <Image url="@../icon/Import.png" />
-                     </image>
-                  </ImageView>
-                  <Button fx:id="exportButton" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Import">
+                  <Button fx:id="exportButton" graphicTextGap="15.0" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Import">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="13.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../icon/Import.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>
@@ -111,17 +119,19 @@
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
             </HBox>
-            <HBox id="translateTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
+            <HBox id="exportTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
                <children>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="13.0" />
-                     </HBox.margin>
-                     <image>
-                        <Image url="@../icon/export.png" />
-                     </image>
-                  </ImageView>
-                  <Button fx:id="importButton" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Export">
+                  <Button fx:id="importButton" graphicTextGap="15.0" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Export">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="13.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../icon/export.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Button>

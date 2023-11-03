@@ -6,6 +6,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.effect.ColorAdjust;
+import javafx.scene.effect.Glow;
+import javafx.scene.effect.InnerShadow;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
@@ -32,10 +34,11 @@ public class Controller implements Initializable {
     private AnchorPane lookupArea;
     private LookUpTabController lookupTabController;
 
-    @FXML
+    @FXML // Xử lý sự kiện khi di chuột vào đối tượng
     protected void onMouseEntered(MouseEvent event) {
-        // Xử lý sự kiện khi di chuột vào đối tượng
+        // Tìm đối tượng gây ra sự kiện (đối tượng được di chuột vào)
         Button b = (Button) event.getSource();
+        // Kiểm tra đối tượng gây ra sự kiện có phải là Tab đang mở hay không
         if (!b.equals(currentButton)) {
             b.getParent().getStyleClass().clear();
             b.getParent().getStyleClass().add("tab-dragged");
@@ -45,11 +48,12 @@ public class Controller implements Initializable {
             colorAdjust.setBrightness(-0.39);
             // Áp dụng ColorAdjust
             b.getParent().getChildrenUnmodifiable().get(0).setEffect(colorAdjust);
-            b.getParent().getChildrenUnmodifiable().get(1).setEffect(colorAdjust);
+        } else {
+            // Tạo hiệu ứng hover khi di chuột vào đối tượng đang mở ????
         }
     }
 
-    @FXML
+    @FXML // Xử lý sự kiện khi di chuột ra khỏi đối tượng
     protected void onMouseExited(MouseEvent event) {
         Button b = (Button) event.getSource();
         if (!b.equals(currentButton)) {
@@ -59,29 +63,26 @@ public class Controller implements Initializable {
             ColorAdjust colorAdjust = new ColorAdjust();
             colorAdjust.setBrightness(0);
             b.getParent().getChildrenUnmodifiable().get(0).setEffect(colorAdjust);
-            b.getParent().getChildrenUnmodifiable().get(1).setEffect(colorAdjust);
         }
     }
 
-    @FXML
+    @FXML // Xử lý sự kiện khi click vào đối tượng
     protected void ButtonClick(ActionEvent event) throws IOException {
         if (currentButton != null) {
             currentButton.getParent().getStyleClass().clear();
             currentButton.getParent().getChildrenUnmodifiable().get(0).setEffect(null);
-            currentButton.getParent().getChildrenUnmodifiable().get(1).setEffect(null);
             currentButton.getParent().getStyleClass().add("tab-menu");
         }
 
         currentButton = (Button) event.getSource();
         currentButton.getParent().getStyleClass().clear();
         currentButton.getParent().getChildrenUnmodifiable().get(0).setEffect(null);
-        currentButton.getParent().getChildrenUnmodifiable().get(1).setEffect(null);
         currentButton.getParent().getStyleClass().add("tab-selected");
 
         contentArea.getChildren().setAll(lookupArea);
     }
 
-    @Override
+    @Override // Khởi tạo các Tab trước khi chương trình chạy
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ui/fxml/lookupTab.fxml"));
