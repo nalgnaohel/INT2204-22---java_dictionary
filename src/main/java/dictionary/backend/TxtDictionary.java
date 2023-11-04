@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class TxtDictionary extends Dictionary{
     private final ArrayList<Word> wordsList = new ArrayList<Word>();
-
+    private final DictAPI dictAPI = new DictAPI();
     /**
      * Import data
      * @param path - file path
@@ -21,20 +21,30 @@ public class TxtDictionary extends Dictionary{
             engWord = engWord.trim();
             String line;
             String meaning = "";
+            int id = 0;
             while ((line = br.readLine()) != null) {
                 if (!line.startsWith("|")) {
                     meaning += line.trim() + "\n";
                 } else {
                     //an E word
-                    Word word = new Word(engWord, meaning);
-                    wordsList.add(word);
+                    if (insertWord(engWord, meaning)) {
+                        id++;
+                        Word word = new Word(engWord, meaning);
+                        wordsList.add(word);
+                        if (id % 10 == 0) {
+                            System.out.print(".");
+                        }
+                    }
                     meaning = "";
                     engWord = line.replace("|", "");
                     engWord = engWord.trim();
                 }
             }
-            Word word = new Word(engWord, meaning);
-            wordsList.add(word);
+            if(insertWord(engWord, meaning)) {
+                Word word = new Word(engWord, meaning);
+                wordsList.add(word);
+            }
+            System.out.println("Done");
         } catch (IOException e) {
             System.out.println("Cannot find the file!\n");
         } catch (Exception e) {
@@ -101,4 +111,16 @@ public class TxtDictionary extends Dictionary{
         }
         return false;
     }
+
+    //Get extra information from API.
+    public String getInfoFromAPI(String target) {
+        try {
+            return dictAPI.getNeededInfo(target);
+        } catch (IOException e) {
+            System.out.println("Failed to use API!");
+            throw new RuntimeException(e);
+        }
+    }
+
+
 }

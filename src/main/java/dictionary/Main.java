@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class Main extends Application {
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Controller.class.getResource("dictionary/fxml/dictionary.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("dictionary/fxml/dictionary.fxml"));
         fxmlLoader.setController(this);
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
@@ -31,10 +31,11 @@ public class Main extends Application {
         ArrayList<Word> wordsList = new ArrayList<Word>();
         //launch();
         TxtDictionary dict = new TxtDictionary();
-        dict.importDataFromFile("src/main/resources/data/dictionaries.txt");
+        //dict.importDataFromFile("src/main/resources/data/dictionaries.txt");
+        dict.insertWord("cat", "meo");
         System.out.println(dict.lookUpWord("cat"));
-        dict.deleteWord("cat");
-        dict.lookUpWord("cat");
-
+        //dict.deleteWord("cat");
+        //dict.lookUpWord("cat");
+        System.out.println(dict.getInfoFromAPI("cat"));
     }
 }
