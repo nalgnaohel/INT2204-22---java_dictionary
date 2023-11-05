@@ -32,10 +32,11 @@ public class Main extends Application {
         //launch();
         TxtDictionary dict = new TxtDictionary();
         //dict.importDataFromFile("src/main/resources/data/dictionaries.txt");
-        dict.insertWord("cat", "meo");
-        System.out.println(dict.lookUpWord("cat"));
+        //dict.insertWord("cat", "meo");
+        //System.out.println(dict.lookUpWord("cat"));
         //dict.deleteWord("cat");
         //dict.lookUpWord("cat");
-        System.out.println(dict.getInfoFromAPI("cat"));
+        System.out.println(dict.getInfoFromAPI("left"));
+        dict.playEngWordSound("I am a witch!");
     }
 }

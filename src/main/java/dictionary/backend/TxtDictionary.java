@@ -8,8 +8,9 @@ import java.util.ArrayList;
 public class TxtDictionary extends Dictionary{
     private final ArrayList<Word> wordsList = new ArrayList<Word>();
     private final DictAPI dictAPI = new DictAPI();
+    private final GoogleAPI ggAPI = new GoogleAPI();
     /**
-     * Import data
+     * Import data.
      * @param path - file path
      */
     public void importDataFromFile(String path) {
@@ -22,6 +23,7 @@ public class TxtDictionary extends Dictionary{
             String line;
             String meaning = "";
             int id = 0;
+            System.out.println("Working... Please wait!");
             while ((line = br.readLine()) != null) {
                 if (!line.startsWith("|")) {
                     meaning += line.trim() + "\n";
@@ -31,8 +33,10 @@ public class TxtDictionary extends Dictionary{
                         id++;
                         Word word = new Word(engWord, meaning);
                         wordsList.add(word);
-                        if (id % 10 == 0) {
-                            System.out.print(".");
+                        if (id % 1000 == 10) {
+                            System.out.println("*");
+                        } else if (id % 10 == 0) {
+                            System.out.print("*");
                         }
                     }
                     meaning = "";
@@ -122,5 +126,12 @@ public class TxtDictionary extends Dictionary{
         }
     }
 
-
+    public void playEngWordSound(String target) {
+        try {
+            ggAPI.playWordSound(target);
+        } catch (Exception e) {
+            System.out.println("Failed to use API to play sound!");
+            throw new RuntimeException(e);
+        }
+    }
 }
