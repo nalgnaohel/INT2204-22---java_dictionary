@@ -37,6 +37,6 @@ public abstract class Dictionary {
     /**
      * Update Vietnamese meaning.
      */
-    public abstract boolean updateWordDefinition(final String target, final String definition);
+    public abstract boolean updateWordMeaning(final String target, final String meaning);
 
 }

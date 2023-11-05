@@ -5,11 +5,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class TxtDictionary {
-    private ArrayList<Word> wordsList = new ArrayList<Word>();
-
+public class TxtDictionary extends Dictionary{
+    private final ArrayList<Word> wordsList = new ArrayList<Word>();
+    private final DictAPI dictAPI = new DictAPI();
+    private final GoogleAPI ggAPI = new GoogleAPI();
     /**
-     * Import data
+     * Import data.
      * @param path - file path
      */
     public void importDataFromFile(String path) {
@@ -21,20 +22,33 @@ public class TxtDictionary {
             engWord = engWord.trim();
             String line;
             String meaning = "";
+            int id = 0;
+            System.out.println("Working... Please wait!");
             while ((line = br.readLine()) != null) {
                 if (!line.startsWith("|")) {
                     meaning += line.trim() + "\n";
                 } else {
                     //an E word
-                    Word word = new Word(engWord, meaning);
-                    wordsList.add(word);
+                    if (insertWord(engWord, meaning)) {
+                        id++;
+                        Word word = new Word(engWord, meaning);
+                        wordsList.add(word);
+                        if (id % 1000 == 10) {
+                            System.out.println("*");
+                        } else if (id % 10 == 0) {
+                            System.out.print("*");
+                        }
+                    }
                     meaning = "";
                     engWord = line.replace("|", "");
                     engWord = engWord.trim();
                 }
             }
-            Word word = new Word(engWord, meaning);
-            wordsList.add(word);
+            if(insertWord(engWord, meaning)) {
+                Word word = new Word(engWord, meaning);
+                wordsList.add(word);
+            }
+            System.out.println("Done");
         } catch (IOException e) {
             System.out.println("Cannot find the file!\n");
         } catch (Exception e) {
@@ -54,6 +68,70 @@ public class TxtDictionary {
     }
 
     /**
-     *
+     * insert
      */
+    @Override
+    public String lookUpWord(String target) {
+        for (Word word : wordsList) {
+            if (word.getWordTarget().equals(target)) {
+                return word.getWordMeaning();
+            }
+        }
+        return "Not found!";
+    }
+
+    @Override
+    public boolean insertWord(final String target, String meaning) {
+        for (Word word : wordsList) {
+            if (word.getWordTarget().equals(target)) {
+                return false;
+            }
+        }
+        Word w = new Word(target, meaning);
+        wordsList.add(w);
+        Trie.insert(target);
+        return true;
+    }
+
+    @Override
+    public boolean deleteWord(final String target) {
+        for (Word word : wordsList) {
+            if (word.getWordTarget().equals(target)) {
+                wordsList.remove(word);
+                Trie.delete(target);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean updateWordMeaning(final String target, String meaning) {
+        for (Word word : wordsList) {
+            if (word.getWordTarget().equals(target)) {
+                word.setWordMeaning(meaning);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //Get extra information from API.
+    public String getInfoFromAPI(String target) {
+        try {
+            return dictAPI.getNeededInfo(target);
+        } catch (IOException e) {
+            System.out.println("Failed to use API!");
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void playEngWordSound(String target) {
+        try {
+            ggAPI.playWordSound(target);
+        } catch (Exception e) {
+            System.out.println("Failed to use API to play sound!");
+            throw new RuntimeException(e);
+        }
+    }
 }
