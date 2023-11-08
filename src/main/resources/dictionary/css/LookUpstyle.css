@@ -1,0 +1,114 @@
+.button {
+    -fx-border-radius: 9px;
+    -fx-border-width: 2px;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0, 0, 0);
+}
+
+#wordTitle {
+    -fx-font-family: "Myriad Pro";
+    -fx-font-weight: bold;
+    -fx-font-size: 40px;
+    -fx-text-fill: #494949;
+    -fx-alignment: bottom-left;
+}
+
+#wordMeaning {
+    -fx-font-family: "Myriad Pro";
+    -fx-font-size: 15px;
+    -fx-text-fill: #494949;
+    -fx-alignment: top-left;
+}
+
+#listview {
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-font-size: 15px;
+    -fx-font-family: "Myriad Pro";
+    -fx-text-fill: #494949;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #cdffeb;
+    -fx-text-fill: #494949;
+    -fx-font-weight: bold;
+    -fx-background-radius: 9px;
+}
+
+.list-cell:odd {
+    -fx-cell-hover-color: #0093ff;
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 9px;
+}
+
+#dict-select {
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-border-radius: 6px;
+    -fx-border-color: #989898;
+    -fx-border-width: 0.5px;
+    -fx-font-family: "Myriad Pro";
+    -fx-font-size: 13px;
+    -fx-text-fill: #494949;
+}
+
+.menu-item {
+    -fx-pref-width: 130px;
+    -fx-padding: 0 0 0 5;
+    -fx-text-fill: black;
+    -fx-background: #b4b4b4;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color :transparent;
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+
+
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 0.0 5.0 0.0;
+
+}
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 5.0 0.0 0.0;
+
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.0 0.15em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color :derive(#646464,90.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color :derive(#646464,90.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}

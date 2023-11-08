@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 public class Trie {
     private static final TrieNode root = new TrieNode();
-    private static final ArrayList<String> trieWords = new ArrayList<>();
+    private static final ArrayList<String> trieWords = new ArrayList<String>();
     /**
      * A node of Trie
      */
@@ -61,8 +61,7 @@ public class Trie {
         }
         for (char index : curNode.children.keySet()) {
             if (curNode.children.get(index) != null) {
-                String f = target + index;
-                getAllPrefixes(f, curNode.children.get(index));
+                getAllPrefixes(target + index, curNode.children.get(index));
             }
         }
     }
@@ -75,6 +74,7 @@ public class Trie {
         if (target.isEmpty()) {
             return trieWords;
         }
+
         TrieNode curNode = root;
         int length = target.length();
         for (int level = 0; level < length; level++) {
