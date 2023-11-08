@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 public class Trie {
     private static final TrieNode root = new TrieNode();
-    private static final ArrayList<String> trieWords = new ArrayList<String>();
+    private static final ArrayList<String> trieWords = new ArrayList<>();
     /**
      * A node of Trie
      */
@@ -54,14 +54,15 @@ public class Trie {
      * @param target - String
      * @param curNode - current Trie Node.
      */
-    private void getAllPrefixes(String target, TrieNode curNode) {
+    private static void getAllPrefixes(String target, TrieNode curNode) {
         if (curNode.isEndOfWord) {
             trieWords.add(target);
-            return;
+            //return;
         }
         for (char index : curNode.children.keySet()) {
             if (curNode.children.get(index) != null) {
-                getAllPrefixes(target + index, curNode.children.get(index));
+                String f = target + index;
+                getAllPrefixes(f, curNode.children.get(index));
             }
         }
     }
@@ -69,12 +70,11 @@ public class Trie {
     /**
      * Search all prefixes.
      */
-    public ArrayList<String> search(String target) {
+    public static ArrayList<String> search(String target) {
         trieWords.clear();
         if (target.isEmpty()) {
             return trieWords;
         }
-
         TrieNode curNode = root;
         int length = target.length();
         for (int level = 0; level < length; level++) {
