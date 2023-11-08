@@ -1,5 +1,6 @@
 package dictionary;
 
+import dictionary.backend.Trie;
 import dictionary.backend.TxtDictionary;
 import dictionary.backend.Word;
 import javafx.application.Application;
@@ -14,8 +15,7 @@ import java.util.ArrayList;
 
 public class Main extends Application {
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("dictionary/fxml/dictionary.fxml"));
-        fxmlLoader.setController(this);
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/dictionary.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
 
@@ -28,15 +28,17 @@ public class Main extends Application {
         stage.show();
     }
     public static void main(String[] args) {
-        ArrayList<Word> wordsList = new ArrayList<Word>();
-        //launch();
-        TxtDictionary dict = new TxtDictionary();
-        //dict.importDataFromFile("src/main/resources/data/dictionaries.txt");
+//        ArrayList<Word> wordsList = new ArrayList<Word>();
+//        TxtDictionary dict = new TxtDictionary();
+//        dict.importDataFromFile("src/main/resources/data/dictionaries.txt");
         //dict.insertWord("cat", "meo");
         //System.out.println(dict.lookUpWord("cat"));
         //dict.deleteWord("cat");
         //dict.lookUpWord("cat");
-        System.out.println(dict.getInfoFromAPI("left"));
-        dict.playEngWordSound("I am a witch!");
+//        for (int i = 0; i < Trie.search("in").size(); i++) {
+//            System.out.println(Trie.search("in").get(i));
+//        }
+
+        launch();
     }
 }

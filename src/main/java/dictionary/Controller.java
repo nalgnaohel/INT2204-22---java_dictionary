@@ -66,28 +66,51 @@ public class Controller implements Initializable {
 
     @FXML // Xử lý sự kiện khi click vào đối tượng
     protected void ButtonClick(ActionEvent event) throws IOException {
+        // Đóng tab đang mở
         if (currentButton != null) {
             currentButton.getParent().getStyleClass().clear();
             currentButton.getParent().getChildrenUnmodifiable().get(0).setEffect(null);
             currentButton.getParent().getStyleClass().add("tab-menu");
         }
 
+        // Bật tab mới
         currentButton = (Button) event.getSource();
         currentButton.getParent().getStyleClass().clear();
         currentButton.getParent().getChildrenUnmodifiable().get(0).setEffect(null);
         currentButton.getParent().getStyleClass().add("tab-selected");
 
-        contentArea.getChildren().setAll(lookupArea);
+        if (currentButton.equals(lookupButton)) {
+            contentArea.getChildren().clear();
+            contentArea.getChildren().add(lookupArea);
+        } else if (currentButton.equals(translateButton)) {
+            contentArea.getChildren().clear();
+            //contentArea.getChildren().add(translateArea);
+        } else if (currentButton.equals(gameButton)) {
+            contentArea.getChildren().clear();
+            //contentArea.getChildren().add(gameArea);
+        } else if (currentButton.equals(importButton)) {
+            contentArea.getChildren().clear();
+            //contentArea.getChildren().add(importArea);
+        } else if (currentButton.equals(exportButton)) {
+            contentArea.getChildren().clear();
+            //contentArea.getChildren().add(exportArea);
+        }
     }
 
     @Override // Khởi tạo các Tab trước khi chương trình chạy
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        // Khởi tạo Tab Lookup (Tab tra từ điển)
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/lookupTab.fxml"));
             lookupArea = fxmlLoader.load();
             lookupTabController = fxmlLoader.getController();
+            lookupTabController.initialize();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        // Khởi tạo Tab Translate (Tab dịch)
+        // Khởi tạo Tab Game (Tab trò chơi)
+        // Khởi tạo Tab Import (Tab nhập dữ liệu)
+        // Khởi tạo Tab Export (Tab xuất dữ liệu)
     }
 }

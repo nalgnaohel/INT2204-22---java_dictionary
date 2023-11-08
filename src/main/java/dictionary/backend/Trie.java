@@ -54,10 +54,10 @@ public class Trie {
      * @param target - String
      * @param curNode - current Trie Node.
      */
-    private void getAllPrefixes(String target, TrieNode curNode) {
+    private static void getAllPrefixes(String target, TrieNode curNode) {
         if (curNode.isEndOfWord) {
             trieWords.add(target);
-            return;
+            //return;
         }
         for (char index : curNode.children.keySet()) {
             if (curNode.children.get(index) != null) {
@@ -69,7 +69,7 @@ public class Trie {
     /**
      * Search all prefixes.
      */
-    public ArrayList<String> search(String target) {
+    public static ArrayList<String> search(String target) {
         trieWords.clear();
         if (target.isEmpty()) {
             return trieWords;
