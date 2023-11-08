@@ -1,8 +1,6 @@
 package dictionary.backend;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 public class TxtDictionary extends Dictionary{
@@ -31,8 +29,6 @@ public class TxtDictionary extends Dictionary{
                     //an E word
                     if (insertWord(engWord, meaning)) {
                         id++;
-                        Word word = new Word(engWord, meaning);
-                        wordsList.add(word);
                         if (id % 1000 == 10) {
                             System.out.println("*");
                         } else if (id % 10 == 0) {
@@ -45,8 +41,7 @@ public class TxtDictionary extends Dictionary{
                 }
             }
             if(insertWord(engWord, meaning)) {
-                Word word = new Word(engWord, meaning);
-                wordsList.add(word);
+                id++;
             }
             System.out.println("Done");
         } catch (IOException e) {
@@ -59,6 +54,66 @@ public class TxtDictionary extends Dictionary{
     /**
      * Export words.
      */
+    public void exportToFiles(String path) {
+        try {
+            FileWriter fw = new FileWriter(path);
+            BufferedWriter bw = new BufferedWriter(fw);
+            for (Word word: wordsList) {
+                bw.write("|" + word.getWordTarget() + "\n" + word.getWordMeaning());
+                bw.newLine();
+            }
+            bw.close();
+        } catch (IOException e) {
+            System.out.println("Errors occured while trying to export to file!");
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public int maxWordTargetLength() {
+        int res = -1;
+        for (Word w : wordsList) {
+            int curL = w.getWordTarget().length();
+            if (curL > res) {
+                res = curL;
+            }
+        }
+        return res;
+    }
+
+    public int maxWordMeaningLength() {
+        int res = -1;
+        for (Word w : wordsList) {
+            int curL = w.getWordMeaning().length();
+            if (curL > res) {
+                res = curL;
+            }
+        }
+        return res;
+    }
+
+    /**
+     * Export to file - table ver.
+     */
+    public void exportToFileTable(String path) {
+        StringBuilder res = new StringBuilder();
+        for (int i = 0; i < wordsList.size(); i++) {
+            Word word = wordsList.get(i);
+            String f = "( \"" + word.getWordTarget() + "\",\"" + word.getWordMeaning() + "\"),\n";
+            res.append(f);
+        }
+        res.append(";");
+        System.out.println(res.toString());
+        try {
+            FileWriter fw = new FileWriter(path);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(res.toString());
+            bw.close();
+        } catch (IOException e) {
+            System.out.println("Errors occured while trying to export to file!");
+            throw new RuntimeException(e);
+        }
+    }
 
     /**
      * Return all the words in our list.
@@ -67,9 +122,6 @@ public class TxtDictionary extends Dictionary{
         return wordsList;
     }
 
-    /**
-     * insert
-     */
     @Override
     public String lookUpWord(String target) {
         for (Word word : wordsList) {
