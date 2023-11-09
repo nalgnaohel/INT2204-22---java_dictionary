@@ -43,7 +43,7 @@ public class Controller implements Initializable {
 
             // Tạo đối tượng ColorAdjust, Sét đặt giá trị cho brightness (Độ sáng)
             ColorAdjust colorAdjust = new ColorAdjust();
-            colorAdjust.setBrightness(-0.39);
+            colorAdjust.setBrightness(-0.6);
             // Áp dụng ColorAdjust
             b.getParent().getChildrenUnmodifiable().get(0).setEffect(colorAdjust);
         } else {
@@ -77,17 +77,19 @@ public class Controller implements Initializable {
         currentButton = (Button) event.getSource();
         currentButton.getParent().getStyleClass().clear();
         currentButton.getParent().getChildrenUnmodifiable().get(0).setEffect(null);
-        currentButton.getParent().getStyleClass().add("tab-selected");
 
         if (currentButton.equals(lookupButton)) {
             contentArea.getChildren().clear();
             contentArea.getChildren().add(lookupArea);
+            currentButton.getParent().getStyleClass().add("lookUp-selected");
         } else if (currentButton.equals(translateButton)) {
             contentArea.getChildren().clear();
             //contentArea.getChildren().add(translateArea);
+            currentButton.getParent().getStyleClass().add("translate-selected");
         } else if (currentButton.equals(gameButton)) {
             contentArea.getChildren().clear();
             //contentArea.getChildren().add(gameArea);
+            currentButton.getParent().getStyleClass().add("game-selected");
         } else if (currentButton.equals(importButton)) {
             contentArea.getChildren().clear();
             //contentArea.getChildren().add(importArea);
@@ -104,6 +106,7 @@ public class Controller implements Initializable {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/lookupTab.fxml"));
             lookupArea = fxmlLoader.load();
             lookupTabController = fxmlLoader.getController();
+            lookupTabController.dictionaryImport();
             lookupTabController.initialize();
         } catch (IOException e) {
             throw new RuntimeException(e);

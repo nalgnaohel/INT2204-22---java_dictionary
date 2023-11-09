@@ -23,7 +23,7 @@ public class TxtDictionary extends Dictionary{
             String line;
             String meaning = "";
             int id = 0;
-            System.out.println("Working... Please wait!");
+            System.out.println("Importing " + path + "... Please wait!");
             while ((line = br.readLine()) != null) {
                 if (!line.startsWith("|")) {
                     meaning += line.trim() + "\n";
@@ -31,8 +31,6 @@ public class TxtDictionary extends Dictionary{
                     //an E word
                     if (insertWord(engWord, meaning)) {
                         id++;
-                        Word word = new Word(engWord, meaning);
-                        wordsList.add(word);
                         if (id % 1000 == 10) {
                             System.out.println("*");
                         } else if (id % 10 == 0) {
@@ -45,10 +43,9 @@ public class TxtDictionary extends Dictionary{
                 }
             }
             if(insertWord(engWord, meaning)) {
-                Word word = new Word(engWord, meaning);
-                wordsList.add(word);
+                id++;
             }
-            System.out.println("Done");
+            System.out.println("Done importing!");
         } catch (IOException e) {
             System.out.println("Cannot find the file!\n");
         } catch (Exception e) {
