@@ -1,14 +1,13 @@
 package dictionary.backend;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 public class TxtDictionary extends Dictionary{
     private final ArrayList<Word> wordsList = new ArrayList<Word>();
     private final DictAPI dictAPI = new DictAPI();
     private final GoogleAPI ggAPI = new GoogleAPI();
+    private final TranslatorAPI translatorAPI = new TranslatorAPI();
     /**
      * Import data.
      * @param path - file path
@@ -56,7 +55,21 @@ public class TxtDictionary extends Dictionary{
     /**
      * Export words.
      */
+    public void exportToFiles(String path) {
+        try {
+            FileWriter fw = new FileWriter(path);
+            BufferedWriter bw = new BufferedWriter(fw);
+            for (Word word: wordsList) {
+                bw.write("| " + word.getWordTarget() + "\n" + word.getWordMeaning());
+                bw.newLine();
+            }
+            bw.close();
+        } catch (IOException e) {
+            System.out.println("Errors occured while trying to export to file!");
+            throw new RuntimeException(e);
+        }
 
+    }
     /**
      * Return all the words in our list.
      */
@@ -130,5 +143,15 @@ public class TxtDictionary extends Dictionary{
             System.out.println("Failed to use API to play sound!");
             throw new RuntimeException(e);
         }
+    }
+
+    public String translateSentence(String langFrom, String langTo, String text) {
+        //Tieng Anh thi String la "en", tieng Viet thi String la "vi".
+        try {
+            return translatorAPI.translate(langFrom, langTo, text);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "Cannot translate your text!";
     }
 }

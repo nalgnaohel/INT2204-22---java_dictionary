@@ -64,8 +64,7 @@ public class DictAPI extends API {
             String cur = responseLine.trim();
             res.append(cur);
         }
-        //mình nghĩ chỉ cần lấy synonym antonym với examples thôi, cái phát âm nó cũng có từ
-        //chạy được từ không ấy :(. Anyway cảm ơn bạn, tự nhiên nghĩ ra cây kế thừa luôn =))).
+
         String response = res.toString();
 
         //Find synonym
