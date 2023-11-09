@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.Controller">
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.Controller">
    <children>
       <VBox id="left_panel" prefHeight="700.0" prefWidth="220.0" stylesheets="@../css/stylesheet.css">
          <children>
@@ -36,7 +36,7 @@
                      </cursor></Button>
                </children>
                <effect>
-                  <ColorAdjust brightness="-0.39" />
+                  <ColorAdjust brightness="-0.6" />
                </effect>
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
@@ -63,7 +63,7 @@
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
                <effect>
-                  <ColorAdjust brightness="-0.39" />
+                  <ColorAdjust brightness="-0.6" />
                </effect>
             </HBox>
             <HBox id="gameTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
@@ -84,7 +84,7 @@
                      </cursor></Button>
                </children>
                <effect>
-                  <ColorAdjust brightness="-0.39" />
+                  <ColorAdjust brightness="-0.6" />
                </effect>
                <VBox.margin>
                   <Insets left="10.0" top="10.0" />
@@ -113,7 +113,7 @@
                      </cursor></Button>
                </children>
                <effect>
-                  <ColorAdjust brightness="-0.39" />
+                  <ColorAdjust brightness="-0.6" />
                </effect>
                <VBox.margin>
                   <Insets left="10.0" top="10.0" />
@@ -137,7 +137,7 @@
                      </cursor></Button>
                </children>
                <effect>
-                  <ColorAdjust brightness="-0.39" />
+                  <ColorAdjust brightness="-0.6" />
                </effect>
                <VBox.margin>
                   <Insets left="10.0" top="10.0" />

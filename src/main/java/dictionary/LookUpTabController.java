@@ -40,11 +40,12 @@ public class LookUpTabController {
     private Button editButton;
 
     public void initialize() {
-        ShowList("an");
+        ShowList("t");
     }
 
     public void dictionaryImport() {
-        dict.importDataFromFile("src/main/resources/data/dictionaries.txt");
+//        dict.importDataFromFile("src/main/resources/data/dictionaries.txt");
+        dict.importDataFromFile("src/main/resources/data/demo.txt");
     }
 
 //    @FXML
