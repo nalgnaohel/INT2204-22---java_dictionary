@@ -14,24 +14,6 @@ public class TranslatorAPI extends API{
         apiName = "https://script.google.com/macros/s/AKfycby3AOWmhe32TgV9nW-Q0TyGOEyCHQeFiIn7hRgy5m8jHPaXDl2GdToyW_3Ys5MTbK6wjg/exec";
     }
 
-    /*public String transEnToVi(String text) {
-        try {
-            return translate("en", "vi", text);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return "Cannot translate your text!";
-    }
-
-    public String transViToEn(String text) {
-        try {
-            return translate("vi", "en", text);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return "Cannot translate your text!";
-    }*/
-
     public String translate(String langFrom, String langTo, String text) throws IOException {
         setAPIName();
         String urlName = apiName + "?q=" + URLEncoder.encode(text, StandardCharsets.UTF_8) +
