@@ -17,7 +17,7 @@ public abstract class Dictionary {
     /**
      * Get all words in the dictionary.
      */
-    public abstract ArrayList<Word> getWordsList();
+    public abstract ArrayList<Word> getAllWords();
 
     /**
      * Lookup word.

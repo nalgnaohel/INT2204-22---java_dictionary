@@ -70,10 +70,51 @@ public class TxtDictionary extends Dictionary{
         }
 
     }
+
+    /**
+     * Export to several files to add sql.
+     */
+    public void exportToSQL(int numOfFiles) {
+        int noWordsPerFile = wordsList.size() / numOfFiles;
+        for (int i = 1; i < numOfFiles; i++) {
+            String fname = "toSql_" + Integer.toString(i) + ".txt";
+            try {
+                FileWriter fw = new FileWriter(fname);
+                BufferedWriter bw = new BufferedWriter(fw);
+                bw.write("INSERT INTO DictWord\nVALUES\n");
+                for (int j = (i - 1) * noWordsPerFile; j < i * noWordsPerFile; j++) {
+                    String wordToSQLValue = "(\"" + wordsList.get(j).getWordTarget() + "\",";
+                    wordToSQLValue += "\"" + wordsList.get(j).getWordMeaning() + "\"),";
+                    bw.write(wordToSQLValue);
+                }
+                bw.close();
+            } catch (IOException e) {
+                System.out.println("Errors occured while trying to export " + fname + "!\n");
+                throw new RuntimeException(e);
+            }
+        }
+        //The last file.
+        String fname = "toSql_" + Integer.toString(numOfFiles) + ".txt";
+        try {
+            FileWriter fw = new FileWriter(fname);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write("INSERT INTO DictWord\nVALUES\n");
+            for (int j = (numOfFiles - 1) * noWordsPerFile; j < wordsList.size(); j++) {
+                String wordToSQLValue = "(\"" + wordsList.get(j).getWordTarget() + "\",";
+                wordToSQLValue += "\"" + wordsList.get(j).getWordMeaning() + "\"),";
+                bw.write(wordToSQLValue);
+            }
+            bw.close();
+        } catch (IOException e) {
+            System.out.println("Errors occured while trying to export " + fname + "!\n");
+            throw new RuntimeException(e);
+        }
+    }
+
     /**
      * Return all the words in our list.
      */
-    public ArrayList<Word> getWordsList() {
+    public ArrayList<Word> getAllWords() {
         return wordsList;
     }
 
