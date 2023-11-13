@@ -44,8 +44,6 @@ public class DtbDictionary extends Dictionary{
     }
 
     //close Connection to our dtb.
-
-
     @Override
     public void close() {
         try {
@@ -69,10 +67,13 @@ public class DtbDictionary extends Dictionary{
                 ResultSet rs = prs.executeQuery();
                 try {
                     ArrayList<Word> wordArrayList = new ArrayList<>();
+                    //System.out.println("Inserting words...");
                     while (rs.next()) {
+                        //System.out.println(rs.getString(1));
                         Word word = new Word(rs.getString(1), rs.getString(2));
                         wordArrayList.add(word);
                     }
+                    //System.out.println("Done inserting words...");
                     return wordArrayList;
                 } finally {
                     rs.close();
@@ -89,6 +90,7 @@ public class DtbDictionary extends Dictionary{
 
     public String lookUpWord(final String target) {
         final String sqlQuery = "SELECT Vietnamese FROM " + dtbTable + " WHERE English = ?";
+        System.out.println("Currently looking up for " + target);
         try {
             PreparedStatement prs = connection.prepareStatement(sqlQuery);
             prs.setString(1, target);
@@ -96,8 +98,13 @@ public class DtbDictionary extends Dictionary{
                 ResultSet rs = prs.executeQuery();
                 try {
                     if (rs.next()) {
+                        System.out.println("Find the word!");
+                        System.out.println(rs.getString("Vietnamese"));
+                        Word word = new Word(target, rs.getString("Vietnamese"));
+                        History.addToHistory(word);
                         return rs.getString("Vietnamese");
                     } else {
+                        System.out.println("Cannot find the word");
                         return "Not found!";
                     }
                 } finally {

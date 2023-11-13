@@ -66,7 +66,7 @@ public class TxtDictionary extends Dictionary{
             bw.close();
         } catch (IOException e) {
             System.out.println("Errors occured while trying to export to file!");
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
     }
@@ -125,6 +125,7 @@ public class TxtDictionary extends Dictionary{
     public String lookUpWord(String target) {
         for (Word word : wordsList) {
             if (word.getWordTarget().equals(target)) {
+                History.addToHistory(word);
                 return word.getWordMeaning();
             }
         }

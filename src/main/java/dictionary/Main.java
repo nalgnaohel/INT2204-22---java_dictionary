@@ -27,13 +27,14 @@ public class Main extends Application {
 //        ArrayList<Word> wordsList = new ArrayList<Word>();
         //TxtDictionary dict = new TxtDictionary();
         /*DtbDictionary dtbDict = new DtbDictionary();
+        History.loadHistory();
         try {
             dtbDict.init();
             System.out.println(dtbDict.lookUpWord("cat"));
             dtbDict.deleteWord("cat");
             dtbDict.insertWord("cat", "meo");
             System.out.println(dtbDict.lookUpWord("cat"));
-            dtbDict.updateWordMeaning("cat", "/kæt/\n" +
+            boolean f = dtbDict.updateWordMeaning("cat", "/kæt/\n" +
                     "* danh từ\n" +
                     "- con mèo\n" +
                     "- (động vật học) thú thuộc giống mèo (sư tử, hổ, báo...)\n" +
@@ -66,11 +67,26 @@ public class Main extends Application {
                     "- đánh bằng roi chín dài\n" +
                     "* nội động từ\n" +
                     "- (thông tục) nôn mửa");
-            System.out.println(dtbDict.lookUpWord("cat"));
-            System.out.println(dtbDict.getInfoFromAPI("cat"));
-            System.out.println(dtbDict.translateSentence("en", "vi", "I love cats!"));
-            dtbDict.playEngWordSound("There was a crooked man. He lived in a crooked house, " +
-                    "with a crooked cat and a crooked mouse");
+            System.out.println(f);
+            //System.out.println(dtbDict.lookUpWord("cat"));
+            System.out.println(dtbDict.lookUpWord("cellist"));
+            ArrayList<Word> allWord = dtbDict.getAllWords();
+            for (int i = 0; i < 20; i++) {
+                System.out.println(allWord.get(i).getWordTarget());
+                System.out.println(dtbDict.lookUpWord(allWord.get(i).getWordTarget()));
+            }
+            System.out.println(dtbDict.lookUpWord("dog"));
+            ArrayList<Word> hist = History.getWordHistory();
+            System.out.println(hist.size());
+            for (int i = 0; i < hist.size(); i++) {
+                System.out.print(i + " " + hist.get(i).getWordTarget() + "\n");
+            }
+            //System.out.println(dtbDict.getInfoFromAPI("cat"));
+            //System.out.println(dtbDict.translateSentence("en", "vi", "I love cats!"));
+            //dtbDict.playEngWordSound("There was a crooked man. He lived in a crooked house, " +
+            //        "with a crooked cat and a crooked mouse");
+            History.exportHistory();
+            dtbDict.close();
         } catch (SQLException e) {
             System.out.println("Cannot connect to the dtb!");
             e.printStackTrace();
