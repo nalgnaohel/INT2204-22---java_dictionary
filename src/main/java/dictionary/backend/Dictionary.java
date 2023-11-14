@@ -1,5 +1,6 @@
 package dictionary.backend;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public abstract class Dictionary {
@@ -7,7 +8,7 @@ public abstract class Dictionary {
     /**
      * Initialize the dictionary when starting the application.
      */
-    //public void initialize() throws SQLException {}
+    public void init() throws SQLException {}
 
     /**
      * Close.
@@ -39,4 +40,9 @@ public abstract class Dictionary {
      */
     public abstract boolean updateWordMeaning(final String target, final String meaning);
 
+    public void importDataFromFile(String path) {}
+
+    public abstract String getInfoFromAPI(String target);
+    public abstract void playEngWordSound(String target);
+    public abstract String translateSentence(String langFrom, String langTo, String text);
 }

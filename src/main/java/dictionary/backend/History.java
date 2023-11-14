@@ -93,4 +93,12 @@ public class History {
     public static ArrayList<Word> getWordHistory() {
         return wordHistory;
     }
+
+    public static ArrayList<String> getWordTargetHistory() {
+        ArrayList<String> res = new ArrayList<>();
+        for (Word word : wordHistory) {
+            res.add(word.getWordTarget());
+        }
+        return res;
+    }
 }

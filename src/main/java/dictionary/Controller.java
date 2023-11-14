@@ -31,6 +31,8 @@ public class Controller implements Initializable {
     private Button currentButton;
     private AnchorPane lookupArea;
     private LookUpTabController lookupTabController;
+    private AnchorPane translateArea;
+    private TranslateTabController translateTabController;
 
     @FXML // Xử lý sự kiện khi di chuột vào đối tượng
     protected void onMouseEntered(MouseEvent event) {
@@ -84,7 +86,7 @@ public class Controller implements Initializable {
             currentButton.getParent().getStyleClass().add("lookUp-selected");
         } else if (currentButton.equals(translateButton)) {
             contentArea.getChildren().clear();
-            //contentArea.getChildren().add(translateArea);
+            contentArea.getChildren().add(translateArea);
             currentButton.getParent().getStyleClass().add("translate-selected");
         } else if (currentButton.equals(gameButton)) {
             contentArea.getChildren().clear();
@@ -106,12 +108,21 @@ public class Controller implements Initializable {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/lookupTab.fxml"));
             lookupArea = fxmlLoader.load();
             lookupTabController = fxmlLoader.getController();
-            lookupTabController.dictionaryImport();
+            //lookupTabController.dictionaryImport();
             lookupTabController.initialize();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
         // Khởi tạo Tab Translate (Tab dịch)
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/translateTab.fxml"));
+            translateArea = fxmlLoader.load();
+            translateTabController = fxmlLoader.getController();
+            translateTabController.initialize();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         // Khởi tạo Tab Game (Tab trò chơi)
         // Khởi tạo Tab Import (Tab nhập dữ liệu)
         // Khởi tạo Tab Export (Tab xuất dữ liệu)

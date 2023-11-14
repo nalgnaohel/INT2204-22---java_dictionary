@@ -1,5 +1,6 @@
 package dictionary;
 
+import dictionary.backend.History;
 import dictionary.backend.Trie;
 import dictionary.backend.TxtDictionary;
 import javafx.collections.FXCollections;
@@ -16,8 +17,10 @@ import javafx.scene.text.TextFlow;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import static dictionary.Main.dict;
+
 public class LookUpTabController {
-    private final TxtDictionary dict = new TxtDictionary();
+    //private final TxtDictionary dict = new TxtDictionary();
     private String currentWord;
     private final ArrayList<String> wordsList = new ArrayList<>();
 
@@ -40,12 +43,7 @@ public class LookUpTabController {
     private Button editButton;
 
     public void initialize() {
-        ShowList("t");
-    }
-
-    public void dictionaryImport() {
-//        dict.importDataFromFile("src/main/resources/data/dictionaries.txt");
-        dict.importDataFromFile("src/main/resources/data/demo.txt");
+        ShowList("");
     }
 
 //    @FXML
@@ -54,7 +52,7 @@ public class LookUpTabController {
 //        ShowList(tmp);
 //    }
 
-    @FXML //throws SQLException?
+    @FXML
     public void SearchInput(KeyEvent event) throws IOException {
         if (event.getSource() == SearchBar) {
             String searchText = SearchBar.getText();
@@ -71,11 +69,19 @@ public class LookUpTabController {
     }
 
     public void ShowList(String target) {
-        wordsList.clear();
-        wordsList.addAll(Trie.search(target));
-        ObservableList<String> items = FXCollections.observableArrayList(wordsList);
-        //show listview
-        listview.setItems(items);
+        if (target.isEmpty()) {
+            wordsList.clear();
+            wordsList.addAll(History.getWordTargetHistory());
+            ObservableList<String> items = FXCollections.observableArrayList(wordsList);
+            //show listview
+            listview.setItems(items);
+        } else {
+            wordsList.clear();
+            wordsList.addAll(Trie.search(target));
+            ObservableList<String> items = FXCollections.observableArrayList(wordsList);
+            //show listview
+            listview.setItems(items);
+        }
     }
 
     public void ShowWord(String newValue) {

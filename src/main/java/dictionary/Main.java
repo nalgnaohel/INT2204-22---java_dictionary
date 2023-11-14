@@ -1,15 +1,28 @@
 package dictionary;
 
+import dictionary.backend.Dictionary;
+import dictionary.backend.DtbDictionary;
+import dictionary.backend.History;
+import dictionary.backend.TxtDictionary;
 import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Optional;
 
 public class Main extends Application {
+    public static Dictionary dict;
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/dictionary.fxml"));
         Parent root = fxmlLoader.load();
@@ -21,10 +34,61 @@ public class Main extends Application {
 
         stage.setResizable(false); // không cho phóng to, thu nhỏ cửa sổ
         stage.setScene(scene);
+        stage.setOnCloseRequest(windowEvent -> {
+            dict.close();
+            History.exportHistory();
+            Platform.exit();
+            System.exit(0);
+        });
         stage.show();
+        selectDictionary(stage);
     }
+
+    @FXML
+    private Button b1;
+
+    @FXML
+    private Button b2;
+    public void selectDictionary(Stage stage) throws IOException {
+        Alert selectAlert = new Alert(Alert.AlertType.CONFIRMATION);
+        selectAlert.setTitle("Chon tu dien");
+        selectAlert.setHeaderText("Ban co muon su dung tu dien ket noi voi " +
+                "Co so du lieu MYSQL khong?\n " +
+                "Neu co, hay chac chan minh da setup MySQL truoc.");
+
+        ButtonType dtb = new ButtonType("Ket noi CSDL");
+        ButtonType noDtb = new ButtonType("Khong ket noi CSDL");
+        selectAlert.getButtonTypes().clear();
+        selectAlert.getButtonTypes().addAll(dtb, noDtb);
+        Optional<ButtonType> opt = selectAlert.showAndWait();
+
+        if (opt.get() == dtb) {
+            dict = new DtbDictionary();
+            //connect to Dtb
+            try {
+                dict.init();
+                Alert dtbAlert = new Alert(Alert.AlertType.INFORMATION);
+                dtbAlert.setTitle("Thong bao");
+                dtbAlert.setHeaderText("Ket noi CSDL thanh cong!");
+                dtbAlert.show();
+            } catch (Exception e) {
+                //Failed
+                e.printStackTrace();
+                Alert failedDtbAlert = new Alert(Alert.AlertType.ERROR);
+                failedDtbAlert.setTitle("Thong bao");
+                failedDtbAlert.setHeaderText("Khong ket noi duoc voi CSDL");
+                failedDtbAlert.show();
+                dict = new TxtDictionary();
+                dict.importDataFromFile("src/main/resources/data/demo.txt");
+            }
+        } else if (opt.get() == noDtb) {
+            dict = new TxtDictionary();
+            dict.importDataFromFile("src/main/resources/data/demo.txt");
+        }
+    }
+
     public static void main(String[] args) {
-//        ArrayList<Word> wordsList = new ArrayList<Word>();
+        History.loadHistory();
         //TxtDictionary dict = new TxtDictionary();
         /*DtbDictionary dtbDict = new DtbDictionary();
         History.loadHistory();
