@@ -34,6 +34,9 @@ public class Controller implements Initializable {
     private AnchorPane translateArea;
     private TranslateTabController translateTabController;
 
+    private AnchorPane gameArea;
+    private ChooseGameController chooseGameController;
+
     @FXML // Xử lý sự kiện khi di chuột vào đối tượng
     protected void onMouseEntered(MouseEvent event) {
         // Tìm đối tượng gây ra sự kiện (đối tượng được di chuột vào)
@@ -90,7 +93,7 @@ public class Controller implements Initializable {
             currentButton.getParent().getStyleClass().add("translate-selected");
         } else if (currentButton.equals(gameButton)) {
             contentArea.getChildren().clear();
-            //contentArea.getChildren().add(gameArea);
+            contentArea.getChildren().add(gameArea);
             currentButton.getParent().getStyleClass().add("game-selected");
         } else if (currentButton.equals(importButton)) {
             contentArea.getChildren().clear();
@@ -123,7 +126,16 @@ public class Controller implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
         // Khởi tạo Tab Game (Tab trò chơi)
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/chooseGame.fxml"));
+            gameArea = fxmlLoader.load();
+            chooseGameController = fxmlLoader.getController();
+            chooseGameController.initialize();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         // Khởi tạo Tab Import (Tab nhập dữ liệu)
         // Khởi tạo Tab Export (Tab xuất dữ liệu)
     }

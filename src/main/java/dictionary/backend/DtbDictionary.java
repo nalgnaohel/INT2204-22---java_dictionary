@@ -222,4 +222,8 @@ public class DtbDictionary extends Dictionary{
         }
         return "Cannot translate your text!";
     }
+
+    //public String getQuestion(int id) {
+
+    //}
 }
