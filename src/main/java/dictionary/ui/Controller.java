@@ -1,5 +1,6 @@
-package dictionary;
+package dictionary.ui;
 
+import dictionary.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -136,7 +137,10 @@ public class Controller implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
         // Khởi tạo Tab Import (Tab nhập dữ liệu)
+
+
         // Khởi tạo Tab Export (Tab xuất dữ liệu)
     }
 }

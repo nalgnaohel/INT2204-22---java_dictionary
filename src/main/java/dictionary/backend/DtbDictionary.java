@@ -1,5 +1,7 @@
 package dictionary.backend;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
@@ -90,7 +92,7 @@ public class DtbDictionary extends Dictionary{
 
     public String lookUpWord(final String target) {
         final String sqlQuery = "SELECT Vietnamese FROM " + dtbTable + " WHERE English = ?";
-        System.out.println("Currently looking up for " + target);
+        //System.out.println("Currently looking up for " + target);
         try {
             PreparedStatement prs = connection.prepareStatement(sqlQuery);
             prs.setString(1, target);
@@ -98,8 +100,8 @@ public class DtbDictionary extends Dictionary{
                 ResultSet rs = prs.executeQuery();
                 try {
                     if (rs.next()) {
-                        System.out.println("Find the word!");
-                        System.out.println(rs.getString("Vietnamese"));
+                        //System.out.println("Find the word!");
+                        //System.out.println(rs.getString("Vietnamese"));
                         Word word = new Word(target, rs.getString("Vietnamese"));
                         History.addToHistory(word);
                         return rs.getString("Vietnamese");
@@ -223,7 +225,35 @@ public class DtbDictionary extends Dictionary{
         return "Cannot translate your text!";
     }
 
-    //public String getQuestion(int id) {
-
-    //}
+    public void export5Words() {
+        ArrayList<Word> wordArrayList = getAllWords();
+        ArrayList<String> wordleWords = new ArrayList<>();
+        for (Word word : wordArrayList) {
+            boolean ok = true;
+            if (word.getWordTarget().length() != 5) {
+                ok = false; continue;
+            }
+            for (int i = 0; i < 5; i++) {
+                char c = word.getWordTarget().charAt(i);
+                if (!Character.isLetter(c)) {
+                    ok = false; break;
+                }
+            }
+            if (ok) {
+                wordleWords.add(word.getWordTarget());
+            }
+        }
+        try {
+            FileWriter fw = new FileWriter("src/main/resources/data/wordle_all.txt");
+            BufferedWriter bw = new BufferedWriter(fw);
+            for (String word: wordleWords) {
+                bw.write( word);
+                bw.newLine();
+            }
+            bw.close();
+        } catch (IOException e) {
+            System.out.println("Errors occured while trying to export to file!");
+            e.printStackTrace();
+        }
+    }
 }

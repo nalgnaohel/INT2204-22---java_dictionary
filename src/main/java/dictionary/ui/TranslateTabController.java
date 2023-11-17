@@ -1,4 +1,4 @@
-package dictionary;
+package dictionary.ui;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

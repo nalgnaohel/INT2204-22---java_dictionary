@@ -72,46 +72,6 @@ public class TxtDictionary extends Dictionary{
     }
 
     /**
-     * Export to several files to add sql.
-     */
-    public void exportToSQL(int numOfFiles) {
-        int noWordsPerFile = wordsList.size() / numOfFiles;
-        for (int i = 1; i < numOfFiles; i++) {
-            String fname = "toSql_" + Integer.toString(i) + ".txt";
-            try {
-                FileWriter fw = new FileWriter(fname);
-                BufferedWriter bw = new BufferedWriter(fw);
-                bw.write("INSERT INTO DictWord\nVALUES\n");
-                for (int j = (i - 1) * noWordsPerFile; j < i * noWordsPerFile; j++) {
-                    String wordToSQLValue = "(\"" + wordsList.get(j).getWordTarget() + "\",";
-                    wordToSQLValue += "\"" + wordsList.get(j).getWordMeaning() + "\"),";
-                    bw.write(wordToSQLValue);
-                }
-                bw.close();
-            } catch (IOException e) {
-                System.out.println("Errors occured while trying to export " + fname + "!\n");
-                throw new RuntimeException(e);
-            }
-        }
-        //The last file.
-        String fname = "toSql_" + Integer.toString(numOfFiles) + ".txt";
-        try {
-            FileWriter fw = new FileWriter(fname);
-            BufferedWriter bw = new BufferedWriter(fw);
-            bw.write("INSERT INTO DictWord\nVALUES\n");
-            for (int j = (numOfFiles - 1) * noWordsPerFile; j < wordsList.size(); j++) {
-                String wordToSQLValue = "(\"" + wordsList.get(j).getWordTarget() + "\",";
-                wordToSQLValue += "\"" + wordsList.get(j).getWordMeaning() + "\"),";
-                bw.write(wordToSQLValue);
-            }
-            bw.close();
-        } catch (IOException e) {
-            System.out.println("Errors occured while trying to export " + fname + "!\n");
-            throw new RuntimeException(e);
-        }
-    }
-
-    /**
      * Return all the words in our list.
      */
     public ArrayList<Word> getAllWords() {
@@ -195,5 +155,37 @@ public class TxtDictionary extends Dictionary{
             e.printStackTrace();
         }
         return "Cannot translate your text!";
+    }
+
+    @Override
+    public void export5Words() {
+        ArrayList<String> wordleWords = new ArrayList<>();
+        for (Word word : wordsList) {
+            boolean ok = true;
+            if (word.getWordTarget().length() != 5) {
+                ok = false; continue;
+            }
+            for (int i = 0; i < 5; i++) {
+                char c = word.getWordTarget().charAt(i);
+                if (!Character.isLetter(c)) {
+                    ok = false; break;
+                }
+            }
+            if (ok) {
+                wordleWords.add(word.getWordTarget());
+            }
+        }
+        try {
+            FileWriter fw = new FileWriter("src/main/resources/data/wordle_all.txt");
+            BufferedWriter bw = new BufferedWriter(fw);
+            for (String word: wordleWords) {
+                bw.write( word);
+                bw.newLine();
+            }
+            bw.close();
+        } catch (IOException e) {
+            System.out.println("Errors occured while trying to export to file!");
+            e.printStackTrace();
+        }
     }
 }

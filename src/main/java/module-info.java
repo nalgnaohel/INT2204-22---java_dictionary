@@ -9,4 +9,8 @@ module com.example.java_dictionary {
 
     exports dictionary;
     opens dictionary to javafx.fxml;
+    exports dictionary.ui;
+    opens dictionary.ui to javafx.fxml;
+    exports dictionary.backend;
+    opens dictionary.backend to javafx.fxml;
 }

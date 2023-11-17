@@ -1,4 +1,4 @@
-package dictionary;
+package dictionary.ui;
 
 import dictionary.backend.History;
 import dictionary.backend.Trie;

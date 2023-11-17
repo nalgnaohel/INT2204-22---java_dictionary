@@ -40,7 +40,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.7" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.TranslateTabController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.7" prefHeight="700.0" prefWidth="900.0" stylesheets="@../css/translatestyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.TranslateTabController">
    <children>
       <TextArea fx:id="fromLangText" layoutX="23.0" layoutY="113.0" prefHeight="175.0" prefWidth="352.0" />
       <ChoiceBox fx:id="langFrom" layoutX="35.0" layoutY="77.0" onAction="#switchToLang" prefHeight="24.0" prefWidth="68.0" />

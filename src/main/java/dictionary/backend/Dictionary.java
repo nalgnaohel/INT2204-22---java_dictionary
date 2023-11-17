@@ -45,4 +45,6 @@ public abstract class Dictionary {
     public abstract String getInfoFromAPI(String target);
     public abstract void playEngWordSound(String target);
     public abstract String translateSentence(String langFrom, String langTo, String text);
+
+    public abstract void export5Words();
 }

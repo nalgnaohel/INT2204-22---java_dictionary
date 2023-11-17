@@ -1,0 +1,92 @@
+.default-tile {
+    -fx-background-color: white;
+    -fx-border-color: #dee3ec;
+    -fx-text-fill: #0e0e0e;
+    -fx-font-size: 30px;
+    -fx-max-width: 50px;
+    -fx-min-width: 50px;
+    -fx-pref-width: 50px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.tile-with-border {
+    -fx-border-color: #2c2d2d;
+}
+
+.existed-letter {
+    -fx-background-color: #c9b458;
+    -fx-border-color: #c9b458;
+    -fx-text-fill: #f6f5f5;
+    -fx-font-size: 30px;
+    -fx-max-width: 50px;
+    -fx-min-width: 50px;
+    -fx-pref-width: 50px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.wrong-letter {
+    -fx-background-color: #787c7e;
+    -fx-border-color: #787c7e;
+    -fx-text-fill: #f6f5f5;
+    -fx-font-size: 30px;
+    -fx-max-width: 50px;
+    -fx-min-width: 50px;
+    -fx-pref-width: 50px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.correct-letter {
+    -fx-background-color: #649630;
+    -fx-border-color: #79c663;
+    -fx-text-fill: #f6f5f5;
+    -fx-font-size: 30px;
+    -fx-max-width: 50px;
+    -fx-min-width: 50px;
+    -fx-pref-width: 50px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-border-radius: 9px;
+    -fx-border-width: 2px;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0, 0, 0);
+}
+
+.restart-button {
+    -fx-border-radius: 9px;
+    -fx-border-width: 2px;
+    -fx-background-color: #53a23c;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0, 0, 0);
+}
+
+.quit-button {
+    -fx-border-radius: 9px;
+    -fx-border-width: 2px;
+    -fx-background-color: #93081c;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0, 0, 0);
+}
+
+.instruct-text {
+    -fx-font: "Myriad Pro";
+    -fx-font-size: 20;
+}
+
+.instruct-button {
+    -fx-border-radius: 9px;
+    -fx-border-width: 2px;
+    -fx-background-color: #595f65;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0, 0, 0);
+}
