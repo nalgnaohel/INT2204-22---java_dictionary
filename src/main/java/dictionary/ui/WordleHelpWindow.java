@@ -95,7 +95,7 @@ public class WordleHelpWindow {
 
         Button quitButton = new Button("Got it...");
         quitButton.getStyleClass().add("instruct-button");
-        quitButton.setOnMouseClicked(me -> stage.close());
+        quitButton.setOnMouseClicked(ev -> stage.close());
 
         root.setAlignment(Pos.TOP_CENTER);
         root.getChildren().addAll(helpParagraph, line1, labelExample, firstWordVBox,

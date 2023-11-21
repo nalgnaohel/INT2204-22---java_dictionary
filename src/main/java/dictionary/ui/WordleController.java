@@ -1,6 +1,7 @@
 package dictionary.ui;
 
 import dictionary.Main;
+import dictionary.WordleMainWindow;
 import dictionary.backend.WordleFunction;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -24,10 +25,7 @@ import java.util.Random;
 import static dictionary.Main.dict;
 
 public class WordleController {
-    private WordleFunction wf = new WordleFunction();
 
-    @FXML
-    private AnchorPane gameArea;
     @FXML
     private Button restartButton;
 
@@ -44,6 +42,12 @@ public class WordleController {
 
     private final ArrayList<String> allWords = new ArrayList<>();
     private String winningWord;
+    private WordleMainWindow wordleMainWindow;
+    private WordleFunction wordleFunction = new WordleFunction();
+
+    public void setWordleMainWindow(WordleMainWindow wmw) {
+        this.wordleMainWindow = wmw;
+    }
 
     public void init() {
         initGrid(wordsTilePane);
@@ -53,11 +57,19 @@ public class WordleController {
         System.out.println(winningWord);
         WordleEndWindow.setQuit();
         WordleEndWindow.setRestart();
+        wordleFunction.setHistoryPath("src/main/resources/data/wordle_history.txt");
+        wordleFunction.init();
     }
 
     public void initGrid(TilePane wordTilesPane) {
         for (int i = 0; i < 25; i++) {
             Label cur = new Label("");
+            cur.setMaxHeight(50);
+            cur.setMinHeight(50);
+            cur.setMinHeight(50);
+            cur.setMaxHeight(50);
+            cur.setPrefHeight(50);
+            cur.setPrefWidth(50);
             cur.getStyleClass().add("default-tile");
             wordTilesPane.getChildren().add(cur);
         }
@@ -113,7 +125,6 @@ public class WordleController {
     }
 
     private void setLabelStyleClass(int row, int col, String styleString) {
-        System.out.println("setLabelStyleClass call getLabel...");
         Label label = getLabel(row, col);
         if (label != null) {
             label.getStyleClass().add(styleString);
@@ -121,7 +132,6 @@ public class WordleController {
     }
 
     private void clearLabelStyleClass(int row, int col) {
-        System.out.println("clearLabeStyleClass call getLabel...");
         Label label = getLabel(row, col);
         if (label != null) {
             label.getStyleClass().clear();
@@ -182,13 +192,13 @@ public class WordleController {
         //check current row is full
         System.out.println(event.getCode());
         if (getLabelText(curRow, curColumn).equals("")) {
-            System.out.println("Before: " + curRow + " " +curColumn);
+            //System.out.println("Before: " + curRow + " " +curColumn);
             setLabelText(curRow, curColumn, event.getText());
             setLabelStyleClass(curRow, curColumn, "tile-with-letter");
             if (curColumn < 4) {
                 curColumn++;
             }
-            System.out.println("After: " + curRow + " " +curColumn);
+            //System.out.println("After: " + curRow + " " +curColumn);
         }
     }
 
@@ -215,8 +225,17 @@ public class WordleController {
         } else {
             String rowWord = getCurrentRowWord(curRow);
             if (rowWord.equals(winningWord)) {
+                //win case
                 updateCurrentRow(curRow);
-                //System.out.println("You won!");
+                wordleFunction.setGamesWon(wordleFunction.getGamesWon() + 1);
+                wordleFunction.setGamesPlayed(wordleFunction.getGamesPlayed() + 1);
+                wordleFunction.setCurrentStreak(wordleFunction.getCurrentStreak() + 1);
+                if (wordleFunction.getCurrentStreak() > wordleFunction.getLongestStreak()) {
+                    wordleFunction.setLongestStreak(wordleFunction.getCurrentStreak());
+                }
+                int old = wordleFunction.getNumOfGuess().get(curRow + 1);
+                wordleFunction.getNumOfGuess().put(curRow + 1, old + 1);
+                wordleFunction.update();
                 try {
                     WordleEndWindow.displayEndWindow(true, winningWord);
                 } catch (IOException e) {
@@ -226,34 +245,27 @@ public class WordleController {
                 updateCurrentRow(curRow);
                 curRow++; curColumn = 0;
                 if (curRow == 5) {
-                    System.out.println("Lose!");
+                    wordleFunction.setGamesPlayed(wordleFunction.getGamesPlayed() + 1);
+                    wordleFunction.setCurrentStreak(0);
+                    wordleFunction.update();
                     try {
                         WordleEndWindow.displayEndWindow(false, winningWord);
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
+                } else {
+                    ShowText.display(wordleMainWindow.getGameStage(), true);
                 }
             } else { //not a valid word
                 System.out.println("Not a word!");
-                curRow++; curColumn = 0;
-                if (curRow == 5) {
-                    System.out.println("Lose!");
-                    try {
-                        WordleEndWindow.displayEndWindow(false, winningWord);
-                    } catch (IOException e) {
-                        throw new RuntimeException(e);
-                    }
-                }
+                ShowText.display(wordleMainWindow.getGameStage(), false);
             }
             if (WordleEndWindow.isRestart()) {
                 restart();
             }
             if (WordleEndWindow.isQuit()) {
-                try{
-                    quit();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+                wordleFunction.update();
+                wordleMainWindow.quit();
             }
         }
     }
@@ -262,16 +274,13 @@ public class WordleController {
         init();
     }
 
-    public void quit() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/chooseGame.fxml"));
-        AnchorPane chooseGamePane = fxmlLoader.load();
-        gameArea.getChildren().clear();
-        gameArea.getChildren().add(chooseGamePane);
-        wordsTilePane.getChildren().clear();
-        curRow = 0; curColumn = 0;
-    }
-
     public void showHelp() {
         WordleHelpWindow.display();
+    }
+
+    public void showStats() throws IOException {
+        WordleStatsWindow wordleStatsWindow = new WordleStatsWindow();
+        wordleStatsWindow.setWordleFunction(wordleFunction);
+        wordleStatsWindow.display();
     }
 }

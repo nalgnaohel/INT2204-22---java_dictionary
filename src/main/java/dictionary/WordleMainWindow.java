@@ -11,16 +11,31 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class WordleMainWindow {
-
+    private Stage gameStage;
+    private WordleController wordleController;
     public void display() throws IOException {
-        Stage stage = new Stage();
+        gameStage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(WordleMainWindow.class.getResource("fxml/wordleMain.fxml"));
         AnchorPane root = fxmlLoader.load();
-        WordleController wordleController = fxmlLoader.getController();
+        wordleController = fxmlLoader.getController();
+        wordleController.setWordleMainWindow(this);
         wordleController.init();
 
         Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.showAndWait();
+        gameStage.setScene(scene);
+        gameStage.setHeight(700);
+        gameStage.setWidth(900);
+        gameStage.setResizable(false);
+        gameStage.showAndWait();
     }
+
+    public Stage getGameStage() {
+        return this.gameStage;
+    }
+
+    public void quit() {
+        gameStage.close();
+    }
+
+
 }

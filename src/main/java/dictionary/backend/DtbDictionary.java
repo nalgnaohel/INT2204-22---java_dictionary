@@ -225,6 +225,7 @@ public class DtbDictionary extends Dictionary{
         return "Cannot translate your text!";
     }
 
+    //cai nay phuc vu wordle thoi, k can quan tam
     public void export5Words() {
         ArrayList<Word> wordArrayList = getAllWords();
         ArrayList<String> wordleWords = new ArrayList<>();

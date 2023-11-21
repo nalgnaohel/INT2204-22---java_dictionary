@@ -65,6 +65,7 @@
 .restart-button {
     -fx-border-radius: 9px;
     -fx-border-width: 2px;
+    -fx-text-fill: #dcdbdb;
     -fx-background-color: #53a23c;
     -fx-background-radius: 10px;
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0, 0, 0);
@@ -73,20 +74,21 @@
 .quit-button {
     -fx-border-radius: 9px;
     -fx-border-width: 2px;
+    -fx-text-fill: #dcdbdb;
     -fx-background-color: #93081c;
     -fx-background-radius: 10px;
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0, 0, 0);
 }
 
 .instruct-text {
-    -fx-font: "Myriad Pro";
-    -fx-font-size: 20;
+    -fx-font: "20px Myriad Pro";
 }
 
 .instruct-button {
     -fx-border-radius: 9px;
     -fx-border-width: 2px;
     -fx-background-color: #595f65;
+    -fx-text-fill: #d9cdcd;
     -fx-background-radius: 10px;
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0, 0, 0);
 }
