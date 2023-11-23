@@ -1,5 +1,6 @@
 package dictionary.ui;
 
+import dictionary.FindingMainWindow;
 import dictionary.Main;
 import dictionary.WordleMainWindow;
 import javafx.event.ActionEvent;
@@ -25,12 +26,14 @@ public class ChooseGameController {
     private AnchorPane gameArea;
 
     private WordleController wordleController;
-    private boolean first = true;
 
     public void switchToWordle(ActionEvent event) throws IOException {
         WordleMainWindow wordleMainWindow = new WordleMainWindow();
         wordleMainWindow.display();
     }
 
-
+    public void switchToFinding(ActionEvent event) throws IOException {
+        FindingMainWindow findingMainWindow = new FindingMainWindow();
+        findingMainWindow.display();
+    }
 }

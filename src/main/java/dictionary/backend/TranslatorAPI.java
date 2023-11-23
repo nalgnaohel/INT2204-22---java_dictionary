@@ -8,7 +8,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
-public class TranslatorAPI extends API{
+public class TranslatorAPI implements API{
+    private String apiName;
     @Override
     public void setAPIName() {
         apiName = "https://script.google.com/macros/s/AKfycby3AOWmhe32TgV9nW-Q0TyGOEyCHQeFiIn7hRgy5m8jHPaXDl2GdToyW_3Ys5MTbK6wjg/exec";

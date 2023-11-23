@@ -58,6 +58,7 @@ public class WordleController {
         WordleEndWindow.setQuit();
         WordleEndWindow.setRestart();
         wordleFunction.setHistoryPath("src/main/resources/data/wordle_history.txt");
+        wordleFunction.setMaxTries(5);
         wordleFunction.init();
     }
 
@@ -257,7 +258,6 @@ public class WordleController {
                     ShowText.display(wordleMainWindow.getGameStage(), true);
                 }
             } else { //not a valid word
-                System.out.println("Not a word!");
                 ShowText.display(wordleMainWindow.getGameStage(), false);
             }
             if (WordleEndWindow.isRestart()) {

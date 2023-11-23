@@ -92,7 +92,6 @@ public class DtbDictionary extends Dictionary{
 
     public String lookUpWord(final String target) {
         final String sqlQuery = "SELECT Vietnamese FROM " + dtbTable + " WHERE English = ?";
-        //System.out.println("Currently looking up for " + target);
         try {
             PreparedStatement prs = connection.prepareStatement(sqlQuery);
             prs.setString(1, target);
@@ -100,8 +99,6 @@ public class DtbDictionary extends Dictionary{
                 ResultSet rs = prs.executeQuery();
                 try {
                     if (rs.next()) {
-                        //System.out.println("Find the word!");
-                        //System.out.println(rs.getString("Vietnamese"));
                         Word word = new Word(target, rs.getString("Vietnamese"));
                         History.addToHistory(word);
                         return rs.getString("Vietnamese");
@@ -256,5 +253,38 @@ public class DtbDictionary extends Dictionary{
             System.out.println("Errors occured while trying to export to file!");
             e.printStackTrace();
         }
+    }
+
+    public ArrayList<String> getQuestion(int id) {
+        final String sqlQuery = "SELECT * FROM Multiplechoices WHERE ID = ?";
+        try {
+            PreparedStatement prs = connection.prepareStatement(sqlQuery);
+            prs.setString(1, Integer.toString(id));
+            System.out.println(Integer.toString(id));
+            try {
+                ResultSet rs = prs.executeQuery();
+                try {
+                    ArrayList<String> res = new ArrayList<>();
+                    if (rs.next()) {
+                        for (int i = 1; i <= 8; i++) {
+                            //System.out.println(rs.getString(i));
+                            res.add(rs.getString(i));
+                        }
+                        return res;
+                    } else {
+                        System.out.println("Cannot find the question");
+                        return new ArrayList<>();
+                    }
+                } finally {
+                    rs.close();
+                }
+            } finally {
+                prs.close();
+            }
+        } catch (SQLException e) {
+            System.out.println("Problem occured while getting data!");
+            e.printStackTrace();
+        }
+        return new ArrayList<>();
     }
 }

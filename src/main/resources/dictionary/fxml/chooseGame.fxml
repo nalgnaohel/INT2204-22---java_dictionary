@@ -44,7 +44,7 @@
             <Font name="System Bold" size="28.0" />
          </font>
       </Label>
-      <Button fx:id="b1" layoutX="156.0" layoutY="257.0" mnemonicParsing="false" text="Chọn đáp án đúng..." />
+      <Button fx:id="b1" layoutX="156.0" layoutY="257.0" mnemonicParsing="false" onAction="#switchToFinding" text="Chọn đáp án đúng..." />
       <Button fx:id="b2" layoutX="662.0" layoutY="251.0" mnemonicParsing="false" onAction="#switchToWordle" text="Wordle" />
    </children>
 </AnchorPane>

@@ -54,7 +54,7 @@
                   </Button>
                </children>
             </HBox>
-            <TilePane fx:id="wordsTilePane" hgap="10.0" maxHeight="360.0" maxWidth="400.0" minHeight="360.0" minWidth="400.0" prefHeight="360.0" prefTileHeight="60.0" prefTileWidth="60.0" prefWidth="400.0" stylesheets="@../css/wordle.css" vgap="10.0">
+            <TilePane fx:id="wordsTilePane" hgap="10.0" maxHeight="370.0" maxWidth="410.0" minHeight="370.0" minWidth="410.0" prefHeight="370.0" prefTileHeight="60.0" prefTileWidth="60.0" prefWidth="410.0" stylesheets="@../css/wordle.css" vgap="10.0">
                <padding>
                   <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
                </padding>

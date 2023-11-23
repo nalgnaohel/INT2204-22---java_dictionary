@@ -1,0 +1,10 @@
+.button {
+    -fx-background-color: rgb(0,0,0,0);
+    -fx-text-fill: #111010;
+    -fx-text-alignment: left;
+    -fx-alignment: center-left;
+    -fx-font-family: Barlow;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-border-color: #2c2a2a;
+}

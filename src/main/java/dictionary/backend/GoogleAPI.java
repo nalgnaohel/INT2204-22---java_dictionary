@@ -8,8 +8,9 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
-public class GoogleAPI extends API{
+public class GoogleAPI implements API{
     //API cua GoogleTranslate, dung de doc tu/cau.
+    private String apiName;
 
     @Override
     public void setAPIName() {

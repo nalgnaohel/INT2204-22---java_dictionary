@@ -1,6 +1,6 @@
 package dictionary.backend;
 
-public abstract class API {
-    protected String apiName;
-    public abstract void setAPIName();
+public interface API {
+    // String apiName;
+    void setAPIName();
 }

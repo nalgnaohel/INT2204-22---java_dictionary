@@ -27,6 +27,7 @@ public class WordleMainWindow {
         gameStage.setWidth(900);
         gameStage.setResizable(false);
         gameStage.showAndWait();
+        root.requestFocus();
     }
 
     public Stage getGameStage() {

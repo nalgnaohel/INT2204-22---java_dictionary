@@ -16,7 +16,7 @@ public class WordleStatsWindow {
     private WordleStatsController wordleStatsController;
     private WordleFunction wordleFunction;
     public void display() throws IOException {
-        System.out.println(wordleFunction.getLongestStreak());
+        //System.out.println(wordleFunction.getLongestStreak());
         stage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/wordleStatsfxml.fxml"));
         Parent root = fxmlLoader.load();

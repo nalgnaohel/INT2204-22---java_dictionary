@@ -81,7 +81,8 @@
 }
 
 .instruct-text {
-    -fx-font: "20px Myriad Pro";
+    -fx-font-family: "Myriad Pro";
+    -fx-font-size: 20px;
 }
 
 .instruct-button {

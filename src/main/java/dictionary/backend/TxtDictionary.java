@@ -188,4 +188,8 @@ public class TxtDictionary extends Dictionary{
             e.printStackTrace();
         }
     }
+
+    public ArrayList<String> getQuestion(int id) {
+        return new ArrayList<>();
+    }
 }
