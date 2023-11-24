@@ -1,5 +1,7 @@
 package dictionary.backend;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -24,7 +26,6 @@ public abstract class Dictionary {
     public abstract boolean updateWordMeaning(final String target, final String meaning);
 
     public void importDataFromFile(String path) {};
-    public abstract void export5Words();
     public abstract ArrayList<String> getQuestion(int id);
 
     public String getInfoFromAPI(String target) {
@@ -56,5 +57,37 @@ public abstract class Dictionary {
             e.printStackTrace();
         }
         return "Cannot translate your text!";
+    }
+
+    public void export5Words() {
+        ArrayList<Word> wordArrayList = getAllWords();
+        ArrayList<String> wordleWords = new ArrayList<>();
+        for (Word word : wordArrayList) {
+            boolean ok = true;
+            if (word.getWordTarget().length() != 5) {
+                ok = false; continue;
+            }
+            for (int i = 0; i < 5; i++) {
+                char c = word.getWordTarget().charAt(i);
+                if (!Character.isLetter(c)) {
+                    ok = false; break;
+                }
+            }
+            if (ok) {
+                wordleWords.add(word.getWordTarget());
+            }
+        }
+        try {
+            FileWriter fw = new FileWriter("src/main/resources/data/wordle_all.txt");
+            BufferedWriter bw = new BufferedWriter(fw);
+            for (String word: wordleWords) {
+                bw.write( word);
+                bw.newLine();
+            }
+            bw.close();
+        } catch (IOException e) {
+            System.out.println("Errors occured while trying to export to file!");
+            e.printStackTrace();
+        }
     }
 }

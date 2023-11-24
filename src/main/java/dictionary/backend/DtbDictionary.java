@@ -190,39 +190,6 @@ public class DtbDictionary extends Dictionary{
         }
     }
 
-    //cai nay phuc vu wordle thoi, k can quan tam
-    public void export5Words() {
-        ArrayList<Word> wordArrayList = getAllWords();
-        ArrayList<String> wordleWords = new ArrayList<>();
-        for (Word word : wordArrayList) {
-            boolean ok = true;
-            if (word.getWordTarget().length() != 5) {
-                ok = false; continue;
-            }
-            for (int i = 0; i < 5; i++) {
-                char c = word.getWordTarget().charAt(i);
-                if (!Character.isLetter(c)) {
-                    ok = false; break;
-                }
-            }
-            if (ok) {
-                wordleWords.add(word.getWordTarget());
-            }
-        }
-        try {
-            FileWriter fw = new FileWriter("src/main/resources/data/wordle_all.txt");
-            BufferedWriter bw = new BufferedWriter(fw);
-            for (String word: wordleWords) {
-                bw.write( word);
-                bw.newLine();
-            }
-            bw.close();
-        } catch (IOException e) {
-            System.out.println("Errors occured while trying to export to file!");
-            e.printStackTrace();
-        }
-    }
-
     public ArrayList<String> getQuestion(int id) {
         final String sqlQuery = "SELECT * FROM Multiplechoices WHERE ID = ?";
         try {

@@ -121,38 +121,6 @@ public class TxtDictionary extends Dictionary{
         return false;
     }
 
-    @Override
-    public void export5Words() {
-        ArrayList<String> wordleWords = new ArrayList<>();
-        for (Word word : wordsList) {
-            boolean ok = true;
-            if (word.getWordTarget().length() != 5) {
-                ok = false; continue;
-            }
-            for (int i = 0; i < 5; i++) {
-                char c = word.getWordTarget().charAt(i);
-                if (!Character.isLetter(c)) {
-                    ok = false; break;
-                }
-            }
-            if (ok) {
-                wordleWords.add(word.getWordTarget());
-            }
-        }
-        try {
-            FileWriter fw = new FileWriter("src/main/resources/data/wordle_all.txt");
-            BufferedWriter bw = new BufferedWriter(fw);
-            for (String word: wordleWords) {
-                bw.write( word);
-                bw.newLine();
-            }
-            bw.close();
-        } catch (IOException e) {
-            System.out.println("Errors occured while trying to export to file!");
-            e.printStackTrace();
-        }
-    }
-
     public ArrayList<String> getQuestion(int id) {
         return new ArrayList<>();
     }
