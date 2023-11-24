@@ -8,7 +8,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
-public class TranslatorAPI implements API{
+public class TranslatorAPI extends API{
     private String apiName;
     @Override
     public void setAPIName() {

@@ -8,7 +8,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
-public class GoogleAPI implements API{
+public class GoogleAPI extends API{
     //API cua GoogleTranslate, dung de doc tu/cau.
     private String apiName;
 
@@ -25,7 +25,6 @@ public class GoogleAPI implements API{
         try {
             setAPIName();
             String urlName = apiName + URLEncoder.encode(text, StandardCharsets.UTF_8);
-            //System.out.println(urlName);
             URL url = new URL(urlName);
             HttpsURLConnection con = (HttpsURLConnection) url.openConnection();
             con.setRequestProperty("User-Agent", "Mozilla/5.0");

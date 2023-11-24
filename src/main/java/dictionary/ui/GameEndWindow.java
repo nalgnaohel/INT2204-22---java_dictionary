@@ -46,7 +46,7 @@ public class GameEndWindow {
 
         buttonsVBox.setAlignment(Pos.CENTER);
 
-        Button quitButton = new Button("  QUIT");
+        Button quitButton = new Button("  QUIT  ");
         quitButton.getStyleClass().add("quit-button");
         quitButton.setOnMouseClicked(e -> {
             if (this instanceof FindingEndGame) {

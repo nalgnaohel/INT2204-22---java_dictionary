@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class DictAPI implements API {
+public class DictAPI extends API {
     //Dictionary API, dung de tim synonyms, antonyms.
     Map<String, ArrayList<String>> mp = new TreeMap<String, ArrayList<String>>();
     private String apiName;

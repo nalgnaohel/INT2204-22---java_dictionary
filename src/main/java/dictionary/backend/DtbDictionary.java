@@ -18,10 +18,6 @@ public class DtbDictionary extends Dictionary{
 
     private static Connection connection = null;
 
-    private final DictAPI dictAPI = new DictAPI();
-    private final GoogleAPI ggAPI = new GoogleAPI();
-    private final TranslatorAPI translatorAPI = new TranslatorAPI();
-
     //Connect to dtb + Dealing with SQLException
     public void connectToDtb() throws SQLException {
         try {
@@ -192,34 +188,6 @@ public class DtbDictionary extends Dictionary{
             System.out.println("Failed to update the word meaning");
             return false;
         }
-    }
-
-    public String getInfoFromAPI(String target) {
-        try {
-            return dictAPI.getNeededInfo(target);
-        } catch (IOException e) {
-            System.out.println("Failed to use API!");
-            throw new RuntimeException(e);
-        }
-    }
-
-    public void playEngWordSound(String target) {
-        try {
-            ggAPI.playWordSound(target);
-        } catch (Exception e) {
-            System.out.println("Failed to use API to play sound!");
-            throw new RuntimeException(e);
-        }
-    }
-
-    public String translateSentence(String langFrom, String langTo, String text) {
-        //Tieng Anh thi String la "en", tieng Viet thi String la "vi".
-        try {
-            return translatorAPI.translate(langFrom, langTo, text);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return "Cannot translate your text!";
     }
 
     //cai nay phuc vu wordle thoi, k can quan tam

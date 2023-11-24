@@ -5,13 +5,6 @@ import java.util.ArrayList;
 
 public class TxtDictionary extends Dictionary{
     private final ArrayList<Word> wordsList = new ArrayList<Word>();
-    private final DictAPI dictAPI = new DictAPI();
-    private final GoogleAPI ggAPI = new GoogleAPI();
-    private final TranslatorAPI translatorAPI = new TranslatorAPI();
-    /**
-     * Import data.
-     * @param path - file path
-     */
     public void importDataFromFile(String path) {
         try {
             FileReader fr = new FileReader(path);
@@ -126,35 +119,6 @@ public class TxtDictionary extends Dictionary{
             }
         }
         return false;
-    }
-
-    //Get extra information from API.
-    public String getInfoFromAPI(String target) {
-        try {
-            return dictAPI.getNeededInfo(target);
-        } catch (IOException e) {
-            System.out.println("Failed to use API!");
-            throw new RuntimeException(e);
-        }
-    }
-
-    public void playEngWordSound(String target) {
-        try {
-            ggAPI.playWordSound(target);
-        } catch (Exception e) {
-            System.out.println("Failed to use API to play sound!");
-            throw new RuntimeException(e);
-        }
-    }
-
-    public String translateSentence(String langFrom, String langTo, String text) {
-        //Tieng Anh thi String la "en", tieng Viet thi String la "vi".
-        try {
-            return translatorAPI.translate(langFrom, langTo, text);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return "Cannot translate your text!";
     }
 
     @Override

@@ -79,8 +79,4 @@ public abstract class GameFunction {
     public int getMaxTries() {
         return this.maxTries;
     }
-
-    public void setMaxTries(int maxTries) {
-        this.maxTries = maxTries;
-    }
 }
