@@ -30,7 +30,7 @@ public abstract class GameFunction {
                 bw.write(Integer.toString(wf.getLongestStreak()));
                 bw.newLine();
             }
-            for (int i = 1; i <= 5; i++) {
+            for (int i = 1; i <= maxTries; i++) {
                 bw.write(Integer.toString(numOfGuess.get(i)));
                 bw.newLine();
             }

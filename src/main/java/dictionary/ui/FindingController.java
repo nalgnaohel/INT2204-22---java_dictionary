@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Queue;
+import java.util.concurrent.ThreadLocalRandom;
 
 import static dictionary.Main.dict;
 
@@ -27,11 +28,13 @@ public class FindingController {
 
     private FindingMainWindow findingMainWindow;
     private FindingFunction findingFunction = new FindingFunction();
+    private int numofQuest;
     private static final int[] dx = {-1, 0, 1, 0};
     private static final int[] dy = {0, -1, 0, 1};
     private int curX;
     private int curY;
     private int changeToStone;
+    private ArrayList<Integer> availableQuestId = new ArrayList<>();
     private int[][] mapIds =  {{0, 0, 1, 0, 0, 0, 1, 2},
             {0, 2, 0, 2, 2, 0, 0, 2},
             {1, 0, 1, 0, 2, 2, 1, 0},
@@ -58,10 +61,14 @@ public class FindingController {
         initMap();
         curX = 0;
         curY = 0;
-        FindingEndGame.setQuit();
-        FindingEndGame.setRestart();
         findingMainWindow.startCountdown();
+        findingFunction.setHistoryPath("src/main/resources/data/finding_history.txt");
+        findingFunction.init();
+        numofQuest = 0;
         changeToStone = 0; //-1 if wrong ans.
+        for (int i = 1; i <= 10; i++) {
+            availableQuestId.add(i);
+        }
     }
 
     public void initMap() {
@@ -156,11 +163,14 @@ public class FindingController {
             moveToNewTile(destX, destY);
         } else if (mapIds[destY][destX] == 1) {
             //launch question
-            ArrayList<String> quest = dict.getQuestion(2);
+            int idQuest = ThreadLocalRandom.current().nextInt(0, availableQuestId.size());
+            ArrayList<String> quest = dict.getQuestion(availableQuestId.get(idQuest));
+            availableQuestId.remove(idQuest);
             try {
                 QuestionWindow questionWindow = new QuestionWindow();
                 questionWindow.setFindingController(this);
                 questionWindow.display(quest);
+                numofQuest++;
 
                 StackPane stackPane = (StackPane) map.getChildren().get(destY * 8 + destX);
                 stackPane.getChildren().remove(stackPane.getChildren().size() - 1);
@@ -185,19 +195,19 @@ public class FindingController {
 
         } else if (mapIds[destY][destX] == 3) {
             //win
+            findingFunction.setGamesPlayed(findingFunction.getGamesPlayed() + 1);
+            findingFunction.setGamesWon(findingFunction.getGamesWon() + 1);
+            int cur = findingFunction.getNumOfGuess().get(numofQuest);
+            findingFunction.getNumOfGuess().put(numofQuest, cur + 1);
+            findingFunction.update();
             try {
-                FindingEndGame.setFindingController(this);
+                FindingEndGame findingEndGame = new FindingEndGame();
+                findingEndGame.setFindingController(this);
                 findingMainWindow.pauseCountdown();
-                FindingEndGame.displayEndWindow(true, "Congratulations");
+                findingEndGame.displayEndWindow(true, "Congratulations");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-//            if (FindingEndGame.isRestart()) {
-//                restart();
-//            }
-//            if (FindingEndGame.isQuit()) {
-//                findingMainWindow.quit();
-//            }
         }
         //System.out.println(curX + " " + curY);
     }
@@ -226,7 +236,20 @@ public class FindingController {
         return findingMainWindow;
     }
 
-    //    private boolean checkWin() {
-//
-//    }
+    public void showStats() throws IOException {
+        FindingStatsWindow findingStatsWindow = new FindingStatsWindow();
+        findingStatsWindow.setFindingFunction(findingFunction);
+        findingMainWindow.pauseCountdown();
+        findingStatsWindow.display();
+        findingMainWindow.getRoot().requestFocus();
+        findingMainWindow.continueCountdown();
+    }
+
+    public FindingFunction getFindingFunction() {
+        return findingFunction;
+    }
+
+    public void setFindingFunction(FindingFunction findingFunction) {
+        this.findingFunction = findingFunction;
+    }
 }

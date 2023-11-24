@@ -13,66 +13,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class WordleEndWindow {
-    private static boolean restart;
-    private static boolean quit;
-    private boolean isWordleWindow;
-    public static void displayEndWindow(boolean win, String winningWord) throws IOException {
-        Stage stage = new Stage();
-        stage.initModality(Modality.APPLICATION_MODAL);
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/endGame.fxml"));
-        VBox root = fxmlLoader.load();
-        Label label1 =(Label) root.getChildren().get(0);
-        if (win) {
-            label1.setText("YOU WON!");
-        } else {
-            label1.setText("YOU LOSE!");
-        }
-        Label label3 = (Label) root.getChildren().get(2);
-        //if (this instanceof WordleEndWindow) {
-        label3.setText(winningWord);
-        //}
+public class WordleEndWindow extends GameEndWindow {
+    private WordleController wordleController;
 
-        Button restartButton = new Button("PLAY AGAIN");
-        restartButton.getStyleClass().add("restart-button");
-        restartButton.setOnMouseClicked(e -> {
-            restart = true;
-            stage.close();
-        });
-
-        VBox buttonsVBox = new VBox(5);
-
-        buttonsVBox.setAlignment(Pos.CENTER);
-
-        Button quitButton = new Button("  QUIT");
-        quitButton.getStyleClass().add("quit-button");
-        quitButton.setOnMouseClicked(e -> {
-            restart = false;
-            quit = true;
-            stage.close();
-        });
-
-        buttonsVBox.getChildren().addAll(restartButton, quitButton);
-        root.getChildren().add(buttonsVBox);
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.showAndWait();
+    public WordleController getWordleController() {
+        return wordleController;
     }
 
-    public static boolean isRestart() {
-        return restart;
+    public void setWordleController(WordleController wordleController) {
+        this.wordleController = wordleController;
     }
-
-    public static boolean isQuit() {
-        return quit;
-    }
-
-    public static void setRestart() {
-        restart = false;
-    }
-
-    public static void setQuit() {
-        quit = false;
-    }
-
 }

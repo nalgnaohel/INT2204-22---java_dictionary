@@ -9,6 +9,7 @@ public class WordleFunction extends GameFunction {
     private int longestStreak;
     public void init() {
         try {
+            this.maxTries = 5;
             File file = new File(historyPath);
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);

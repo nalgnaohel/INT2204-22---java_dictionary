@@ -9,6 +9,7 @@ public class FindingFunction extends GameFunction{
     @Override
     public void init() {
         try {
+            this.maxTries = 10;
             File file = new File(historyPath);
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
@@ -26,7 +27,7 @@ public class FindingFunction extends GameFunction{
                         case 1: gamesWon = val;
                     }
                 } else {
-                    numOfGuess.put(id - 3, val);
+                    numOfGuess.put(id - 1, val);
                 }
                 id++;
             }

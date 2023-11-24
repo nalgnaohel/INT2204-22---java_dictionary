@@ -25,7 +25,7 @@ public class QuestionWindow {
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setHeight(420);
+        stage.setHeight(450);
         stage.setWidth(800);
         stage.setResizable(false);
         stage.showAndWait();

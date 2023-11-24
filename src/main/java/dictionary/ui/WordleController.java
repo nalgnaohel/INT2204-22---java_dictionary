@@ -27,15 +27,6 @@ import static dictionary.Main.dict;
 public class WordleController {
 
     @FXML
-    private Button restartButton;
-
-    @FXML
-    private Button infoButton;
-
-    @FXML
-    private Button statsButton;
-
-    @FXML
     private TilePane wordsTilePane;
     private int curRow = 0;
     private int curColumn = 0;
@@ -55,10 +46,7 @@ public class WordleController {
         curColumn = 0;
         winningWord = getRandomWord();
         System.out.println(winningWord);
-        WordleEndWindow.setQuit();
-        WordleEndWindow.setRestart();
         wordleFunction.setHistoryPath("src/main/resources/data/wordle_history.txt");
-        wordleFunction.setMaxTries(5);
         wordleFunction.init();
     }
 
@@ -238,7 +226,9 @@ public class WordleController {
                 wordleFunction.getNumOfGuess().put(curRow + 1, old + 1);
                 wordleFunction.update();
                 try {
-                    WordleEndWindow.displayEndWindow(true, winningWord);
+                    WordleEndWindow wordleEndWindow = new WordleEndWindow();
+                    wordleEndWindow.setWordleController(this);
+                    wordleEndWindow.displayEndWindow(true, winningWord);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -250,7 +240,9 @@ public class WordleController {
                     wordleFunction.setCurrentStreak(0);
                     wordleFunction.update();
                     try {
-                        WordleEndWindow.displayEndWindow(false, winningWord);
+                        WordleEndWindow wordleEndWindow = new WordleEndWindow();
+                        wordleEndWindow.setWordleController(this);
+                        wordleEndWindow.displayEndWindow(false, winningWord);
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
@@ -260,18 +252,15 @@ public class WordleController {
             } else { //not a valid word
                 ShowText.display(wordleMainWindow.getGameStage(), false);
             }
-            if (WordleEndWindow.isRestart()) {
-                restart();
-            }
-            if (WordleEndWindow.isQuit()) {
-                wordleFunction.update();
-                wordleMainWindow.quit();
-            }
         }
     }
     public void restart() {
         wordsTilePane.getChildren().clear();
         init();
+    }
+
+    public void quit() {
+        wordleMainWindow.quit();
     }
 
     public void showHelp() {

@@ -9,6 +9,7 @@ import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
@@ -23,11 +24,13 @@ public class FindingMainWindow {
     private Stage gameStage;
     private FindingController findingController;
     private Timeline countdownTimeline;
+    private Parent root;
     public void display() throws IOException {
         gameStage = new Stage();
         gameStage.initModality(Modality.APPLICATION_MODAL);
-        FXMLLoader fxmlLoader = new FXMLLoader(FindingMainWindow.class.getResource("fxml/findingMain.fxml"));
-        AnchorPane root = fxmlLoader.load();
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/findingMain.fxml"));
+        //System.out.println(fxmlLoader);
+        root = fxmlLoader.load();
         findingController = fxmlLoader.getController();
         findingController.setFindingMainWindow(this);
         findingController.init();
@@ -42,6 +45,10 @@ public class FindingMainWindow {
         root.requestFocus();
     }
 
+    public Parent getRoot(){
+        return root;
+    }
+
     public Stage getGameStage() {
         return this.gameStage;
     }
@@ -51,7 +58,7 @@ public class FindingMainWindow {
     }
 
     public void startCountdown() {
-        ObjectProperty<Duration> remainingDuration = new SimpleObjectProperty<>(Duration.ofSeconds(30));
+        ObjectProperty<Duration> remainingDuration = new SimpleObjectProperty<>(Duration.ofSeconds(60));
         findingController.getRemainingTime().textProperty().bind(Bindings.createStringBinding(() ->
                         String.format("%02d:%02d", remainingDuration.get().toMinutesPart(), remainingDuration.get().toSecondsPart()),
                 remainingDuration));
@@ -64,12 +71,19 @@ public class FindingMainWindow {
         countdownTimeline.setOnFinished(ev -> {
             try {
                 System.out.println("Lose!");
-                FindingEndGame.setFindingController(findingController);
-                FindingEndGame.displayEndWindow(false, "");
+                findingController.getFindingFunction().setGamesPlayed(findingController.getFindingFunction().getGamesPlayed() + 1);
+                findingController.getFindingFunction().update();
+                FindingEndGame findingEndGame = new FindingEndGame();
+                findingEndGame.setFindingController(findingController);
+                findingEndGame.displayEndWindow(false, "");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         });
+        countdownTimeline.play();
+    }
+
+    public void continueCountdown() {
         countdownTimeline.play();
     }
 

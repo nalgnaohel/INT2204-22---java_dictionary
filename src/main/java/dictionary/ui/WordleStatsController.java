@@ -10,6 +10,8 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Label;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 
@@ -21,10 +23,10 @@ public class WordleStatsController {
     private Label winRate;
 
     @FXML
-    private Label curStreak;
+    protected Label curStreak;
 
     @FXML
-    private Label longestStreak;
+    protected Label longestStreak;
 
     @FXML
     private BarChart<String, Number> barchart;
@@ -36,7 +38,6 @@ public class WordleStatsController {
     private CategoryAxis yAxis;
     private WordleStatsWindow wordleStatsWindow;
     private WordleFunction wordleFunction;
-    private final ObservableList<BarChart.Series<String, Number>> bcData = FXCollections.observableArrayList();
 
     public void init() {
         gamesPlayed.setText(Integer.toString(wordleFunction.getGamesPlayed()));
@@ -44,7 +45,11 @@ public class WordleStatsController {
         curStreak.setText(Integer.toString(wordleFunction.getCurrentStreak()));
         longestStreak.setText(Integer.toString(wordleFunction.getLongestStreak()));
         barchart.setTitle("Guesses Distribution");
-        yAxis.setCategories(FXCollections.observableArrayList(Arrays.asList("1", "2", "3", "4", "5")));
+        ArrayList<String> al = new ArrayList<>();
+        for (int i = 1; i <= wordleFunction.getMaxTries(); i++) {
+            al.add(Integer.toString(i));
+        }
+        yAxis.setCategories(FXCollections.observableArrayList(al));
         XYChart.Series<String, Number> series = new XYChart.Series<>();
         for (Map.Entry<Integer, Integer> curSet :
                 wordleFunction.getNumOfGuess().entrySet()) {

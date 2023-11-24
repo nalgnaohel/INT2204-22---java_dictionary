@@ -33,9 +33,9 @@ public class WordleHelpWindow {
         helpParagraph.setTextAlignment(TextAlignment.CENTER);
         helpParagraph.getStyleClass().add("instruct-text");
 
-        Line line1 = new Line();
-        line1.setStroke(Paint.valueOf("b8b8b8"));
-        line1.setEndX(900);
+        Line line = new Line();
+        line.setStroke(Paint.valueOf("b8b8b8"));
+        line.setEndX(900);
 
         Label labelExample = new Label("Examples");
         labelExample.getStyleClass().setAll("h3");
@@ -98,7 +98,7 @@ public class WordleHelpWindow {
         quitButton.setOnMouseClicked(ev -> stage.close());
 
         root.setAlignment(Pos.TOP_CENTER);
-        root.getChildren().addAll(helpParagraph, line1, labelExample, firstWordVBox,
+        root.getChildren().addAll(helpParagraph, line, labelExample, firstWordVBox,
                 firstWordLabel, secondWordVBox, secondWordLabel, thirdWordVBox, thirdWordLabel, quitButton);
         Scene scene = new Scene(root, 500, 515);
         scene.getStylesheets().add(Objects.requireNonNull(Main.class.getResource("css/wordle.css"))
