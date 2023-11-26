@@ -3,6 +3,7 @@ package dictionary.backend;
 public class Word {
     private final String wordTarget;
     private String wordMeaning;
+    private boolean inHistory;
 
     /**
      * Constructor new Word.
@@ -40,5 +41,13 @@ public class Word {
         String res = "Word:{ WordTarget = " + this.wordTarget + ", ";
         res += "WordMeaning = " + this.wordMeaning + "\n";
         return res;
+    }
+
+    public boolean isInHistory() {
+        return inHistory;
+    }
+
+    public void setInHistory(boolean inHistory) {
+        this.inHistory = inHistory;
     }
 }

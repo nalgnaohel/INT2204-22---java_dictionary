@@ -20,6 +20,6 @@ public class FindingEndGame extends GameEndWindow {
     }
 
     public void setFindingController(FindingController fr) {
-        findingController = fr;
+        this.findingController = fr;
     }
 }

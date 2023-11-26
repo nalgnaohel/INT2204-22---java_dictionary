@@ -8,13 +8,21 @@ import java.util.ArrayList;
 
 public abstract class Dictionary {
 
+    private History history;
+    private Favorites favorites;
     public void init() throws SQLException {}
+
+    public void initUtilsFile() {
+        history = new History();
+        history.setFname("src/main/resources/data/history.txt");
+        history.load();
+        favorites = new Favorites();
+        favorites.setFname("src/main/resources/data/favorites.txt");
+        favorites.load();
+    }
 
     public void close() {}
 
-    /**
-     * Get all words in the dictionary.
-     */
     public abstract ArrayList<Word> getAllWords();
 
     public abstract String lookUpWord(final String target);
@@ -69,7 +77,7 @@ public abstract class Dictionary {
             }
             for (int i = 0; i < 5; i++) {
                 char c = word.getWordTarget().charAt(i);
-                if (!Character.isLetter(c)) {
+                if (!Character.isLetter(c) || !Character.isLowerCase(c)) {
                     ok = false; break;
                 }
             }
@@ -89,5 +97,17 @@ public abstract class Dictionary {
             System.out.println("Errors occured while trying to export to file!");
             e.printStackTrace();
         }
+    }
+
+    public History getHistory() {
+        return (History) history;
+    }
+
+    public void setHistory(History history) {
+        this.history = history;
+    }
+
+    public Favorites getFavorites() {
+        return favorites;
     }
 }

@@ -24,6 +24,8 @@ import java.util.Optional;
 public class Main extends Application {
     public static Dictionary dict;
     public void start(Stage stage) throws IOException {
+
+        selectDictionary(stage);
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/dictionary.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
@@ -36,12 +38,12 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.setOnCloseRequest(windowEvent -> {
             dict.close();
-            History.exportHistory();
+            dict.getHistory().export();
+            dict.getFavorites().export();
             Platform.exit();
             System.exit(0);
         });
         stage.show();
-        selectDictionary(stage);
     }
 
     @FXML
@@ -64,32 +66,35 @@ public class Main extends Application {
 
         if (opt.get() == dtb) {
             dict = new DtbDictionary();
+            dict.initUtilsFile();
             //connect to Dtb
             try {
                 dict.init();
                 Alert dtbAlert = new Alert(Alert.AlertType.INFORMATION);
                 dtbAlert.setTitle("Thong bao");
                 dtbAlert.setHeaderText("Ket noi CSDL thanh cong!");
-                dtbAlert.show();
+                dtbAlert.showAndWait();
             } catch (Exception e) {
                 //Failed
                 e.printStackTrace();
+
                 Alert failedDtbAlert = new Alert(Alert.AlertType.ERROR);
                 failedDtbAlert.setTitle("Thong bao");
                 failedDtbAlert.setHeaderText("Khong ket noi duoc voi CSDL");
-                failedDtbAlert.show();
+                failedDtbAlert.showAndWait();
                 dict = new TxtDictionary();
+                dict.initUtilsFile();
                 dict.importDataFromFile("src/main/resources/data/demo.txt");
             }
         } else if (opt.get() == noDtb) {
             dict = new TxtDictionary();
+            dict.initUtilsFile();
             dict.importDataFromFile("src/main/resources/data/demo.txt");
         }
         dict.export5Words();
     }
 
     public static void main(String[] args) {
-        History.loadHistory();
         launch();
     }
 }

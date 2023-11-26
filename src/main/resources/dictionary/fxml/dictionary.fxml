@@ -90,6 +90,31 @@
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
             </HBox>
+            <HBox id="favoriteTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
+               <children>
+                  <Button fx:id="favoriteButton" graphicTextGap="15.0" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Favorite">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="13.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../icon/Bookmark.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <effect>
+                  <ColorAdjust brightness="-0.6" />
+               </effect>
+            </HBox>
             <Separator maxWidth="-Infinity" minWidth="-Infinity" opacity="0.44" prefHeight="27.0" prefWidth="185.0">
                <VBox.margin>
                   <Insets left="17.0" top="15.0" />

@@ -75,7 +75,7 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </padding>
                   </Label>
-                  <Button alignment="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" textAlignment="CENTER">
+                  <Button alignment="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onMouseClicked="#showHelp" prefHeight="60.0" prefWidth="60.0" textAlignment="CENTER">
                      <VBox.margin>
                         <Insets left="20.0" top="30.0" />
                      </VBox.margin>

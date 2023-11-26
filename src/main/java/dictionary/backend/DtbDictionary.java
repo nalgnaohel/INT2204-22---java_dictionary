@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 
+import static dictionary.Main.dict;
+
 public class DtbDictionary extends Dictionary{
     private static final String dtbName = "Dictionary";
     private static final String dtbTable = "DictWord";
@@ -96,11 +98,11 @@ public class DtbDictionary extends Dictionary{
                 try {
                     if (rs.next()) {
                         Word word = new Word(target, rs.getString("Vietnamese"));
-                        History.addToHistory(word);
+                        dict.getHistory().addTo(word);
                         return rs.getString("Vietnamese");
                     } else {
                         System.out.println("Cannot find the word");
-                        return "Not found!";
+                        return "Not found!\n";
                     }
                 } finally {
                     rs.close();
@@ -112,7 +114,7 @@ public class DtbDictionary extends Dictionary{
             System.out.println("Cannot find the word!");
             e.printStackTrace();
         }
-        return "Not found!";
+        return "Not found!\n";
     }
 
     /**

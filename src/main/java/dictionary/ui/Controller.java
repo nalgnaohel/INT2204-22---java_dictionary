@@ -23,6 +23,8 @@ public class Controller implements Initializable {
     @FXML
     private Button gameButton;
     @FXML
+    private Button favoriteButton;
+    @FXML
     private Button importButton;
     @FXML
     private Button exportButton;
@@ -37,6 +39,9 @@ public class Controller implements Initializable {
 
     private AnchorPane gameArea;
     private ChooseGameController chooseGameController;
+
+    private AnchorPane favoriteArea;
+    private FavoriteTabController favoriteTabController;
 
     @FXML // Xử lý sự kiện khi di chuột vào đối tượng
     protected void onMouseEntered(MouseEvent event) {
@@ -96,6 +101,11 @@ public class Controller implements Initializable {
             contentArea.getChildren().clear();
             contentArea.getChildren().add(gameArea);
             currentButton.getParent().getStyleClass().add("game-selected");
+        } else if (currentButton.equals(favoriteButton)) {
+            favoriteTabController.update();
+            contentArea.getChildren().clear();
+            contentArea.getChildren().add(favoriteArea);
+            //currentButton.getParent().getStyleClass().add("favorite-selected");
         } else if (currentButton.equals(importButton)) {
             contentArea.getChildren().clear();
             //contentArea.getChildren().add(importArea);
@@ -134,6 +144,15 @@ public class Controller implements Initializable {
             gameArea = fxmlLoader.load();
             chooseGameController = fxmlLoader.getController();
             chooseGameController.initialize();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        //Favorite Tab
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/favoriteTab.fxml"));
+            favoriteArea = fxmlLoader.load();
+            favoriteTabController = fxmlLoader.getController();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

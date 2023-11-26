@@ -1,7 +1,6 @@
 package dictionary;
 
-import dictionary.ui.FindingController;
-import dictionary.ui.FindingEndGame;
+import dictionary.ui.*;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.beans.binding.Bindings;
@@ -25,11 +24,13 @@ public class FindingMainWindow {
     private FindingController findingController;
     private Timeline countdownTimeline;
     private Parent root;
+    private FindingHelpWindow findingHelpWindow;
+    private FindingStatsWindow findingStatsWindow;
+    private QuestionWindow questionWindow;
     public void display() throws IOException {
         gameStage = new Stage();
         gameStage.initModality(Modality.APPLICATION_MODAL);
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/findingMain.fxml"));
-        //System.out.println(fxmlLoader);
         root = fxmlLoader.load();
         findingController = fxmlLoader.getController();
         findingController.setFindingMainWindow(this);
@@ -41,6 +42,9 @@ public class FindingMainWindow {
         gameStage.setHeight(700);
         gameStage.setWidth(800);
         gameStage.setResizable(false);
+        gameStage.setOnCloseRequest(windowEvent -> {
+            countdownTimeline.stop();
+        });
         gameStage.show();
         root.requestFocus();
     }
@@ -54,11 +58,20 @@ public class FindingMainWindow {
     }
 
     public void quit() {
+        if (findingHelpWindow != null) {
+            findingHelpWindow.quit();
+        }
+        if (findingStatsWindow != null) {
+            findingStatsWindow.quit();
+        }
+        if (questionWindow != null) {
+            questionWindow.quit();
+        }
         gameStage.close();
     }
 
     public void startCountdown() {
-        ObjectProperty<Duration> remainingDuration = new SimpleObjectProperty<>(Duration.ofSeconds(60));
+        ObjectProperty<Duration> remainingDuration = new SimpleObjectProperty<>(Duration.ofSeconds(20));
         findingController.getRemainingTime().textProperty().bind(Bindings.createStringBinding(() ->
                         String.format("%02d:%02d", remainingDuration.get().toMinutesPart(), remainingDuration.get().toSecondsPart()),
                 remainingDuration));
@@ -81,6 +94,30 @@ public class FindingMainWindow {
             }
         });
         countdownTimeline.play();
+    }
+
+    public FindingHelpWindow getFindingHelpWindow() {
+        return findingHelpWindow;
+    }
+
+    public void setFindingHelpWindow(FindingHelpWindow findingHelpWindow) {
+        this.findingHelpWindow = findingHelpWindow;
+    }
+
+    public FindingStatsWindow getFindingStatsWindow() {
+        return findingStatsWindow;
+    }
+
+    public void setFindingStatsWindow(FindingStatsWindow findingStatsWindow) {
+        this.findingStatsWindow = findingStatsWindow;
+    }
+
+    public QuestionWindow getQuestionWindow() {
+        return questionWindow;
+    }
+
+    public void setQuestionWindow(QuestionWindow questionWindow) {
+        this.questionWindow = questionWindow;
     }
 
     public void continueCountdown() {

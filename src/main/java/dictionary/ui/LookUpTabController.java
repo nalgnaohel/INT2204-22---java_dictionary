@@ -1,8 +1,9 @@
 package dictionary.ui;
 
+import dictionary.Main;
 import dictionary.backend.History;
 import dictionary.backend.Trie;
-import dictionary.backend.TxtDictionary;
+import dictionary.backend.Word;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -10,6 +11,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
@@ -22,6 +26,7 @@ import static dictionary.Main.dict;
 public class LookUpTabController {
     //private final TxtDictionary dict = new TxtDictionary();
     private String currentWord;
+    private String currentMeaning;
     private final ArrayList<String> wordsList = new ArrayList<>();
 
     @FXML
@@ -56,8 +61,9 @@ public class LookUpTabController {
     public void SearchInput(KeyEvent event) throws IOException {
         if (event.getSource() == SearchBar) {
             String searchText = SearchBar.getText();
-            if (!searchText.isEmpty()) {
-                ShowList(searchText);
+            ShowList(searchText);
+            if (event.getCode() == KeyCode.ENTER) {
+                ShowWord(searchText);
             }
         }
     }
@@ -71,7 +77,9 @@ public class LookUpTabController {
     public void ShowList(String target) {
         if (target.isEmpty()) {
             wordsList.clear();
-            wordsList.addAll(History.getWordTargetHistory());
+            for (int i = dict.getHistory().getWordTargetHistory().size() - 1; i >= 0; i--) {
+                wordsList.add(dict.getHistory().getWordTargetHistory().get(i));
+            }
             ObservableList<String> items = FXCollections.observableArrayList(wordsList);
             //show listview
             listview.setItems(items);
@@ -93,7 +101,8 @@ public class LookUpTabController {
         wordTitle.getChildren().add(word);
 
         //Hiện word meaning và info (antonyms, synonyms)
-        Text meaning = new Text(dict.lookUpWord(currentWord));
+        currentMeaning = dict.lookUpWord(currentWord);
+        Text meaning = new Text(currentMeaning);
         wordMeaning.getChildren().clear();
         wordMeaning.getChildren().add(meaning);
         try {
@@ -103,10 +112,53 @@ public class LookUpTabController {
         } catch (Exception e) {
             System.out.println("No synonyms or antonyms");
         }
+        showSaveButton(currentWord);
     }
 
     @FXML
     public void pronounce(ActionEvent event) throws IOException {
         dict.playEngWordSound(currentWord);
+    }
+
+    public void setFavorite(ActionEvent event) {
+        changeSaveButton(currentWord);
+    }
+
+    public void changeSaveButton(String currentWord) {
+        System.out.print(currentWord + " ");
+        if (dict.getFavorites().isFavorited(currentWord)) {
+            System.out.println("YES!");
+            dict.getFavorites().remove(currentWord);
+            Image image = new Image(Main.class.getResourceAsStream("icon/Bookmark.png"));
+            ImageView imageView = new ImageView(image);
+            imageView.setFitWidth(18);
+            imageView.setFitHeight(18);
+            saveButton.setGraphic(imageView);
+        } else {
+            System.out.println("NO!");
+            Word word = new Word(currentWord, currentMeaning);
+            dict.getFavorites().addTo(word);
+            Image image = new Image(Main.class.getResourceAsStream("icon/faved_bookmark.png"));
+            ImageView imageView = new ImageView(image);
+            imageView.setFitWidth(18);
+            imageView.setFitHeight(18);
+            saveButton.setGraphic(imageView);
+        }
+    }
+
+    public void showSaveButton(String currentWord) {
+        if (dict.getFavorites().isFavorited(currentWord)) {
+            Image image = new Image(Main.class.getResourceAsStream("icon/faved_bookmark.png"));
+            ImageView imageView = new ImageView(image);
+            imageView.setFitWidth(18);
+            imageView.setFitHeight(18);
+            saveButton.setGraphic(imageView);
+        } else {
+            Image image = new Image(Main.class.getResourceAsStream("icon/Bookmark.png"));
+            ImageView imageView = new ImageView(image);
+            imageView.setFitWidth(18);
+            imageView.setFitHeight(18);
+            saveButton.setGraphic(imageView);
+        }
     }
 }

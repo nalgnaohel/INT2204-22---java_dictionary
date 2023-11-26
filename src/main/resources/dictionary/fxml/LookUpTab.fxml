@@ -96,7 +96,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button id="save" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
+                        <Button fx:id="saveButton" id="save" mnemonicParsing="false" onAction="#setFavorite" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
                            <graphic>
                               <ImageView fitHeight="18.0" fitWidth="18.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                                  <image>

@@ -56,9 +56,10 @@ public class FindingController {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 mapIds[i][j] = levelmaps[i][j];
+                System.out.print(mapIds[i][j] + " ");
             }
+            System.out.println("");
         }
-        initMap();
         curX = 0;
         curY = 0;
         findingMainWindow.startCountdown();
@@ -69,6 +70,7 @@ public class FindingController {
         for (int i = 1; i <= 10; i++) {
             availableQuestId.add(i);
         }
+        initMap();
     }
 
     public void initMap() {
@@ -87,7 +89,6 @@ public class FindingController {
                 ImageView imageView = new ImageView(image);
                 imageView.setFitHeight(64);
                 imageView.setFitWidth(64);
-                stackPane.getChildren().clear();
                 stackPane.getChildren().add(imageView);
                 if (i == 0 && j == 0) {
                     InputStream ip = Main.class.getResourceAsStream("icon/character.png");
@@ -111,6 +112,7 @@ public class FindingController {
                     iv.setFitHeight(64);
                     iv.setFitWidth(64);
                     stackPane.getChildren().add(iv);
+                    System.out.println(i + " " + j + ": " + stackPane.getChildren().size());
                 } else if (mapIds[i][j] == 3) {
                     InputStream ip = Main.class.getResourceAsStream("icon/treasure.png");
                     Image im = new Image(ip);
@@ -126,8 +128,6 @@ public class FindingController {
 
     public void handleKeyPressed(KeyEvent event) {
         //LURD
-        System.out.println();
-        System.out.println(event.getCode());
         if (event.getCode() == KeyCode.LEFT) {
             handleMove(0);
         } else if (event.getCode() == KeyCode.UP) {
@@ -169,13 +169,13 @@ public class FindingController {
             try {
                 QuestionWindow questionWindow = new QuestionWindow();
                 questionWindow.setFindingController(this);
+                findingMainWindow.setQuestionWindow(questionWindow);
                 questionWindow.display(quest);
                 numofQuest++;
-
-                StackPane stackPane = (StackPane) map.getChildren().get(destY * 8 + destX);
-                stackPane.getChildren().remove(stackPane.getChildren().size() - 1);
                 if (changeToStone == 1) {
                     mapIds[destY][destX] = 2;
+                    StackPane stackPane = (StackPane) map.getChildren().get(destY * 8 + destX);
+                    stackPane.getChildren().remove(stackPane.getChildren().size() - 1);
                     InputStream ip = Main.class.getResourceAsStream("icon/stone.png");
                     Image im = new Image(ip);
                     ImageView iv = new ImageView(im);
@@ -186,6 +186,8 @@ public class FindingController {
                 } else if (changeToStone == -1) {
                     System.out.println("Turning " + destX + " - " + destY + "to grass...");
                     mapIds[destY][destX] = 0;
+                    StackPane stackPane = (StackPane) map.getChildren().get(destY * 8 + destX);
+                    stackPane.getChildren().remove(stackPane.getChildren().size() - 1);
                     moveToNewTile(destX, destY);
                     changeToStone = 0;
                 }
@@ -216,6 +218,20 @@ public class FindingController {
     }
 
     public void restart() {
+        if (findingMainWindow.getQuestionWindow() != null) {
+            findingMainWindow.getQuestionWindow().quit();
+        }
+        if (findingMainWindow.getFindingHelpWindow() != null) {
+            findingMainWindow.getFindingHelpWindow().quit();
+        }
+        if (findingMainWindow.getFindingStatsWindow() != null) {
+            findingMainWindow.getFindingStatsWindow().quit();
+        }
+        for (int i = 0; i < map.getChildren().size(); i++) {
+            StackPane sp = (StackPane) map.getChildren().get(i);
+            //System.out.println((i / 8) + " " + (i % 8)  + ": " + sp.getChildren().size());
+            sp.getChildren().clear();
+        }
         map.getChildren().clear();
         init();
     }
@@ -239,8 +255,20 @@ public class FindingController {
     public void showStats() throws IOException {
         FindingStatsWindow findingStatsWindow = new FindingStatsWindow();
         findingStatsWindow.setFindingFunction(findingFunction);
+        findingStatsWindow.setFindingController(this);
+        findingMainWindow.setFindingStatsWindow(findingStatsWindow);
         findingMainWindow.pauseCountdown();
         findingStatsWindow.display();
+        findingMainWindow.getRoot().requestFocus();
+        findingMainWindow.continueCountdown();
+    }
+
+    public void showHelp() {
+        FindingHelpWindow findingHelpWindow = new FindingHelpWindow();
+        findingHelpWindow.setFindingController(this);
+        findingMainWindow.setFindingHelpWindow(findingHelpWindow);
+        findingMainWindow.pauseCountdown();
+        findingHelpWindow.display();
         findingMainWindow.getRoot().requestFocus();
         findingMainWindow.continueCountdown();
     }

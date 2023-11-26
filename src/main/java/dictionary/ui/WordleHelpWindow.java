@@ -52,8 +52,10 @@ public class WordleHelpWindow {
             firstWord.add(l);
         }
         HBox firstWordVBox = new HBox(5);
-        for (Label label : firstWord)
+        for (Label label : firstWord) {
             firstWordVBox.getChildren().add(label);
+        }
+
         Label firstWordLabel = new Label("The letter W is in the word and in the correct spot.");
         firstWordLabel.getStyleClass().add("instruct-text");
 
@@ -70,8 +72,10 @@ public class WordleHelpWindow {
             secondWord.add(label);
         }
         HBox secondWordVBox = new HBox(5);
-        for (Label label : secondWord)
+        for (Label label : secondWord) {
             secondWordVBox.getChildren().add(label);
+        }
+
         Label secondWordLabel = new Label("The letter I is in the word but in the wrong spot.");
         secondWordLabel.getStyleClass().add("instruct-text");
 
@@ -88,14 +92,18 @@ public class WordleHelpWindow {
         thirdWord.add(u);
         thirdWord.add(e);
         HBox thirdWordVBox = new HBox(5);
-        for (Label label : thirdWord)
+        for (Label label : thirdWord) {
             thirdWordVBox.getChildren().add(label);
+        }
+
         Label thirdWordLabel = new Label("The letter U is not in the word in any spot.");
         thirdWordLabel.getStyleClass().add("instruct-text");
 
         Button quitButton = new Button("Got it...");
         quitButton.getStyleClass().add("instruct-button");
-        quitButton.setOnMouseClicked(ev -> stage.close());
+        quitButton.setOnMouseClicked(ev ->{
+            stage.close();
+        } );
 
         root.setAlignment(Pos.TOP_CENTER);
         root.getChildren().addAll(helpParagraph, line, labelExample, firstWordVBox,

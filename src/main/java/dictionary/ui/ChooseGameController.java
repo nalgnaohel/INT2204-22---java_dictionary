@@ -3,13 +3,20 @@ package dictionary.ui;
 import dictionary.FindingMainWindow;
 import dictionary.Main;
 import dictionary.WordleMainWindow;
+import dictionary.backend.TxtDictionary;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import static dictionary.Main.dict;
 
 public class ChooseGameController {
     public void initialize() {
@@ -33,7 +40,15 @@ public class ChooseGameController {
     }
 
     public void switchToFinding(ActionEvent event) throws IOException {
+        if (dict instanceof TxtDictionary) {
+            Alert failedDtbAlert = new Alert(Alert.AlertType.ERROR);
+            failedDtbAlert.setTitle("Thong bao");
+            failedDtbAlert.setHeaderText("Khong ket noi duoc voi CSDL.\n Hay ket noi voi CSDL de choi!");
+            failedDtbAlert.show();
+            return;
+        }
         FindingMainWindow findingMainWindow = new FindingMainWindow();
         findingMainWindow.display();
     }
+
 }

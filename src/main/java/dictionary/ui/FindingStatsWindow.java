@@ -14,6 +14,7 @@ import java.io.IOException;
 public class FindingStatsWindow {
     private Stage stage;
     private FindingStatsController findingStatsController;
+    private FindingController findingController;
     private FindingFunction findingFunction;
     public void display() throws IOException {
         stage = new Stage();
@@ -30,6 +31,9 @@ public class FindingStatsWindow {
         stage.setWidth(450);
         stage.setResizable(false);
         stage.showAndWait();
+        stage.setOnCloseRequest(windowEvent -> {
+            findingController.getFindingMainWindow().setFindingStatsWindow(null);
+        });
     }
 
     public Stage getStage() {
@@ -40,13 +44,13 @@ public class FindingStatsWindow {
         stage.close();
     }
 
-//    public FindingMainWindow getFindingMainWindow() {
-//        return findingMainWindow;
-//    }
-//
-//    public void setFindingMainWindow(FindingMainWindow findingMainWindow) {
-//        this.findingMainWindow = findingMainWindow;
-//    }
+    public FindingController getFindingController() {
+        return findingController;
+    }
+
+    public void setFindingController(FindingController findingController) {
+        this.findingController = findingController;
+    }
 
     public FindingFunction getFindingFunction() {
         return findingFunction;

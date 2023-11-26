@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,7 +17,8 @@ public class QuestionWindow {
     private FindingController findingController;
     public void display(final ArrayList<String> question) throws IOException {
         stage = new Stage();
-        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initModality(Modality.WINDOW_MODAL);
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/question.fxml"));
         Parent root = fxmlLoader.load();
         questionController = fxmlLoader.getController();
@@ -29,6 +31,9 @@ public class QuestionWindow {
         stage.setWidth(800);
         stage.setResizable(false);
         stage.showAndWait();
+        stage.setOnCloseRequest(windowEvent -> {
+            findingController.getFindingMainWindow().setQuestionWindow(null);
+        });
     }
 
     public void setFindingController(FindingController findingController) {

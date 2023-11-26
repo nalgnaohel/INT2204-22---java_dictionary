@@ -3,8 +3,11 @@ package dictionary.backend;
 import java.io.*;
 import java.util.ArrayList;
 
+import static dictionary.Main.dict;
+
 public class TxtDictionary extends Dictionary{
     private final ArrayList<Word> wordsList = new ArrayList<Word>();
+
     public void importDataFromFile(String path) {
         try {
             FileReader fr = new FileReader(path);
@@ -78,11 +81,11 @@ public class TxtDictionary extends Dictionary{
     public String lookUpWord(String target) {
         for (Word word : wordsList) {
             if (word.getWordTarget().equals(target)) {
-                History.addToHistory(word);
+                dict.getHistory().addTo(word);
                 return word.getWordMeaning();
             }
         }
-        return "Not found!";
+        return "Not found!\n";
     }
 
     @Override
