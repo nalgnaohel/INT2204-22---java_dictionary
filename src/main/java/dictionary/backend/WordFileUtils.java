@@ -73,7 +73,7 @@ public abstract class WordFileUtils {
         try {
             FileWriter fw = new FileWriter(fname);
             BufferedWriter bw = new BufferedWriter(fw);
-            for (Word word : allWords) {
+            for (Word word : getAllWords()) {
                 bw.write("| " + word.getWordTarget() + "\n" + word.getWordMeaning());
                 bw.newLine();
             }
@@ -84,7 +84,5 @@ public abstract class WordFileUtils {
         }
     }
 
-    public ArrayList<Word> getAllWords() {
-        return allWords;
-    }
+    public abstract ArrayList<Word> getAllWords();
 }

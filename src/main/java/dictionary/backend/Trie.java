@@ -7,9 +7,7 @@ import java.util.TreeMap;
 public class Trie {
     private static final TrieNode root = new TrieNode();
     private static final ArrayList<String> trieWords = new ArrayList<String>();
-    /**
-     * A node of Trie
-     */
+
     private static class TrieNode {
         Map<Character, TrieNode> children;
         boolean isEndOfWord;
@@ -19,9 +17,6 @@ public class Trie {
         }
     }
 
-    /**
-     * Insert a word.
-     */
     public static void insert(String word) {
         int length = word.length();
         TrieNode curNode = root;

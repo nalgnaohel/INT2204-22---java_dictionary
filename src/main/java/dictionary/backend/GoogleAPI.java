@@ -18,9 +18,6 @@ public class GoogleAPI extends API{
                 "en" + "&client=tw-ob&q=";
     }
 
-    /**
-     * Get speech of a text.
-     */
     public void playWordSound(String text) {
         try {
             setAPIName();

@@ -31,9 +31,6 @@ public class DtbDictionary extends Dictionary{
         }
     }
 
-    /**
-     * Initialize dtb.
-     */
     public void init() throws SQLException {
         connectToDtb();
         ArrayList<Word> wordArrayList = getAllWords();
@@ -160,6 +157,8 @@ public class DtbDictionary extends Dictionary{
                 prs.close();
             }
             Trie.delete(target);
+            history.remove(target);
+            favorites.remove(target);
             return true;
         } catch (SQLException e) {
             System.out.println("Cannot delete the word");
@@ -171,7 +170,7 @@ public class DtbDictionary extends Dictionary{
     //update.
 
     @Override
-    public boolean updateWordMeaning(final String target, String meaning) {
+    public boolean updateWordMeaning(String target, String meaning) {
         final String sqlQuery = "UPDATE " + dtbTable + " SET Vietnamese = ? WHERE English = ?";
         try {
             PreparedStatement prs = connection.prepareStatement(sqlQuery);
@@ -197,7 +196,7 @@ public class DtbDictionary extends Dictionary{
         try {
             PreparedStatement prs = connection.prepareStatement(sqlQuery);
             prs.setString(1, Integer.toString(id));
-            System.out.println(Integer.toString(id));
+            System.out.println(id);
             try {
                 ResultSet rs = prs.executeQuery();
                 try {

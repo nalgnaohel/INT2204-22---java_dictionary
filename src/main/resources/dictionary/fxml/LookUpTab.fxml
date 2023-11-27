@@ -109,7 +109,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button id="edit" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
+                        <Button fx:id="editButton" id="edit" mnemonicParsing="false" onAction="#edit" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
                            <graphic>
                               <ImageView fitHeight="18.0" fitWidth="18.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -124,7 +124,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button id="remove" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
+                        <Button fx:id="removeButton" id="remove" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
                            <graphic>
                               <ImageView fitHeight="18.0" fitWidth="18.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                                  <image>

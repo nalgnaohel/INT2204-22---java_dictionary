@@ -8,9 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
@@ -20,12 +18,12 @@ import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Optional;
 
 import static dictionary.Main.dict;
 
 public class LookUpTabController {
-    //private final TxtDictionary dict = new TxtDictionary();
-    private String currentWord;
+    private String currentWord = "";
     private String currentMeaning;
     private final ArrayList<String> wordsList = new ArrayList<>();
 
@@ -94,6 +92,9 @@ public class LookUpTabController {
 
     public void ShowWord(String newValue) {
         currentWord = newValue;
+        if (currentWord == null || currentWord.isEmpty()) {
+            return;
+        }
 
         // Hiện word title
         Text word = new Text(currentWord);
@@ -125,6 +126,9 @@ public class LookUpTabController {
     }
 
     public void changeSaveButton(String currentWord) {
+        if (currentWord ==  null || currentWord.isEmpty()) {
+            return;
+        }
         System.out.print(currentWord + " ");
         if (dict.getFavorites().isFavorited(currentWord)) {
             System.out.println("YES!");
@@ -159,6 +163,52 @@ public class LookUpTabController {
             imageView.setFitWidth(18);
             imageView.setFitHeight(18);
             saveButton.setGraphic(imageView);
+        }
+    }
+
+    public void delete(ActionEvent event) {
+        if (currentWord.isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Thong bao");
+            alert.setHeaderText("Chua chon tu de xoa!");
+            alert.showAndWait();
+        } else {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Xac nhan xoa tu");
+            alert.setHeaderText("Ban co chac chan muon xoa tu " + currentWord +  "?");
+            ButtonType cf = new ButtonType("Co");
+            ButtonType canc = new ButtonType("Khong");
+            alert.getButtonTypes().clear();
+            alert.getButtonTypes().addAll(cf, canc);
+            Optional<ButtonType> opt = alert.showAndWait();
+
+            if (opt.get() == cf) {
+                if (dict.deleteWord(currentWord)) {
+                    Alert successAlert = new Alert(Alert.AlertType.INFORMATION);
+                    successAlert.setTitle("Xoa tu thanh cong");
+                    successAlert.setHeaderText("Xoa tu " + currentWord + " thanh cong!");
+                    successAlert.showAndWait();
+                } else {
+                    Alert unsuccessAlert = new Alert(Alert.AlertType.ERROR);
+                    unsuccessAlert.setTitle("Xoa tu khong thanh cong");
+                    unsuccessAlert.setHeaderText("Xoa tu " + currentWord + " khong thanh cong!");
+                    unsuccessAlert.showAndWait();
+                }
+                ShowList(currentWord);
+                currentWord = "";
+                wordTitle.getChildren().clear();
+                wordMeaning.getChildren().clear();
+            }
+        }
+    }
+
+    //edit + insert.
+    public void edit(ActionEvent event) {
+        EditWindow editWindow = new EditWindow();
+        try {
+            editWindow.display();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }
