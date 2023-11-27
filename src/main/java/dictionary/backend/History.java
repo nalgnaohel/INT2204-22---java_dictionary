@@ -20,8 +20,17 @@ public class History extends WordFileUtils {
         allWords.add(w);
     }
 
+    public void remove(String target) {
+        for (Word word : allWords) {
+            if (word.getWordTarget().equals(target)) {
+                allWords.remove(word);
+                break;
+            }
+        }
+    }
+
     //get all history word.
-    public ArrayList<Word> getWordHistory() {
+    public ArrayList<Word> getAllWords() {
         return allWords;
     }
 

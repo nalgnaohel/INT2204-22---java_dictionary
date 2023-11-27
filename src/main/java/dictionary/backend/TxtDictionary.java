@@ -8,46 +8,6 @@ import static dictionary.Main.dict;
 public class TxtDictionary extends Dictionary{
     private final ArrayList<Word> wordsList = new ArrayList<Word>();
 
-    public void importDataFromFile(String path) {
-        try {
-            FileReader fr = new FileReader(path);
-            BufferedReader br = new BufferedReader(fr);
-            String engWord = br.readLine();
-            engWord = engWord.replace("|", "");
-            engWord = engWord.trim();
-            String line;
-            String meaning = "";
-            int id = 0;
-            System.out.println("Importing " + path + "... Please wait!");
-            while ((line = br.readLine()) != null) {
-                if (!line.startsWith("|")) {
-                    meaning += line.trim() + "\n";
-                } else {
-                    //an E word
-                    if (insertWord(engWord, meaning)) {
-                        id++;
-                        if (id % 1000 == 10) {
-                            System.out.println("*");
-                        } else if (id % 10 == 0) {
-                            System.out.print("*");
-                        }
-                    }
-                    meaning = "";
-                    engWord = line.replace("|", "");
-                    engWord = engWord.trim();
-                }
-            }
-            if(insertWord(engWord, meaning)) {
-                id++;
-            }
-            System.out.println("Done importing!");
-        } catch (IOException e) {
-            System.out.println("Cannot find the file!\n");
-        } catch (Exception e) {
-            System.out.println("Something went wrong: " + e);
-        }
-    }
-
     /**
      * Export words.
      */
@@ -102,11 +62,13 @@ public class TxtDictionary extends Dictionary{
     }
 
     @Override
-    public boolean deleteWord(final String target) {
+    public boolean deleteWord(String target) {
         for (Word word : wordsList) {
             if (word.getWordTarget().equals(target)) {
                 wordsList.remove(word);
                 Trie.delete(target);
+                history.remove(target);
+                favorites.remove(target);
                 return true;
             }
         }
@@ -114,7 +76,7 @@ public class TxtDictionary extends Dictionary{
     }
 
     @Override
-    public boolean updateWordMeaning(final String target, String meaning) {
+    public boolean updateWordMeaning(String target, String meaning) {
         for (Word word : wordsList) {
             if (word.getWordTarget().equals(target)) {
                 word.setWordMeaning(meaning);

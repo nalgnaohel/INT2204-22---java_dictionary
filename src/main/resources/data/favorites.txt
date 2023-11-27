@@ -1,31 +1,3 @@
-| freak
-/fri:k/
-* danh từ
-- tính đồng bóng, tính hay thay đổi
-= out of mere freak+ chỉ vì tính đồng bóng
-- quái vật; điều kỳ dị
-= a freak of nature+ một quái vật
-* ngoại động từ
-- làm lốm đốm, làm có vệt
-
-
-
-
-
-
-
-| freak out
-/'fri:kaut/
-* nội động từ,  (từ Mỹ,nghĩa Mỹ),  (từ lóng)
-- cảm thấy đê mê, đi mây về gió, phiêu diêu bay bổng (như lúc hút thuốc phiện...)
-- trở thành một híp-pi, ăn mặc hành động như một híp-pi ((xem) hippie); ăn mặc lập dị, hành động lập dị
-
-
-
-
-
-
-
 | breath
 /breθ/
 * danh từ
@@ -50,6 +22,62 @@
 - làm ngạc nhiên, làm kinh ngạc
 !to waste one's breath
 - hoài hơi, phí lời
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| freak
+/fri:k/
+* danh từ
+- tính đồng bóng, tính hay thay đổi
+= out of mere freak+ chỉ vì tính đồng bóng
+- quái vật; điều kỳ dị
+= a freak of nature+ một quái vật
+* ngoại động từ
+- làm lốm đốm, làm có vệt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -120,6 +148,58 @@ like
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| freak out
+/'fri:kaut/
+* nội động từ,  (từ Mỹ,nghĩa Mỹ),  (từ lóng)
+- cảm thấy đê mê, đi mây về gió, phiêu diêu bay bổng (như lúc hút thuốc phiện...)
+- trở thành một híp-pi, ăn mặc hành động như một híp-pi ((xem) hippie); ăn mặc lập dị, hành động lập dị
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 | fry
 /frai/
 * danh từ
@@ -131,4 +211,70 @@ like
 - rán, chiên
 !to have other fish to fry
 - fish
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| fresh
+/freʃ/
+* tính từ
+- tươi (hoa, trứng, sữa, cá, thịt...)
+- tươi tắn, mơn mởn
+= fresh paint+ sơn còn ướt
+- còn rõ rệt, chưa phai mờ
+= fresh memories+ những kỷ niệm chưa phai mờ
+- trong sạch, tươi mát, mát mẻ (không khí...)
+= first fresh dreams+ những giấc mơ đầu tươi mát
+- mới
+= to begin a fresh chapter+ bắt đầu một chương mới
+= fresh news+ tin mới
+- vừa mới tới, vừa mới ra; non nớt, ít kinh nghiệm
+= a fresh hand+ một anh chàng thiếu kinh nghiệm
+- không mặn, không chát (bơ...); ngọt (nước)
+= fresh water+ nước ngọt
+- khoẻ khắn, sảng khoái, khoẻ mạnh, lanh lợi
+= as fresh as paint+ rất khoẻ
+= to feel fresh after six sets of ping-pong+ cảm thấy khoẻ khoắn sau khi chơi sáu ván bóng bàn
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) hỗn xược, xấc láo, sỗ sàng
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) ngà ngà say, chếnh choáng
+- (từ Mỹ,nghĩa Mỹ) vừa mới có sữa (bò cái sau khi đẻ)
+* phó từ
+- mới
+= fresh from school+ vừa mới tốt nghiệp ở trường ra
+* danh từ
+- lúc tươi mát, lúc mát mẻ
+= in the fresh of the morning+ vào lúc tươi mát của buổi sáng
+- dòng nước trong mát
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
