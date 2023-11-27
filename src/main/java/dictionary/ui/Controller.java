@@ -57,8 +57,6 @@ public class Controller implements Initializable {
             colorAdjust.setBrightness(-0.6);
             // Áp dụng ColorAdjust
             b.getParent().getChildrenUnmodifiable().get(0).setEffect(colorAdjust);
-        } else {
-            // Tạo hiệu ứng hover khi di chuột vào đối tượng đang mở ????
         }
     }
 
@@ -105,7 +103,7 @@ public class Controller implements Initializable {
             favoriteTabController.update();
             contentArea.getChildren().clear();
             contentArea.getChildren().add(favoriteArea);
-            //currentButton.getParent().getStyleClass().add("favorite-selected");
+            currentButton.getParent().getStyleClass().add("favorite-selected");
         } else if (currentButton.equals(importButton)) {
             contentArea.getChildren().clear();
             //contentArea.getChildren().add(importArea);
