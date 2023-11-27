@@ -1,8 +1,114 @@
 .button {
-    -fx-border-radius: 9px;
-    -fx-border-width: 2px;
-    -fx-background-color: #ffffff;
-    -fx-border-color: #212020;
-    -fx-background-radius: 10px;
+    -fx-background-color: transparent;
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0, 0, 0);
 }
+
+
+#chooseLang {
+    -fx-background-color: white;
+    /*-fx-border-radius: 8px;*/
+    /*-fx-background-radius: 8px;*/
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0.5px;
+}
+
+.choice-box .label {
+    -fx-font-family: "Barlow Medium";
+    -fx-font-size: 14px;
+    -fx-text-fill: #151515;
+}
+
+#toLangText {
+    -fx-font-family: "Myriad Pro";
+    -fx-font-size: 25px;
+    -fx-text-fill: #151515;
+}
+
+.text-area {
+    -fx-background-color: white;
+    -fx-border-color: #ffffff;
+    -fx-text-fill: #680fb6;
+}
+
+.text-area {
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+    -fx-highlight-fill: #656565;
+}
+
+.text-area .content {
+    -fx-padding: 10px;
+    -fx-text-fill: #777777;
+    -fx-highlight-fill: #656565;
+}
+
+.text-area .scroll-pane:fitToWidth:fitToHeight .scroll-bar:vertical .track {
+    -fx-pref-width: 1px;
+}
+
+/*Scrollpane*/
+.scroll-pane > .corner {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .scroll-bar {
+    -fx-background-color :transparent;
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+
+.scroll-pane {
+    -fx-background-color: white;
+}
+
+.scroll-bar:vertical .track{
+    -fx-background-color :transparent;
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 5.0 0.0 0.0;
+
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.0 0.15em;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color : #9a9a9a;
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+
+

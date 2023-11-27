@@ -3,8 +3,10 @@ package dictionary.ui;
 import dictionary.backend.Word;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
@@ -27,6 +29,7 @@ public class FavoriteTabController implements Initializable {
     @FXML
     private TextFlow wordMeaning;
 
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         for (Word word : dict.getFavorites().getAllWords()) {
@@ -45,7 +48,7 @@ public class FavoriteTabController implements Initializable {
         listview.setItems(favItems);
     }
 
-    public void selectItem(MouseEvent event) throws IOException {
+    public void SelectItem(MouseEvent event) throws IOException {
         String selected = listview.getSelectionModel().getSelectedItem();
         showWord(selected);
     }
@@ -69,4 +72,5 @@ public class FavoriteTabController implements Initializable {
             System.out.println("No synonyms or antonyms");
         }
     }
+
 }

@@ -6,6 +6,8 @@ module com.example.java_dictionary {
     requires org.kordamp.bootstrapfx.core;
     requires jlayer;
     requires java.sql;
+    requires java.datatransfer;
+    requires java.desktop;
 
     exports dictionary;
     opens dictionary to javafx.fxml;

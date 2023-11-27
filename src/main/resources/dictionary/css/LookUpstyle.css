@@ -113,23 +113,23 @@ list-view:vertical .virtual-flow .scroll-bar:vertical .thumb {
 }
 
 
-#dict-select {
-    -fx-background-color: white;
-    -fx-border-radius: 8px;
-    -fx-background-radius: 8px;
-    -fx-border-color: #ffffff;
-    -fx-border-width: 0.5px;
-    -fx-font-family: "Myriad Pro";
-    -fx-font-size: 13px;
-    -fx-text-fill: #494949;
-}
+/*#dict-select {*/
+/*    -fx-background-color: white;*/
+/*    -fx-border-radius: 8px;*/
+/*    -fx-background-radius: 8px;*/
+/*    -fx-border-color: #ffffff;*/
+/*    -fx-border-width: 0.5px;*/
+/*    -fx-font-family: "Myriad Pro";*/
+/*    -fx-font-size: 13px;*/
+/*    -fx-text-fill: #494949;*/
+/*}*/
 
-.menu-item {
-    -fx-pref-width: 130px;
-    -fx-padding: 0 0 0 5;
-    -fx-text-fill: black;
-    -fx-background: #b4b4b4;
-}
+/*.menu-item {*/
+/*    -fx-pref-width: 130px;*/
+/*    -fx-padding: 0 0 0 5;*/
+/*    -fx-text-fill: black;*/
+/*    -fx-background: #b4b4b4;*/
+/*}*/
 
 
 

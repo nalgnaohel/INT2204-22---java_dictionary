@@ -35,6 +35,8 @@ public class WordleController {
     private String winningWord;
     private WordleMainWindow wordleMainWindow;
     private WordleFunction wordleFunction = new WordleFunction();
+    @FXML
+    private AnchorPane gameArea;
 
     public void setWordleMainWindow(WordleMainWindow wmw) {
         this.wordleMainWindow = wmw;
@@ -48,6 +50,7 @@ public class WordleController {
         System.out.println(winningWord);
         wordleFunction.setHistoryPath("src/main/resources/data/wordle_history.txt");
         wordleFunction.init();
+        //System.out.println(wordsTilePane.getChildren().get(0).getWidth());
     }
 
     public void initGrid(TilePane wordTilesPane) {
@@ -62,7 +65,7 @@ public class WordleController {
             cur.getStyleClass().add("default-tile");
             wordTilesPane.getChildren().add(cur);
         }
-        //System.out.println(wordTilesPane.getChildren().size());
+        System.out.println(wordTilesPane.getWidth() + " " + wordTilesPane.getHeight() + " " + wordTilesPane.getTileHeight() + " " + wordTilesPane.getTileWidth());
     }
 
     private void initAllWords() {
@@ -166,14 +169,18 @@ public class WordleController {
     }
 
     public void handleKeyPressed(KeyEvent event) {
-        if (event.getCode().isLetterKey()) {
-            handleLetterKey(event);
-        } else if (event.getCode() == KeyCode.BACK_SPACE) {
-            handleBackspaceKey();
-        } else if (event.getCode() == KeyCode.ENTER) {
-            handleEnterKey();
-        } else {
-            System.out.println("Something else...");
+        if (event.getSource() == gameArea) {
+            if (event.getCode().isLetterKey()) {
+                handleLetterKey(event);
+            } else if (event.getCode() == KeyCode.BACK_SPACE) {
+                System.out.println("Clear!");
+                handleBackspaceKey();
+            } else if (event.getCode() == KeyCode.SHIFT) {  //change to shift
+                System.out.println("Enter pressed...");
+                handleEnterKey();
+            } else {
+                System.out.println("Something else...");
+            }
         }
     }
 
@@ -209,10 +216,12 @@ public class WordleController {
     }
 
     private void handleEnterKey() {
+        System.out.println("Enter!");
         if (curColumn != 4 || (curColumn == 4 && getLabelText(curRow, curColumn).equals(""))) {
             System.out.println("Not enough characters!");
         } else {
             String rowWord = getCurrentRowWord(curRow);
+            System.out.println(rowWord);
             if (rowWord.equals(winningWord)) {
                 //win case
                 updateCurrentRow(curRow);
@@ -233,6 +242,7 @@ public class WordleController {
                     throw new RuntimeException(e);
                 }
             } else if (!dict.lookUpWord(rowWord).equals("Not found!")) {
+                System.out.println("Not winning word!");
                 updateCurrentRow(curRow);
                 curRow++; curColumn = 0;
                 if (curRow == 5) {

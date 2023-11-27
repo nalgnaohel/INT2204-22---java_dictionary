@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
@@ -10,6 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.Controller">
    <children>
@@ -41,6 +43,34 @@
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
+            </HBox>
+            <HBox id="favoriteTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
+               <children>
+                  <Button fx:id="favoriteButton" graphicTextGap="15.0" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Favorite">
+                     <graphic>
+                        <ImageView fitHeight="20.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="13.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../icon/Star.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <effect>
+                  <ColorAdjust brightness="-0.6" />
+               </effect>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
             </HBox>
             <HBox id="translateTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
                <children>
@@ -89,31 +119,6 @@
                <VBox.margin>
                   <Insets left="10.0" top="10.0" />
                </VBox.margin>
-            </HBox>
-            <HBox id="favoriteTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
-               <children>
-                  <Button fx:id="favoriteButton" graphicTextGap="15.0" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Favorite">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <HBox.margin>
-                              <Insets left="13.0" />
-                           </HBox.margin>
-                           <image>
-                              <Image url="@../icon/Bookmark.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <HBox.margin>
-                        <Insets left="10.0" />
-                     </HBox.margin>
-                  </Button>
-               </children>
-               <effect>
-                  <ColorAdjust brightness="-0.6" />
-               </effect>
             </HBox>
             <Separator maxWidth="-Infinity" minWidth="-Infinity" opacity="0.44" prefHeight="27.0" prefWidth="185.0">
                <VBox.margin>
@@ -170,6 +175,37 @@
             </HBox>
          </children>
       </VBox>
-      <AnchorPane fx:id="contentArea" layoutX="220.0" prefHeight="700.0" prefWidth="900.0" />
+      <AnchorPane fx:id="contentArea" layoutX="220.0" prefHeight="700.0" prefWidth="900.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="242.0" layoutY="265.0" prefHeight="170.0" prefWidth="416.0" style="-fx-border-color: #cfcfcf; -fx-border-width: 2px; -fx-border-radius: 15px;">
+               <children>
+                  <ImageView fitHeight="105.0" fitWidth="100.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/hello.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER_LEFT" prefHeight="170.0" prefWidth="227.0">
+                     <HBox.margin>
+                        <Insets left="23.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="223.0" text="Welcome!" textFill="#a1a1a1">
+                           <font>
+                              <Font name="MyriadPro-Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="49.0" prefWidth="227.0" text="Unlock Words, Embrace Knowledge – Your Gateway to Language Brilliance!" textFill="#8e8e8e" wrapText="true">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="MyriadPro-Regular" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></AnchorPane>
    </children>
 </AnchorPane>

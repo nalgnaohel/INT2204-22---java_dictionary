@@ -1,0 +1,13 @@
+.button {
+    -fx-background-radius: 15px;
+    -fx-background-color: white;
+    -fx-cursor: hand;
+}
+
+.button:hover{
+    -fx-background-radius: 15px;
+    -fx-background-color: white;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-scale-z: 1.2;
+}

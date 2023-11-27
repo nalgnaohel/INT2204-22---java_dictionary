@@ -34,17 +34,60 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="gameArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.ChooseGameController">
    <children>
-      <Label layoutX="314.0" layoutY="46.0" text="Chọn game bạn muốn chơi" textFill="#837a52">
-         <font>
-            <Font name="System Bold" size="28.0" />
-         </font>
-      </Label>
-      <Button fx:id="b1" layoutX="156.0" layoutY="257.0" mnemonicParsing="false" onAction="#switchToFinding" text="Chọn đáp án đúng..." />
-      <Button fx:id="b2" layoutX="662.0" layoutY="251.0" mnemonicParsing="false" onAction="#switchToWordle" text="Wordle" />
+      <StackPane prefHeight="700.0" prefWidth="900.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="700.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/back3.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="208.0" layoutY="56.0" text="Welcome to the Arcade !" textFill="WHITE">
+                     <font>
+                        <Font name="MyriadPro-Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="185.0" layoutY="118.0" text="Elevate your English skills through fun and interactive word games." textFill="#ffffffc2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="b2" alignment="CENTER" contentDisplay="TOP" graphicTextGap="20.0" layoutX="492.0" layoutY="245.0" mnemonicParsing="false" onAction="#switchToWordle" prefHeight="300.0" prefWidth="300.0" stylesheets="@../css/chooseGame.css" text="WORDLE" textFill="#11d34b">
+                     <font>
+                        <Font name="Barlow Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/word.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="b1" alignment="CENTER" contentDisplay="TOP" graphicTextGap="20.0" layoutX="109.0" layoutY="245.0" mnemonicParsing="false" onAction="#switchToFinding" prefHeight="300.0" prefWidth="300.0" stylesheets="@../css/chooseGame.css" text="TREASURE HUNTER" textFill="#5003bc">
+                     <graphic>
+                        <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/treasure.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Barlow Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
    </children>
 </AnchorPane>
