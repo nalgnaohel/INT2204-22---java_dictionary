@@ -43,10 +43,10 @@ public abstract class Dictionary {
         }
     }
 
-    public void playEngWordSound(String target) {
+    public void playTextSound(String target, String lang) {
         API api = new GoogleAPI();
         try {
-            api.playWordSound(target);
+            api.playWordSound(target, lang);
         } catch (Exception e) {
             System.out.println("Failed to use API to play sound!");
             throw new RuntimeException(e);

@@ -11,15 +11,17 @@ import java.nio.charset.StandardCharsets;
 public class GoogleAPI extends API{
     //API cua GoogleTranslate, dung de doc tu/cau.
     private String apiName;
+    private String curLang = "en";
 
     @Override
     public void setAPIName() {
         apiName = "https://translate.google.com/translate_tts?ie=UTF-8&tl=" +
-                "en" + "&client=tw-ob&q=";
+                curLang + "&client=tw-ob&q=";
     }
 
-    public void playWordSound(String text) {
+    public void playWordSound(String text, String lang) {
         try {
+            curLang = lang;
             setAPIName();
             String urlName = apiName + URLEncoder.encode(text, StandardCharsets.UTF_8);
             URL url = new URL(urlName);

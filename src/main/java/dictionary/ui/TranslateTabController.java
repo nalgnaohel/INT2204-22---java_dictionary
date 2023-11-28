@@ -1,5 +1,6 @@
 package dictionary.ui;
 
+import dictionary.backend.API;
 import dictionary.backend.GoogleAPI;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -52,10 +53,6 @@ public class TranslateTabController {
     private ChoiceBox chooseLang;
 
     public void initialize() {
-//        langFrom.setItems(langFromList);
-//        langTo.setItems(langFromList);
-//        langFrom.setValue("English");
-//        langTo.setValue("Vietnamese");
         chooseLang.setItems(langFromList);
         chooseLang.setValue("English to Vietnamese");
     }
@@ -113,12 +110,14 @@ public class TranslateTabController {
 
     @FXML
     public void listen (ActionEvent event) {
-        GoogleAPI tmp = new GoogleAPI();
-        if (event.getSource() == InputListen)
-            tmp.playWordSound(fromLangText.getText());
+        String[] f = chooseLang.getValue().toString().split(" ");
+        if (event.getSource() == InputListen) {
+            String lang = f[0].substring(0, 2).toLowerCase();
+            dict.playTextSound(fromLangText.getText(), lang);
+        }
         else if (event.getSource() == OutputListen) {
-
-            tmp.playWordSound(getOutputText());
+            String lang = f[2].substring(0, 2).toLowerCase();
+            dict.playTextSound(getOutputText(), lang);
         }
     }
 

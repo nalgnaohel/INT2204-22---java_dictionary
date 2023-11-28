@@ -118,7 +118,7 @@ public class LookUpTabController {
 
     @FXML
     public void pronounce(ActionEvent event) throws IOException {
-        dict.playEngWordSound(currentWord);
+        dict.playTextSound(currentWord, "en");
     }
 
     public void setFavorite(ActionEvent event) {

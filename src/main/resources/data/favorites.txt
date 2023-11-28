@@ -1,31 +1,3 @@
-| freak
-/fri:k/
-* danh từ
-- tính đồng bóng, tính hay thay đổi
-= out of mere freak+ chỉ vì tính đồng bóng
-- quái vật; điều kỳ dị
-= a freak of nature+ một quái vật
-* ngoại động từ
-- làm lốm đốm, làm có vệt
-
-
-
-
-
-
-
-| freak out
-/'fri:kaut/
-* nội động từ,  (từ Mỹ,nghĩa Mỹ),  (từ lóng)
-- cảm thấy đê mê, đi mây về gió, phiêu diêu bay bổng (như lúc hút thuốc phiện...)
-- trở thành một híp-pi, ăn mặc hành động như một híp-pi ((xem) hippie); ăn mặc lập dị, hành động lập dị
-
-
-
-
-
-
-
 | breath
 /breθ/
 * danh từ
@@ -50,6 +22,32 @@
 - làm ngạc nhiên, làm kinh ngạc
 !to waste one's breath
 - hoài hơi, phí lời
+
+
+
+
+
+
+
+
+
+
+| freak
+/fri:k/
+* danh từ
+- tính đồng bóng, tính hay thay đổi
+= out of mere freak+ chỉ vì tính đồng bóng
+- quái vật; điều kỳ dị
+= a freak of nature+ một quái vật
+* ngoại động từ
+- làm lốm đốm, làm có vệt
+
+
+
+
+
+
+
 
 
 
@@ -120,6 +118,28 @@ like
 
 
 
+
+
+
+
+
+| freak out
+/'fri:kaut/
+* nội động từ,  (từ Mỹ,nghĩa Mỹ),  (từ lóng)
+- cảm thấy đê mê, đi mây về gió, phiêu diêu bay bổng (như lúc hút thuốc phiện...)
+- trở thành một híp-pi, ăn mặc hành động như một híp-pi ((xem) hippie); ăn mặc lập dị, hành động lập dị
+
+
+
+
+
+
+
+
+
+
+
+
 | fry
 /frai/
 * danh từ
@@ -131,4 +151,9 @@ like
 - rán, chiên
 !to have other fish to fry
 - fish
+
+
+
+
+
 

@@ -12,7 +12,7 @@ public abstract class API {
         return "";
     }
 
-    public void playWordSound(String target) {
+    public void playWordSound(String target, String fromLang) {
 
     }
 
