@@ -1,6 +1,8 @@
-package dictionary.ui;
+package dictionary.ui.game;
 
 import dictionary.Main;
+import dictionary.ui.game.finding.FindingEndGame;
+import dictionary.ui.game.wordles.WordleEndWindow;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;

@@ -9,14 +9,18 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class DictAPI extends API {
+public class DictAPI implements API {
     //Dictionary API, dung de tim synonyms, antonyms.
     Map<String, ArrayList<String>> mp = new TreeMap<String, ArrayList<String>>();
     private String apiName;
+    private String res;
     public void setAPIName() {
         apiName = "https://api.dictionaryapi.dev/api/v2/entries/en/";
     }
 
+    public void work(String target, String langFrom, String langTo) throws IOException {
+        res = getNeededInfo(target);
+    }
     /**
      * Find synonyms, antonyms and examples.
      */
@@ -85,5 +89,9 @@ public class DictAPI extends API {
         }
         //result tra ve cac antonyms va synonyms
         return result;
+    }
+
+    public String getRes() {
+        return res;
     }
 }

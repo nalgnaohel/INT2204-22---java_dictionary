@@ -8,7 +8,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
-public class GoogleAPI extends API{
+public class GoogleAPI implements API{
     //API cua GoogleTranslate, dung de doc tu/cau.
     private String apiName;
     private String curLang = "en";
@@ -19,7 +19,12 @@ public class GoogleAPI extends API{
                 curLang + "&client=tw-ob&q=";
     }
 
-    public void playWordSound(String text, String lang) {
+    @Override
+    public void work(String target, String langFrom, String langTo) throws Exception {
+        playWordSound(target, langFrom);
+    }
+
+    public void playWordSound(String text, String lang) throws Exception {
         try {
             curLang = lang;
             setAPIName();

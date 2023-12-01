@@ -1,4 +1,4 @@
-package dictionary.ui;
+package dictionary.ui.game.finding;
 
 import dictionary.FindingMainWindow;
 import dictionary.Main;
@@ -15,7 +15,6 @@ import javafx.scene.layout.TilePane;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Queue;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static dictionary.Main.dict;
@@ -254,7 +253,7 @@ public class FindingController {
 
     public void showStats() throws IOException {
         FindingStatsWindow findingStatsWindow = new FindingStatsWindow();
-        findingStatsWindow.setFindingFunction(findingFunction);
+        findingStatsWindow.setGameFunction(findingFunction);
         findingStatsWindow.setFindingController(this);
         findingMainWindow.setFindingStatsWindow(findingStatsWindow);
         findingMainWindow.pauseCountdown();

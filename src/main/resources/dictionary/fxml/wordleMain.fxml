@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane fx:id="gameArea" maxHeight="700.0" maxWidth="900.0" minHeight="700.0" minWidth="900.0" onKeyPressed="#handleKeyPressed" prefHeight="700.0" prefWidth="900.0" stylesheets="@../css/wordle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.WordleController">
+<AnchorPane fx:id="gameArea" maxHeight="700.0" maxWidth="900.0" minHeight="700.0" minWidth="900.0" onKeyPressed="#handleKeyPressed" prefHeight="700.0" prefWidth="900.0" stylesheets="@../css/wordle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.game.wordles.WordleController">
    <children>
       <VBox layoutX="200.0" maxHeight="700.0" maxWidth="900.0" minHeight="700.0" minWidth="900.0" prefHeight="700.0" prefWidth="900.0">
          <children>

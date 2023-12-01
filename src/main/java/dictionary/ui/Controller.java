@@ -120,7 +120,6 @@ public class Controller implements Initializable {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/lookupTab.fxml"));
             lookupArea = fxmlLoader.load();
             lookupTabController = fxmlLoader.getController();
-            lookupTabController.initialize();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

@@ -1,4 +1,4 @@
-package dictionary.ui;
+package dictionary.ui.game.wordles;
 
 import javafx.animation.FadeTransition;
 import javafx.scene.Scene;

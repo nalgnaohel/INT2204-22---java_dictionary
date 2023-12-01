@@ -43,7 +43,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="700.0" maxWidth="450.0" minHeight="700.0" minWidth="450.0" prefHeight="700.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.WordleStatsController">
+<VBox alignment="CENTER" maxHeight="700.0" maxWidth="450.0" minHeight="700.0" minWidth="450.0" prefHeight="700.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.game.GameStatsController">
    <children>
       <Label text="Statistics" textAlignment="JUSTIFY">
          <font>
@@ -99,7 +99,7 @@
                         <Insets bottom="10.0" />
                      </padding>
                   </Label>
-                  <Label text="Current streak">
+                  <Label fx:id="curStreakText" text="Current streak">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -116,7 +116,7 @@
                         <Insets bottom="10.0" />
                      </padding>
                   </Label>
-                  <Label alignment="CENTER" text="Longest streak">
+                  <Label fx:id="longestStreakText" alignment="CENTER" text="Longest streak">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -131,12 +131,12 @@
       <StackPane maxHeight="400.0" maxWidth="450.0" minHeight="450.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0">
          <children>
             <BarChart fx:id="barchart" animated="false" horizontalGridLinesVisible="false" legendVisible="false" maxHeight="450.0" maxWidth="450.0" minHeight="450.0" minWidth="450.0" prefHeight="450.0" prefWidth="450.0" titleSide="BOTTOM" verticalGridLinesVisible="false">
-              <xAxis>
-                <CategoryAxis fx:id="yAxis" side="LEFT" />
-              </xAxis>
-              <yAxis>
-                <NumberAxis label="xAxis" tickLabelsVisible="false" tickMarkVisible="false" fx:id="xAxis" />
-              </yAxis>
+               <xAxis>
+                  <NumberAxis label="xAxis" tickLabelsVisible="false" tickMarkVisible="false" fx:id="xAxis" />
+               </xAxis>
+               <yAxis>
+                  <CategoryAxis fx:id="yAxis" side="LEFT" />
+               </yAxis>
             </BarChart>
          </children>
       </StackPane>

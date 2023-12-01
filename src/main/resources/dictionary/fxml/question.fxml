@@ -38,7 +38,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="420.0" maxWidth="800.0" minHeight="420.0" minWidth="800.0" prefHeight="420.0" prefWidth="640.0" stylesheets="@../css/finding.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.QuestionController">
+<VBox maxHeight="420.0" maxWidth="800.0" minHeight="420.0" minWidth="800.0" prefHeight="420.0" prefWidth="640.0" stylesheets="@../css/finding.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.game.finding.QuestionController">
   <children>
     <AnchorPane maxHeight="420.0" maxWidth="800.0" minHeight="420.0" minWidth="800.0" prefHeight="420.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
          <children>

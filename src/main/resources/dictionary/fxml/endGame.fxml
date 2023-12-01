@@ -37,7 +37,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="600.0" maxWidth="300.0" minHeight="600.0" minWidth="300.0" prefHeight="600.0" prefWidth="300.0" stylesheets="@../css/wordle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.WordleEndController">
+<VBox alignment="CENTER" maxHeight="600.0" maxWidth="300.0" minHeight="600.0" minWidth="300.0" prefHeight="600.0" prefWidth="300.0" stylesheets="@../css/wordle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.ui.game.wordles.WordleEndController">
    <children>
       <Label fx:id="gameState" text="Label" textAlignment="CENTER" textFill="#322f2f">
          <font>

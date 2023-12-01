@@ -1,20 +1,15 @@
-package dictionary.ui;
+package dictionary.ui.game.wordles;
 
-import dictionary.Main;
 import dictionary.WordleMainWindow;
+import dictionary.backend.GameFunction;
 import dictionary.backend.WordleFunction;
-import javafx.event.ActionEvent;
+import dictionary.ui.game.GameStatsWindow;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.TilePane;
-import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -34,7 +29,7 @@ public class WordleController {
     private final ArrayList<String> allWords = new ArrayList<>();
     private String winningWord;
     private WordleMainWindow wordleMainWindow;
-    private WordleFunction wordleFunction = new WordleFunction();
+    private GameFunction wordleFunction = new WordleFunction();
     @FXML
     private AnchorPane gameArea;
 
@@ -227,9 +222,9 @@ public class WordleController {
                 updateCurrentRow(curRow);
                 wordleFunction.setGamesWon(wordleFunction.getGamesWon() + 1);
                 wordleFunction.setGamesPlayed(wordleFunction.getGamesPlayed() + 1);
-                wordleFunction.setCurrentStreak(wordleFunction.getCurrentStreak() + 1);
-                if (wordleFunction.getCurrentStreak() > wordleFunction.getLongestStreak()) {
-                    wordleFunction.setLongestStreak(wordleFunction.getCurrentStreak());
+                ((WordleFunction)wordleFunction).setCurrentStreak(((WordleFunction) wordleFunction).getCurrentStreak() + 1);
+                if (((WordleFunction) wordleFunction).getCurrentStreak() > ((WordleFunction) wordleFunction).getLongestStreak()) {
+                    ((WordleFunction) wordleFunction).setLongestStreak(((WordleFunction) wordleFunction).getCurrentStreak());
                 }
                 int old = wordleFunction.getNumOfGuess().get(curRow + 1);
                 wordleFunction.getNumOfGuess().put(curRow + 1, old + 1);
@@ -247,7 +242,7 @@ public class WordleController {
                 curRow++; curColumn = 0;
                 if (curRow == 5) {
                     wordleFunction.setGamesPlayed(wordleFunction.getGamesPlayed() + 1);
-                    wordleFunction.setCurrentStreak(0);
+                    ((WordleFunction)wordleFunction).setCurrentStreak(0);
                     wordleFunction.update();
                     try {
                         WordleEndWindow wordleEndWindow = new WordleEndWindow();
@@ -278,8 +273,8 @@ public class WordleController {
     }
 
     public void showStats() throws IOException {
-        WordleStatsWindow wordleStatsWindow = new WordleStatsWindow();
-        wordleStatsWindow.setWordleFunction(wordleFunction);
-        wordleStatsWindow.display();
+        GameStatsWindow gameStatsWindow = new WordleStatsWindow();
+        gameStatsWindow.setGameFunction(wordleFunction);
+        gameStatsWindow.display();
     }
 }

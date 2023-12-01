@@ -1,6 +1,6 @@
 package dictionary;
 
-import dictionary.ui.*;
+import dictionary.ui.game.finding.*;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.beans.binding.Bindings;
@@ -10,8 +10,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.HBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -51,10 +49,6 @@ public class FindingMainWindow {
 
     public Parent getRoot(){
         return root;
-    }
-
-    public Stage getGameStage() {
-        return this.gameStage;
     }
 
     public void quit() {
@@ -110,6 +104,10 @@ public class FindingMainWindow {
 
     public void setFindingStatsWindow(FindingStatsWindow findingStatsWindow) {
         this.findingStatsWindow = findingStatsWindow;
+    }
+
+    public Stage getGameStage() {
+        return gameStage;
     }
 
     public QuestionWindow getQuestionWindow() {

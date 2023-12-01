@@ -1,6 +1,6 @@
 package dictionary.backend;
 
-public class Word {
+public class Word implements Comparable<Word> {
     private final String wordTarget;
     private String wordMeaning;
     private boolean inHistory;
@@ -49,5 +49,10 @@ public class Word {
 
     public void setInHistory(boolean inHistory) {
         this.inHistory = inHistory;
+    }
+
+    @Override
+    public int compareTo(Word o) {
+        return this.wordTarget.compareTo(o.getWordTarget());
     }
 }

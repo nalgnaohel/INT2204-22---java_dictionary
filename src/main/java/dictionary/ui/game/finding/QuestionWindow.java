@@ -1,4 +1,4 @@
-package dictionary.ui;
+package dictionary.ui.game.finding;
 
 import dictionary.Main;
 import javafx.fxml.FXMLLoader;
@@ -18,6 +18,7 @@ public class QuestionWindow {
     public void display(final ArrayList<String> question) throws IOException {
         stage = new Stage();
         stage.initStyle(StageStyle.UNDECORATED);
+        stage.initOwner(findingController.getFindingMainWindow().getGameStage());
         stage.initModality(Modality.WINDOW_MODAL);
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/question.fxml"));
         Parent root = fxmlLoader.load();
@@ -27,6 +28,8 @@ public class QuestionWindow {
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
+        stage.setX(stage.getOwner().getX());
+        stage.setY(stage.getOwner().getY() + stage.getOwner().getHeight() - 450);
         stage.setHeight(450);
         stage.setWidth(800);
         stage.setResizable(false);

@@ -34,9 +34,10 @@ public abstract class Dictionary {
     public abstract ArrayList<String> getQuestion(int id);
 
     public String getInfoFromAPI(String target) {
-        API api = new DictAPI();
+        DictAPI api = new DictAPI();
         try {
-            return api.getNeededInfo(target);
+            api.work(target, "", "");
+            return api.getRes();
         } catch (IOException e) {
             System.out.println("Failed to use API!");
             throw new RuntimeException(e);
@@ -44,9 +45,9 @@ public abstract class Dictionary {
     }
 
     public void playTextSound(String target, String lang) {
-        API api = new GoogleAPI();
+        GoogleAPI api = new GoogleAPI();
         try {
-            api.playWordSound(target, lang);
+            api.work(target, lang, "");
         } catch (Exception e) {
             System.out.println("Failed to use API to play sound!");
             throw new RuntimeException(e);
@@ -55,10 +56,11 @@ public abstract class Dictionary {
 
     public String translateSentence(String langFrom, String langTo, String text) {
         //Tieng Anh thi String la "en", tieng Viet thi String la "vi".
-        API api = new TranslatorAPI();
+        TranslatorAPI api = new TranslatorAPI();
         try {
-            return api.translate(langFrom, langTo, text);
-        } catch (IOException e) {
+            api.work(text, langFrom, langTo);
+            return api.getRes();
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return "Cannot translate your text!";

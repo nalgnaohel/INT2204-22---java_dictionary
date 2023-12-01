@@ -1,10 +1,9 @@
-package dictionary.ui;
+package dictionary.ui.game.finding;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
-import org.w3c.dom.events.MouseEvent;
 
 import java.util.ArrayList;
 

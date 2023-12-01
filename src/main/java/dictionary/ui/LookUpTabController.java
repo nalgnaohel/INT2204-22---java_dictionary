@@ -8,6 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -17,12 +18,14 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Optional;
+import java.util.ResourceBundle;
 
 import static dictionary.Main.dict;
 
-public class LookUpTabController {
+public class LookUpTabController implements Initializable {
     private String currentWord = "";
     private String currentMeaning;
     private final ArrayList<String> wordsList = new ArrayList<>();
@@ -45,7 +48,8 @@ public class LookUpTabController {
     @FXML
     private Button editButton;
 
-    public void initialize() {
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
         ShowList("");
     }
 

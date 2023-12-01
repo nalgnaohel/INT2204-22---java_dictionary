@@ -8,11 +8,17 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
-public class TranslatorAPI extends API{
+public class TranslatorAPI implements API{
     private String apiName;
+    private String res;
     @Override
     public void setAPIName() {
         apiName = "https://script.google.com/macros/s/AKfycby3AOWmhe32TgV9nW-Q0TyGOEyCHQeFiIn7hRgy5m8jHPaXDl2GdToyW_3Ys5MTbK6wjg/exec";
+    }
+
+    @Override
+    public void work(String target, String langFrom, String langTo) throws Exception {
+        res = translate(langFrom, langTo, target);
     }
 
     public String translate(String langFrom, String langTo, String text) throws IOException {
@@ -32,5 +38,9 @@ public class TranslatorAPI extends API{
         }
         in.close();
         return res.toString();
+    }
+
+    public String getRes() {
+        return res;
     }
 }

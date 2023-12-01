@@ -1,4 +1,4 @@
-package dictionary.ui;
+package dictionary.ui.game.wordles;
 
 import dictionary.Main;
 import javafx.geometry.Insets;
