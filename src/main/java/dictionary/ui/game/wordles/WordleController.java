@@ -1,9 +1,9 @@
 package dictionary.ui.game.wordles;
 
-import dictionary.WordleMainWindow;
-import dictionary.backend.GameFunction;
-import dictionary.backend.WordleFunction;
-import dictionary.ui.game.GameStatsWindow;
+import dictionary.backend.game.GameFunction;
+import dictionary.backend.game.WordleFunction;
+import dictionary.ui.game.GameController;
+import dictionary.ui.game.GameHelpWindow;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
@@ -19,7 +19,7 @@ import java.util.Random;
 
 import static dictionary.Main.dict;
 
-public class WordleController {
+public class WordleController extends GameController {
 
     @FXML
     private TilePane wordsTilePane;
@@ -28,24 +28,20 @@ public class WordleController {
 
     private final ArrayList<String> allWords = new ArrayList<>();
     private String winningWord;
-    private WordleMainWindow wordleMainWindow;
-    private GameFunction wordleFunction = new WordleFunction();
     @FXML
     private AnchorPane gameArea;
 
-    public void setWordleMainWindow(WordleMainWindow wmw) {
-        this.wordleMainWindow = wmw;
+    public WordleController() {
+        this.gameFunction = new WordleFunction();
     }
-
     public void init() {
         initGrid(wordsTilePane);
         curRow = 0;
         curColumn = 0;
         winningWord = getRandomWord();
         System.out.println(winningWord);
-        wordleFunction.setHistoryPath("src/main/resources/data/wordle_history.txt");
-        wordleFunction.init();
-        //System.out.println(wordsTilePane.getChildren().get(0).getWidth());
+        gameFunction.setHistoryPath("src/main/resources/data/wordle_history.txt");
+        gameFunction.init();
     }
 
     public void initGrid(TilePane wordTilesPane) {
@@ -55,12 +51,9 @@ public class WordleController {
             cur.setMinHeight(50);
             cur.setMinHeight(50);
             cur.setMaxHeight(50);
-            cur.setPrefHeight(50);
-            cur.setPrefWidth(50);
             cur.getStyleClass().add("default-tile");
             wordTilesPane.getChildren().add(cur);
         }
-        System.out.println(wordTilesPane.getWidth() + " " + wordTilesPane.getHeight() + " " + wordTilesPane.getTileHeight() + " " + wordTilesPane.getTileWidth());
     }
 
     private void initAllWords() {
@@ -73,11 +66,8 @@ public class WordleController {
                 line = line.replace("\n", "");
                 allWords.add(line);
             }
-            //System.out.println("Done getting!");
-        } catch (IOException e) {
-            System.out.println("Cannot find the file!\n");
         } catch (Exception e) {
-            System.out.println("Something went wrong: " + e);
+            e.printStackTrace();
         }
     }
 
@@ -98,13 +88,12 @@ public class WordleController {
     private String getLabelText(int row, int col) {
         Label label = getLabel(row, col);
         if (label != null) {
-            return label.getText().toLowerCase(); //de tien ghep tra tu dien
+            return label.getText().toLowerCase();
         }
         return null;
     }
 
     private void setLabelText(int row, int col, String target) {
-        System.out.println("setLabelText call getLabel...");
         Label label = getLabel(row, col);
         if (label != null) {
             label.setText(target.toUpperCase());
@@ -156,7 +145,7 @@ public class WordleController {
                     styleClass = "correct-letter";
                 }
 
-                //update style
+                //updateToFiles style
                 label.getStyleClass().clear();
                 label.getStyleClass().setAll(styleClass);
             }
@@ -168,33 +157,25 @@ public class WordleController {
             if (event.getCode().isLetterKey()) {
                 handleLetterKey(event);
             } else if (event.getCode() == KeyCode.BACK_SPACE) {
-                System.out.println("Clear!");
                 handleBackspaceKey();
-            } else if (event.getCode() == KeyCode.SHIFT) {  //change to shift
-                System.out.println("Enter pressed...");
+            } else if (event.getCode() == KeyCode.ENTER) {
                 handleEnterKey();
-            } else {
-                System.out.println("Something else...");
             }
         }
     }
 
     private void handleLetterKey(KeyEvent event) {
-        //check current row is full
         System.out.println(event.getCode());
         if (getLabelText(curRow, curColumn).equals("")) {
-            //System.out.println("Before: " + curRow + " " +curColumn);
             setLabelText(curRow, curColumn, event.getText());
             setLabelStyleClass(curRow, curColumn, "tile-with-letter");
             if (curColumn < 4) {
                 curColumn++;
             }
-            //System.out.println("After: " + curRow + " " +curColumn);
         }
     }
 
     private void handleBackspaceKey() {
-        //System.out.println(curRow + " " + curColumn);
         if ((curColumn == 0 || curColumn == 4)
                 && !getLabelText(curRow, curColumn).equals("")) {
             setLabelText(curRow, curColumn, "");
@@ -207,28 +188,18 @@ public class WordleController {
             clearLabelStyleClass(curRow, curColumn);
             setLabelStyleClass(curRow, curColumn, "default-tile");
         }
-        //System.out.println(curRow + " " + curColumn);
     }
 
     private void handleEnterKey() {
-        System.out.println("Enter!");
         if (curColumn != 4 || (curColumn == 4 && getLabelText(curRow, curColumn).equals(""))) {
             System.out.println("Not enough characters!");
         } else {
             String rowWord = getCurrentRowWord(curRow);
             System.out.println(rowWord);
             if (rowWord.equals(winningWord)) {
-                //win case
                 updateCurrentRow(curRow);
-                wordleFunction.setGamesWon(wordleFunction.getGamesWon() + 1);
-                wordleFunction.setGamesPlayed(wordleFunction.getGamesPlayed() + 1);
-                ((WordleFunction)wordleFunction).setCurrentStreak(((WordleFunction) wordleFunction).getCurrentStreak() + 1);
-                if (((WordleFunction) wordleFunction).getCurrentStreak() > ((WordleFunction) wordleFunction).getLongestStreak()) {
-                    ((WordleFunction) wordleFunction).setLongestStreak(((WordleFunction) wordleFunction).getCurrentStreak());
-                }
-                int old = wordleFunction.getNumOfGuess().get(curRow + 1);
-                wordleFunction.getNumOfGuess().put(curRow + 1, old + 1);
-                wordleFunction.update();
+                gameFunction.updateWinCase(curRow + 1);
+                gameFunction.updateToFiles();
                 try {
                     WordleEndWindow wordleEndWindow = new WordleEndWindow();
                     wordleEndWindow.setWordleController(this);
@@ -236,14 +207,12 @@ public class WordleController {
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-            } else if (!dict.lookUpWord(rowWord).equals("Not found!")) {
-                System.out.println("Not winning word!");
+            } else if (!dict.lookUpWord(rowWord).equals("Not found!\n")) {
                 updateCurrentRow(curRow);
                 curRow++; curColumn = 0;
                 if (curRow == 5) {
-                    wordleFunction.setGamesPlayed(wordleFunction.getGamesPlayed() + 1);
-                    ((WordleFunction)wordleFunction).setCurrentStreak(0);
-                    wordleFunction.update();
+                    gameFunction.updateLoseCase();
+                    gameFunction.updateToFiles();
                     try {
                         WordleEndWindow wordleEndWindow = new WordleEndWindow();
                         wordleEndWindow.setWordleController(this);
@@ -252,10 +221,10 @@ public class WordleController {
                         throw new RuntimeException(e);
                     }
                 } else {
-                    ShowText.display(wordleMainWindow.getGameStage(), true);
+                    ShowText.display(gameMainWindow.getGameStage(), true);
                 }
-            } else { //not a valid word
-                ShowText.display(wordleMainWindow.getGameStage(), false);
+            } else {
+                ShowText.display(gameMainWindow.getGameStage(), false);
             }
         }
     }
@@ -264,17 +233,4 @@ public class WordleController {
         init();
     }
 
-    public void quit() {
-        wordleMainWindow.quit();
-    }
-
-    public void showHelp() {
-        WordleHelpWindow.display();
-    }
-
-    public void showStats() throws IOException {
-        GameStatsWindow gameStatsWindow = new WordleStatsWindow();
-        gameStatsWindow.setGameFunction(wordleFunction);
-        gameStatsWindow.display();
-    }
 }

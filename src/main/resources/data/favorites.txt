@@ -1,80 +1,3 @@
-| breath
-/breθ/
-* danh từ
-- hơi thở, hơi
-= to take a deep breath+ hít một hơi dài
-= to hold (coatch) one's breath+ nín hơi, nín thở
-= to lose one's breath+ hết hơi
-= to recover one's breath+ lấy lại hơi
-= to take breath+ nghỉ lấy hơi
-= out of breath+ hết hơi, đứt hơi
-= all in a breath; all in the same breath+ một hơi, một mạch
-- cơn gió nhẹ; làn hương thoảng
-= there wasn't a breath of air+ chẳng có tí gió nào
-- tiếng thì thào
-!breath of life (nostrils)
-- điều cần thiết, điều bắt buộc
-!to keep one's breath to cool one's porridge
-- (xem) porridge
-!to speak under one's breath
-- nói khẽ, nói thì thầm, nói thì thào
-!to take one's breath away
-- làm ngạc nhiên, làm kinh ngạc
-!to waste one's breath
-- hoài hơi, phí lời
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| freak
-/fri:k/
-* danh từ
-- tính đồng bóng, tính hay thay đổi
-= out of mere freak+ chỉ vì tính đồng bóng
-- quái vật; điều kỳ dị
-= a freak of nature+ một quái vật
-* ngoại động từ
-- làm lốm đốm, làm có vệt
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 | like
 /laik/
 * tính từ
@@ -156,6 +79,43 @@ like
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| like-mindedness
+/'laik'maindidnis/
+* danh từ
+- sự cùng một khuynh hướng, sự cùng một mục đích, sự có ý kiến giống nhau; sự giống tính nhau
+
+
 | freak out
 /'fri:kaut/
 * nội động từ,  (từ Mỹ,nghĩa Mỹ),  (từ lóng)
@@ -184,81 +144,20 @@ like
 
 
 
-| start
-/stɑ:t/
-* danh từ
-- lúc bắt đầu, buổi đầu
-= it was difficult work at the start+ lúc bắt đầu công việc rất khó
-- dị bắt đầu, cơ hội bắt đầu (một công cuộc gì)
-- sự khởi hành, sự ra đi, sự lên đường
-= to make an early start+ đi sớm
-- chỗ khởi hành, chỗ xuất phát; giờ xuất phát (của cuộc đua); lệnh bắt đầu, lệnh xuất phát (của cuộc đua)
-- sự giật mình; sự giật nảy người (vì đau...)
-- sự chấp (trong thể thao)
-= I'll give him 40 meters start+ tôi sẽ chấp cậu ấy 40 mét
-- thế lợi
-= to get the start of somebody+ lợi thế hơn ai
-!a rum start
-- (thông tục) một sự xảy ra kỳ lạ
-!by fits and stars
-- không đều, thất thường, từng đợt một
-* nội động từ
-- bắt đầu (đi, làm việc...)
-= to start on journey+ bắt đầu lên đường, khởi hành
-- chạy (máy)
-- giật mình
-= to start out of one's sleep+ giật mình thức dậy
-- rời ra, long ra (gỗ)
-* ngoại động từ
-- bắt đầu
-= to start work+ bắt đầu công việc
-- làm (ai, cái gì) bắt đầu, khiến (ai) phải
-= this started me coughing+ điều đó làm tôi phát ho lên
-- ra hiệu xuất phát (cho người đua)
-- mở, khởi động (máy)
-- khêu, gây, nêu ra
-= to start quarrel+ gây chuyện cãi nhau
-= to start a problem+ nêu ra một vấn đề
-- làm tách ra, làm rời ra, làm long ra (gỗ)
-- giúp đỡ, nâng đỡ (ai, trong công việc)
-- đuổi (thú săn) ra khỏi hang
-- (từ cổ,nghĩa cổ) (như) startle
-!to start aside
-- né vội sang một bên
-!to start in
-- (thông tục) bắt đầu làm
-!to start out
-- khởi hành
-- khởi công, bắt đầu tiến hành (công việc gì)
-!to start up
-- thình lình đứng dậy
-- nảy ra, nổi lên; nảy ra trong óc
-= many difficulties have started up+ nhiều khó khăn nảy ra
-- khởi động (máy)
-!to start with
-- trước hết
-- lúc bắt đầu
-= we had six members to start with+ lúc bắt đầu chúng tôi có sáu hội viên
-
-start
-- xuất phát, khởi động
 
 
 
 
 
 
-| fry
-/frai/
-* danh từ
-- cá mới nở, cá bột
-- cá hồi hai năm
-* danh từ
-- thịt rán
-* động từ
-- rán, chiên
-!to have other fish to fry
-- fish
+
+
+
+
+
+
+
+
 
 
 

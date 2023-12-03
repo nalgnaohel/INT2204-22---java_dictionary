@@ -58,7 +58,7 @@
                      </VBox.margin>
                   </HBox>
                   <Separator prefHeight="0.0" prefWidth="129.0" />
-                  <ListView id="listview" fx:id="listview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#SelectItem" prefHeight="602.0" prefWidth="200.0" stylesheets="@../css/LookUpstyle.css">
+                  <ListView id="listview" fx:id="listView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#SelectItem" prefHeight="602.0" prefWidth="200.0" stylesheets="@../css/LookUpstyle.css">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>

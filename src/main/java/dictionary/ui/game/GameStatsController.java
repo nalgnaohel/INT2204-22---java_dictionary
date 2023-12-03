@@ -1,7 +1,7 @@
 package dictionary.ui.game;
 
-import dictionary.backend.GameFunction;
-import dictionary.backend.WordleFunction;
+import dictionary.backend.game.GameFunction;
+import dictionary.backend.game.WordleFunction;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.chart.BarChart;
@@ -59,17 +59,13 @@ public class GameStatsController {
             curStreakText.setText("");
         }
 
-        barchart.setTitle("Number of Right Answer to Win Distribution");
+        barchart.setTitle(gameStatsWindow.getBarChartTitle());
         ArrayList<String> al = new ArrayList<>();
         for (int i = 1; i <= gameFunction.getMaxTries(); i++) {
             //System.out.println(i + ": " + findingFunction.getNumOfGuess().get(i));
             al.add(Integer.toString(i));
         }
         yAxis.setCategories(FXCollections.observableArrayList(al));
-        for (String s : yAxis.getCategories()) {
-            System.out.print(s + " ");
-        }
-        System.out.println("");
         XYChart.Series<Number, String> series = new XYChart.Series<>();
         for (Map.Entry<Integer, Integer> curSet :
                 gameFunction.getNumOfGuess().entrySet()) {

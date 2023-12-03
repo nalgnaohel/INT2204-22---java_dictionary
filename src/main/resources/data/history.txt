@@ -1,6 +1,57 @@
-| crack-down
+| prankish
+/'præɳkiʃ/
+* tính từ
+- hay chơi ác, hay chơi khăm, hay đùa nhả
+- hay trục trặc (máy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+| prankishly
+- xem prankish
+
+
+
+
+
+
+
+
+
+
+
+
+
+| prankishness
+/'præɳkiʃnis/
+* danh từ
+- tính hay chơi ác, tính hay chơi khăm, tính hay đùa nhả
+- tính hay trục trặc (máy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+| prankster
 *danh từ
-- sự trừng trị thẳng tay, sự đàn áp không nương tay
+- người hay tinh nghịch, người hay đùa cợt, người chơi khăm
 
 
 
@@ -14,326 +65,115 @@
 
 
 
-
-
-
-
-
-
-
-
-
-| bracket
-/'brækit/
-* danh từ
-- (kiến trúc) côngxon, rầm chia
-- dấu ngoặc đơn; dấu móc; dấu ngoặc ôm
-= to put between brackets+ để trong ngoặc đơn; để trong móc; để trong dấu ngoặc ôm
-- (quân sự) giá đỡ nòng (súng đại bác)
-- (quân sự) khoảng cách giữa hai phát đạn trên và dưới (mục tiêu) để quan trắc
-!income bracket
-- (từ Mỹ,nghĩa Mỹ) nhóm người đóng thuế xếp theo thu hoạch
-* ngoại động từ
-- gộp lại trong dấu ngoặc; đặt trong dấu ngoặc
-- xếp (hai hay nhiều người) đồng hạng
-= A and B were bracketed for the fierst prize+ A và B đều được xếp vào giải nhất
-- (quân sự) bắn hai phát đạn trên và dưới (mục tiêu) để quan trắc
-
-bracket
-- (Tech) dấu ngoặc; thanh chống
-
-bracket
-- dấu ngoặc
-- curly b. dấu ngoặc {}
-- round b. dấu ngoặc ( )
-- square b. dấu ngoặc [ ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| serious
-/'siəriəs/
+| long
+/lɔɳ/
 * tính từ
-- đứng đắn, nghiêm trang, nghiêm nghị
-= a serious young person+ một thanh niên đứng đắn
-= to have a serious look+ có vẻ nghiêm trang, trông nghiêm nghị
-- hệ trọng, quan trọng, không thể coi thường được; nghiêm trọng, trầm trọng, nặng
-= this is a serious matter+ đây là một vấn đề quan trọng
-= serious illness+ bệnh nặng, bệnh trầm trọng
-= serious defeat+ sự thất bại nặng
-= serious casualties+ tổn thương nặng
-- đáng sợ, đáng gờm
-= a serious rival+ một đối thủ đáng gờm
-- thành thật, thật sự, không đùa
-= are you serious?+ anh có nói thật không?
-= a serious attempt+ một cố gắng thật sự
-- (thuộc) tôn giáo, (thuộc) đạo lý
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| black
-/blæk/
-* tính từ
-- đen
-- mặc quần áo đen
-- da đen
-= a black woman+ người đàn bà da đen
-- tối; tối tăm
-= black as ink+ tối như mực
-= black night+ đêm tối tăm
-- dơ bẩn, bẩn thỉu
-= black hands+ những bàn tay dơ bẩn
-- đen tối, ảm đạm, buồn rầu, vô hy vọng
-= things look black+ sự việc có vẻ đen tối vô hy vọng
-= black tidings+ tin buồn
-- xấu xa, độc ác; kinh tởm, ghê tởm
-= black crimes+ những tội ác ghê tởm
-!to beat black and blue
-- (xem) beat
-!to give someone a black look
-- lườm nguýt người nào
-!he is not so balck as he is painted
-- nó cũng không đến nỗi xấu (tồi tệ) như người ta nói đâu
+- dài (không gian, thời gian); xa, lâu
+= a long journey+ một cuộc hành trình dài
+= to live a long life+ sống lâu
+- kéo dài
+= a one-month long leave+ thời gian nghỉ phép (kéo dài) một tháng
+- cao; nhiều, đáng kể
+= a long price+ giá cao
+= for long years+ trong nhiều năm
+= a long family+ gia đình đông con
+- dài dòng, chán
+= what a long speech!+ bài nói sao mà dài dòng thế!
+- quá, hơn
+= a long hundred+ (thương nghiệp) một trăm hai mươi
+- chậm, chậm trễ, lâu
+= don't be long+ đừng chậm nhé
+!to bid a farewell
+- tạm biệt trong một thời gian dài
+!to draw the long bow
+- (xem) bow
+!to have a long arm
+- mạnh cánh có thế lực
+!to have a long face
+- mặt dài ra, chán nản, buồn xỉu
+!to have a long head
+- linh lợi; láu lỉnh; nhìn xa thấy rộng
+!to have a long tongue
+- hay nói nhiều
+!to have a long wind
+- trường hơi, có thể chạy lâu mà không nghỉ; có thể nói mãi mà không mệt
+!to make a long arm
+- với tay ai (để lấy cái gì)
+!to make a long nose
+- vẫy mũi chế giễu
+!to take long views
+- biết nhìn xa nghĩ rộng; nhìn thấu được vấn đề
+!in the long run
+- sau cùng, sau rốt, kết quả là, rốt cuộc
+!of long standing
+- có từ lâu đời
+!one's long home
+- (xem) home
 * danh từ
-- màu đen
-- sơn đen
-- quần áo đen, áo tang
-= to be in black+ mặc quần áo đen; mặc áo tang
-- người da đen
-- bụi bẩn, mồ hóng
-* ngoại động từ
-- làm đen, bôi đen
-- đánh xi đen (giày)
-!to black out
-- bôi đen để xoá đi
-- (sân khấu) tắt đèn
-- che kín ánh đèn, tắt đèn phòng không
-- thoáng ngất đi; thoáng mất trí nhớ; thoáng hoa mắt
-- (từ Mỹ,nghĩa Mỹ) che giấu đi, ỉm đi
-- (từ Mỹ,nghĩa Mỹ) kiểm duyệt
-
-black
-- (Tech) mầu đen; làm đen (đ)
-
-black
-- đen
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| awfulness
-- xem awful
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| fryer
-* danh từ:
-- cái chảo rán
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| cat
-* danh từ:
-- con mồn lèo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| short
-/ʃɔ:t/
-* tính từ
-- ngắn, cụt
-= a short story+ truyện ngắn
-= a short way off+ không xa
-= to have a short memory+ có trí nhớ kém
-- lùn, thấp (người)
-- thiển cận, chỉ thấy việc trước mắt
-= to take short views+ thiển cận, không nhìn xa trông rộng
-- thiếu, không có, hụt, không tới
-= short of tea+ thiếu chè
-= to be short of hands+ thiếu nhân công
-= this book is short of satisfactory+ quyển sách này còn nhiều thiếu sót
-- gọn, ngắn, tắt
-= in short+ nói tóm lại
-= he is called Bob for short+ người ta gọi tắt nó là Bóp
-- vô lễ, xấc, cộc lốc
-= to be short with somebody+ vô lễ với ai
-- giòn (bánh)
-- bán non, bán trước khi có hàng để giao
-- (ngôn ngữ học) ngắn (nguyên âm, âm tiết)
-!an escape short of marvellous
-- một sự trốn thoát thật là kỳ lạ
-!to make short work of x work something short
-- một cốc rượu mạnh
-* phó từ
-- bất thình lình, bất chợt
-= to bring (pull) up short+ ngừng lại bất thình lình
-= to stop short+ chấm dứt bất thình lình, không tiếp tục đến cùng; chặn đứng
-= to take somebody up short; to cut somebody short+ ngắt lời ai
-- trước thời hạn thông thường, trước thời hạn chờ đợi
-= to sell short+ bán non, bán trước khi có hàng để giao
-= short of+ trừ, trừ phi
-* danh từ
-- (ngôn ngữ học) nguyên âm ngắn; âm tiết ngắn
-- phim ngắn
-- (điện học),  (thông tục) mạch ngắn, mạch chập
-- cú bắn không tới đích
-- (thông tục) cốc rượu mạnh
-- (số nhiều) quần soóc
-- (số nhiều) những mảnh thừa, những mảnh vụn (cắt ra khi sản xuất cái gì)
-- sự bán non, sự bán trước khi có hàng để giao
+- thời gian lâu
+= before long+ không bao lâu, chẳng bao lâu
+= it is long since I heard of him+ đã từ lâu tôi không được tin gì của anh ta
+- (thông tục) vụ nghỉ hè
 !the long and the short of it
-- (xem) long
-* ngoại động từ
-- (thông tục) làm ngắn mạch, làm chập mạch ((cũng) short-circuit)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| bread
-/bred/
-* ngoại động từ
-- làm thủng
-- (quân sự) chọc thủng, phá vỡ (tuyến phòng thủ)
+- tóm lại; tất cả vấn đề thâu tóm lại, nói gọn lại
+* phó từ
+- lâu, trong một thời gian dài
+= you can stay here as long as you like+ anh có thể ở lại đây bao lâu tuỳ theo ý thích
+- suốt trong cả một khoảng thời gian dài
+= all day long+ suốt ngày
+= all one's life long+ suốt đời mình
+- (+ ago,  after,  before,  since) lâu, đã lâu, từ lâu
+= that happened long ago+ việc đó xảy ra đã từ lâu
+= I knew him long before I knew+ tôi biết nó từ lâu trước khi biết anh
+!so long!
+- (từ Mỹ,nghĩa Mỹ) tạm biệt!
+!so long as
+!as long as
+- miễn là, chỉ cần, với điều kiện là
+- chừng nào mà
+!to be long
+- (+ động tính từ hiện tại) mãi mới
+= to be long finding something+ mãi mới tìm ra cái gì
 * nội động từ
-- nhảy lên khỏi mặt nước (cá voi)
+- nóng lòng, mong mỏi, ước mong, ao ước
+= I long to see him+ tôi nóng lòng được gặp nó
+= I long for you letter+ tôi mong mỏi thư anh
+
+long
+- dài // kéo dài
+
+
+
+
+
+
+
+
+
+
+
+
+
+| long drink
+*danh từ
+- lượng thức uống rót đầy một cốc
+
+
+
+
+
+
+
+
+
+
+
+
+
+| long ears
+/'lɔɳiəz/
 * danh từ
-- bánh mì
-= a loaf of bread+ ổ bánh mì
-- (nghĩa bóng) miếng ăn, kế sinh nhai
-= daily bread+ miếng ăn hàng ngày
-!bread and butter
-- bánh mì phết bơ
-- miếng ăn; kế sinh nhai
-!bread and cheese
-- miếng ăn; kế sinh nhai
-- cuộc sống thanh đạm
-!bread buttered on both sides
-- sự phong lưu, sự sung túc
-!to earn (make) one's bread
-- kiếm ăn, kiếm sống
-!to eat the bread of affiction
-- phiền não, sầu khổ, đau buồn
-!to eat the bread of idleness
-- nhàn rỗi, vô công rỗi nghề
-!to have one's bread buttered for life
-- suốt đời sống dư dật sung túc
-!to know which side one's bread is buttered
-- (xem) butter
-!to live on bread and chesse
-- sống đạm bạc
-!to quarrel with one's bread and butter
-- (xem) quarel
-!to take the bread out of someone's mouth
-- lấy mất kế sinh nhai của ai, cướp cơm chim của ai
+- sự ngu độn
 
 
 
@@ -347,19 +187,27 @@ black
 
 
 
-
-| brute
-/bru:t/
+| long greens
+/'lɔɳ'gri:nz/
 * danh từ
-- súc vật, thú vật
-- cục súc, kẻ vũ phu
-- thú tính (trong con người)
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tiền giấy
+
+
+
+
+
+
+
+
+
+
+
+
+
+| likeable
+/'laikəbl/
 * tính từ
-- (thuộc) súc vật
-- cục súc, vũ phu
-= brute strength+ sức mạnh vũ phu
-- hung ác, tàn bạo
-- (thuộc) xác thịt, nhục dục
+- dễ thương, đáng yêu
 
 
 
@@ -373,41 +221,70 @@ black
 
 
 
-
-| trochophore
-*danh từ
-- (động vật học) luân trùng; ấu trùng bánh xe
-
-
-
-
-
-
-
-
-
-
-| troop
-/tru:p/
+| likelihood
+/'laiklihud/
 * danh từ
-- đoàn, lũ, đàn, đám, bọn, toán
-= a troop of children+ một lũ trẻ con
-- đội hướng đạo sinh
-- (quân sự) phân đội kỵ binh (gồm 60 người do một đại uý chỉ huy)
-- (số nhiều) quân, bộ đội; lính
-= three thousand troops+ ba nghìn quân
-- (từ cổ,nghĩa cổ) gánh (hát...)
+- sự có thể đúng, sự có thể thật
+= in all likelihood+ có thể, có nhiều khả năng
+
+likelihood
+- (thống kê) hợp lý
+- maximum l. (thống kê) hợp lý cực đại
+
+
+
+
+
+
+
+
+
+
+
+
+
+| likeliness
+/'laiklihud/
+* danh từ
+- sự có thể đúng, sự có thể thật
+= in all likelihood+ có thể, có nhiều khả năng
+
+
+
+
+
+
+
+
+
+
+
+
+
+| o'clock
+/klɔk/
+* danh từ
+- đường chỉ viền ở cạnh bít tất
+- đồng hồ
+!o'clock
+- giờ
+= what o' clock is it?+ mấy giờ rồi
+!like a clock
+- đều đặn, chạy đều, trơn tru, trôi chảy
+= everything went like a clock+ mọi việc đều trôi chảy; mọi việc vẫn chạy đều
+!to put (set) back the clock
+- (nghĩa bóng) quay lại thời kỳ đã qua; đi ngược lại bánh xe lịch sử, ngăn chặn sự phát triển
+!to work round the clock
+- làm việc suốt 12 tiếng; làm việc suốt 24 tiếng
 * nội động từ
-- xúm lại, lũ lượt kéo đến; đi từng đàn từng lũ
-= the children trooped round him+ trẻ con kéo đến xúm lại quanh anh ta
+- (thể dục,thể thao) bấm giờ (trong một cuộc chạy đua)
+- ghi giờ
+= to clock in+ ghi giờ đến làm
+= to clock out+ ghi giờ về (ở nhà máy)
 * ngoại động từ
-- (quân sự) phân thành phân đội kỵ binh
-!to toop off (away)
-- lũ lượt kéo đi
-!to troop together
-- tập trung đông
-!to troop up
-- lũ lượt kéo đến
+- (thể dục,thể thao) bấm giờ (một cuộc chạy đua)
+- (thể dục,thể thao) chạy (đi...) mất... (bao nhiêu thời gian)
+= he clocked 11 seconds for the 100 meters+ anh ta chạy 100 mét mất 11 giây
 
 
 
@@ -418,357 +295,158 @@ black
 
 
 
-| tron
-*danh từ
-- (Xcôtlân) chợ
-- (Xcôtlân) cái cân dùng ở chợ
 
 
 
-
-
-
-
-
-
-
-| trone
-*danh từ
-- (Xcôtlân) xem tron
-
-
-
-
-
-
-
-
-
-
-| trona
-*danh từ
-- (khoáng vật học) trona
-
-
-
-
-
-
-
-
-
-
-| trodden
-/tred/
+| pom
+/pɔm/
 * danh từ
-- bước đi, cách đi, dáng đi
-= a firm tread+ dáng đi vững chắc
-- tiếng chân bước
-= heavy tread+ tiếng chân bước nặng nề
-- (động vật học) sự đạp mái
-- mặt bậc cầu thang
-- tấm (cao su...) phủ bậc cầu thang
-- đế ủng
-- Talông (lốp xe)
-- mặt đường ray
-- phôi (trong quả trứng)
-- khoảng cách bàn đạp (xe đạp); khoảng cách trục (xe ô tô)
-* động từ trod; trodden
-- đi, bước lên, giẫm lên, đặt chân lên
-= to tread heavily+ đi nặng nề
-= to tread unknown ground+ bước chân lên một mảnh đất xa lạ
-= don't tread on the flowers+ đừng giẫm lên hoa
-- đạp (nho để làm rượu...)
-- đạp mái (gà)
-!to tread down
-- đạp lên, giẫm lên; (nghĩa bóng) chà đạp, giày xéo, áp chế; khinh rẻ
-!to tread in
-- dận lún xuống, đạp lún xuống
-!to tread out
-- lấy chân di cho tắt, giẫm cho tắt (ngọn lửa); (nghĩa bóng) dập tắt, trấn áp (cuộc nổi dậy)
-- đạp (nho để làm rượu...)
-!to tread lightly
-- đi nhẹ nhàng; (nghĩa bóng) làm việc thận trọng dè dặt; đề cập một cách dè dặt (đến một vấn đề khó khăn)
-!to tread in someone's footsteps
-- theo vết chân ai, bắt chước ai
-!to tread on someone's corns (toes)
-- giẫm lên ngón chân ai; (nghĩa bóng) làm mếch lòng ai, chạm lòng tự ái của ai
-!to tead on the heels of
-- bám sát, theo sát gót
-- theo dõi (sự việc)
-!to tread on air
-- mừng rơn, sướng rơn
-!to tead on (as on) eggs
-- đi từng bước dè dặt thận trọng như đi trên trứng; hành động thận trọng dè dặt
-!to tread on somebody's neck
-- đè đầu cưỡi cổ ai, chà đạp ai, đàn áp ai, trấn áp ai
-!to tread the stage (the boards)
-- là diễn viên sân khấu
-!to tread under foot
-- (nghĩa bóng) chà đạp, giày xéo; khinh rẻ
-!to tread water
-- bơi đứngtread /tred/
+- (viết tắt) của Pomeranian
+
+
+
+
+
+
+
+
+
+
+
+
+
+| on behalf
+- thay mặt, nhận danh
+
+
+| pride
+/praid/
 * danh từ
-- bước đi, cách đi, dáng đi
-= a firm tread+ dáng đi vững chắc
-- tiếng chân bước
-= heavy tread+ tiếng chân bước nặng nề
-- (động vật học) sự đạp mái
-- mặt bậc cầu thang
-- tấm (cao su...) phủ bậc cầu thang
-- đế ủng
-- Talông (lốp xe)
-- mặt đường ray
-- phôi (trong quả trứng)
-- khoảng cách bàn đạp (xe đạp); khoảng cách trục (xe ô tô)
-* động từ trod; trodden
-- đi, bước lên, giẫm lên, đặt chân lên
-= to tread heavily+ đi nặng nề
-= to tread unknown ground+ bước chân lên một mảnh đất xa lạ
-= don't tread on the flowers+ đừng giẫm lên hoa
-- đạp (nho để làm rượu...)
-- đạp mái (gà)
-!to tread down
-- đạp lên, giẫm lên; (nghĩa bóng) chà đạp, giày xéo, áp chế; khinh rẻ
-!to tread in
-- dận lún xuống, đạp lún xuống
-!to tread out
-- lấy chân di cho tắt, giẫm cho tắt (ngọn lửa); (nghĩa bóng) dập tắt, trấn áp (cuộc nổi dậy)
-- đạp (nho để làm rượu...)
-!to tread lightly
-- đi nhẹ nhàng; (nghĩa bóng) làm việc thận trọng dè dặt; đề cập một cách dè dặt (đến một vấn đề khó khăn)
-!to tread in someone's footsteps
-- theo vết chân ai, bắt chước ai
-!to tread on someone's corns (toes)
-- giẫm lên ngón chân ai; (nghĩa bóng) làm mếch lòng ai, chạm lòng tự ái của ai
-!to tead on the heels of
-- bám sát, theo sát gót
-- theo dõi (sự việc)
-!to tread on air
-- mừng rơn, sướng rơn
-!to tead on (as on) eggs
-- đi từng bước dè dặt thận trọng như đi trên trứng; hành động thận trọng dè dặt
-!to tread on somebody's neck
-- đè đầu cưỡi cổ ai, chà đạp ai, đàn áp ai, trấn áp ai
-!to tread the stage (the boards)
-- là diễn viên sân khấu
-!to tread under foot
-- (nghĩa bóng) chà đạp, giày xéo; khinh rẻ
-!to tread water
-- bơi đứng
+- sự kiêu hãnh, sự hãnh diện; niềm kiêu hãnh, niềm hãnh diện, tính tự cao, tính tự phụ, tính kiêu căng
+= false pride+ tính tự ái; tính kiêu căng ngạo mạn; tính hư danh, tính hiếu danh
+= he is his father's pride+ anh ta là niềm kiêu hãnh của ông bố
+- lòng tự trọng ((cũng) proper pride); lòng tự hào về công việc của mình
+- độ đẹp nhất, độ rực rỡ nhất, độ chín muồi, độ phát triển nhất
+= in the full pride of youth+ ở tuổi thanh xuân phơi phới
+= a peacock in his pride+ con công đang xoè đuôi
+= in pride of grease+ béo, giết thịt được rồi
+- tính hăng (ngựa)
+- (văn học) sự tráng lệ, sự huy hoàng, sự lộng lẫy
+- đàn, bầy
+= a pride of lions+ đàn sư tử
+!pride of the morning
+- sương lúc mặt trời mọc
+!pride of place
+- địa vị cao quý
+- sự tự phụ về địa vị cao quý của mình; sự ngạo mạn
+!pride will have a fall
+- (xem) fall
+!to put one's pride in one's pocket
+!to swallow one's pride
+- nén tự ái, đẹp lòng tự ái
+* phó từ (+ on,  upon)
+- lấy làm kiêu hãnh (về cái gì...)
+- lấy làm tự hào (về việc gì...)
 
 
+| prideful
+/'praidful/
+* tính từ
+- (Ê-cốt) đầy kiêu hãnh; tự cao, tự phụ
+- tự hào
 
 
-
-
-
-
-
-
-| trod
-/tred/
+| pause
+/pɔ:z/
 * danh từ
-- bước đi, cách đi, dáng đi
-= a firm tread+ dáng đi vững chắc
-- tiếng chân bước
-= heavy tread+ tiếng chân bước nặng nề
-- (động vật học) sự đạp mái
-- mặt bậc cầu thang
-- tấm (cao su...) phủ bậc cầu thang
-- đế ủng
-- Talông (lốp xe)
-- mặt đường ray
-- phôi (trong quả trứng)
-- khoảng cách bàn đạp (xe đạp); khoảng cách trục (xe ô tô)
-* động từ trod; trodden
-- đi, bước lên, giẫm lên, đặt chân lên
-= to tread heavily+ đi nặng nề
-= to tread unknown ground+ bước chân lên một mảnh đất xa lạ
-= don't tread on the flowers+ đừng giẫm lên hoa
-- đạp (nho để làm rượu...)
-- đạp mái (gà)
-!to tread down
-- đạp lên, giẫm lên; (nghĩa bóng) chà đạp, giày xéo, áp chế; khinh rẻ
-!to tread in
-- dận lún xuống, đạp lún xuống
-!to tread out
-- lấy chân di cho tắt, giẫm cho tắt (ngọn lửa); (nghĩa bóng) dập tắt, trấn áp (cuộc nổi dậy)
-- đạp (nho để làm rượu...)
-!to tread lightly
-- đi nhẹ nhàng; (nghĩa bóng) làm việc thận trọng dè dặt; đề cập một cách dè dặt (đến một vấn đề khó khăn)
-!to tread in someone's footsteps
-- theo vết chân ai, bắt chước ai
-!to tread on someone's corns (toes)
-- giẫm lên ngón chân ai; (nghĩa bóng) làm mếch lòng ai, chạm lòng tự ái của ai
-!to tead on the heels of
-- bám sát, theo sát gót
-- theo dõi (sự việc)
-!to tread on air
-- mừng rơn, sướng rơn
-!to tead on (as on) eggs
-- đi từng bước dè dặt thận trọng như đi trên trứng; hành động thận trọng dè dặt
-!to tread on somebody's neck
-- đè đầu cưỡi cổ ai, chà đạp ai, đàn áp ai, trấn áp ai
-!to tread the stage (the boards)
-- là diễn viên sân khấu
-!to tread under foot
-- (nghĩa bóng) chà đạp, giày xéo; khinh rẻ
-!to tread water
-- bơi đứngtread /tred/
-* danh từ
-- bước đi, cách đi, dáng đi
-= a firm tread+ dáng đi vững chắc
-- tiếng chân bước
-= heavy tread+ tiếng chân bước nặng nề
-- (động vật học) sự đạp mái
-- mặt bậc cầu thang
-- tấm (cao su...) phủ bậc cầu thang
-- đế ủng
-- Talông (lốp xe)
-- mặt đường ray
-- phôi (trong quả trứng)
-- khoảng cách bàn đạp (xe đạp); khoảng cách trục (xe ô tô)
-* động từ trod; trodden
-- đi, bước lên, giẫm lên, đặt chân lên
-= to tread heavily+ đi nặng nề
-= to tread unknown ground+ bước chân lên một mảnh đất xa lạ
-= don't tread on the flowers+ đừng giẫm lên hoa
-- đạp (nho để làm rượu...)
-- đạp mái (gà)
-!to tread down
-- đạp lên, giẫm lên; (nghĩa bóng) chà đạp, giày xéo, áp chế; khinh rẻ
-!to tread in
-- dận lún xuống, đạp lún xuống
-!to tread out
-- lấy chân di cho tắt, giẫm cho tắt (ngọn lửa); (nghĩa bóng) dập tắt, trấn áp (cuộc nổi dậy)
-- đạp (nho để làm rượu...)
-!to tread lightly
-- đi nhẹ nhàng; (nghĩa bóng) làm việc thận trọng dè dặt; đề cập một cách dè dặt (đến một vấn đề khó khăn)
-!to tread in someone's footsteps
-- theo vết chân ai, bắt chước ai
-!to tread on someone's corns (toes)
-- giẫm lên ngón chân ai; (nghĩa bóng) làm mếch lòng ai, chạm lòng tự ái của ai
-!to tead on the heels of
-- bám sát, theo sát gót
-- theo dõi (sự việc)
-!to tread on air
-- mừng rơn, sướng rơn
-!to tead on (as on) eggs
-- đi từng bước dè dặt thận trọng như đi trên trứng; hành động thận trọng dè dặt
-!to tread on somebody's neck
-- đè đầu cưỡi cổ ai, chà đạp ai, đàn áp ai, trấn áp ai
-!to tread the stage (the boards)
-- là diễn viên sân khấu
-!to tread under foot
-- (nghĩa bóng) chà đạp, giày xéo; khinh rẻ
-!to tread water
-- bơi đứng
-
-
-
-
-
-
-
-
-
-| reset
-/'ri:'set/
-* ngoại động từ
-- đặt lại, lắp lại (một bộ phận của máy...)
-- bó lại (xương gãy)
-= to reset a broken+ bó lại cái xương gãy
-- mài lại (một dụng cụ); căng lại (lò xo...)
-* động từ
-- oa trữ (đồ ăn trộm...)
-
-reset
-- lập lại
-
-
-
-
-
-
-| fry
-/frai/
-* danh từ
-- cá mới nở, cá bột
-- cá hồi hai năm
-* danh từ
-- thịt rán
-* động từ
-- rán, chiên
-!to have other fish to fry
-- fish
-
-
-
-
-
-
-| start
-/stɑ:t/
-* danh từ
-- lúc bắt đầu, buổi đầu
-= it was difficult work at the start+ lúc bắt đầu công việc rất khó
-- dị bắt đầu, cơ hội bắt đầu (một công cuộc gì)
-- sự khởi hành, sự ra đi, sự lên đường
-= to make an early start+ đi sớm
-- chỗ khởi hành, chỗ xuất phát; giờ xuất phát (của cuộc đua); lệnh bắt đầu, lệnh xuất phát (của cuộc đua)
-- sự giật mình; sự giật nảy người (vì đau...)
-- sự chấp (trong thể thao)
-= I'll give him 40 meters start+ tôi sẽ chấp cậu ấy 40 mét
-- thế lợi
-= to get the start of somebody+ lợi thế hơn ai
-!a rum start
-- (thông tục) một sự xảy ra kỳ lạ
-!by fits and stars
-- không đều, thất thường, từng đợt một
+- sự tạm nghỉ, sự tạm ngừng
+- sự ngập ngừng
+= to give pause to+ làm cho (ai) ngập ngừng
+- sự ngắt giọng (trong khi đang nói, đang đọc); chỗ ngắt giọng, chỗ ngắt
+= the after a short pause, he resumed his speech+ sau khi ngắt giọng một giây, ông ấy lại tiếp tục bài diễn văn của mình
+- (âm nhạc) dấu dãn nhịp
 * nội động từ
-- bắt đầu (đi, làm việc...)
-= to start on journey+ bắt đầu lên đường, khởi hành
-- chạy (máy)
-- giật mình
-= to start out of one's sleep+ giật mình thức dậy
-- rời ra, long ra (gỗ)
+- tạm nghỉ, tạm ngừng
+- chờ đợi; ngập ngừng
+- (+ upon) ngừng lại
+= let us pause upon this phrase+ chúng ta hãy ngừng lại ở nhóm từ này
+
+
+| price
+- (Econ) Giá
++ Giá của một loại hàng hoá hoặc giá đầu vào cho thấy cái phải chi để có được một thứ hàng hoá hay dịch vụ.
+
+Price/earning ratio
+- (Econ) Tỷ lệ giá / Lợi tức (tỷ lệ P/E)
++ Tỷ số của giá môt cổ phiếu bình thường đối với mỗi cổ phiếu bình thường.
+
+
+| like
+/laik/
+* tính từ
+- giống, giống nhau, như nhau, tương tự, cùng loại
+= as like as two peas+ giống nhau như hai giọt nước
+= what's he like?+ anh ta là người như thế nào? anh ta là hạng người như thế nào?
+- thực đúng, đúng như mong đợi
+= it's like a Vietnamese to thirst for learning+ hiếu học thực đúng đặc tính người Việt Nam
+= this poetry is something like+ thơ này mới thật là thơ
+- thích, sãn sàng, sãn lòng, vui lòng
+= not to feel like going out today+ cảm thấy không thích đi chơi hôm nay
+- có vẻ như
+= it looks like rain+ có vẻ như trời muốn mưa
+- gần, khoảng độ
+= something like 100d+ khoảng độ 100 đồng
+!like father like son
+- cha nào con nấy
+!like master like man
+- thầy nào tớ nấy
+* giới từ
+- như
+= don't talk like that+ đừng nói như vậy
+= like mad+ như điên, điên cuồng
+!like a shot
+- không ngần ngại, sãn lòng; bất chấp hậu quả
+!sure like rain
+- chắc như đinh đóng cột
+* phó từ
+- like very; like enough rất có thể
+* liên từ
+- (thông tục) thay cho as như
+= I cannot do it like you do+ tôi không thể làm cái đó như anh làm
+* danh từ
+- người thuộc loại như; vật thuộc loại như
+= did not ever see the like of it?+ có bao giờ anh trông thấy cái giống như cái đó không?
+= music, painting and the like+ âm nhạc, hội hoạ và những môn thuộc loại đó
+= the likes of me+ (thông tục) những kẻ hèn như tôi
+= the likes of you+ (thông tục) những bậc cao sang như anh
+!like cures like
+- lấy độc trị độc
+!to return like for like
+- lấy ơn trả ơn, lấy oán trả oán
+* danh từ
+- cái thích
+= likes and dislikes+ những cái thích và những cái không thích
 * ngoại động từ
-- bắt đầu
-= to start work+ bắt đầu công việc
-- làm (ai, cái gì) bắt đầu, khiến (ai) phải
-= this started me coughing+ điều đó làm tôi phát ho lên
-- ra hiệu xuất phát (cho người đua)
-- mở, khởi động (máy)
-- khêu, gây, nêu ra
-= to start quarrel+ gây chuyện cãi nhau
-= to start a problem+ nêu ra một vấn đề
-- làm tách ra, làm rời ra, làm long ra (gỗ)
-- giúp đỡ, nâng đỡ (ai, trong công việc)
-- đuổi (thú săn) ra khỏi hang
-- (từ cổ,nghĩa cổ) (như) startle
-!to start aside
-- né vội sang một bên
-!to start in
-- (thông tục) bắt đầu làm
-!to start out
-- khởi hành
-- khởi công, bắt đầu tiến hành (công việc gì)
-!to start up
-- thình lình đứng dậy
-- nảy ra, nổi lên; nảy ra trong óc
-= many difficulties have started up+ nhiều khó khăn nảy ra
-- khởi động (máy)
-!to start with
-- trước hết
-- lúc bắt đầu
-= we had six members to start with+ lúc bắt đầu chúng tôi có sáu hội viên
+- thích ưa, chuộng, yêu
+= do you like fish?+ anh có thích cá không?
+= I like his cheek+(mỉa mai) tôi mới thích thái độ láo xược của hắn làm sao
+- (would like,  should like) muốn, ước mong
+= I should like a cup of tea+ tôi muốn có một tách chè
+= parents like their children to be successful in file+ bố mẹ muốn cho con cái thành công ở đời
+= I'd like to know (see)+ thử cho tôi biết (xem) nào!
+- thích hợp, hợp với (thể trạng, sức khoẻ...)
+= wine does not like me+ rượu vang không hợp với thể trạng của tôi, tôi không chịu đựng được rượu vang
+* nội động từ
+- thích, muốn
+= you may do as you like+ anh có thể làm theo như ý thích
 
-start
-- xuất phát, khởi động
+like
+- giống như; bằng; cùng tên // giống, có lẽ, có thể
 
 
-
-
+| like-mindedness
+/'laik'maindidnis/
+* danh từ
+- sự cùng một khuynh hướng, sự cùng một mục đích, sự có ý kiến giống nhau; sự giống tính nhau
 
 

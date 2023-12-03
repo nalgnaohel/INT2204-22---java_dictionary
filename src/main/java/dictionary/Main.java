@@ -2,7 +2,6 @@ package dictionary;
 
 import dictionary.backend.Dictionary;
 import dictionary.backend.DtbDictionary;
-import dictionary.backend.History;
 import dictionary.backend.TxtDictionary;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -84,12 +83,12 @@ public class Main extends Application {
                 failedDtbAlert.showAndWait();
                 dict = new TxtDictionary();
                 dict.initUtilsFile();
-                dict.importDataFromFile("src/main/resources/data/demo.txt");
+                dict.importDataFromFile("src/main/resources/data/dictionaries.txt");
             }
         } else if (opt.get() == noDtb) {
             dict = new TxtDictionary();
             dict.initUtilsFile();
-            dict.importDataFromFile("src/main/resources/data/demo.txt");
+            dict.importDataFromFile("src/main/resources/data/dictionaries.txt");
         }
         dict.export5Words();
     }

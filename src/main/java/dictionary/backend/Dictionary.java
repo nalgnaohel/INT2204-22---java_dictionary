@@ -1,5 +1,9 @@
 package dictionary.backend;
 
+import dictionary.backend.api.DictAPI;
+import dictionary.backend.api.GoogleAPI;
+import dictionary.backend.api.TranslatorAPI;
+
 import java.io.*;
 import java.sql.SQLException;
 import java.util.ArrayList;

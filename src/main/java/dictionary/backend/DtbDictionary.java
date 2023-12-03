@@ -95,7 +95,7 @@ public class DtbDictionary extends Dictionary{
                 try {
                     if (rs.next()) {
                         Word word = new Word(target, rs.getString("Vietnamese"));
-                        dict.getHistory().addTo(word);
+//                        dict.getHistory().addTo(word);
                         return rs.getString("Vietnamese");
                     } else {
                         System.out.println("Cannot find the word");
@@ -167,7 +167,7 @@ public class DtbDictionary extends Dictionary{
         return false;
     }
 
-    //update.
+    //updateToFiles.
 
     @Override
     public boolean updateWordMeaning(String target, String meaning) {
@@ -186,7 +186,7 @@ public class DtbDictionary extends Dictionary{
             }
             return true;
         } catch (SQLException e) {
-            System.out.println("Failed to update the word meaning");
+            System.out.println("Failed to updateToFiles the word meaning");
             return false;
         }
     }

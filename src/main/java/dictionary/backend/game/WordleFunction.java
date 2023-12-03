@@ -1,8 +1,6 @@
-package dictionary.backend;
+package dictionary.backend.game;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
 
 public class WordleFunction extends GameFunction {
     private int currentStreak;

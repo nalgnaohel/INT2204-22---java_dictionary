@@ -1,17 +1,13 @@
 package dictionary.ui.game.finding;
 
-import dictionary.Main;
-import dictionary.backend.FindingFunction;
 import dictionary.ui.game.GameStatsWindow;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class FindingStatsWindow extends GameStatsWindow {
     private FindingController findingController;
+
+    public FindingStatsWindow() {
+        this.barChartTitle = "Number of Right Answer to Win Distribution";
+    }
 
     public FindingController getFindingController() {
         return findingController;

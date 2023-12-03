@@ -1,7 +1,7 @@
 package dictionary.ui;
 
-import dictionary.FindingMainWindow;
-import dictionary.WordleMainWindow;
+import dictionary.ui.game.finding.FindingMainWindow;
+import dictionary.ui.game.wordles.WordleMainWindow;
 import dictionary.backend.TxtDictionary;
 import dictionary.ui.game.wordles.WordleController;
 import javafx.event.ActionEvent;

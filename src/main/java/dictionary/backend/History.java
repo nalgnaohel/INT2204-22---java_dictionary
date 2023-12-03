@@ -9,12 +9,12 @@ public class History extends WordFileUtils {
         int id = 0;
         while (id < allWords.size()) {
             if (allWords.get(id).getWordTarget().equals(w.getWordTarget())) {
-                allWords.remove(id);
+                allWords.remove(id); break;
             } else {
                 id++;
             }
         }
-        if (allWords.size() == maxHisLen) {
+        while (allWords.size() >= maxHisLen) {
             allWords.remove(0);
         }
         allWords.add(w);

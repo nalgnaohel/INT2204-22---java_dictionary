@@ -1,7 +1,7 @@
 package dictionary.ui.game;
 
 import dictionary.Main;
-import dictionary.backend.GameFunction;
+import dictionary.backend.game.GameFunction;
 import dictionary.ui.game.finding.FindingStatsWindow;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,6 +14,7 @@ public class GameStatsWindow {
     private Stage stage;
     private GameStatsController gameStatsController;
     private GameFunction gameFunction;
+    protected String barChartTitle;
     private VBox root;
     public void display() throws IOException {
         stage = new Stage();
@@ -58,5 +59,9 @@ public class GameStatsWindow {
 
     public void setGameStatsController(GameStatsController gameStatsController) {
         this.gameStatsController = gameStatsController;
+    }
+
+    public String getBarChartTitle() {
+        return barChartTitle;
     }
 }

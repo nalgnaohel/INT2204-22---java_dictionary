@@ -1,4 +1,4 @@
-package dictionary.backend;
+package dictionary.backend.game;
 
 import java.io.BufferedReader;
 import java.io.File;

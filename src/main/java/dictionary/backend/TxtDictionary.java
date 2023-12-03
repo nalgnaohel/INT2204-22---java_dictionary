@@ -2,6 +2,9 @@ package dictionary.backend;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 
 import static dictionary.Main.dict;
 
@@ -27,22 +30,24 @@ public class TxtDictionary extends Dictionary{
 
     }
 
-    /**
-     * Return all the words in our list.
-     */
     public ArrayList<Word> getAllWords() {
         return wordsList;
     }
 
-    /**
-     * insert
-     */
     @Override
     public String lookUpWord(String target) {
-        for (Word word : wordsList) {
-            if (word.getWordTarget().equals(target)) {
-                dict.getHistory().addTo(word);
-                return word.getWordMeaning();
+        Collections.sort(wordsList, new SortByTarget());
+        int l = 0;
+        int r = wordsList.size() - 1;
+        while (l <= r) {
+            int m = l + (r - l) / 2;
+            if (wordsList.get(m).getWordTarget().equals(target)) {
+                return wordsList.get(m).getWordMeaning();
+            }
+            if (wordsList.get(m).getWordTarget().compareTo(target) < 0) {
+                l = m + 1;
+            } else {
+                r = m - 1;
             }
         }
         return "Not found!\n";

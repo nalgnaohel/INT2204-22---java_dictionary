@@ -68,7 +68,6 @@ public abstract class WordFileUtils {
         }
     }
 
-    //update history
     public void export() {
         try {
             FileWriter fw = new FileWriter(fname);

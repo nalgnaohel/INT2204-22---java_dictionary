@@ -1,4 +1,4 @@
-package dictionary.backend;
+package dictionary.backend.api;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;

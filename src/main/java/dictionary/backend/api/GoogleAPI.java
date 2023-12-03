@@ -1,4 +1,4 @@
-package dictionary.backend;
+package dictionary.backend.api;
 
 import javazoom.jl.player.Player;
 

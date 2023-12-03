@@ -1,8 +1,8 @@
 package dictionary.ui.game.finding;
 
-import dictionary.FindingMainWindow;
 import dictionary.Main;
-import dictionary.backend.FindingFunction;
+import dictionary.backend.game.FindingFunction;
+import dictionary.ui.game.GameController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -19,14 +19,11 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import static dictionary.Main.dict;
 
-public class FindingController {
+public class FindingController extends GameController {
     @FXML
     private TilePane map;
     @FXML
     private Label remainingTime;
-
-    private FindingMainWindow findingMainWindow;
-    private FindingFunction findingFunction = new FindingFunction();
     private int numofQuest;
     private static final int[] dx = {-1, 0, 1, 0};
     private static final int[] dy = {0, -1, 0, 1};
@@ -51,19 +48,19 @@ public class FindingController {
             {2, 0, 1, 0, 1, 0, 0, 2},
             {2, 2, 0, 0, 2, 0, 0, 3}};
 
+    public FindingController() {
+        this.gameFunction = new FindingFunction();
+    }
     public void init() {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 mapIds[i][j] = levelmaps[i][j];
-                System.out.print(mapIds[i][j] + " ");
             }
-            System.out.println("");
         }
-        curX = 0;
-        curY = 0;
-        findingMainWindow.startCountdown();
-        findingFunction.setHistoryPath("src/main/resources/data/finding_history.txt");
-        findingFunction.init();
+        curX = 0; curY = 0;
+        gameMainWindow.startCountdown();
+        gameFunction.setHistoryPath("src/main/resources/data/finding_history.txt");
+        gameFunction.init();
         numofQuest = 0;
         changeToStone = 0; //-1 if wrong ans.
         for (int i = 1; i <= 10; i++) {
@@ -80,45 +77,17 @@ public class FindingController {
                 stackPane.setMaxHeight(64);
                 stackPane.setMinWidth(64);
                 stackPane.setMinHeight(64);
-                stackPane.setPrefHeight(64);
-                stackPane.setPrefWidth(64);
 
-                InputStream inputStream = Main.class.getResourceAsStream("icon/grass.png");
-                Image image = new Image(inputStream);
-                ImageView imageView = new ImageView(image);
-                imageView.setFitHeight(64);
-                imageView.setFitWidth(64);
-                stackPane.getChildren().add(imageView);
+                stackPane.getChildren().add(createTile("icon/grass.png"));
                 if (i == 0 && j == 0) {
-                    InputStream ip = Main.class.getResourceAsStream("icon/character.png");
-                    Image im = new Image(ip);
-                    ImageView iv = new ImageView(im);
-                    iv.setFitHeight(64);
-                    iv.setFitWidth(64);
-                    stackPane.getChildren().add(iv);
+                    stackPane.getChildren().add(createTile("icon/character.png"));
                 }
                 if (mapIds[i][j] == 2) {
-                    InputStream ip = Main.class.getResourceAsStream("icon/stone.png");
-                    Image im = new Image(ip);
-                    ImageView iv = new ImageView(im);
-                    iv.setFitHeight(64);
-                    iv.setFitWidth(64);
-                    stackPane.getChildren().add(iv);
+                    stackPane.getChildren().add(createTile("icon/stone.png"));
                 } else if (mapIds[i][j] == 1) {
-                    InputStream ip = Main.class.getResourceAsStream("icon/question.png");
-                    Image im = new Image(ip);
-                    ImageView iv = new ImageView(im);
-                    iv.setFitHeight(64);
-                    iv.setFitWidth(64);
-                    stackPane.getChildren().add(iv);
-                    System.out.println(i + " " + j + ": " + stackPane.getChildren().size());
+                    stackPane.getChildren().add(createTile("icon/question.png"));
                 } else if (mapIds[i][j] == 3) {
-                    InputStream ip = Main.class.getResourceAsStream("icon/treasure.png");
-                    Image im = new Image(ip);
-                    ImageView iv = new ImageView(im);
-                    iv.setFitHeight(64);
-                    iv.setFitWidth(64);
-                    stackPane.getChildren().add(iv);
+                    stackPane.getChildren().add(createTile("icon/treasure.png"));
                 }
                 map.getChildren().add(stackPane);
             }
@@ -135,8 +104,6 @@ public class FindingController {
             handleMove(2);
         } else if (event.getCode() == KeyCode.DOWN) {
             handleMove(3);
-        } else {
-            System.out.println("Something else...");
         }
     }
 
@@ -151,39 +118,28 @@ public class FindingController {
     public void handleMove(int id) {
         int destX = curX + dx[id];
         int destY = curY + dy[id];
-        System.out.println("Destination: " + destX + " " + destY + " " + mapIds[destY][destX]);
         if (destX < 0 || destX >= 8 || destY < 0 || destY >= 8) {
-            System.out.println("Invalid move...");
             return;
         }
         if (mapIds[destY][destX] == 0) {
-            //move
-            System.out.println("Grass...");
             moveToNewTile(destX, destY);
         } else if (mapIds[destY][destX] == 1) {
-            //launch question
             int idQuest = ThreadLocalRandom.current().nextInt(0, availableQuestId.size());
             ArrayList<String> quest = dict.getQuestion(availableQuestId.get(idQuest));
             availableQuestId.remove(idQuest);
             try {
                 QuestionWindow questionWindow = new QuestionWindow();
                 questionWindow.setFindingController(this);
-                findingMainWindow.setQuestionWindow(questionWindow);
+                ((FindingMainWindow)gameMainWindow).setQuestionWindow(questionWindow);
                 questionWindow.display(quest);
                 numofQuest++;
                 if (changeToStone == 1) {
                     mapIds[destY][destX] = 2;
                     StackPane stackPane = (StackPane) map.getChildren().get(destY * 8 + destX);
                     stackPane.getChildren().remove(stackPane.getChildren().size() - 1);
-                    InputStream ip = Main.class.getResourceAsStream("icon/stone.png");
-                    Image im = new Image(ip);
-                    ImageView iv = new ImageView(im);
-                    iv.setFitHeight(64);
-                    iv.setFitWidth(64);
-                    stackPane.getChildren().add(iv);
+                    stackPane.getChildren().add(createTile("icon/stone.png"));
                     changeToStone = 0;
                 } else if (changeToStone == -1) {
-                    System.out.println("Turning " + destX + " - " + destY + "to grass...");
                     mapIds[destY][destX] = 0;
                     StackPane stackPane = (StackPane) map.getChildren().get(destY * 8 + destX);
                     stackPane.getChildren().remove(stackPane.getChildren().size() - 1);
@@ -195,46 +151,45 @@ public class FindingController {
             }
 
         } else if (mapIds[destY][destX] == 3) {
-            //win
-            findingFunction.setGamesPlayed(findingFunction.getGamesPlayed() + 1);
-            findingFunction.setGamesWon(findingFunction.getGamesWon() + 1);
-            int cur = findingFunction.getNumOfGuess().get(numofQuest);
-            findingFunction.getNumOfGuess().put(numofQuest, cur + 1);
-            findingFunction.update();
+            gameFunction.updateWinCase(numofQuest);
+            gameFunction.updateToFiles();
             try {
                 FindingEndGame findingEndGame = new FindingEndGame();
                 findingEndGame.setFindingController(this);
-                findingMainWindow.pauseCountdown();
+                gameMainWindow.pauseCountdown();
                 findingEndGame.displayEndWindow(true, "Congratulations");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         }
-        //System.out.println(curX + " " + curY);
-    }
-    public void setFindingMainWindow(FindingMainWindow findingMainWindow) {
-        this.findingMainWindow = findingMainWindow;
     }
 
     public void restart() {
-        if (findingMainWindow.getQuestionWindow() != null) {
-            findingMainWindow.getQuestionWindow().quit();
+        if (((FindingMainWindow)gameMainWindow).getQuestionWindow() != null) {
+            ((FindingMainWindow)gameMainWindow).getQuestionWindow().quit();
         }
-        if (findingMainWindow.getFindingHelpWindow() != null) {
-            findingMainWindow.getFindingHelpWindow().quit();
+        if (((FindingMainWindow) gameMainWindow).getFindingHelpWindow() != null) {
+            ((FindingMainWindow) gameMainWindow).getFindingHelpWindow().quit();
         }
-        if (findingMainWindow.getFindingStatsWindow() != null) {
-            findingMainWindow.getFindingStatsWindow().quit();
+        if (((FindingMainWindow) gameMainWindow).getFindingStatsWindow() != null) {
+            ((FindingMainWindow) gameMainWindow).getFindingStatsWindow().quit();
         }
         for (int i = 0; i < map.getChildren().size(); i++) {
             StackPane sp = (StackPane) map.getChildren().get(i);
-            //System.out.println((i / 8) + " " + (i % 8)  + ": " + sp.getChildren().size());
             sp.getChildren().clear();
         }
         map.getChildren().clear();
         init();
     }
 
+    public ImageView createTile(String fname) {
+        InputStream inputStream = Main.class.getResourceAsStream(fname);
+        Image image = new Image(inputStream);
+        ImageView imageView = new ImageView(image);
+        imageView.setFitHeight(64);
+        imageView.setFitWidth(64);
+        return imageView;
+    }
     public void setChangeToStone(int changeToStone) {
         this.changeToStone = changeToStone;
     }
@@ -243,40 +198,7 @@ public class FindingController {
         return remainingTime;
     }
 
-    public void setRemainingTime(Label remainingTime) {
-        this.remainingTime = remainingTime;
-    }
-
     public FindingMainWindow getFindingMainWindow() {
-        return findingMainWindow;
-    }
-
-    public void showStats() throws IOException {
-        FindingStatsWindow findingStatsWindow = new FindingStatsWindow();
-        findingStatsWindow.setGameFunction(findingFunction);
-        findingStatsWindow.setFindingController(this);
-        findingMainWindow.setFindingStatsWindow(findingStatsWindow);
-        findingMainWindow.pauseCountdown();
-        findingStatsWindow.display();
-        findingMainWindow.getRoot().requestFocus();
-        findingMainWindow.continueCountdown();
-    }
-
-    public void showHelp() {
-        FindingHelpWindow findingHelpWindow = new FindingHelpWindow();
-        findingHelpWindow.setFindingController(this);
-        findingMainWindow.setFindingHelpWindow(findingHelpWindow);
-        findingMainWindow.pauseCountdown();
-        findingHelpWindow.display();
-        findingMainWindow.getRoot().requestFocus();
-        findingMainWindow.continueCountdown();
-    }
-
-    public FindingFunction getFindingFunction() {
-        return findingFunction;
-    }
-
-    public void setFindingFunction(FindingFunction findingFunction) {
-        this.findingFunction = findingFunction;
+        return (FindingMainWindow) gameMainWindow;
     }
 }

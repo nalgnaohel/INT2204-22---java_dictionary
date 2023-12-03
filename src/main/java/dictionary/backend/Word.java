@@ -1,6 +1,8 @@
 package dictionary.backend;
 
-public class Word implements Comparable<Word> {
+import java.util.Comparator;
+
+public class Word {
     private final String wordTarget;
     private String wordMeaning;
     private boolean inHistory;
@@ -49,10 +51,5 @@ public class Word implements Comparable<Word> {
 
     public void setInHistory(boolean inHistory) {
         this.inHistory = inHistory;
-    }
-
-    @Override
-    public int compareTo(Word o) {
-        return this.wordTarget.compareTo(o.getWordTarget());
     }
 }

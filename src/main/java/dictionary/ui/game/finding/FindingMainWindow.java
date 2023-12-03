@@ -1,70 +1,30 @@
-package dictionary;
+package dictionary.ui.game.finding;
 
-import dictionary.ui.game.finding.*;
+import dictionary.ui.game.GameMainWindow;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 
-public class FindingMainWindow {
-    private Stage gameStage;
-    private FindingController findingController;
+public class FindingMainWindow extends GameMainWindow {
     private Timeline countdownTimeline;
-    private Parent root;
     private FindingHelpWindow findingHelpWindow;
     private FindingStatsWindow findingStatsWindow;
     private QuestionWindow questionWindow;
-    public void display() throws IOException {
-        gameStage = new Stage();
-        gameStage.initModality(Modality.APPLICATION_MODAL);
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/findingMain.fxml"));
-        root = fxmlLoader.load();
-        findingController = fxmlLoader.getController();
-        findingController.setFindingMainWindow(this);
-        findingController.init();
 
-        //startCountdown();
-        Scene scene = new Scene(root);
-        gameStage.setScene(scene);
-        gameStage.setHeight(700);
-        gameStage.setWidth(800);
-        gameStage.setResizable(false);
-        gameStage.setOnCloseRequest(windowEvent -> {
-            countdownTimeline.stop();
-        });
-        gameStage.show();
-        root.requestFocus();
-    }
-
-    public Parent getRoot(){
-        return root;
-    }
-
-    public void quit() {
-        if (findingHelpWindow != null) {
-            findingHelpWindow.quit();
-        }
-        if (findingStatsWindow != null) {
-            findingStatsWindow.quit();
-        }
-        if (questionWindow != null) {
-            questionWindow.quit();
-        }
-        gameStage.close();
+    public FindingMainWindow() {
+        this.fxmlPath = "fxml/findingMain.fxml";
     }
 
     public void startCountdown() {
+        FindingController findingController = (FindingController) this.gameController;
         ObjectProperty<Duration> remainingDuration = new SimpleObjectProperty<>(Duration.ofSeconds(20));
         findingController.getRemainingTime().textProperty().bind(Bindings.createStringBinding(() ->
                         String.format("%02d:%02d", remainingDuration.get().toMinutesPart(), remainingDuration.get().toSecondsPart()),
@@ -78,8 +38,8 @@ public class FindingMainWindow {
         countdownTimeline.setOnFinished(ev -> {
             try {
                 System.out.println("Lose!");
-                findingController.getFindingFunction().setGamesPlayed(findingController.getFindingFunction().getGamesPlayed() + 1);
-                findingController.getFindingFunction().update();
+                findingController.getGameFunction().updateLoseCase();
+                findingController.getGameFunction().updateToFiles();
                 FindingEndGame findingEndGame = new FindingEndGame();
                 findingEndGame.setFindingController(findingController);
                 findingEndGame.displayEndWindow(false, "");
@@ -106,10 +66,6 @@ public class FindingMainWindow {
         this.findingStatsWindow = findingStatsWindow;
     }
 
-    public Stage getGameStage() {
-        return gameStage;
-    }
-
     public QuestionWindow getQuestionWindow() {
         return questionWindow;
     }
@@ -124,5 +80,9 @@ public class FindingMainWindow {
 
     public void pauseCountdown() {
         countdownTimeline.pause();
+    }
+
+    public Timeline getCountdownTimeline() {
+        return countdownTimeline;
     }
 }

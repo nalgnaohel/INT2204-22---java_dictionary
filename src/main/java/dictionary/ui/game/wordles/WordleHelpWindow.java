@@ -1,6 +1,7 @@
 package dictionary.ui.game.wordles;
 
 import dictionary.Main;
+import dictionary.ui.game.GameHelpWindow;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -18,21 +19,15 @@ import javafx.scene.Scene;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class WordleHelpWindow {
-    public static void display() {
-        Stage stage = new Stage();
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.setTitle("HOW TO PLAY");
+public class WordleHelpWindow extends GameHelpWindow {
 
-        VBox root = new VBox(15);
-        root.setPadding(new Insets(20, 20, 20, 20));
-        String instruct = "Guess the WORDLE in five tries. ";
+    public WordleHelpWindow() {
+        instruct = "Guess the WORDLE in five tries. ";
         instruct += "Press Enter to submit.\n";
         instruct += "After each guess, the color of the tiles will change to \n show how close your guess was to the word.\n";
-        Label helpParagraph = new Label(instruct);
-        helpParagraph.setTextAlignment(TextAlignment.CENTER);
-        helpParagraph.getStyleClass().add("instruct-text");
+    }
 
+    public void addWordleInstruct(VBox root) {
         Line line = new Line();
         line.setStroke(Paint.valueOf("b8b8b8"));
         line.setEndX(900);
@@ -98,21 +93,7 @@ public class WordleHelpWindow {
 
         Label thirdWordLabel = new Label("The letter U is not in the word in any spot.");
         thirdWordLabel.getStyleClass().add("instruct-text");
-
-        Button quitButton = new Button("Got it...");
-        quitButton.getStyleClass().add("instruct-button");
-        quitButton.setOnMouseClicked(ev ->{
-            stage.close();
-        } );
-
-        root.setAlignment(Pos.TOP_CENTER);
-        root.getChildren().addAll(helpParagraph, line, labelExample, firstWordVBox,
-                firstWordLabel, secondWordVBox, secondWordLabel, thirdWordVBox, thirdWordLabel, quitButton);
-        Scene scene = new Scene(root, 500, 515);
-        scene.getStylesheets().add(Objects.requireNonNull(Main.class.getResource("css/wordle.css"))
-                        .toExternalForm());
-
-        stage.setScene(scene);
-        stage.showAndWait();
+        root.getChildren().addAll(line, labelExample, firstWordVBox, firstWordLabel, secondWordVBox,
+                secondWordLabel, thirdWordVBox, thirdWordLabel);
     }
 }

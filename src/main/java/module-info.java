@@ -21,4 +21,8 @@ module com.example.java_dictionary {
     opens dictionary.ui.game.wordles to javafx.fxml;
     exports dictionary.ui.game;
     opens dictionary.ui.game to javafx.fxml;
+    exports dictionary.backend.game;
+    opens dictionary.backend.game to javafx.fxml;
+    exports dictionary.backend.api;
+    opens dictionary.backend.api to javafx.fxml;
 }

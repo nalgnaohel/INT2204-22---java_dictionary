@@ -1,4 +1,4 @@
-package dictionary.backend;
+package dictionary.backend.game;
 
 import java.io.*;
 import java.util.HashMap;
@@ -15,7 +15,27 @@ public abstract class GameFunction {
 
     public abstract void init();
 
-    public void update() {
+    public void updateWinCase(int num) {
+        this.gamesWon = this.gamesWon + 1;
+        this.gamesPlayed = this.gamesPlayed + 1;
+        int x = this.numOfGuess.get(num);
+        this.numOfGuess.put(num, x + 1);
+        if (this instanceof WordleFunction) {
+            ((WordleFunction)this).setCurrentStreak(((WordleFunction) this).getCurrentStreak() + 1);
+            if (((WordleFunction) this).getCurrentStreak() > ((WordleFunction) this).getLongestStreak()) {
+                ((WordleFunction) this).setLongestStreak(((WordleFunction) this).getCurrentStreak());
+            }
+        }
+    }
+
+    public void updateLoseCase() {
+        this.gamesPlayed += 1;
+        if (this instanceof WordleFunction) {
+            ((WordleFunction) this).setCurrentStreak(0);
+        }
+    }
+
+    public void updateToFiles() {
         try {
             FileWriter fw = new FileWriter(historyPath);
             BufferedWriter bw = new BufferedWriter(fw);
@@ -67,11 +87,6 @@ public abstract class GameFunction {
         }
         return 0;
     }
-
-    public String getHistoryPath() {
-        return historyPath;
-    }
-
     public void setHistoryPath(String historyPath) {
         this.historyPath = historyPath;
     }

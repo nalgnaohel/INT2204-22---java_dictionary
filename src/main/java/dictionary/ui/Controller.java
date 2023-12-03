@@ -91,6 +91,8 @@ public class Controller implements Initializable {
             contentArea.getChildren().clear();
             contentArea.getChildren().add(lookupArea);
             currentButton.getParent().getStyleClass().add("lookUp-selected");
+            lookupTabController.ShowList("");
+            lookupTabController.ShowWord("");
         } else if (currentButton.equals(translateButton)) {
             contentArea.getChildren().clear();
             contentArea.getChildren().add(translateArea);

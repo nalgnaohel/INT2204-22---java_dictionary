@@ -1,6 +1,7 @@
 package dictionary.ui.game.finding;
 
 import dictionary.Main;
+import dictionary.ui.game.GameHelpWindow;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -13,17 +14,11 @@ import javafx.stage.Stage;
 
 import java.util.Objects;
 
-public class FindingHelpWindow {
+public class FindingHelpWindow extends GameHelpWindow {
     private FindingController findingController;
-    private Stage stage;
-    public void display() {
-        stage = new Stage();
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.setTitle("HOW TO PLAY");
 
-        VBox root = new VBox(15);
-        root.setPadding(new Insets(20, 20, 20, 20));
-        String instruct = "You have to take our ninja to the treasure by\n" +
+    public FindingHelpWindow() {
+        this.instruct = "You have to take our ninja to the treasure by\n" +
                 "choosing a suitable route\n";
         instruct += "Use arrow keys to move.\n";
         instruct += "When reaching a (?) sign, you have to answer the\n" +
@@ -33,32 +28,6 @@ public class FindingHelpWindow {
                 "you cannot move forward and have to find another route.\n";
         instruct += "You win if you reach the treasure.\n" +
                 "You will lose if the time is up.\n";
-        Label helpParagraph = new Label(instruct);
-        helpParagraph.setTextAlignment(TextAlignment.CENTER);
-        helpParagraph.getStyleClass().add("instruct-text");
-
-        Button quitButton = new Button("Got it...");
-        quitButton.getStyleClass().add("instruct-button");
-        quitButton.setOnMouseClicked(ev ->{
-            findingController.getFindingMainWindow().getRoot().requestFocus();
-            stage.close();
-        } );
-
-        root.setAlignment(Pos.TOP_CENTER);
-        root.getChildren().addAll(helpParagraph, quitButton);
-        Scene scene = new Scene(root, 500, 515);
-        scene.getStylesheets().add(Objects.requireNonNull(Main.class.getResource("css/wordle.css"))
-                .toExternalForm());
-
-        stage.setScene(scene);
-        stage.showAndWait();
-        stage.setOnCloseRequest(windowEvent -> {
-            findingController.getFindingMainWindow().setFindingHelpWindow(null);
-        });
-    }
-
-    public void quit() {
-        stage.close();
     }
 
     public void setFindingController(FindingController fc) {
