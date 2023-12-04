@@ -147,11 +147,11 @@ public abstract class MutualController implements Initializable {
 
         //Hiện word meaning
         currentMeaning = dict.lookUpWord(currentWord);
-        if (this instanceof FavoriteTabController) {
-            currentMeaning = dict.getFavorites().getAllFav().get(currentWord);
-        } else {
-            currentMeaning = dict.lookUpWord(currentWord);
-        }
+//        if (this instanceof FavoriteTabController) {
+//            currentMeaning = dict.getFavorites().getAllFav().get(currentWord);
+//        } else {
+//            currentMeaning = dict.lookUpWord(currentWord);
+//        }
         if (currentMeaning.equals("Not found!\n")) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Thong bao");
@@ -175,6 +175,7 @@ public abstract class MutualController implements Initializable {
             if (info.equals("antonyms: \nsynonyms: \n") || info.isEmpty()) {
                 throw new Exception();
             } else {
+                ThesaurusInfo.getChildren().clear();
                 ThesaurusLabel.setVisible(true);
                 ThesaurusInfo.setVisible(true);
                 ThesaurusInfo.getChildren().add(new Text(info));
@@ -182,6 +183,7 @@ public abstract class MutualController implements Initializable {
         } catch (Exception e) {
             System.out.println("No synonyms or antonyms");
             info = "Không tìm thấy kết quả";
+            ThesaurusInfo.getChildren().clear();
             ThesaurusLabel.setVisible(false);
             ThesaurusInfo.setVisible(false);
         }
