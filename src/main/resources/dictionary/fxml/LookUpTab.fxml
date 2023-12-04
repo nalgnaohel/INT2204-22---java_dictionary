@@ -78,7 +78,7 @@
          <children>
             <AnchorPane prefHeight="85.0" prefWidth="559.0">
                <children>
-                  <HBox prefHeight="85.0" prefWidth="191.0">
+                  <HBox prefHeight="85.0" prefWidth="622.0">
                      <children>
                         <Button id="pronounceButton" fx:id="pronounceButton" mnemonicParsing="false" onAction="#pronounce" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
                            <HBox.margin>
@@ -110,21 +110,6 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button id="edit" fx:id="editButton" mnemonicParsing="false" onAction="#edit" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
-                           <graphic>
-                              <ImageView fitHeight="18.0" fitWidth="18.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../icon/Edit.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <HBox.margin>
-                              <Insets left="10.0" top="25.0" />
-                           </HBox.margin>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
                         <Button id="remove" fx:id="removeButton" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
                            <graphic>
                               <ImageView fitHeight="18.0" fitWidth="18.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
@@ -139,6 +124,36 @@
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
+                        </Button>
+                        <Button id="edit" fx:id="editButton" mnemonicParsing="false" onAction="#edit" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="18.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icon/Edit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="385.0" top="25.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button id="remove" fx:id="addButton" mnemonicParsing="false" onAction="#addWord" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icon/add.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <HBox.margin>
+                              <Insets left="10.0" top="25.0" />
+                           </HBox.margin>
                         </Button>
                      </children>
                   </HBox>
