@@ -42,13 +42,13 @@ public abstract class GameController {
         gameStatsWindow.setGameFunction(gameFunction);
         if (this instanceof FindingController) {
             ((FindingStatsWindow) gameStatsWindow).setFindingController((FindingController) this);
-            ((FindingStatsWindow) gameStatsWindow).setFindingController((FindingController) this);
             ((FindingMainWindow)gameMainWindow).setFindingStatsWindow((FindingStatsWindow) gameStatsWindow);
             gameMainWindow.pauseCountdown();
         }
         gameStatsWindow.display();
         if (this instanceof FindingController) {
-            ((FindingController) this).getFindingMainWindow().getRoot().requestFocus();
+            gameMainWindow.getRoot().requestFocus();
+            gameMainWindow.continueCountdown();
         }
     }
 

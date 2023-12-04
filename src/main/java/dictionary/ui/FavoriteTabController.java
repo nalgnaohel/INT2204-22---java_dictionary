@@ -30,18 +30,18 @@ public class FavoriteTabController extends MutualController {
         prepareSaveButton();
     }
 
-    @Override
+    //@Override
     public void update() {
-        super.update();
+        //super.update();
 
         wordsList.clear();
         listView.getItems().clear();
-        ThesaurusInfo.getChildren().clear();
+        //ThesaurusInfo.getChildren().clear();
         wordTitle.getChildren().clear();
         wordMeaning.getChildren().clear();
 
         DefinitionLabel.setVisible(false);
-        ThesaurusLabel.setVisible(false);
+        //ThesaurusLabel.setVisible(false);
         saved.setVisible(false);
         loading.setVisible(false);
 

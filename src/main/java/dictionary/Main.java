@@ -3,6 +3,7 @@ package dictionary;
 import dictionary.backend.Dictionary;
 import dictionary.backend.DtbDictionary;
 import dictionary.backend.TxtDictionary;
+import dictionary.ui.WordOfTheDayWindow;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -13,8 +14,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -43,6 +42,10 @@ public class Main extends Application {
             System.exit(0);
         });
         stage.show();
+        if (dict instanceof DtbDictionary) {
+            WordOfTheDayWindow wordOfTheDayWindow = new WordOfTheDayWindow();
+            wordOfTheDayWindow.display();
+        }
     }
 
     @FXML

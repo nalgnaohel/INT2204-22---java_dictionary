@@ -64,13 +64,13 @@ public abstract class MutualController implements Initializable {
     protected Thread loadingThesaurus;
 
     public abstract void initialize(URL url, ResourceBundle resourceBundle);
-    public void update() {
-        stopLoadingThesaurus();
-    };
+//    public void update() {
+//        stopLoadingThesaurus();
+//    };
 
     @FXML
     public void SelectItem(MouseEvent event) throws IOException {
-        stopLoadingThesaurus();
+        //stopLoadingThesaurus();
         String searchText = listView.getSelectionModel().getSelectedItem();
         ShowWord(searchText);
     }
@@ -84,11 +84,45 @@ public abstract class MutualController implements Initializable {
             ObservableList<String> items = FXCollections.observableArrayList(wordsList);
             //show listview
             listView.setItems(items);
+
+            // set history & favorite icon
+            listView.setCellFactory(param -> new ListCell<String>() {
+                private ImageView imageView = new ImageView();
+                @Override
+                public void updateItem(String name, boolean empty) {
+                    super.updateItem(name, empty);
+                    if (empty) {
+                        setText(null);
+                        setGraphic(null);
+                    } else {
+                        // check if the word is in history list
+                        if (dict.getHistory().getWordTargetHistory().contains(name)) {
+                            imageView.setImage(new Image(Main.class.getResourceAsStream("icon/history.png")));
+                            imageView.setFitWidth(18);
+                            imageView.setFitHeight(18);
+                            setGraphic(imageView);
+                        } else {
+                            setGraphic(null);
+                        }
+                        setText(name);
+                    }
+                }
+            });
         } else {
             wordsList.clear();
-            wordsList.addAll(Trie.search(target));
+            ArrayList<String> temp = Trie.search(target);
+            for (int i = dict.getHistory().getWordTargetHistory().size() - 1; i >= 0; i--) {
+                if (dict.getHistory().getWordTargetHistory().get(i).startsWith(target)) {
+                    wordsList.add(dict.getHistory().getWordTargetHistory().get(i));
+                    for (int j = 0; j < temp.size(); j++) {
+                        if (temp.get(j).equals(dict.getHistory().getWordTargetHistory().get(i))) {
+                            temp.remove(j); break;
+                        }
+                    }
+                }
+            }
+            wordsList.addAll(temp);
             ObservableList<String> items = FXCollections.observableArrayList(wordsList);
-            //show listview
             listView.setItems(items);
         }
     }
@@ -113,11 +147,11 @@ public abstract class MutualController implements Initializable {
 
         //Hiện word meaning
         currentMeaning = dict.lookUpWord(currentWord);
-//        if (this instanceof FavoriteTabController) {
-//            currentMeaning = dict.getFavorites().getAllFav().get(currentWord);
-//        } else {
-//            currentMeaning = dict.lookUpWord(currentWord);
-//        }
+        if (this instanceof FavoriteTabController) {
+            currentMeaning = dict.getFavorites().getAllFav().get(currentWord);
+        } else {
+            currentMeaning = dict.lookUpWord(currentWord);
+        }
         if (currentMeaning.equals("Not found!\n")) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Thong bao");
@@ -135,9 +169,25 @@ public abstract class MutualController implements Initializable {
         wordMeaning.getChildren().clear();
         wordMeaning.getChildren().add(meaning);
         DefinitionLabel.setVisible(true);
+        String info = "";
+        try {
+            info = dict.getInfoFromAPI(currentWord);
+            if (info.equals("antonyms: \nsynonyms: \n") || info.isEmpty()) {
+                throw new Exception();
+            } else {
+                ThesaurusLabel.setVisible(true);
+                ThesaurusInfo.setVisible(true);
+                ThesaurusInfo.getChildren().add(new Text(info));
+            }
+        } catch (Exception e) {
+            System.out.println("No synonyms or antonyms");
+            info = "Không tìm thấy kết quả";
+            ThesaurusLabel.setVisible(false);
+            ThesaurusInfo.setVisible(false);
+        }
 
         // Hiện word thesaurus
-        ThesaurusInfo.getChildren().clear();
+        /*ThesaurusInfo.getChildren().clear();
         Task<String> getThesaurus = new Task<String>() {
             @Override
             public String call() {
@@ -169,20 +219,20 @@ public abstract class MutualController implements Initializable {
             ThesaurusInfo.getChildren().add(info);
         });
         loadingThesaurus = new Thread(getThesaurus);
-        loadingThesaurus.start();
+        loadingThesaurus.start();*/
 
         showSaveButton(currentWord);
         showSevedLabel(currentWord);
     }
 
-    private void stopLoadingThesaurus() {
-        if (loadingThesaurus != null) {
-            loadingThesaurus.stop();
-            ThesaurusLabel.setVisible(false);
-            ThesaurusInfo.getChildren().clear();
-            System.out.println("Loading thesaurus stopped");
-        }
-    }
+//    private void stopLoadingThesaurus() {
+//        if (loadingThesaurus != null) {
+//            loadingThesaurus.stop();
+//            ThesaurusLabel.setVisible(false);
+//            ThesaurusInfo.getChildren().clear();
+//            System.out.println("Loading thesaurus stopped");
+//        }
+//    }
 
     // note: code deleted here tmp.txt
 
@@ -256,7 +306,7 @@ public abstract class MutualController implements Initializable {
                 DefinitionLabel.setVisible(false);
                 loading.setVisible(false);
                 saved.setVisible(false);
-                update();
+                ((FavoriteTabController) this).update();
             } else {
                 saveButton.setGraphic(bookmarkView);
             }

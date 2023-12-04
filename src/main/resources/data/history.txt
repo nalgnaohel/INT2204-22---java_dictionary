@@ -1,101 +1,190 @@
-| game-cock
-/'geimkɔk/
+| press
+/pres/
 * danh từ
-- gà chọi
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| ticket-office
-*danh từ
-- phòng bán vé, phòng vé
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| ticket
-/'tikit/
-* danh từ
-- vé
-= through ticket+ vé suốt
-= return ticket+ vé khứ hồi
-- giấy (giấy phép, giấy mời...)
-= free ticket+ giấy mời; giấy ưu tiên ra vào
-- bông, phiếu
-= ticket for soup+ phiếu cháo
-- nhãn ghi giá; nhãn ghi đặc điểm (hàng hoá...)
-- thẻ, biển
-- (từ Mỹ,nghĩa Mỹ) danh sách ứng cử
-= the Democratic ticket+ danh sách ứng cử của đảng Dân chủ
-- (thông tục) (the ticket) cái đúng điệu
-= that's the ticket+ đúng điệu; đúng lắm; vừa nhịp
-!to get one's ticket
-- được giải ngũ
+- sự ép, sự nén, sự bóp, sự ấn
+= a press of the hand+ cái bóp tay
+= to give something a slight press+ bóp nhẹ cái gì, ấn nhẹ cái gì
+- sự đông đúc, sự chen chúc; đám đông chen chúc, đám đông xô lấn
+= to be lost in the press+ bị lạc trong đám đông chen chúc
+- sự thúc ép, sự hối hả, sự tất bật
+= there is a great press of business+ công việc hết sức hối hả tất bật
+- cuộc hỗn chiến, cuộc loạn đả (trong một trận đánh nhau)
+- cái ép; máy ép; máy nén bàn là
+= hydraulic press+ máy ép dùng sức nước
+- máy in ((cũng) orinting press); nhà máy in; thuật in; sự in
+= in the press+ đang in (sách...)
+= to send (go, come) to [the] press+ đưa in, đem in
+= to correct the press+ chữa những lỗi in
+= to sign for press+ ký cho in
+- báo chí
+= freedom of the press+ quyền tự do báo chí
+= to be favourably noticed by the press; to have a good press+ được báo chí ca ngợi
+- tủ đóng vào tường; tủ đứng nhiều ngăn (để quần áo, sách vở...)
+- (hàng hải) sự căng hết
+= press of salt (canvas)+ sự căng hết buồm
 * ngoại động từ
-- dán nhãn, viết nhãn (ghi giá, ghi đặc điểm... hàng hoá)
-- phát vé, phát phiếu
+- ép, nép, bóp, ấn
+= to press grapes+ ép nho
+= to press juice from (out of) orange+ ép (vắt) cam lấy nước
+= to press the trigger of a gun+ bóp cò súng
+= to press the button+ ấn nút, bấm nút (cho máy chạy, bấm chuông điện...); (nghĩa bóng) khởi đầu, quyết định
+- là
+= to press clothes+ là quần áo
+- ép chặt, ghì chặt, siết chặt, ôm chặt, bóp chặt
+= to press someone's hand+ siết chặt tay ai
+= to press someone to one's heart+ ôm chặt ai vào lòng
+- thúc ép, thúc bách, dồn ép
+= to press an attack+ dồn dập tấn công
+= to press the enemy hard+ dồn ép kẻ địch
+= to be hard pressed+ bị thúc ép; bị lâm vào cảnh khó khăn o ép
+= to be pressed with questions+ bị hỏi dồn
+- thúc giục, giục giã, khẩn hoản, nài ép (ai làm gì)
+= to press someone for something+ nài ép ai lấy cái gì
+= to press someone to do something+ thúc giục ai làm cái gì
+= to press a gilf upon someone+ nài ép ai phải nhận món quà tặng
+= to press an opinion upon someone+ ép ai phải theo ý kiến
+- nhấn mạnh
+= to press the question+ nhấn mạnh vào vấn đề
+- đè nặng
+= to press the mind+ đè nặng lên tâm trí
+* nội động từ
+- ép, bóp, ấn
+= to press on a button+ ấn nút (điện...)
+- xúm xít, túm tụm, chen lấn, quây chặt lấy
+= to press round someone+ xúm xít quanh ai, quây chặt lấy ai
+- thúc giục, thúc ép, thúc bách
+= time presses+ thì giờ thúc bách
+= nothing remains that presses+ không còn có gì thúc bách, không còn lại việc gì phải làm gấp
+- hối hả, vội vã, tất bật
+= to press through a crowd+ hối hả chen lấn qua đám đông
+- (+ on,  upon) đè nặng
+= to press upon one's mind+ đè nặng lên tâm trí
+!to press down
+- ấn xuống, ép xuống, đè xuống
+!to press for
+- thúc giục, thúc bách, đòi hỏi thúc bách
+= to be pressed for money+ túng quẫn
+= to be pressed for time+ thiếu thì giờ, thì giờ eo hẹp
+!to press fowrad
+- hối hả, vội vã
+!to press on
+!to press foward
+- thúc giục, giục giã, thúc gấp
+!to press out
+- ép ra, vắt ra
+!to press up
+- xúm xít lại, túm tụm lại, quây chặt lại
+* danh từ
+- (sử học) sự bắt lính
+* ngoại động từ
+- (sử học) bắt (lính); (nghĩa bóng) lấy, tước đoạt
+= to press something into the service of...+ tước đoạt cái gì để dùng cho...
+- trưng dụng (ngựa...)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| prize
+/prize/
+* danh từ
+- giải thưởng, phầm thưởng
+= the International Lenin Peace Prize+ giải thưởng quốc tế hoà bình Lê-nin
+= to carry off the prize+ giật giải, đoạt giải
+- (nghĩa bóng) điều mong ước, ước vọng
+= the prizes of life+ những ước vọng của cuộc đời
+- giải xổ số; số trúng
+- (định ngữ) được giải, chiếm giải
+= prize ox+ con bò được giải
+- (định ngữ), (mỉa mai) đại hạng, cực
+= a prize idiot+ thằng ngốc đại hạng
+* ngoại động từ
+- đánh giá cao, quý
+= to liberty more than life+ quý tự do hơn sinh mệnh
+* danh từ
+- chiến lợi phẩm (tàu bè, tài sản...)
+= to make prize of...+ tịch thu (tàu bè, tài sản... ở biển) làm chiến lợi phẩm
+= to become prize+ bị bắt, bị tịch thu làm chiến lợi phẩm
+- (nghĩa bóng) của trời ơi, của bắt được
+* ngoại động từ ((cũng) pry)
+- tịch thu (tàu bè, tài sản... ở biển) làm chiến lợi phẩm
+* danh từ ((cũng) prise)
+- sự nạy, sự bẩy (bằng đòn bẩy)
+- (từ Mỹ,nghĩa Mỹ) đòn bẩy
+* ngoại động từ ((cũng) prise)
+- nạy, bẩy lên
+= to prize open a box+ nạy tung cái hộp ra
+= to prize up the cover+ bẩy cái nắp lên
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+| blood
+/blʌd/
+* danh từ
+- máu, huyết
+- nhựa (cây); nước ngọt (hoa quả...)
+- sự tàn sát, sự chém giết, sự đổ máu
+= to thirst for blood+ khát máu
+- tính khí
+= in warm blood+ nổi nóng, nổi giận
+= bad blood+ ác ý
+- giống nòi, dòng dõi, họ hàng, gia đình
+= to be the same flesh and blood+ cùng một dòng họ, cùng một dòng máu
+= to be near in blood+ có họ gần
+= blood royal+ hoang gia
+= fresh blood+ số người mới nhập (vào một gia đình, một xã, một hội)
+= bit of blood+ ngựa thuần chủng
+= dauntlessness runs in the blood of that family+ tinh thần bất khuất là truyền thống của gia đình ấy
+- người lịch sự, người ăn diện ((thường) young blood)
+!blood and iron
+- chính sách vũ lực tàn bạo
+!blood is thicker than water
+- (tục ngữ) một giọt máu đào hơn ao nước lã
+!to breed (make, stir up) bad blood between persons
+- gây sự bất hoà giữa người nọ với người kia
+!to drown in blood
+- nhận chìm trong máu
+!to freeze someone's blood
+- (xem) freeze
+!to get (have) one's blood up
+- nổi nóng
+!to get someone's blood up
+- làm cho ai nổi nóng
+!in cold blood
+- chủ tâm có suy tính trước
+- nhẫn tâm, lạnh lùng, không ghê tay (khi giết người)
+!to make one's blood boil
+- (xem) boit
+!to make someone's blood run cold
+- (xem) cold
+!you cannot get (take) blood (out of) stone
+- không thể nào làm mủi lòng kẻ nhẫn tâm được
+* ngoại động từ
+- trích máu
+- (săn bắn) luyện cho (chó săn) thích máu
+- (nghĩa bóng) xúi giục, kích động (ai)
 
 
 
@@ -107,8 +196,49 @@
 
 
 
+| blank
+/blæɳk/
+* tính từ
+- để trống, để trắng (tờ giấy...)
+= a blank page+ một trang để trắng
+= a blank cheque+ một tờ séc để trống
+= a blank space+ một quãng trống
+- trống rỗng; ngây ra, không có thần (cái nhìn...)
+= a blank existence+ một cuộc đời trống rỗng
+= a blank look+ cái nhìn ngây dại
+= his money is completely blank on the subject+ về vấn đề đó anh ta không nhớ được tí gì
+- không nạp chì (đạn); giả
+= blank cartridge+ đạn không nạp chì
+= blank window+ cửa sổ giả
+- bối rối, lúng túng
+= to look blank+ có vẻ bối rối, lúng túng
+- hoàn toàn tuyệt đối
+= blank silence+ sự yên lặng hoàn toàn
+= blank despair+ nỗi thất vọng hoàn toàn
+- không vần (thơ)
+= blank verse+ thơ không vần
+* danh từ
+- chỗ để trống, khoảng trống, gạch để trống
+= to fill the blank+ điền vào những chỗ để trống
+- sự trống rỗng
+= his mind is a complete blank+ đầu óc anh ta trống rỗng
+- nỗi trống trải
+= what a blank such a life is!+ cuộc sống như vậy thật trống rỗng quá!
+- đạn không nạp chì ((cũng) blank cartridge)
+- vé xổ số không trúng
+= to draw a blank+ không trúng số; ((nghĩa bóng)) thất bại
+- phôi tiền (mảnh kim loại để rập thành đồng tiền)
+- (từ Mỹ,nghĩa Mỹ) mẫu in có chừa chỗ trống
+- (từ Mỹ,nghĩa Mỹ) điểm giữa bia tập bắn; đích
+= to fire points blank+ chĩa súng thẳng sát đích mà bắn, dí súng tận nơi mà bắn
+* ngoại động từ
+- (từ Mỹ,nghĩa Mỹ),  (thể dục,thể thao) thắng tuyệt đối, thắng hoàn toàn (đội bạn)
 
+blank
+- (Tech) mẫu kê khai; ký tư trống; khoảng trống/cách; để trống/trắng; xóa (đ)
 
+blank
+- chỗ trống
 
 
 
@@ -118,6 +248,20 @@
 
 
 
+| bucket
+/'bʌkit/
+* danh từ
+- thùng, xô (để múc nước)
+- pittông (ống bơm)
+- gầu (ở guồng nước)
+- lỗ căm (roi, súng, chân giả...)
+!to give the bucket
+- đuổi ra không cho làm, sa thải
+!to kick the bucket
+- (từ lóng) củ, ngoẻo
+* động từ
+- bắt (ngựa) chạy quá sức
+- chèo (thuyền) vội vàng
 
 
 
@@ -126,11 +270,37 @@
 
 
 
-| ticket-collector
-*danh từ
-- người soát vé
+| button
+/'bʌtn/
+* danh từ
+- cái khuy, cái cúc (áo)
+- cái nút, cái núm, cái bấm (chuông điện...)
+- nụ hoa; búp mầm (chưa nở)
+- (số nhiều) (thông tục) chú bé phục vụ ở khách sạn ((cũng) boy in buttons)
+!not to care a [brass] button
+- (thông tục) cóc cần
+* động từ
+- cái khuy, cái cúc; cài
+= to button up one's coat+ cài khuy áo lại
+= this dress buttons down the back+ cái áo này cài ở phía sau
+- đơm khuy, đôm cúc (áo)
+- ((thường) + up) phủ kín áo lên (người hay súc vật mang trong người)
+!buttoned up
+- (quân sự),  (từ lóng) tất cả đều đã sẵn sàng đâu vào đấy
+!to button up one's mouth
+- (thông tục) im thin thít
+!to button up one's purse
+- (thông tục) keo kiệt, bủn xỉn
 
+button
+- (Tech) nút; núm
 
+button
+- nút bấm, cái khuy
+- push b. nút bấm đẩy
+- reset b. nút bật lại
+- start b. (máy tính) nút bấm khởi động
+- stop b. (máy tính) nút dừng
 
 
 
@@ -138,99 +308,15 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| ticket-punch
-*danh từ
-- (đường sắt) cái bấm vé; cái bấm lỗ
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| ticket-holder
-*danh từ
-- người có vé
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| likeliness
+| likelihood
 /'laiklihud/
 * danh từ
 - sự có thể đúng, sự có thể thật
 = in all likelihood+ có thể, có nhiều khả năng
 
+likelihood
+- (thống kê) hợp lý
+- maximum l. (thống kê) hợp lý cực đại
 
 
 
@@ -238,6 +324,9 @@
 
 
 
+| braai
+*ngoại động từ, n
+- (từ Nam Phi) nướng, quay cả con
 
 
 
@@ -245,6 +334,12 @@
 
 
 
+| bloat
+/blout/
+* ngoại động từ
+- muối và hun khói (cá trích)
+* động từ
+- phông lên, sưng lên, phù lên, sưng húp lên
 
 
 
@@ -252,28 +347,67 @@
 
 
 
-
-
-
-
-
-
-
-
-| pause
-/pɔ:z/
+| like
+/laik/
+* tính từ
+- giống, giống nhau, như nhau, tương tự, cùng loại
+= as like as two peas+ giống nhau như hai giọt nước
+= what's he like?+ anh ta là người như thế nào? anh ta là hạng người như thế nào?
+- thực đúng, đúng như mong đợi
+= it's like a Vietnamese to thirst for learning+ hiếu học thực đúng đặc tính người Việt Nam
+= this poetry is something like+ thơ này mới thật là thơ
+- thích, sãn sàng, sãn lòng, vui lòng
+= not to feel like going out today+ cảm thấy không thích đi chơi hôm nay
+- có vẻ như
+= it looks like rain+ có vẻ như trời muốn mưa
+- gần, khoảng độ
+= something like 100d+ khoảng độ 100 đồng
+!like father like son
+- cha nào con nấy
+!like master like man
+- thầy nào tớ nấy
+* giới từ
+- như
+= don't talk like that+ đừng nói như vậy
+= like mad+ như điên, điên cuồng
+!like a shot
+- không ngần ngại, sãn lòng; bất chấp hậu quả
+!sure like rain
+- chắc như đinh đóng cột
+* phó từ
+- like very; like enough rất có thể
+* liên từ
+- (thông tục) thay cho as như
+= I cannot do it like you do+ tôi không thể làm cái đó như anh làm
 * danh từ
-- sự tạm nghỉ, sự tạm ngừng
-- sự ngập ngừng
-= to give pause to+ làm cho (ai) ngập ngừng
-- sự ngắt giọng (trong khi đang nói, đang đọc); chỗ ngắt giọng, chỗ ngắt
-= the after a short pause, he resumed his speech+ sau khi ngắt giọng một giây, ông ấy lại tiếp tục bài diễn văn của mình
-- (âm nhạc) dấu dãn nhịp
+- người thuộc loại như; vật thuộc loại như
+= did not ever see the like of it?+ có bao giờ anh trông thấy cái giống như cái đó không?
+= music, painting and the like+ âm nhạc, hội hoạ và những môn thuộc loại đó
+= the likes of me+ (thông tục) những kẻ hèn như tôi
+= the likes of you+ (thông tục) những bậc cao sang như anh
+!like cures like
+- lấy độc trị độc
+!to return like for like
+- lấy ơn trả ơn, lấy oán trả oán
+* danh từ
+- cái thích
+= likes and dislikes+ những cái thích và những cái không thích
+* ngoại động từ
+- thích ưa, chuộng, yêu
+= do you like fish?+ anh có thích cá không?
+= I like his cheek+(mỉa mai) tôi mới thích thái độ láo xược của hắn làm sao
+- (would like,  should like) muốn, ước mong
+= I should like a cup of tea+ tôi muốn có một tách chè
+= parents like their children to be successful in file+ bố mẹ muốn cho con cái thành công ở đời
+= I'd like to know (see)+ thử cho tôi biết (xem) nào!
+- thích hợp, hợp với (thể trạng, sức khoẻ...)
+= wine does not like me+ rượu vang không hợp với thể trạng của tôi, tôi không chịu đựng được rượu vang
 * nội động từ
-- tạm nghỉ, tạm ngừng
-- chờ đợi; ngập ngừng
-- (+ upon) ngừng lại
-= let us pause upon this phrase+ chúng ta hãy ngừng lại ở nhóm từ này
+- thích, muốn
+= you may do as you like+ anh có thể làm theo như ý thích
+
+like
+- giống như; bằng; cùng tên // giống, có lẽ, có thể
 
 
 
@@ -281,28 +415,289 @@
 
 
 
+| love
+/lʌv/
+* danh từ
+- lòng yêu, tình thương
+= love of one's country+ lòng yêu nước
+= a mother's love for her children+ tình mẹ yêu con
+- tình yêu, mối tình, ái tình
+= first love+ mối tình đầu
+= never trifle with love+ không nên đùa bỡn với tình yêu
+= to be in love with+ yêu (ai)
+= to fall in love with+ đâm ra yêu (phải lòng) (ai)
+= to make love to someone+ tán tỉnh ai, tỏ tình với ai; ôm ấp hôn hít ai, ăn nằm với ai
+= to marry for love+ kết hôn vì tình
+- người yêu, người tình
+- thần ái tình
+- (thông tục) người đáng yêu; vật đáng yêu
+- (thể dục,thể thao) điểm không, không (quần vợt)
+= love all+ không không (hai bên cùng không được điểm nào)
+= love forty+ không bốn mươi
+= a love set+ một ván thua trắng (người thua không được điểm nào)
+!to love in a cottage
+- ái tình và nước lã
+!one can't get it for love or money
+- không có cách gì lấy được cái đó
+!to play for love
+- chơi vì thích không phải vì tiền
+!there is no love lost between them
+- chúng nó ghét nhau như đào đất đổ đi
+* ngoại động từ
+- yêu, thương, yêu mến
+= to love one another+ yêu nhau, thương nhau
+- thích, ưa thích
+= to love sports+ thích thể thao
+= to love music+ thích âm nhạc
+= he loves to be praised+ nó thích được khen
 
 
 
 
 
 
+| black
+/blæk/
+* tính từ
+- đen
+- mặc quần áo đen
+- da đen
+= a black woman+ người đàn bà da đen
+- tối; tối tăm
+= black as ink+ tối như mực
+= black night+ đêm tối tăm
+- dơ bẩn, bẩn thỉu
+= black hands+ những bàn tay dơ bẩn
+- đen tối, ảm đạm, buồn rầu, vô hy vọng
+= things look black+ sự việc có vẻ đen tối vô hy vọng
+= black tidings+ tin buồn
+- xấu xa, độc ác; kinh tởm, ghê tởm
+= black crimes+ những tội ác ghê tởm
+!to beat black and blue
+- (xem) beat
+!to give someone a black look
+- lườm nguýt người nào
+!he is not so balck as he is painted
+- nó cũng không đến nỗi xấu (tồi tệ) như người ta nói đâu
+* danh từ
+- màu đen
+- sơn đen
+- quần áo đen, áo tang
+= to be in black+ mặc quần áo đen; mặc áo tang
+- người da đen
+- bụi bẩn, mồ hóng
+* ngoại động từ
+- làm đen, bôi đen
+- đánh xi đen (giày)
+!to black out
+- bôi đen để xoá đi
+- (sân khấu) tắt đèn
+- che kín ánh đèn, tắt đèn phòng không
+- thoáng ngất đi; thoáng mất trí nhớ; thoáng hoa mắt
+- (từ Mỹ,nghĩa Mỹ) che giấu đi, ỉm đi
+- (từ Mỹ,nghĩa Mỹ) kiểm duyệt
+
+black
+- (Tech) mầu đen; làm đen (đ)
+
+black
+- đen
 
 
 
 
 
 
+| provability
+- xem prove
 
 
 
 
+| provable
+/provable/
+* tính từ
+- có thể chứng tỏ, có thể chứng minh
+
+provable
+- (logic học) chứng minh được
 
 
 
 
+| prank
+/præɳk/
+* danh từ
+- trò chơi ác, trò chơi khăm, trò đùa nhả
+= to play pranks+ chơi ác, chơi khăm, đùa nhả
+= to play a prank on somebody+ chơi ác ai, chơi khăm ai, đùa nhả ai
+- sự trục trặc (máy)
+* ngoại động từ
+- ((thường) + out) trang sức, trang hoàng, tô điểm
+* nội động từ
+- vênh vang, chưng tr
 
 
+
+| proud
+/proud/
+* tính từ
+- ((thường) + of) kiêu ngạo, kiêu căng, kiêu hãnh, tự đắc
+= with proud looks+ vẻ kiêu hãnh, vẻ kiêu căng
+= to be proud of one's rank+ kiêu ngạo về địa vị của mình
+- tự hào; hãnh diện; đáng tự hào
+= to be proud of the victory+ tự hào về chiến thắng
+= the proudest day of my life+ ngày tươi đẹp hãnh diện nhất đời tôi
+- tự trọng
+= to be too proud to beg+ quá tự trọng không thể hạ mình cầu xin được
+- lộng lẫy, huy hoàng, uy nghi, hùng vĩ
+= the troops ranged in proud array+ quân dội đứng thành hàng ngũ uy nghi
+= proud Truongson range+ dãy Trường-sơn hùng vĩ
+- tràn ngập, ngập lụt (sông, hồ...)
+- hãng (ngựa...)
+!proud flesh
+- thịt mọc lồi lên ở vết thương
+* phó từ
+- (thông tục) trọng vọng, trọng đãi
+= you do me proud+ anh trọng vọng tôi quá, anh trọng đãi tôi quá
+
+
+
+| list
+/list/
+* danh từ
+- trạng thái nghiêng; mặt nghiêng
+= to have a list+ (hàng hải) nghiêng về một bên
+= this wall has a decided list+ bức tường này nghiêng hẳn về một bên
+* danh từ
+- mép vải; dải
+- mép vải nhét khe cửa
+= to line edges of door with list+ bịt khe cửa bằng mép vửi (cho khỏi gió lùa)
+- (số nhiều) hàng rào bao quanh trường đấu; trường đấu, vũ đài
+= to enter the lists against somebody+ thách thức ai, nhận sự thách thức của ai ((thường) dùng về cuộc tranh luận)
+- danh sách, sổ, bản kê khai
+= to draw up a list of..+ làm một bản danh sách về...
+= to strike off the list+ xoá tên khỏi danh sách
+!active list
+- danh sách sĩ quan có thể được gọi nhập ngũ
+* ngoại động từ
+- viềm, diềm bằng vải
+- nhét mép vải (vào khe cửa)
+- ghi vào danh sách
+* ngoại động từ
+- (từ cổ,nghĩa cổ) thích, muốn
+* động từ
+- (từ cổ,nghĩa cổ) nghe
+
+list
+- danh sách, bảng // lập danh sách
+- check l. (máy tính) sơ đồ kiểm tra thử, bảng kiểm tra
+
+
+
+| trolley-bus
+/'trɔlibʌs/
+* danh từ
+- ô tô điện
+
+| trodden
+/tred/
+* danh từ
+- bước đi, cách đi, dáng đi
+= a firm tread+ dáng đi vững chắc
+- tiếng chân bước
+= heavy tread+ tiếng chân bước nặng nề
+- (động vật học) sự đạp mái
+- mặt bậc cầu thang
+- tấm (cao su...) phủ bậc cầu thang
+- đế ủng
+- Talông (lốp xe)
+- mặt đường ray
+- phôi (trong quả trứng)
+- khoảng cách bàn đạp (xe đạp); khoảng cách trục (xe ô tô)
+* động từ trod; trodden
+- đi, bước lên, giẫm lên, đặt chân lên
+= to tread heavily+ đi nặng nề
+= to tread unknown ground+ bước chân lên một mảnh đất xa lạ
+= don't tread on the flowers+ đừng giẫm lên hoa
+- đạp (nho để làm rượu...)
+- đạp mái (gà)
+!to tread down
+- đạp lên, giẫm lên; (nghĩa bóng) chà đạp, giày xéo, áp chế; khinh rẻ
+!to tread in
+- dận lún xuống, đạp lún xuống
+!to tread out
+- lấy chân di cho tắt, giẫm cho tắt (ngọn lửa); (nghĩa bóng) dập tắt, trấn áp (cuộc nổi dậy)
+- đạp (nho để làm rượu...)
+!to tread lightly
+- đi nhẹ nhàng; (nghĩa bóng) làm việc thận trọng dè dặt; đề cập một cách dè dặt (đến một vấn đề khó khăn)
+!to tread in someone's footsteps
+- theo vết chân ai, bắt chước ai
+!to tread on someone's corns (toes)
+- giẫm lên ngón chân ai; (nghĩa bóng) làm mếch lòng ai, chạm lòng tự ái của ai
+!to tead on the heels of
+- bám sát, theo sát gót
+- theo dõi (sự việc)
+!to tread on air
+- mừng rơn, sướng rơn
+!to tead on (as on) eggs
+- đi từng bước dè dặt thận trọng như đi trên trứng; hành động thận trọng dè dặt
+!to tread on somebody's neck
+- đè đầu cưỡi cổ ai, chà đạp ai, đàn áp ai, trấn áp ai
+!to tread the stage (the boards)
+- là diễn viên sân khấu
+!to tread under foot
+- (nghĩa bóng) chà đạp, giày xéo; khinh rẻ
+!to tread water
+- bơi đứngtread /tred/
+* danh từ
+- bước đi, cách đi, dáng đi
+= a firm tread+ dáng đi vững chắc
+- tiếng chân bước
+= heavy tread+ tiếng chân bước nặng nề
+- (động vật học) sự đạp mái
+- mặt bậc cầu thang
+- tấm (cao su...) phủ bậc cầu thang
+- đế ủng
+- Talông (lốp xe)
+- mặt đường ray
+- phôi (trong quả trứng)
+- khoảng cách bàn đạp (xe đạp); khoảng cách trục (xe ô tô)
+* động từ trod; trodden
+- đi, bước lên, giẫm lên, đặt chân lên
+= to tread heavily+ đi nặng nề
+= to tread unknown ground+ bước chân lên một mảnh đất xa lạ
+= don't tread on the flowers+ đừng giẫm lên hoa
+- đạp (nho để làm rượu...)
+- đạp mái (gà)
+!to tread down
+- đạp lên, giẫm lên; (nghĩa bóng) chà đạp, giày xéo, áp chế; khinh rẻ
+!to tread in
+- dận lún xuống, đạp lún xuống
+!to tread out
+- lấy chân di cho tắt, giẫm cho tắt (ngọn lửa); (nghĩa bóng) dập tắt, trấn áp (cuộc nổi dậy)
+- đạp (nho để làm rượu...)
+!to tread lightly
+- đi nhẹ nhàng; (nghĩa bóng) làm việc thận trọng dè dặt; đề cập một cách dè dặt (đến một vấn đề khó khăn)
+!to tread in someone's footsteps
+- theo vết chân ai, bắt chước ai
+!to tread on someone's corns (toes)
+- giẫm lên ngón chân ai; (nghĩa bóng) làm mếch lòng ai, chạm lòng tự ái của ai
+!to tead on the heels of
+- bám sát, theo sát gót
+- theo dõi (sự việc)
+!to tread on air
+- mừng rơn, sướng rơn
+!to tead on (as on) eggs
+- đi từng bước dè dặt thận trọng như đi trên trứng; hành động thận trọng dè dặt
+!to tread on somebody's neck
+- đè đầu cưỡi cổ ai, chà đạp ai, đàn áp ai, trấn áp ai
+!to tread the stage (the boards)
+- là diễn viên sân khấu
+!to tread under foot
+- (nghĩa bóng) chà đạp, giày xéo; khinh rẻ
+!to tread water
+- bơi đứng
 
 | like-mindedness
 /'laik'maindidnis/
@@ -338,9 +733,6 @@
 
 
 
-| game-warden
-*danh từ
-- người quản lý khu vực cấm săn bắn
 
 
 
@@ -356,319 +748,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| gaslight
-/'gæslait/
-* danh từ
-- đèn khí
-- ánh đèn khí
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| gambler
-/'gæmblə/
-* danh từ
-- người đánh bạc, con bạc
-- kẻ đầu cơ; kẻ làm liều, mưu đồ ăn to
-
-gambler
-- (lý thuyết trò chơi) người đánh bạc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| gamble
-/'gæmbl/
-* danh từ
-- cuộc đánh bạc, cuộc may rủi
-- việc mạo hiểm được ăn cả ngã về không; việc làm liều mưu đồ ăn to (đầu cơ buôn bán...)
-* động từ
-- đánh bạc
-- đầu cơ (ở thị trường chứng khoán)
-- (nghĩa bóng) liều làm một công việc gì
-!to gamble away one's fortune
-- thua bạc khánh kiệt
-
-gamble
-- (lý thuyết trò chơi) (cờ) bạc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| timberman
-*danh từ số nhiều timbermen
-- thợ lâm trường
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| timber-wolf
-*danh từ
-- chó sói to, lông xám ở Bắc Mỹ
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| time exposure
-*danh từ
-- sự phơi sáng ảnh (trong đó cửa trập được mở ra lâu hơn thời gian ngắn nhất, tức là hơn một, hai giây)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| timberling
-*danh từ
-- cây con
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| timbrel
-/'timbrəl/
-* danh từ
-- (âm nhạc) trống prôvăng
-
-
-
-
-
-
-
-
-
-| timber-yard
-/'timbəjɑ:d/
-* danh từ
-- bãi gỗ
-
-
-
-
-
-
-
-
-
-| ticketing
-/'tikitiɳ/
-* danh từ
-- sự dán nhãn, sự viết nhãn (ghi giá hàng...)ticket /'tikit/
-* danh từ
-- vé
-= through ticket+ vé suốt
-= return ticket+ vé khứ hồi
-- giấy (giấy phép, giấy mời...)
-= free ticket+ giấy mời; giấy ưu tiên ra vào
-- bông, phiếu
-= ticket for soup+ phiếu cháo
-- nhãn ghi giá; nhãn ghi đặc điểm (hàng hoá...)
-- thẻ, biển
-- (từ Mỹ,nghĩa Mỹ) danh sách ứng cử
-= the Democratic ticket+ danh sách ứng cử của đảng Dân chủ
-- (thông tục) (the ticket) cái đúng điệu
-= that's the ticket+ đúng điệu; đúng lắm; vừa nhịp
-!to get one's ticket
-- được giải ngũ
-* ngoại động từ
-- dán nhãn, viết nhãn (ghi giá, ghi đặc điểm... hàng hoá)
-- phát vé, phát phiếu
 
 
 
