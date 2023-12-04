@@ -9,14 +9,17 @@ import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -48,6 +51,8 @@ public abstract class MutualController implements Initializable {
     private Button removeButton;
     @FXML
     protected Button editButton;
+    @FXML
+    protected Button addButton;
     @FXML
     protected Label loading;
     @FXML
@@ -147,11 +152,11 @@ public abstract class MutualController implements Initializable {
 
         //Hiện word meaning
         currentMeaning = dict.lookUpWord(currentWord);
-        if (this instanceof FavoriteTabController) {
-            currentMeaning = dict.getFavorites().getAllFav().get(currentWord);
-        } else {
-            currentMeaning = dict.lookUpWord(currentWord);
-        }
+//        if (this instanceof FavoriteTabController) {
+//            currentMeaning = dict.getFavorites().getAllFav().get(currentWord);
+//        } else {
+//            currentMeaning = dict.lookUpWord(currentWord);
+//        }
         if (currentMeaning.equals("Not found!\n")) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Thong bao");
@@ -384,10 +389,14 @@ public abstract class MutualController implements Initializable {
                     unsuccessAlert.setHeaderText("Xóa từ " + currentWord + " không thành công!");
                     unsuccessAlert.showAndWait();
                 }
+                SearchBar.setText("");
                 ShowList(currentWord);
                 currentWord = "";
                 wordTitle.getChildren().clear();
                 wordMeaning.getChildren().clear();
+                ThesaurusInfo.getChildren().clear();
+                ThesaurusLabel.setVisible(false);
+                DefinitionLabel.setVisible(false);
             }
         }
     }
@@ -408,10 +417,45 @@ public abstract class MutualController implements Initializable {
             wordMeaning.getChildren().clear();
             wordMeaning.getChildren().add(new Text(currentMeaning));
         }
-
     }
 
     public String getCurrentWord() {
         return currentWord;
     }
+
+    @FXML
+    void addWord(ActionEvent event) throws IOException {
+        Alert formatAlert = new Alert(Alert.AlertType.WARNING);
+        formatAlert.setTitle("LƯU Ý");
+        formatAlert.setHeaderText("Hãy chắc chắn rằng luôn có kí tự | trước mỗi từ bạn muốn thêm vào từ điển. Ví dụ:\n" +
+                "| Hello\n*Xin chào\n| Goodbye\n*Tạm biệt");
+        formatAlert.showAndWait();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        FileChooser fc = new FileChooser();
+        fc.setTitle("Choose a text file");
+        fc.setInitialDirectory(new File(System.getProperty("user.home")));
+        FileChooser.ExtensionFilter Filter = new FileChooser.ExtensionFilter("Text file", "*.txt");
+        fc.getExtensionFilters().add(Filter);
+        File file = fc.showOpenDialog(stage);
+
+        Alert successAlert = new Alert(Alert.AlertType.INFORMATION);
+        if (file == null) {
+            return;
+        } else if (!file.exists()) {
+            successAlert.setTitle("Thêm từ không thành công");
+            successAlert.setHeaderText("Đường dẫn đến file không đúng hoặc không tồn tại");
+        } else if (file.length() == 0) {
+            successAlert.setTitle("Thêm từ không thành công");
+            successAlert.setHeaderText("File " + file.getName() + " rỗng");
+        } else {
+            dict.importDataFromFile(file.getPath());
+            successAlert.setTitle("Thêm từ thành công");
+            successAlert.setHeaderText("Đã thêm từ từ file: " + file.getName());
+        }
+        successAlert.showAndWait();
+        ShowList("");
+        ShowList(currentWord);
+    }
+
 }

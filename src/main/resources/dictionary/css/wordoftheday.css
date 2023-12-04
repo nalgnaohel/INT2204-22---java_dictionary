@@ -1,0 +1,42 @@
+.word-of-the-day {
+    -fx-font-size: 25px;
+    -fx-font-family: Barlow;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.word-title {
+    -fx-border-radius: 9px;
+    -fx-border-width: 3px;
+    -fx-border-color: white;
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.16), 10, 0, 0, 0);
+    -fx-font-size: 40px;
+    -fx-font-family: Barlow;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.text-flow {
+    -fx-font-size: 15px;
+    -fx-font-family: "Myriad Pro";
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-row-valignment: center;
+}
+
+
+.button {
+    -fx-text-fill: #2d2d2d;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-font-family: Barlow;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-cursor: hand;
+}
