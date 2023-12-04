@@ -31,6 +31,13 @@ public class LookUpTabController extends MutualController {
         ShowList("");
     }
 
+    public void init() {
+        ShowWord("");
+        ShowList("");
+        currentWord = "";
+        SearchBar.setText(currentWord);
+    }
+
     public void SearchInput(KeyEvent event) throws IOException {
         if (event.getSource() == SearchBar) {
             String searchText = SearchBar.getText();
@@ -41,5 +48,12 @@ public class LookUpTabController extends MutualController {
         }
     }
 
-
+    public void updateHistory() {
+        wordsList.clear();
+        for (Word word : dict.getFavorites().getAllWords()) {
+            wordsList.add(word.getWordTarget());
+        }
+        ObservableList<String> favItems = FXCollections.observableArrayList(wordsList);
+        listView.setItems(favItems);
+    }
 }

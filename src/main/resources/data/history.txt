@@ -1,253 +1,27 @@
-| prankish
-/'præɳkiʃ/
-* tính từ
-- hay chơi ác, hay chơi khăm, hay đùa nhả
-- hay trục trặc (máy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-| prankishly
-- xem prankish
-
-
-
-
-
-
-
-
-
-
-
-
-
-| prankishness
-/'præɳkiʃnis/
-* danh từ
-- tính hay chơi ác, tính hay chơi khăm, tính hay đùa nhả
-- tính hay trục trặc (máy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-| prankster
-*danh từ
-- người hay tinh nghịch, người hay đùa cợt, người chơi khăm
-
-
-
-
-
-
-
-
-
-
-
-
-
-| long
-/lɔɳ/
-* tính từ
-- dài (không gian, thời gian); xa, lâu
-= a long journey+ một cuộc hành trình dài
-= to live a long life+ sống lâu
-- kéo dài
-= a one-month long leave+ thời gian nghỉ phép (kéo dài) một tháng
-- cao; nhiều, đáng kể
-= a long price+ giá cao
-= for long years+ trong nhiều năm
-= a long family+ gia đình đông con
-- dài dòng, chán
-= what a long speech!+ bài nói sao mà dài dòng thế!
-- quá, hơn
-= a long hundred+ (thương nghiệp) một trăm hai mươi
-- chậm, chậm trễ, lâu
-= don't be long+ đừng chậm nhé
-!to bid a farewell
-- tạm biệt trong một thời gian dài
-!to draw the long bow
-- (xem) bow
-!to have a long arm
-- mạnh cánh có thế lực
-!to have a long face
-- mặt dài ra, chán nản, buồn xỉu
-!to have a long head
-- linh lợi; láu lỉnh; nhìn xa thấy rộng
-!to have a long tongue
-- hay nói nhiều
-!to have a long wind
-- trường hơi, có thể chạy lâu mà không nghỉ; có thể nói mãi mà không mệt
-!to make a long arm
-- với tay ai (để lấy cái gì)
-!to make a long nose
-- vẫy mũi chế giễu
-!to take long views
-- biết nhìn xa nghĩ rộng; nhìn thấu được vấn đề
-!in the long run
-- sau cùng, sau rốt, kết quả là, rốt cuộc
-!of long standing
-- có từ lâu đời
-!one's long home
-- (xem) home
-* danh từ
-- thời gian lâu
-= before long+ không bao lâu, chẳng bao lâu
-= it is long since I heard of him+ đã từ lâu tôi không được tin gì của anh ta
-- (thông tục) vụ nghỉ hè
-!the long and the short of it
-- tóm lại; tất cả vấn đề thâu tóm lại, nói gọn lại
-* phó từ
-- lâu, trong một thời gian dài
-= you can stay here as long as you like+ anh có thể ở lại đây bao lâu tuỳ theo ý thích
-- suốt trong cả một khoảng thời gian dài
-= all day long+ suốt ngày
-= all one's life long+ suốt đời mình
-- (+ ago,  after,  before,  since) lâu, đã lâu, từ lâu
-= that happened long ago+ việc đó xảy ra đã từ lâu
-= I knew him long before I knew+ tôi biết nó từ lâu trước khi biết anh
-!so long!
-- (từ Mỹ,nghĩa Mỹ) tạm biệt!
-!so long as
-!as long as
-- miễn là, chỉ cần, với điều kiện là
-- chừng nào mà
-!to be long
-- (+ động tính từ hiện tại) mãi mới
-= to be long finding something+ mãi mới tìm ra cái gì
-* nội động từ
-- nóng lòng, mong mỏi, ước mong, ao ước
-= I long to see him+ tôi nóng lòng được gặp nó
-= I long for you letter+ tôi mong mỏi thư anh
-
-long
-- dài // kéo dài
-
-
-
-
-
-
-
-
-
-
-
-
-
-| long drink
-*danh từ
-- lượng thức uống rót đầy một cốc
-
-
-
-
-
-
-
-
-
-
-
-
-
-| long ears
-/'lɔɳiəz/
-* danh từ
-- sự ngu độn
-
-
-
-
-
-
-
-
-
-
-
-
-
-| long greens
-/'lɔɳ'gri:nz/
-* danh từ
-- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tiền giấy
-
-
-
-
-
-
-
-
-
-
-
-
-
-| likeable
-/'laikəbl/
-* tính từ
-- dễ thương, đáng yêu
-
-
-
-
-
-
-
-
-
-
-
-
-
-| likelihood
-/'laiklihud/
-* danh từ
-- sự có thể đúng, sự có thể thật
-= in all likelihood+ có thể, có nhiều khả năng
-
-likelihood
-- (thống kê) hợp lý
-- maximum l. (thống kê) hợp lý cực đại
-
-
-
-
-
-
-
-
-
-
-
-
-
 | likeliness
 /'laiklihud/
 * danh từ
 - sự có thể đúng, sự có thể thật
 = in all likelihood+ có thể, có nhiều khả năng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -298,6 +72,25 @@ likelihood
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 | pom
 /pɔm/
 * danh từ
@@ -315,8 +108,133 @@ likelihood
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 | on behalf
 - thay mặt, nhận danh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| prideful
+/'praidful/
+* tính từ
+- (Ê-cốt) đầy kiêu hãnh; tự cao, tự phụ
+- tự hào
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| pause
+/pɔ:z/
+* danh từ
+- sự tạm nghỉ, sự tạm ngừng
+- sự ngập ngừng
+= to give pause to+ làm cho (ai) ngập ngừng
+- sự ngắt giọng (trong khi đang nói, đang đọc); chỗ ngắt giọng, chỗ ngắt
+= the after a short pause, he resumed his speech+ sau khi ngắt giọng một giây, ông ấy lại tiếp tục bài diễn văn của mình
+- (âm nhạc) dấu dãn nhịp
+* nội động từ
+- tạm nghỉ, tạm ngừng
+- chờ đợi; ngập ngừng
+- (+ upon) ngừng lại
+= let us pause upon this phrase+ chúng ta hãy ngừng lại ở nhóm từ này
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| destination
+/,desti'neiʃn/
+* danh từ
+- nơi gửi tới, nơi đưa tới, nơi đi tới
+- sự dự định; mục đích dự định
+
+destination
+- (máy tính) chỗ ghi (thông tin)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 | pride
@@ -349,36 +267,98 @@ likelihood
 - lấy làm tự hào (về việc gì...)
 
 
-| prideful
-/'praidful/
-* tính từ
-- (Ê-cốt) đầy kiêu hãnh; tự cao, tự phụ
-- tự hào
 
 
-| pause
-/pɔ:z/
+| like-mindedness
+/'laik'maindidnis/
 * danh từ
-- sự tạm nghỉ, sự tạm ngừng
-- sự ngập ngừng
-= to give pause to+ làm cho (ai) ngập ngừng
-- sự ngắt giọng (trong khi đang nói, đang đọc); chỗ ngắt giọng, chỗ ngắt
-= the after a short pause, he resumed his speech+ sau khi ngắt giọng một giây, ông ấy lại tiếp tục bài diễn văn của mình
-- (âm nhạc) dấu dãn nhịp
-* nội động từ
-- tạm nghỉ, tạm ngừng
-- chờ đợi; ngập ngừng
-- (+ upon) ngừng lại
-= let us pause upon this phrase+ chúng ta hãy ngừng lại ở nhóm từ này
+- sự cùng một khuynh hướng, sự cùng một mục đích, sự có ý kiến giống nhau; sự giống tính nhau
 
 
-| price
-- (Econ) Giá
-+ Giá của một loại hàng hoá hoặc giá đầu vào cho thấy cái phải chi để có được một thứ hàng hoá hay dịch vụ.
 
-Price/earning ratio
-- (Econ) Tỷ lệ giá / Lợi tức (tỷ lệ P/E)
-+ Tỷ số của giá môt cổ phiếu bình thường đối với mỗi cổ phiếu bình thường.
+
+| troop-carrier
+*danh từ
+- tàu bay chuyên chở quân đội
+
+
+
+
+| full
+/ful/
+* tính từ
+- đầy, đầy đủ, nhiều, tràn trề, tràn ngập, chan chứa
+= to be full to the brim (to overflowing)+ đầy tràn, đầy ắp
+= my heart is too full for words+ lòng tôi tràn ngập xúc động không nói được nên lời
+= to be full of hopes+ chứa chan hy vọng
+= to give full details+ cho đầy đủ chi tiết
+= to be full on some point+ trình bày đầy đủ chi tiết về một điểm nào
+= a full orchestra+ dàn nhạc đầy đủ nhạc khí
+= to be full of years and honours+ (kinh thánh) tuổi tác đã cao, danh vọng cũng nhiều
+- chật, đông, chật ních, hết chỗ ngồi (rạp hát, xe buýt...)
+= to be full up+ chật rồi, hết chỗ ngồi
+- no, no nê
+= a full stomach+ bụng no
+- hết sức, ở mức độ cao nhất
+= to drive a car at full speed+ cho xe chạy hết tốc lực
+- tròn, đầy đặn, nở nang (đàn bà)
+- giữa, hoàn toàn, trọn vẹn, đầy đủ
+= in full summer+ giữa mùa hạ
+= in full daylight+ giữa ban ngày, lúc thanh thiên bạch nhật
+= a full dozen+ một tá tròn đủ một tá
+= to give full liberty to act+ cho hoàn toàn tự do hành động
+= to wait for two full hours+ đợi trọn hai giờ, đợi suốt hai giờ
+- lùng nhùng, phồng, xếp nhiều nếp (quần áo...)
+- thịnh soạn
+= a full meal+ bữa cơm thịnh soạn
+- chính thức; thuần (giống...); ruột (anh em...)
+= full membership+ tư cách hội viên chính thức
+= a full brother+ anh (em) ruột
+= a full sister+ chị (em) ruột
+= of the full blood+ thuần giống
+- đậm, thẫm (màu sắc); chói (ánh sáng); sang sảng (tiếng)
+!to be full of oneself
+- tự phụ, tự mãn
+!to fall at full length
+- ngã sóng soài
+!in full swing
+!in full blast
+- lúc sôi nổi nhất, lúc hăng say nhất; lúc náo nhiệt nhất
+* phó từ
+- (thơ ca) rất
+= full many a time+ rất nhiều lần
+= to know something full well+ biết rất rõ điều gì
+- hoàn toàn
+- đúng, trúng
+= the ball hit him full on the nose+ quả bóng trúng ngay vào mũi nó
+- quá
+= this chair is full high+ cái ghế này cao quá
+* danh từ
+- toàn bộ
+= in full+ đầy đủ, toàn bộ, không cắt bớt
+= to write one's name in full+ viết đầy đủ họ tên của mình
+= to the full+ đến mức cao nhất
+= to enjoy oneself to the full+ vui chơi thoả thích
+- điểm cao nhất
+* ngoại động từ
+- chuội và hồ (vải)
+
+full
+- toàn thể, toàn phần, đầy // hoàn toàn
+
+
+
+
+| r
+/r/
+* danh từ,  số nhiều Rs,  R's
+- R
+!the r months
+- mùa sò (gồm có tám tháng có chữ r từ September đến April)
+!the three R's
+- đọc (reading), viết (writting) và số học sinh (arithmetic) (cơ sở giáo dục sơ cấp)
+
+
 
 
 | like
@@ -444,9 +424,126 @@ like
 - giống như; bằng; cùng tên // giống, có lẽ, có thể
 
 
-| like-mindedness
-/'laik'maindidnis/
-* danh từ
-- sự cùng một khuynh hướng, sự cùng một mục đích, sự có ý kiến giống nhau; sự giống tính nhau
 
+
+| poach
+/poutʃ/
+* ngoại động từ
+- bỏ vô chần nước sôi; chần nước sôi (trứng)
+* ngoại động từ
+- (+ into) thọc, đâm (gậy, ngón tay... vào cái gì)
+- giẫm nát (cỏ...); giẫm lầy (đất...) (ngựa...)
+- săn trộm, câu trộm
+= to poach hares+ săn trộm thỏ rừng
+- xâm phạm (tài sản người khác)
+- (thể dục,thể thao) đánh (bóng quần vợt) lấn phần sân đồng đội
+- dở ngón ăn gian để đạt (thắng lợi trong cuộc đua...)
+* nội động từ
+- bị giẫm lầy (đất)
+- săn trộm, câu trộm (ở khu vực cấm...)
+- xâm phạm
+= to poach on a neighbour's land+ xâm phạm đất đai của người bên cạnh
+- (thể dục,thể thao) đánh bóng lấn phần sân đồng đội (quần vợt)
+- dở ngón ăn gian (trong cuộc chạy đua...)
+
+
+
+| pencil
+/'pensl/
+* danh từ
+- bút chì
+- vật hình bút chì
+- (vật lý); (toán học) hình chùm nhọn, chùm
+= pencil of planes+ chùm mặt phẳng
+= pencil of straight lines+ chùm đường thẳng
+- (nghĩa bóng) lối vẽ, nét bút (của một hoạ sĩ)
+- (từ cổ,nghĩa cổ) bút vẽ
+* ngoại động từ
+- viết bằng bút chì, vẽ bằng bút chì, kẻ bằng bút chì, tô bằng bút chì, ghi bằng bút chì
+- ghi (tên ngựa đua) vào sổ đánh cá
+- (thường),  dạng bị động đánh bóng nhẹ bằng những đường vòng tròn đồng tâm hoặc song song)
+
+pencil
+- chùm
+- p. of cireles chùm vòng tròn
+- p. of curves chùm đường cong
+- p. of forms chùm các dạng
+- p. of lines chùm đường thẳng
+- p. of matrices chùm ma trận
+- p. of planes chùm mặt phẳng
+- p. of quadric chùm quađric
+- p. of rays chùm tia
+- p. of spheres chùm hình cầu
+- axial p. chùm trục
+- coaxial p. chùm đồng trục
+- cocentric p.s chùm đồng tâm
+- flat p. chùm dẹt
+
+| price
+- (Econ) Giá
++ Giá của một loại hàng hoá hoặc giá đầu vào cho thấy cái phải chi để có được một thứ hàng hoá hay dịch vụ.
+
+Price/earning ratio
+- (Econ) Tỷ lệ giá / Lợi tức (tỷ lệ P/E)
++ Tỷ số của giá môt cổ phiếu bình thường đối với mỗi cổ phiếu bình thường.
+
+| iodic
+/ai'ɔdik/
+* tính từ
+- (hoá học) Ioddic
+= iodic acid+ axit ioddic
+
+| prize
+/prize/
+* danh từ
+- giải thưởng, phầm thưởng
+= the International Lenin Peace Prize+ giải thưởng quốc tế hoà bình Lê-nin
+= to carry off the prize+ giật giải, đoạt giải
+- (nghĩa bóng) điều mong ước, ước vọng
+= the prizes of life+ những ước vọng của cuộc đời
+- giải xổ số; số trúng
+- (định ngữ) được giải, chiếm giải
+= prize ox+ con bò được giải
+- (định ngữ), (mỉa mai) đại hạng, cực
+= a prize idiot+ thằng ngốc đại hạng
+* ngoại động từ
+- đánh giá cao, quý
+= to liberty more than life+ quý tự do hơn sinh mệnh
+* danh từ
+- chiến lợi phẩm (tàu bè, tài sản...)
+= to make prize of...+ tịch thu (tàu bè, tài sản... ở biển) làm chiến lợi phẩm
+= to become prize+ bị bắt, bị tịch thu làm chiến lợi phẩm
+- (nghĩa bóng) của trời ơi, của bắt được
+* ngoại động từ ((cũng) pry)
+- tịch thu (tàu bè, tài sản... ở biển) làm chiến lợi phẩm
+* danh từ ((cũng) prise)
+- sự nạy, sự bẩy (bằng đòn bẩy)
+- (từ Mỹ,nghĩa Mỹ) đòn bẩy
+* ngoại động từ ((cũng) prise)
+- nạy, bẩy lên
+= to prize open a box+ nạy tung cái hộp ra
+= to prize up the cover+ bẩy cái nắp lên
+
+| plank
+/plæɳk/
+* danh từ
+- tấm ván (thường là loại dài, bề dày từ 5 cm đến 15 cm, bề ngang từ 23 cm trở lên)
+- (nghĩa bóng) mục (một cương lĩnh)
+!to walk the plank
+- (xem) walk
+* ngoại động từ
+- lát ván (sàn...)
+- (thông tục) ((thường) + down) đặt mạnh xuống, trả ngay
+= to plank down money+ trả tiền ngay
+- (từ Mỹ,nghĩa Mỹ) nướng (cá, thịt...) bằng cặp chả
+
+| likelihood
+/'laiklihud/
+* danh từ
+- sự có thể đúng, sự có thể thật
+= in all likelihood+ có thể, có nhiều khả năng
+
+likelihood
+- (thống kê) hợp lý
+- maximum l. (thống kê) hợp lý cực đại
 

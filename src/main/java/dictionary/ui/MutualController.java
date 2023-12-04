@@ -11,12 +11,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
-import org.controlsfx.control.IndexedCheckModel;
 
 import java.io.IOException;
 import java.net.URL;
@@ -28,6 +25,7 @@ import static dictionary.Main.dict;
 
 public abstract class MutualController implements Initializable {
     private String currentMeaning;
+    protected boolean editSuccess = false;
 
     @FXML
     protected TextField SearchBar;
@@ -93,8 +91,11 @@ public abstract class MutualController implements Initializable {
             return;
         }
 
-        //Hiện word meaning và info (antonyms, synonyms)
-        currentMeaning = dict.lookUpWord(currentWord);
+        if (this instanceof FavoriteTabController) {
+            currentMeaning = dict.getFavorites().getAllFav().get(currentWord);
+        } else {
+            currentMeaning = dict.lookUpWord(currentWord);
+        }
         if (currentMeaning.equals("Not found!\n")) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Thong bao");
@@ -103,9 +104,7 @@ public abstract class MutualController implements Initializable {
             return;
         }
         if (this instanceof LookUpTabController) {
-            System.out.println(dict.getHistory().getAllWords().size());
             dict.getHistory().addTo(new Word(currentWord, currentMeaning));
-            System.out.println(dict.getHistory().getAllWords().size());
         }
         Text word = new Text(currentWord);
         wordTitle.getChildren().clear();
@@ -215,11 +214,24 @@ public abstract class MutualController implements Initializable {
 
     public void edit(ActionEvent event) {
         EditWindow editWindow = new EditWindow();
+        editWindow.setController(this);
         try {
             editWindow.display();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        System.out.println("Done editing!");
+        if (editSuccess && this instanceof FavoriteTabController) {
+            currentMeaning = dict.lookUpWord(currentWord);
+            dict.getFavorites().getAllFav().put(currentWord, currentMeaning);
+            System.out.println(currentMeaning);
+            wordMeaning.getChildren().clear();
+            wordMeaning.getChildren().add(new Text(currentMeaning));
+        }
+
     }
 
+    public String getCurrentWord() {
+        return currentWord;
+    }
 }

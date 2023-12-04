@@ -14,7 +14,7 @@ import java.util.ResourceBundle;
 
 import static dictionary.Main.dict;
 
-public class EditController implements Initializable {
+public class EditController {
     @FXML
     private TextField wordTarget;
 
@@ -25,9 +25,16 @@ public class EditController implements Initializable {
     private Button cfButton;
 
     private EditWindow editWindow;
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        wordTarget.requestFocus();
+
+    public void initialize(boolean canEdit, String currentWord) {
+        if (!canEdit) {
+            setWordTarget(currentWord);
+        }
+    }
+
+    public void setWordTarget(String currentWord) {
+        wordTarget.setText(currentWord);
+        wordTarget.setEditable(false);
     }
 
     public void setEditWindow(EditWindow editWindow) {
@@ -58,6 +65,7 @@ public class EditController implements Initializable {
             } else {
                 String meaning = wordMeaning.getText();
                 if (dict.updateWordMeaning(target, meaning)) {
+                    editWindow.getController().editSuccess = true;
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     alert.setTitle("Thong bao");
                     alert.setHeaderText("Sua tu " + target + " thanh cong!");
@@ -71,5 +79,9 @@ public class EditController implements Initializable {
             }
         }
         editWindow.quit();
+    }
+
+    public TextField getWordTarget() {
+        return wordTarget;
     }
 }

@@ -1,3 +1,11 @@
+| troop-carrier
+tau bay
+
+
+
+
+
+
 | like
 /laik/
 * tính từ
@@ -110,17 +118,31 @@ like
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 | like-mindedness
 /'laik'maindidnis/
 * danh từ
 - sự cùng một khuynh hướng, sự cùng một mục đích, sự có ý kiến giống nhau; sự giống tính nhau
 
 
-| freak out
-/'fri:kaut/
-* nội động từ,  (từ Mỹ,nghĩa Mỹ),  (từ lóng)
-- cảm thấy đê mê, đi mây về gió, phiêu diêu bay bổng (như lúc hút thuốc phiện...)
-- trở thành một híp-pi, ăn mặc hành động như một híp-pi ((xem) hippie); ăn mặc lập dị, hành động lập dị
 
 
 
@@ -140,38 +162,34 @@ like
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| prize
+/prize/
+* danh từ
+- giải thưởng, phầm thưởng
+= the International Lenin Peace Prize+ giải thưởng quốc tế hoà bình Lê-nin
+= to carry off the prize+ giật giải, đoạt giải
+- (nghĩa bóng) điều mong ước, ước vọng
+= the prizes of life+ những ước vọng của cuộc đời
+- giải xổ số; số trúng
+- (định ngữ) được giải, chiếm giải
+= prize ox+ con bò được giải
+- (định ngữ), (mỉa mai) đại hạng, cực
+= a prize idiot+ thằng ngốc đại hạng
+* ngoại động từ
+- đánh giá cao, quý
+= to liberty more than life+ quý tự do hơn sinh mệnh
+* danh từ
+- chiến lợi phẩm (tàu bè, tài sản...)
+= to make prize of...+ tịch thu (tàu bè, tài sản... ở biển) làm chiến lợi phẩm
+= to become prize+ bị bắt, bị tịch thu làm chiến lợi phẩm
+- (nghĩa bóng) của trời ơi, của bắt được
+* ngoại động từ ((cũng) pry)
+- tịch thu (tàu bè, tài sản... ở biển) làm chiến lợi phẩm
+* danh từ ((cũng) prise)
+- sự nạy, sự bẩy (bằng đòn bẩy)
+- (từ Mỹ,nghĩa Mỹ) đòn bẩy
+* ngoại động từ ((cũng) prise)
+- nạy, bẩy lên
+= to prize open a box+ nạy tung cái hộp ra
+= to prize up the cover+ bẩy cái nắp lên
 
