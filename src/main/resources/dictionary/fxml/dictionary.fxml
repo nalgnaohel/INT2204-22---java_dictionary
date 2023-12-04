@@ -125,54 +125,6 @@
                   <Insets left="17.0" top="15.0" />
                </VBox.margin>
             </Separator>
-            <HBox id="importTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
-               <children>
-                  <Button fx:id="exportButton" graphicTextGap="15.0" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Import">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <HBox.margin>
-                              <Insets left="13.0" />
-                           </HBox.margin>
-                           <image>
-                              <Image url="@../icon/Import.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor></Button>
-               </children>
-               <effect>
-                  <ColorAdjust brightness="-0.6" />
-               </effect>
-               <VBox.margin>
-                  <Insets left="10.0" top="10.0" />
-               </VBox.margin>
-            </HBox>
-            <HBox id="exportTab" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="194.0" styleClass="tab-menu" stylesheets="@../css/stylesheet.css">
-               <children>
-                  <Button fx:id="importButton" graphicTextGap="15.0" mnemonicParsing="false" onAction="#ButtonClick" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="30.0" prefWidth="166.0" text="Export">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <HBox.margin>
-                              <Insets left="13.0" />
-                           </HBox.margin>
-                           <image>
-                              <Image url="@../icon/export.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor></Button>
-               </children>
-               <effect>
-                  <ColorAdjust brightness="-0.6" />
-               </effect>
-               <VBox.margin>
-                  <Insets left="10.0" top="10.0" />
-               </VBox.margin>
-            </HBox>
          </children>
       </VBox>
       <AnchorPane fx:id="contentArea" layoutX="220.0" prefHeight="700.0" prefWidth="900.0">

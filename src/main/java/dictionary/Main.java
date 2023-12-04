@@ -52,13 +52,18 @@ public class Main extends Application {
     private Button b2;
     public void selectDictionary(Stage stage) throws IOException {
         Alert selectAlert = new Alert(Alert.AlertType.CONFIRMATION);
-        selectAlert.setTitle("Chon tu dien");
-        selectAlert.setHeaderText("Ban co muon su dung tu dien ket noi voi " +
-                "Co so du lieu MYSQL khong?\n " +
-                "Neu co, hay chac chan minh da setup MySQL truoc.");
 
-        ButtonType dtb = new ButtonType("Ket noi CSDL");
-        ButtonType noDtb = new ButtonType("Khong ket noi CSDL");
+        // set icon for the dtbAlert dialog
+        Stage tmp = (Stage) selectAlert.getDialogPane().getScene().getWindow();
+        tmp.getIcons().add(new Image(Main.class.getResourceAsStream("icon/warning.png")));
+
+        selectAlert.setTitle("Chọn từ điển");
+        selectAlert.setHeaderText("Bạn có muốn sử dụng từ điển kết nốt với " +
+                "cơ sở dữ liệu MySQL không?\n" +
+                "Nếu có, hãy chắc chắn bạn đã cài đặt MySQL từ truớc");
+
+        ButtonType dtb = new ButtonType("Có");
+        ButtonType noDtb = new ButtonType("Không");
         selectAlert.getButtonTypes().clear();
         selectAlert.getButtonTypes().addAll(dtb, noDtb);
         Optional<ButtonType> opt = selectAlert.showAndWait();
@@ -70,16 +75,24 @@ public class Main extends Application {
             try {
                 dict.init();
                 Alert dtbAlert = new Alert(Alert.AlertType.INFORMATION);
-                dtbAlert.setTitle("Thong bao");
-                dtbAlert.setHeaderText("Ket noi CSDL thanh cong!");
+
+                // set icon for the dtbAlert dialog
+                Stage tmp2 = (Stage) dtbAlert.getDialogPane().getScene().getWindow();
+                tmp2.getIcons().add(new Image(Main.class.getResourceAsStream("icon/warning.png")));
+                dtbAlert.setTitle("Thông báo");
+                dtbAlert.setHeaderText("Kết nối với MySQL thành công!");
                 dtbAlert.showAndWait();
             } catch (Exception e) {
                 //Failed
                 e.printStackTrace();
 
                 Alert failedDtbAlert = new Alert(Alert.AlertType.ERROR);
-                failedDtbAlert.setTitle("Thong bao");
-                failedDtbAlert.setHeaderText("Khong ket noi duoc voi CSDL");
+
+                // set icon for the dtbAlert dialog
+                Stage stage1 = (Stage) failedDtbAlert.getDialogPane().getScene().getWindow();
+                stage1.getIcons().add(new Image(Main.class.getResourceAsStream("icon/warning.png")));
+                failedDtbAlert.setTitle("Thông báo");
+                failedDtbAlert.setHeaderText("Không thể kết nới với MySQL");
                 failedDtbAlert.showAndWait();
                 dict = new TxtDictionary();
                 dict.initUtilsFile();

@@ -25,10 +25,6 @@ public class Controller implements Initializable {
     @FXML
     private Button favoriteButton;
     @FXML
-    private Button importButton;
-    @FXML
-    private Button exportButton;
-    @FXML
     private AnchorPane contentArea;
 
     private Button currentButton;
@@ -88,12 +84,12 @@ public class Controller implements Initializable {
         currentButton.getParent().getChildrenUnmodifiable().get(0).setEffect(null);
 
         if (currentButton.equals(lookupButton)) {
+            lookupTabController.update();
             contentArea.getChildren().clear();
             contentArea.getChildren().add(lookupArea);
             currentButton.getParent().getStyleClass().add("lookUp-selected");
-            lookupTabController.ShowList("");
-            lookupTabController.ShowWord("");
         } else if (currentButton.equals(translateButton)) {
+            translateTabController.update();
             contentArea.getChildren().clear();
             contentArea.getChildren().add(translateArea);
             currentButton.getParent().getStyleClass().add("translate-selected");
@@ -106,12 +102,6 @@ public class Controller implements Initializable {
             contentArea.getChildren().clear();
             contentArea.getChildren().add(favoriteArea);
             currentButton.getParent().getStyleClass().add("favorite-selected");
-        } else if (currentButton.equals(importButton)) {
-            contentArea.getChildren().clear();
-            //contentArea.getChildren().add(importArea);
-        } else if (currentButton.equals(exportButton)) {
-            contentArea.getChildren().clear();
-            //contentArea.getChildren().add(exportArea);
         }
     }
 
@@ -131,7 +121,6 @@ public class Controller implements Initializable {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/translateTab.fxml"));
             translateArea = fxmlLoader.load();
             translateTabController = fxmlLoader.getController();
-            translateTabController.initialize();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -141,7 +130,6 @@ public class Controller implements Initializable {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/chooseGame.fxml"));
             gameArea = fxmlLoader.load();
             chooseGameController = fxmlLoader.getController();
-            chooseGameController.initialize();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -155,9 +143,5 @@ public class Controller implements Initializable {
             throw new RuntimeException(e);
         }
 
-        // Khởi tạo Tab Import (Tab nhập dữ liệu)
-
-
-        // Khởi tạo Tab Export (Tab xuất dữ liệu)
     }
 }

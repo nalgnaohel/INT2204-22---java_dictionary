@@ -5,6 +5,7 @@ import dictionary.ui.game.finding.FindingMainWindow;
 import dictionary.ui.game.wordles.WordleMainWindow;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.effect.GaussianBlur;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -25,8 +26,6 @@ public abstract class GameMainWindow {
 
         Scene scene = new Scene(root);
         gameStage.setScene(scene);
-        gameStage.setHeight(700);
-        gameStage.setWidth(900);
         gameStage.setResizable(false);
         if (this instanceof FindingMainWindow) {
             gameStage.setOnCloseRequest(windowEvent -> {
@@ -70,5 +69,14 @@ public abstract class GameMainWindow {
 
     public void pauseCountdown() {
 
+    }
+
+    public void setEffect() {
+        GaussianBlur blur = new GaussianBlur(55);
+        gameStage.getScene().getRoot().setEffect(blur);
+    }
+
+    public void removeEffect() {
+        gameStage.getScene().getRoot().setEffect(null);
     }
 }

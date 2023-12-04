@@ -48,7 +48,7 @@
                   <Line endX="649.5786743164062" endY="0.3643283545970917" startX="-100.0" stroke="#a7a7a7" />
                   <HBox prefHeight="40.0" prefWidth="750.0">
                      <children>
-                        <ChoiceBox fx:id="chooseLang" onAction="#switchToLang" prefHeight="30.0" prefWidth="187.0" stylesheets="@../css/translatestyle.css">
+                        <ChoiceBox fx:id="chooseLang" prefHeight="30.0" prefWidth="187.0" stylesheets="@../css/translatestyle.css">
                            <HBox.margin>
                               <Insets left="10.0" top="5.0" />
                            </HBox.margin>

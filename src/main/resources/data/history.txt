@@ -1,41 +1,7 @@
-| prankish
-/'præɳkiʃ/
-* tính từ
-- hay chơi ác, hay chơi khăm, hay đùa nhả
-- hay trục trặc (máy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-| prankishly
-- xem prankish
-
-
-
-
-
-
-
-
-
-
-
-
-
-| prankishness
-/'præɳkiʃnis/
+| game-cock
+/'geimkɔk/
 * danh từ
-- tính hay chơi ác, tính hay chơi khăm, tính hay đùa nhả
-- tính hay trục trặc (máy)
+- gà chọi
 
 
 
@@ -49,9 +15,22 @@
 
 
 
-| prankster
+
+
+
+
+
+
+
+
+
+
+
+
+
+| ticket-office
 *danh từ
-- người hay tinh nghịch, người hay đùa cợt, người chơi khăm
+- phòng bán vé, phòng vé
 
 
 
@@ -65,82 +44,39 @@
 
 
 
-| long
-/lɔɳ/
-* tính từ
-- dài (không gian, thời gian); xa, lâu
-= a long journey+ một cuộc hành trình dài
-= to live a long life+ sống lâu
-- kéo dài
-= a one-month long leave+ thời gian nghỉ phép (kéo dài) một tháng
-- cao; nhiều, đáng kể
-= a long price+ giá cao
-= for long years+ trong nhiều năm
-= a long family+ gia đình đông con
-- dài dòng, chán
-= what a long speech!+ bài nói sao mà dài dòng thế!
-- quá, hơn
-= a long hundred+ (thương nghiệp) một trăm hai mươi
-- chậm, chậm trễ, lâu
-= don't be long+ đừng chậm nhé
-!to bid a farewell
-- tạm biệt trong một thời gian dài
-!to draw the long bow
-- (xem) bow
-!to have a long arm
-- mạnh cánh có thế lực
-!to have a long face
-- mặt dài ra, chán nản, buồn xỉu
-!to have a long head
-- linh lợi; láu lỉnh; nhìn xa thấy rộng
-!to have a long tongue
-- hay nói nhiều
-!to have a long wind
-- trường hơi, có thể chạy lâu mà không nghỉ; có thể nói mãi mà không mệt
-!to make a long arm
-- với tay ai (để lấy cái gì)
-!to make a long nose
-- vẫy mũi chế giễu
-!to take long views
-- biết nhìn xa nghĩ rộng; nhìn thấu được vấn đề
-!in the long run
-- sau cùng, sau rốt, kết quả là, rốt cuộc
-!of long standing
-- có từ lâu đời
-!one's long home
-- (xem) home
+
+
+
+
+
+
+
+
+
+
+
+
+| ticket
+/'tikit/
 * danh từ
-- thời gian lâu
-= before long+ không bao lâu, chẳng bao lâu
-= it is long since I heard of him+ đã từ lâu tôi không được tin gì của anh ta
-- (thông tục) vụ nghỉ hè
-!the long and the short of it
-- tóm lại; tất cả vấn đề thâu tóm lại, nói gọn lại
-* phó từ
-- lâu, trong một thời gian dài
-= you can stay here as long as you like+ anh có thể ở lại đây bao lâu tuỳ theo ý thích
-- suốt trong cả một khoảng thời gian dài
-= all day long+ suốt ngày
-= all one's life long+ suốt đời mình
-- (+ ago,  after,  before,  since) lâu, đã lâu, từ lâu
-= that happened long ago+ việc đó xảy ra đã từ lâu
-= I knew him long before I knew+ tôi biết nó từ lâu trước khi biết anh
-!so long!
-- (từ Mỹ,nghĩa Mỹ) tạm biệt!
-!so long as
-!as long as
-- miễn là, chỉ cần, với điều kiện là
-- chừng nào mà
-!to be long
-- (+ động tính từ hiện tại) mãi mới
-= to be long finding something+ mãi mới tìm ra cái gì
-* nội động từ
-- nóng lòng, mong mỏi, ước mong, ao ước
-= I long to see him+ tôi nóng lòng được gặp nó
-= I long for you letter+ tôi mong mỏi thư anh
-
-long
-- dài // kéo dài
+- vé
+= through ticket+ vé suốt
+= return ticket+ vé khứ hồi
+- giấy (giấy phép, giấy mời...)
+= free ticket+ giấy mời; giấy ưu tiên ra vào
+- bông, phiếu
+= ticket for soup+ phiếu cháo
+- nhãn ghi giá; nhãn ghi đặc điểm (hàng hoá...)
+- thẻ, biển
+- (từ Mỹ,nghĩa Mỹ) danh sách ứng cử
+= the Democratic ticket+ danh sách ứng cử của đảng Dân chủ
+- (thông tục) (the ticket) cái đúng điệu
+= that's the ticket+ đúng điệu; đúng lắm; vừa nhịp
+!to get one's ticket
+- được giải ngũ
+* ngoại động từ
+- dán nhãn, viết nhãn (ghi giá, ghi đặc điểm... hàng hoá)
+- phát vé, phát phiếu
 
 
 
@@ -154,9 +90,21 @@ long
 
 
 
-| long drink
+
+
+
+
+
+
+
+
+
+
+
+
+| ticket-collector
 *danh từ
-- lượng thức uống rót đầy một cốc
+- người soát vé
 
 
 
@@ -170,10 +118,18 @@ long
 
 
 
-| long ears
-/'lɔɳiəz/
-* danh từ
-- sự ngu độn
+
+
+
+
+
+
+
+
+
+| ticket-punch
+*danh từ
+- (đường sắt) cái bấm vé; cái bấm lỗ
 
 
 
@@ -187,10 +143,6 @@ long
 
 
 
-| long greens
-/'lɔɳ'gri:nz/
-* danh từ
-- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tiền giấy
 
 
 
@@ -200,14 +152,9 @@ long
 
 
 
-
-
-
-
-| likeable
-/'laikəbl/
-* tính từ
-- dễ thương, đáng yêu
+| ticket-holder
+*danh từ
+- người có vé
 
 
 
@@ -217,19 +164,6 @@ long
 
 
 
-
-
-
-
-| likelihood
-/'laiklihud/
-* danh từ
-- sự có thể đúng, sự có thể thật
-= in all likelihood+ có thể, có nhiều khả năng
-
-likelihood
-- (thống kê) hợp lý
-- maximum l. (thống kê) hợp lý cực đại
 
 
 
@@ -261,30 +195,6 @@ likelihood
 
 
 
-| o'clock
-/klɔk/
-* danh từ
-- đường chỉ viền ở cạnh bít tất
-- đồng hồ
-!o'clock
-- giờ
-= what o' clock is it?+ mấy giờ rồi
-!like a clock
-- đều đặn, chạy đều, trơn tru, trôi chảy
-= everything went like a clock+ mọi việc đều trôi chảy; mọi việc vẫn chạy đều
-!to put (set) back the clock
-- (nghĩa bóng) quay lại thời kỳ đã qua; đi ngược lại bánh xe lịch sử, ngăn chặn sự phát triển
-!to work round the clock
-- làm việc suốt 12 tiếng; làm việc suốt 24 tiếng
-* nội động từ
-- (thể dục,thể thao) bấm giờ (trong một cuộc chạy đua)
-- ghi giờ
-= to clock in+ ghi giờ đến làm
-= to clock out+ ghi giờ về (ở nhà máy)
-* ngoại động từ
-- (thể dục,thể thao) bấm giờ (một cuộc chạy đua)
-- (thể dục,thể thao) chạy (đi...) mất... (bao nhiêu thời gian)
-= he clocked 11 seconds for the 100 meters+ anh ta chạy 100 mét mất 11 giây
 
 
 
@@ -292,68 +202,6 @@ likelihood
 
 
 
-
-
-
-
-
-
-| pom
-/pɔm/
-* danh từ
-- (viết tắt) của Pomeranian
-
-
-
-
-
-
-
-
-
-
-
-
-
-| on behalf
-- thay mặt, nhận danh
-
-
-| pride
-/praid/
-* danh từ
-- sự kiêu hãnh, sự hãnh diện; niềm kiêu hãnh, niềm hãnh diện, tính tự cao, tính tự phụ, tính kiêu căng
-= false pride+ tính tự ái; tính kiêu căng ngạo mạn; tính hư danh, tính hiếu danh
-= he is his father's pride+ anh ta là niềm kiêu hãnh của ông bố
-- lòng tự trọng ((cũng) proper pride); lòng tự hào về công việc của mình
-- độ đẹp nhất, độ rực rỡ nhất, độ chín muồi, độ phát triển nhất
-= in the full pride of youth+ ở tuổi thanh xuân phơi phới
-= a peacock in his pride+ con công đang xoè đuôi
-= in pride of grease+ béo, giết thịt được rồi
-- tính hăng (ngựa)
-- (văn học) sự tráng lệ, sự huy hoàng, sự lộng lẫy
-- đàn, bầy
-= a pride of lions+ đàn sư tử
-!pride of the morning
-- sương lúc mặt trời mọc
-!pride of place
-- địa vị cao quý
-- sự tự phụ về địa vị cao quý của mình; sự ngạo mạn
-!pride will have a fall
-- (xem) fall
-!to put one's pride in one's pocket
-!to swallow one's pride
-- nén tự ái, đẹp lòng tự ái
-* phó từ (+ on,  upon)
-- lấy làm kiêu hãnh (về cái gì...)
-- lấy làm tự hào (về việc gì...)
-
-
-| prideful
-/'praidful/
-* tính từ
-- (Ê-cốt) đầy kiêu hãnh; tự cao, tự phụ
-- tự hào
 
 
 | pause
@@ -372,76 +220,24 @@ likelihood
 = let us pause upon this phrase+ chúng ta hãy ngừng lại ở nhóm từ này
 
 
-| price
-- (Econ) Giá
-+ Giá của một loại hàng hoá hoặc giá đầu vào cho thấy cái phải chi để có được một thứ hàng hoá hay dịch vụ.
-
-Price/earning ratio
-- (Econ) Tỷ lệ giá / Lợi tức (tỷ lệ P/E)
-+ Tỷ số của giá môt cổ phiếu bình thường đối với mỗi cổ phiếu bình thường.
 
 
-| like
-/laik/
-* tính từ
-- giống, giống nhau, như nhau, tương tự, cùng loại
-= as like as two peas+ giống nhau như hai giọt nước
-= what's he like?+ anh ta là người như thế nào? anh ta là hạng người như thế nào?
-- thực đúng, đúng như mong đợi
-= it's like a Vietnamese to thirst for learning+ hiếu học thực đúng đặc tính người Việt Nam
-= this poetry is something like+ thơ này mới thật là thơ
-- thích, sãn sàng, sãn lòng, vui lòng
-= not to feel like going out today+ cảm thấy không thích đi chơi hôm nay
-- có vẻ như
-= it looks like rain+ có vẻ như trời muốn mưa
-- gần, khoảng độ
-= something like 100d+ khoảng độ 100 đồng
-!like father like son
-- cha nào con nấy
-!like master like man
-- thầy nào tớ nấy
-* giới từ
-- như
-= don't talk like that+ đừng nói như vậy
-= like mad+ như điên, điên cuồng
-!like a shot
-- không ngần ngại, sãn lòng; bất chấp hậu quả
-!sure like rain
-- chắc như đinh đóng cột
-* phó từ
-- like very; like enough rất có thể
-* liên từ
-- (thông tục) thay cho as như
-= I cannot do it like you do+ tôi không thể làm cái đó như anh làm
-* danh từ
-- người thuộc loại như; vật thuộc loại như
-= did not ever see the like of it?+ có bao giờ anh trông thấy cái giống như cái đó không?
-= music, painting and the like+ âm nhạc, hội hoạ và những môn thuộc loại đó
-= the likes of me+ (thông tục) những kẻ hèn như tôi
-= the likes of you+ (thông tục) những bậc cao sang như anh
-!like cures like
-- lấy độc trị độc
-!to return like for like
-- lấy ơn trả ơn, lấy oán trả oán
-* danh từ
-- cái thích
-= likes and dislikes+ những cái thích và những cái không thích
-* ngoại động từ
-- thích ưa, chuộng, yêu
-= do you like fish?+ anh có thích cá không?
-= I like his cheek+(mỉa mai) tôi mới thích thái độ láo xược của hắn làm sao
-- (would like,  should like) muốn, ước mong
-= I should like a cup of tea+ tôi muốn có một tách chè
-= parents like their children to be successful in file+ bố mẹ muốn cho con cái thành công ở đời
-= I'd like to know (see)+ thử cho tôi biết (xem) nào!
-- thích hợp, hợp với (thể trạng, sức khoẻ...)
-= wine does not like me+ rượu vang không hợp với thể trạng của tôi, tôi không chịu đựng được rượu vang
-* nội động từ
-- thích, muốn
-= you may do as you like+ anh có thể làm theo như ý thích
 
-like
-- giống như; bằng; cùng tên // giống, có lẽ, có thể
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 | like-mindedness
@@ -449,4 +245,276 @@ like
 * danh từ
 - sự cùng một khuynh hướng, sự cùng một mục đích, sự có ý kiến giống nhau; sự giống tính nhau
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| game-warden
+*danh từ
+- người quản lý khu vực cấm săn bắn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| gaslight
+/'gæslait/
+* danh từ
+- đèn khí
+- ánh đèn khí
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| gambler
+/'gæmblə/
+* danh từ
+- người đánh bạc, con bạc
+- kẻ đầu cơ; kẻ làm liều, mưu đồ ăn to
+
+gambler
+- (lý thuyết trò chơi) người đánh bạc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| gamble
+/'gæmbl/
+* danh từ
+- cuộc đánh bạc, cuộc may rủi
+- việc mạo hiểm được ăn cả ngã về không; việc làm liều mưu đồ ăn to (đầu cơ buôn bán...)
+* động từ
+- đánh bạc
+- đầu cơ (ở thị trường chứng khoán)
+- (nghĩa bóng) liều làm một công việc gì
+!to gamble away one's fortune
+- thua bạc khánh kiệt
+
+gamble
+- (lý thuyết trò chơi) (cờ) bạc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| timberman
+*danh từ số nhiều timbermen
+- thợ lâm trường
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| timber-wolf
+*danh từ
+- chó sói to, lông xám ở Bắc Mỹ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| time exposure
+*danh từ
+- sự phơi sáng ảnh (trong đó cửa trập được mở ra lâu hơn thời gian ngắn nhất, tức là hơn một, hai giây)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| timberling
+*danh từ
+- cây con
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| timbrel
+/'timbrəl/
+* danh từ
+- (âm nhạc) trống prôvăng
+
+| timber-yard
+/'timbəjɑ:d/
+* danh từ
+- bãi gỗ
+
+| ticketing
+/'tikitiɳ/
+* danh từ
+- sự dán nhãn, sự viết nhãn (ghi giá hàng...)ticket /'tikit/
+* danh từ
+- vé
+= through ticket+ vé suốt
+= return ticket+ vé khứ hồi
+- giấy (giấy phép, giấy mời...)
+= free ticket+ giấy mời; giấy ưu tiên ra vào
+- bông, phiếu
+= ticket for soup+ phiếu cháo
+- nhãn ghi giá; nhãn ghi đặc điểm (hàng hoá...)
+- thẻ, biển
+- (từ Mỹ,nghĩa Mỹ) danh sách ứng cử
+= the Democratic ticket+ danh sách ứng cử của đảng Dân chủ
+- (thông tục) (the ticket) cái đúng điệu
+= that's the ticket+ đúng điệu; đúng lắm; vừa nhịp
+!to get one's ticket
+- được giải ngũ
+* ngoại động từ
+- dán nhãn, viết nhãn (ghi giá, ghi đặc điểm... hàng hoá)
+- phát vé, phát phiếu
 

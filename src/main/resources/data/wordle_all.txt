@@ -1572,6 +1572,7 @@ frown
 froze
 fruit
 frump
+fryer
 fubsy
 fucus
 fudge
@@ -3575,6 +3576,7 @@ shame
 shang
 shank
 shape
+shard
 share
 shark
 sharp
@@ -4273,6 +4275,7 @@ treat
 trend
 tress
 trews
+triad
 trial
 trias
 tribe
@@ -4685,4 +4688,3 @@ zippy
 zloty
 zonae
 zonal
-fryer

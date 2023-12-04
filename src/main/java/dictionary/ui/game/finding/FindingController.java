@@ -85,7 +85,7 @@ public class FindingController extends GameController {
                 if (mapIds[i][j] == 2) {
                     stackPane.getChildren().add(createTile("icon/stone.png"));
                 } else if (mapIds[i][j] == 1) {
-                    stackPane.getChildren().add(createTile("icon/question.png"));
+                    stackPane.getChildren().add(createTile("icon/question.gif"));
                 } else if (mapIds[i][j] == 3) {
                     stackPane.getChildren().add(createTile("icon/treasure.png"));
                 }
@@ -158,6 +158,8 @@ public class FindingController extends GameController {
                 findingEndGame.setFindingController(this);
                 gameMainWindow.pauseCountdown();
                 findingEndGame.displayEndWindow(true, "Congratulations");
+                findingEndGame.setColor("green");
+                gameMainWindow.setEffect();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -179,6 +181,7 @@ public class FindingController extends GameController {
             sp.getChildren().clear();
         }
         map.getChildren().clear();
+        gameMainWindow.removeEffect();
         init();
     }
 

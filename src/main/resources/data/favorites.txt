@@ -1,64 +1,24 @@
-| like
-/laik/
-* tính từ
-- giống, giống nhau, như nhau, tương tự, cùng loại
-= as like as two peas+ giống nhau như hai giọt nước
-= what's he like?+ anh ta là người như thế nào? anh ta là hạng người như thế nào?
-- thực đúng, đúng như mong đợi
-= it's like a Vietnamese to thirst for learning+ hiếu học thực đúng đặc tính người Việt Nam
-= this poetry is something like+ thơ này mới thật là thơ
-- thích, sãn sàng, sãn lòng, vui lòng
-= not to feel like going out today+ cảm thấy không thích đi chơi hôm nay
-- có vẻ như
-= it looks like rain+ có vẻ như trời muốn mưa
-- gần, khoảng độ
-= something like 100d+ khoảng độ 100 đồng
-!like father like son
-- cha nào con nấy
-!like master like man
-- thầy nào tớ nấy
-* giới từ
-- như
-= don't talk like that+ đừng nói như vậy
-= like mad+ như điên, điên cuồng
-!like a shot
-- không ngần ngại, sãn lòng; bất chấp hậu quả
-!sure like rain
-- chắc như đinh đóng cột
-* phó từ
-- like very; like enough rất có thể
-* liên từ
-- (thông tục) thay cho as như
-= I cannot do it like you do+ tôi không thể làm cái đó như anh làm
+| ticket
+/'tikit/
 * danh từ
-- người thuộc loại như; vật thuộc loại như
-= did not ever see the like of it?+ có bao giờ anh trông thấy cái giống như cái đó không?
-= music, painting and the like+ âm nhạc, hội hoạ và những môn thuộc loại đó
-= the likes of me+ (thông tục) những kẻ hèn như tôi
-= the likes of you+ (thông tục) những bậc cao sang như anh
-!like cures like
-- lấy độc trị độc
-!to return like for like
-- lấy ơn trả ơn, lấy oán trả oán
-* danh từ
-- cái thích
-= likes and dislikes+ những cái thích và những cái không thích
+- vé
+= through ticket+ vé suốt
+= return ticket+ vé khứ hồi
+- giấy (giấy phép, giấy mời...)
+= free ticket+ giấy mời; giấy ưu tiên ra vào
+- bông, phiếu
+= ticket for soup+ phiếu cháo
+- nhãn ghi giá; nhãn ghi đặc điểm (hàng hoá...)
+- thẻ, biển
+- (từ Mỹ,nghĩa Mỹ) danh sách ứng cử
+= the Democratic ticket+ danh sách ứng cử của đảng Dân chủ
+- (thông tục) (the ticket) cái đúng điệu
+= that's the ticket+ đúng điệu; đúng lắm; vừa nhịp
+!to get one's ticket
+- được giải ngũ
 * ngoại động từ
-- thích ưa, chuộng, yêu
-= do you like fish?+ anh có thích cá không?
-= I like his cheek+(mỉa mai) tôi mới thích thái độ láo xược của hắn làm sao
-- (would like,  should like) muốn, ước mong
-= I should like a cup of tea+ tôi muốn có một tách chè
-= parents like their children to be successful in file+ bố mẹ muốn cho con cái thành công ở đời
-= I'd like to know (see)+ thử cho tôi biết (xem) nào!
-- thích hợp, hợp với (thể trạng, sức khoẻ...)
-= wine does not like me+ rượu vang không hợp với thể trạng của tôi, tôi không chịu đựng được rượu vang
-* nội động từ
-- thích, muốn
-= you may do as you like+ anh có thể làm theo như ý thích
-
-like
-- giống như; bằng; cùng tên // giống, có lẽ, có thể
+- dán nhãn, viết nhãn (ghi giá, ghi đặc điểm... hàng hoá)
+- phát vé, phát phiếu
 
 
 
@@ -82,38 +42,6 @@ like
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-| like-mindedness
-/'laik'maindidnis/
-* danh từ
-- sự cùng một khuynh hướng, sự cùng một mục đích, sự có ý kiến giống nhau; sự giống tính nhau
 
 
 | freak out
@@ -133,6 +61,819 @@ like
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| tree
+/tri:/
+* danh từ
+- cây
+- (tôn giáo) giá chữ thập
+- cái nòng (giày); cái cốt (yên); trục (bánh xe)
+- biểu đồ hình cây, cây
+= a genealogical tree+ cây phả hệ
+!at the top of the tree
+- ở bậc cao nhất của ngành nghề
+!to be up a treen
+- (nghĩa bóng) gặp khó khăn lúng túng
+* ngoại động từ
+- bắt phải nấp trên cây, bắt phải trốn trên cây
+= the dog treed the cat+ con chó làm cho con mèo phải trốn lên trên cây
+- cho nòng vào
+- hãm vào vòng khó khăn lúng túng
+= to be treed+ gặp bước khó khăn, gặp bước đường cùng
+
+tree
+- cây
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| prankster
+*danh từ
+- người hay tinh nghịch, người hay đùa cợt, người chơi khăm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| game-cock
+/'geimkɔk/
+* danh từ
+- gà chọi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| gaslight
+/'gæslait/
+* danh từ
+- đèn khí
+- ánh đèn khí
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| ticket-holder
+*danh từ
+- người có vé
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| ticket-office
+*danh từ
+- phòng bán vé, phòng vé
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| likeliness
+/'laiklihud/
+* danh từ
+- sự có thể đúng, sự có thể thật
+= in all likelihood+ có thể, có nhiều khả năng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| pause
+/pɔ:z/
+* danh từ
+- sự tạm nghỉ, sự tạm ngừng
+- sự ngập ngừng
+= to give pause to+ làm cho (ai) ngập ngừng
+- sự ngắt giọng (trong khi đang nói, đang đọc); chỗ ngắt giọng, chỗ ngắt
+= the after a short pause, he resumed his speech+ sau khi ngắt giọng một giây, ông ấy lại tiếp tục bài diễn văn của mình
+- (âm nhạc) dấu dãn nhịp
+* nội động từ
+- tạm nghỉ, tạm ngừng
+- chờ đợi; ngập ngừng
+- (+ upon) ngừng lại
+= let us pause upon this phrase+ chúng ta hãy ngừng lại ở nhóm từ này
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| ticket-collector
+*danh từ
+- người soát vé
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| ticket-punch
+*danh từ
+- (đường sắt) cái bấm vé; cái bấm lỗ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| apple
+/'æpl/
+* danh từ
+- quả táo
+!Adam's apple
+- (xem) Adam
+!apple of discord
+- mối bất hoà
+!apple of the eye
+- đồng tử, con ngươi
+- vật quí báu phải giữ gìn nhất
+!the apple of Sodom; Dead Sea apple
+- quả táo trông mã ngoài thì đẹp nhưng trong đã thối
+- (nghĩa bóng) thành tích bề ngoài, thành tích giả tạo
+!the rotten apple injures its neighbours
+- (tục ngữ) con sâu bỏ rầu nồi canh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| prideful
+/'praidful/
+* tính từ
+- (Ê-cốt) đầy kiêu hãnh; tự cao, tự phụ
+- tự hào
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| world
+/wə:ld/
+* danh từ
+- thế giới, hoàn cầu, địa cầu
+= to go round the world+ đi vòng quanh thế giới
+= all over the world+ khắp thế giới
+- vũ trụ, vạn vật
+= since the beginning of the world+ từ buổi sơ khai của vũ trụ, từ khi khai thiên lập địa
+- thế gian, trần tục, cõi trần gian, thế giới
+= to be brought into the world+ sinh ra đời
+= in this world+ ở cõi trần gian này
+- thiên hạ, nhân loại, mọi người
+= all the world has heard of it+ thiên hạ ai người ta cũng biết cái đó
+- cuộc đời, việc đời; xã hội, cuộc sống xã hội
+= a man of the world+ một người lịch duyệt từng trải
+= to know nothing of the world+ không biết tí gì việc đời
+= as the world goes+ thời buổi này, cứ thời thế này; thói đời này
+- giới
+= in the world of letters; in the literary world+ trong giới văn học
+= the sporting world+ giới thể thao
+= the vegetable world+ giới thực vật
+- nhiều, một số lớn ((thường) a world of)
+= a world of meaning+ nhiều ý nghĩa
+= a world of letters+ một đống thư
+= a world of trouble+ nhiều điều phiền phức
+!to be all the world to
+- là tất cả
+= he was all the world to his mother+ đối với mẹ nó thì nó là tất cả
+!to carry the world before one
+- thành công hoàn toàn và nhanh chóng
+!for all the world
+- (xem) for
+!for the world
+- không vì bất cứ lý do gì, không đời nào
+= I would not do it for the world+ không đời nào tôi làm cái đó
+!to the world
+- (từ lóng) hết sức, rất mực
+= drunk to the world+ say bí tỉ
+= tired to the world+ mệt nhoài
+= dead to the world+ chết giấc; say bí tỉ
+!to take the world as it is
+- đời thế nào thì phải theo thế
+!top of the world
+- (từ lóng) không chê vào đâu được, tuyệt diệu
+!world without end
+- vĩnh viễn
+!the world, the flesh and the devil
+- mọi cái cám dỗ con người
+!would give the world for something
+- (xem) give
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| ticketing
+/'tikitiɳ/
+* danh từ
+- sự dán nhãn, sự viết nhãn (ghi giá hàng...)ticket /'tikit/
+* danh từ
+- vé
+= through ticket+ vé suốt
+= return ticket+ vé khứ hồi
+- giấy (giấy phép, giấy mời...)
+= free ticket+ giấy mời; giấy ưu tiên ra vào
+- bông, phiếu
+= ticket for soup+ phiếu cháo
+- nhãn ghi giá; nhãn ghi đặc điểm (hàng hoá...)
+- thẻ, biển
+- (từ Mỹ,nghĩa Mỹ) danh sách ứng cử
+= the Democratic ticket+ danh sách ứng cử của đảng Dân chủ
+- (thông tục) (the ticket) cái đúng điệu
+= that's the ticket+ đúng điệu; đúng lắm; vừa nhịp
+!to get one's ticket
+- được giải ngũ
+* ngoại động từ
+- dán nhãn, viết nhãn (ghi giá, ghi đặc điểm... hàng hoá)
+- phát vé, phát phiếu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| wench
+/went /
+* danh từ
+- thiếu nữ, cô gái; thôn nữ
+- (từ cổ,nghĩa cổ) đĩ, gái điếm
+* nội động từ
+- tán gái
+- đi nhà thổ (đàn ông); làm đĩ (đàn bà)
 
 
 

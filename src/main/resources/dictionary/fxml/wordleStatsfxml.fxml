@@ -54,7 +54,7 @@
          <children>
             <VBox alignment="CENTER" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0">
                <children>
-                  <Label fx:id="gamesPlayed" alignment="CENTER" maxHeight="40.0" maxWidth="100.0" minHeight="40.0" minWidth="100.0" prefHeight="40.0" prefWidth="100.0" text="Label" textAlignment="JUSTIFY">
+                  <Label fx:id="gamesPlayed" alignment="CENTER" prefHeight="40.0" prefWidth="100.0" text="Label" textAlignment="JUSTIFY">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>
@@ -74,7 +74,7 @@
             </VBox>
             <VBox alignment="CENTER" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0">
                <children>
-                  <Label fx:id="winRate" alignment="CENTER" maxHeight="40.0" maxWidth="100.0" minHeight="40.0" minWidth="100.0" prefHeight="40.0" prefWidth="100.0" text="Label" textAlignment="JUSTIFY">
+                  <Label fx:id="winRate" alignment="CENTER" prefHeight="40.0" prefWidth="100.0" text="Label" textAlignment="JUSTIFY">
                      <font>
                         <Font size="30.0" />
                      </font>
@@ -91,7 +91,7 @@
             </VBox>
             <VBox alignment="CENTER" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0">
                <children>
-                  <Label fx:id="curStreak" alignment="CENTER" maxHeight="40.0" maxWidth="100.0" minHeight="40.0" minWidth="100.0" prefHeight="40.0" prefWidth="100.0" text="Label" textAlignment="JUSTIFY">
+                  <Label fx:id="curStreak" alignment="CENTER" prefHeight="40.0" prefWidth="100.0" text="Label" textAlignment="JUSTIFY">
                      <font>
                         <Font size="30.0" />
                      </font>
@@ -108,7 +108,7 @@
             </VBox>
             <VBox alignment="CENTER" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="100.0">
                <children>
-                  <Label fx:id="longestStreak" alignment="CENTER" maxHeight="40.0" maxWidth="100.0" minHeight="40.0" minWidth="100.0" prefHeight="40.0" prefWidth="100.0" text="Label" textAlignment="JUSTIFY">
+                  <Label fx:id="longestStreak" alignment="CENTER" prefHeight="40.0" prefWidth="100.0" text="Label" textAlignment="JUSTIFY">
                      <font>
                         <Font size="30.0" />
                      </font>

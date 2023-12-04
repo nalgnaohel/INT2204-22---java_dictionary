@@ -1,0 +1,61 @@
+.green {
+    -fx-background-color: linear-gradient(to bottom right, #30af00 -1.54%, #81ff7d 152.46%);
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+}
+
+.red {
+    -fx-background-color: linear-gradient(to bottom right, #ff4141 -1.54%, #ff916f 152.46%);
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+}
+
+.restart {
+    -fx-border-radius: 9px;
+    -fx-border-width: 2px;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0, 0, 0);
+    -fx-font-family: Barlow;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-cursor: hand;
+}
+
+.quit {
+    -fx-border-radius: 9px;
+    -fx-border-width: 2px;
+    -fx-background-color: transparent;
+    -fx-border-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0), 10, 0, 0, 0);
+    -fx-font-family: Barlow;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-cursor: hand;
+    -fx-text-fill: #ffffff;
+}
+
+.label {
+    -fx-text-fill: #ffffff;
+}
+
+.winning-word-long {
+    -fx-font-family: Barlow;
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+    -fx-text-fill: #ffffff;
+}
+
+.multiple-choice {
+    -fx-font-family: Barlow;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 9px;
+    -fx-border-width: 2px;
+    -fx-border-color: white;
+    -fx-background-color: linear-gradient(to bottom right, #2CB3FF -1.54%, #5EFFC5 152.46%);
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.16), 10, 0, 0, 0);
+}

@@ -1,7 +1,7 @@
 .default-tile {
     -fx-background-color: white;
-    -fx-border-color: #dee3ec;
-    -fx-text-fill: #0e0e0e;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #151515;
     -fx-font-size: 30px;
     -fx-max-width: 50px;
     -fx-min-width: 50px;
@@ -16,8 +16,8 @@
 }
 
 .existed-letter {
-    -fx-background-color: #c9b458;
-    -fx-border-color: #c9b458;
+    -fx-background-color: #f1d259;
+    -fx-background-radius: 8px;
     -fx-text-fill: #f6f5f5;
     -fx-font-size: 30px;
     -fx-max-width: 50px;
@@ -29,8 +29,8 @@
 }
 
 .wrong-letter {
-    -fx-background-color: #787c7e;
-    -fx-border-color: #787c7e;
+    -fx-background-color: #5d5d5d;
+    -fx-background-radius: 8px;
     -fx-text-fill: #f6f5f5;
     -fx-font-size: 30px;
     -fx-max-width: 50px;
@@ -42,8 +42,8 @@
 }
 
 .correct-letter {
-    -fx-background-color: #649630;
-    -fx-border-color: #79c663;
+    -fx-background-color: #28ce61;
+    -fx-background-radius: 8px;
     -fx-text-fill: #f6f5f5;
     -fx-font-size: 30px;
     -fx-max-width: 50px;

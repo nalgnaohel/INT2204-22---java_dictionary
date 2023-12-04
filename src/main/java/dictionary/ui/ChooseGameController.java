@@ -15,9 +15,6 @@ import java.io.IOException;
 import static dictionary.Main.dict;
 
 public class ChooseGameController {
-    public void initialize() {
-
-    }
 
     @FXML
     private Button b1;

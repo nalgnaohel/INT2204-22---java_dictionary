@@ -9,11 +9,11 @@ import java.util.ArrayList;
 import static dictionary.Main.dict;
 
 public class DtbDictionary extends Dictionary{
-    private static final String dtbName = "Dictionary";
-    private static final String dtbTable = "DictWord";
+    private static final String dtbName = "dictionary";
+    private static final String dtbTable = "dictword";
     private static final String hostName = "localhost";
-    private static final String port = "3307";
-    private static final String userName = "root";
+    private static final String port = "3306";
+    private static final String userName = "Dictionary";
     private static final String password = ""; //No password as default.
     private static final String dtbURL = "jdbc:mysql://"
             + hostName + ":" + port + "/" + dtbName;

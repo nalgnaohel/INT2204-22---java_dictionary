@@ -1,0 +1,68 @@
+//        try {
+//            Text info = new Text(dict.getInfoFromAPI(currentWord));
+//            System.out.println(dict.getInfoFromAPI(currentWord));
+//            wordMeaning.getChildren().add(info);
+//        } catch (Exception e) {
+//            System.out.println("No synonyms or antonyms");
+//        }
+//        showSaveButton(currentWord);
+    }
+
+//    public void ShowWord(String target) {
+//        currentWord = target;
+//        wordMeaning.getChildren().clear();
+//        wordTitle.getChildren().clear();
+//        ThesaurusInfo.getChildren().clear();
+//        if (currentWord == null || currentWord.isEmpty()) {
+//            ThesaurusLabel.setVisible(false);
+//            DefinitionLabel.setVisible(false);
+//            return;
+//        }
+//
+//        // Hiện word title
+//        Text word = new Text(currentWord);
+//        wordTitle.getChildren().add(word);
+//
+//        //Hiện word meaning
+//        currentMeaning = dict.lookUpWord(currentWord);
+//        Text meaning = new Text(currentMeaning);
+//        wordMeaning.getChildren().add(meaning);
+//        DefinitionLabel.setVisible(true);
+//        System.out.println(currentMeaning);
+//
+//        Task<String> getThesaurus = new Task<String>() {
+//            @Override
+//            public String call() {
+//                String info = "";
+//                try {
+//                    info = dict.getInfoFromAPI(currentWord);
+//                    if (info.equals("antonyms: \nsynonyms: \n") || info.isEmpty()) {
+//                        throw new Exception();
+//                    }
+//                } catch (Exception e) {
+//                    System.out.println("No synonyms or antonyms");
+//                    info = "Không tìm thấy kết quả";
+//                }
+//                return info;
+//            }
+//        };
+//
+//        // loading animation
+//        getThesaurus.setOnRunning(e -> {
+//            ThesaurusLabel.setVisible(false);
+//            loading.setVisible(true);
+//        });
+//        getThesaurus.setOnSucceeded(e -> {
+//            ThesaurusLabel.setVisible(true);
+//            loading.setVisible(false);
+//            String value = getThesaurus.getValue();
+//            System.out.println(value);
+//            Text info = new Text(value);
+//            ThesaurusInfo.getChildren().add(info);
+//        });
+//        Thread thread = new Thread(getThesaurus);
+//        thread.start();
+//
+//        showSaveButton(currentWord);
+//        showSevedLabel(currentWord);
+//    }

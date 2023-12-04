@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
@@ -21,8 +22,10 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.*;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class TranslateTabController {
+public class TranslateTabController implements Initializable {
     @FXML
     private TextArea fromLangText;
     @FXML
@@ -41,42 +44,17 @@ public class TranslateTabController {
     ObservableList<String> langFromList = FXCollections.observableArrayList("English to Vietnamese",
             "Vietnamese to English");
 
-//    @FXML
-//    private ChoiceBox langFrom;
-//    @FXML
-//    private ChoiceBox langTo;
     @FXML
     private ChoiceBox chooseLang;
 
-    public void initialize() {
+    public void initialize(URL url, ResourceBundle resourceBundle) {
         chooseLang.setItems(langFromList);
         chooseLang.setValue("English to Vietnamese");
     }
 
-    public void switchLanguage(ActionEvent event) {
-//        if (langFrom.getValue() == "English") {
-//            langFrom.setValue("Vietnamese");
-//            langTo.setValue("English");
-//        } else {
-//            langFrom.setValue("English");
-//            langTo.setValue("Vietnamese");
-//        }
-    }
-
-    public void switchFromLang(ActionEvent event) {
-//        if (langTo.getValue() == "Vietnamese") {
-//            langFrom.setValue("English");
-//        } else {
-//            langFrom.setValue("Vietnamese");
-//        }
-    }
-
-    public void switchToLang(ActionEvent event) {
-//        if (langFrom.getValue() == "Vietnamese") {
-//            langTo.setValue("English");
-//        } else {
-//            langTo.setValue("Vietnamese");
-//        }
+    public void update() {
+        fromLangText.clear();
+        toLangText.getChildren().clear();
     }
 
     public void translate(ActionEvent event) {
@@ -158,4 +136,5 @@ public class TranslateTabController {
             }
         }
     }
+
 }

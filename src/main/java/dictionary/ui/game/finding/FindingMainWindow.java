@@ -43,6 +43,8 @@ public class FindingMainWindow extends GameMainWindow {
                 FindingEndGame findingEndGame = new FindingEndGame();
                 findingEndGame.setFindingController(findingController);
                 findingEndGame.displayEndWindow(false, "");
+                findingEndGame.setColor("red");
+                this.setEffect();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

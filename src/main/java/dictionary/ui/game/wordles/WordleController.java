@@ -158,7 +158,7 @@ public class WordleController extends GameController {
                 handleLetterKey(event);
             } else if (event.getCode() == KeyCode.BACK_SPACE) {
                 handleBackspaceKey();
-            } else if (event.getCode() == KeyCode.ENTER) {
+            } else if (event.getCode() == KeyCode.SHIFT) {
                 handleEnterKey();
             }
         }
@@ -204,6 +204,8 @@ public class WordleController extends GameController {
                     WordleEndWindow wordleEndWindow = new WordleEndWindow();
                     wordleEndWindow.setWordleController(this);
                     wordleEndWindow.displayEndWindow(true, winningWord);
+                    wordleEndWindow.setColor("green");
+                    getGameMainWindow().setEffect();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -217,6 +219,8 @@ public class WordleController extends GameController {
                         WordleEndWindow wordleEndWindow = new WordleEndWindow();
                         wordleEndWindow.setWordleController(this);
                         wordleEndWindow.displayEndWindow(false, winningWord);
+                        wordleEndWindow.setColor("red");
+                        getGameMainWindow().setEffect();
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
@@ -230,6 +234,7 @@ public class WordleController extends GameController {
     }
     public void restart() {
         wordsTilePane.getChildren().clear();
+        getGameMainWindow().removeEffect();
         init();
     }
 

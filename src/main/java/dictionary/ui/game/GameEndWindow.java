@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -16,12 +17,15 @@ import javafx.stage.StageStyle;
 import java.io.IOException;
 
 public class GameEndWindow {
+    GameEndController gameEndController;
     public void displayEndWindow(boolean win, String winningWord) throws IOException {
         Stage stage = new Stage();
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.TRANSPARENT);
         stage.initModality(Modality.APPLICATION_MODAL);
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/endGame.fxml"));
         VBox root = fxmlLoader.load();
+        gameEndController = fxmlLoader.getController();
+
         Label label1 =(Label) root.getChildren().get(0);
         if (win) {
             label1.setText("YOU WON!");
@@ -33,10 +37,12 @@ public class GameEndWindow {
             label2.setText("");
         }
         Label label3 = (Label) root.getChildren().get(2);
-        label3.setText(winningWord);
+        label3.setText(winningWord.toUpperCase());
+        if (winningWord.length() > 10) {
+            label3.getStyleClass().add("winning-word-long");
+        }
 
-        Button restartButton = new Button("PLAY AGAIN");
-        restartButton.getStyleClass().add("restart-button");
+        Button restartButton = gameEndController.getRestartButton();
         restartButton.setOnMouseClicked(e -> {
             if (this instanceof FindingEndGame) {
                 ((FindingEndGame) this).getFindingController().restart();
@@ -46,12 +52,7 @@ public class GameEndWindow {
             stage.close();
         });
 
-        VBox buttonsVBox = new VBox(5);
-
-        buttonsVBox.setAlignment(Pos.CENTER);
-
-        Button quitButton = new Button("  QUIT  ");
-        quitButton.getStyleClass().add("quit-button");
+        Button quitButton = gameEndController.getQuitButton();
         quitButton.setOnMouseClicked(e -> {
             if (this instanceof FindingEndGame) {
                 ((FindingEndGame) this).getFindingController().getFindingMainWindow().quit();
@@ -61,10 +62,13 @@ public class GameEndWindow {
             stage.close();
         });
 
-        buttonsVBox.getChildren().addAll(restartButton, quitButton);
-        root.getChildren().add(buttonsVBox);
         Scene scene = new Scene(root);
+        scene.setFill(Color.TRANSPARENT);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void setColor(String color) {
+        gameEndController.setColor(color);
     }
 }
