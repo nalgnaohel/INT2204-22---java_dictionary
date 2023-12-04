@@ -55,7 +55,7 @@
     -fx-border-radius: 9px;
     -fx-border-width: 2px;
     -fx-border-color: white;
-    -fx-background-color: linear-gradient(to bottom right, #2CB3FF -1.54%, #5EFFC5 152.46%);
+    -fx-background-color: linear-gradient(to bottom right, #00dc6c -1.54%, #d8ff2c 152.46%);
     -fx-background-radius: 10px;
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.16), 10, 0, 0, 0);
 }

@@ -61,7 +61,7 @@
                   <Insets top="10.0" />
                </VBox.margin>
             </HBox>
-            <TextField fx:id="wordTarget" alignment="CENTER" maxHeight="50.0" maxWidth="300.0" minHeight="31.0" minWidth="254.0" prefHeight="31.0" prefWidth="254.0" style="-fx-border-color: gray; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: white;" styleClass="text-area" />
+            <TextField fx:id="wordTarget" alignment="CENTER" maxHeight="50.0" maxWidth="300.0" minHeight="31.0" minWidth="254.0" prefHeight="31.0" prefWidth="254.0" style="-fx-border-color: #7c7c7c; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: white;" styleClass="text-area" />
             <Label alignment="CENTER" prefHeight="22.0" prefWidth="600.0" text="Nghĩa của từ:">
                <font>
                   <Font name="Barlow Medium" size="18.0" />
@@ -70,7 +70,7 @@
                   <Insets bottom="10.0" top="15.0" />
                </VBox.margin>
             </Label>
-            <TextArea fx:id="wordMeaning" prefHeight="253.0" prefWidth="560.0" style="-fx-border-color: gray; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: white;" styleClass="text-area">
+            <TextArea fx:id="wordMeaning" prefHeight="253.0" prefWidth="560.0" style="-fx-border-color: #7a7a7a; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: white;" styleClass="text-area">
                <VBox.margin>
                   <Insets left="20.0" right="20.0" />
                </VBox.margin>

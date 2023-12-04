@@ -28,9 +28,25 @@
 
 
 
+
+
+
+
+
+
+
+
 | ticket-office
 *danh từ
 - phòng bán vé, phòng vé
+
+
+
+
+
+
+
+
 
 
 
@@ -102,9 +118,25 @@
 
 
 
+
+
+
+
+
+
+
+
 | ticket-collector
 *danh từ
 - người soát vé
+
+
+
+
+
+
+
+
 
 
 
@@ -152,9 +184,25 @@
 
 
 
+
+
+
+
+
+
+
+
 | ticket-holder
 *danh từ
 - người có vé
+
+
+
+
+
+
+
+
 
 
 
@@ -182,6 +230,14 @@
 * danh từ
 - sự có thể đúng, sự có thể thật
 = in all likelihood+ có thể, có nhiều khả năng
+
+
+
+
+
+
+
+
 
 
 
@@ -240,6 +296,14 @@
 
 
 
+
+
+
+
+
+
+
+
 | like-mindedness
 /'laik'maindidnis/
 * danh từ
@@ -266,9 +330,25 @@
 
 
 
+
+
+
+
+
+
+
+
 | game-warden
 *danh từ
 - người quản lý khu vực cấm săn bắn
+
+
+
+
+
+
+
+
 
 
 
@@ -318,6 +398,14 @@
 
 
 
+
+
+
+
+
+
+
+
 | gambler
 /'gæmblə/
 * danh từ
@@ -326,6 +414,14 @@
 
 gambler
 - (lý thuyết trò chơi) người đánh bạc
+
+
+
+
+
+
+
+
 
 
 
@@ -384,9 +480,25 @@ gamble
 
 
 
+
+
+
+
+
+
+
+
 | timberman
 *danh từ số nhiều timbermen
 - thợ lâm trường
+
+
+
+
+
+
+
+
 
 
 
@@ -434,9 +546,25 @@ gamble
 
 
 
+
+
+
+
+
+
+
+
 | time exposure
 *danh từ
 - sự phơi sáng ảnh (trong đó cửa trập được mở ra lâu hơn thời gian ngắn nhất, tức là hơn một, hai giây)
+
+
+
+
+
+
+
+
 
 
 
@@ -484,15 +612,39 @@ gamble
 
 
 
+
+
+
+
+
+
+
+
 | timbrel
 /'timbrəl/
 * danh từ
 - (âm nhạc) trống prôvăng
 
+
+
+
+
+
+
+
+
 | timber-yard
 /'timbəjɑ:d/
 * danh từ
 - bãi gỗ
+
+
+
+
+
+
+
+
 
 | ticketing
 /'tikitiɳ/
@@ -517,4 +669,12 @@ gamble
 * ngoại động từ
 - dán nhãn, viết nhãn (ghi giá, ghi đặc điểm... hàng hoá)
 - phát vé, phát phiếu
+
+
+
+
+
+
+
+
 

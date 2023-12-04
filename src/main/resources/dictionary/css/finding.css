@@ -1,10 +1,45 @@
-.button {
-    -fx-background-color: rgb(0,0,0,0);
-    -fx-text-fill: #111010;
-    -fx-text-alignment: left;
-    -fx-alignment: center-left;
+.multiple-choice {
     -fx-font-family: Barlow;
     -fx-font-weight: bold;
-    -fx-font-size: 15;
-    -fx-border-color: #2c2a2a;
+    -fx-font-size: 15px;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 9px;
+    -fx-border-width: 2px;
+    -fx-border-color: white;
+    -fx-background-color: linear-gradient(to bottom right, #00dc6c -1.54%, #d8ff2c 152.46%);
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.16), 10, 0, 0, 0);
+}
+
+.text-area {
+    -fx-background-color: white;
+    -fx-border-color: #ffffff;
+    -fx-text-fill: #680fb6;
+}
+
+.text-area {
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+    -fx-highlight-fill: #656565;
+}
+
+.text-area .content {
+    -fx-padding: 10px;
+    -fx-text-fill: #777777;
+    -fx-highlight-fill: #656565;
+}
+
+.text-area .scroll-pane:fitToWidth:fitToHeight .scroll-bar:vertical .track {
+    -fx-pref-width: 1px;
 }

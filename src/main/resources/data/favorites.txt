@@ -44,11 +44,27 @@
 
 
 
+
+
+
+
+
+
+
+
 | freak out
 /'fri:kaut/
 * nội động từ,  (từ Mỹ,nghĩa Mỹ),  (từ lóng)
 - cảm thấy đê mê, đi mây về gió, phiêu diêu bay bổng (như lúc hút thuốc phiện...)
 - trở thành một híp-pi, ăn mặc hành động như một híp-pi ((xem) hippie); ăn mặc lập dị, hành động lập dị
+
+
+
+
+
+
+
+
 
 
 
@@ -273,9 +289,25 @@ tree
 
 
 
+
+
+
+
+
+
+
+
 | prankster
 *danh từ
 - người hay tinh nghịch, người hay đùa cợt, người chơi khăm
+
+
+
+
+
+
+
+
 
 
 
@@ -379,11 +411,27 @@ tree
 
 
 
+
+
+
+
+
+
+
+
 | gaslight
 /'gæslait/
 * danh từ
 - đèn khí
 - ánh đèn khí
+
+
+
+
+
+
+
+
 
 
 
@@ -438,9 +486,25 @@ tree
 
 
 
+
+
+
+
+
+
+
+
 | ticket-office
 *danh từ
 - phòng bán vé, phòng vé
+
+
+
+
+
+
+
+
 
 
 
@@ -471,6 +535,14 @@ tree
 * danh từ
 - sự có thể đúng, sự có thể thật
 = in all likelihood+ có thể, có nhiều khả năng
+
+
+
+
+
+
+
+
 
 
 
@@ -537,6 +609,14 @@ tree
 
 
 
+
+
+
+
+
+
+
+
 | ticket-collector
 *danh từ
 - người soát vé
@@ -565,9 +645,25 @@ tree
 
 
 
+
+
+
+
+
+
+
+
 | ticket-punch
 *danh từ
 - (đường sắt) cái bấm vé; cái bấm lỗ
+
+
+
+
+
+
+
+
 
 
 
@@ -651,11 +747,27 @@ tree
 
 
 
+
+
+
+
+
+
+
+
 | prideful
 /'praidful/
 * tính từ
 - (Ê-cốt) đầy kiêu hãnh; tự cao, tự phụ
 - tự hào
+
+
+
+
+
+
+
+
 
 
 
@@ -818,6 +930,14 @@ tree
 
 
 
+
+
+
+
+
+
+
+
 | ticketing
 /'tikitiɳ/
 * danh từ
@@ -866,6 +986,14 @@ tree
 
 
 
+
+
+
+
+
+
+
+
 | wench
 /went /
 * danh từ
@@ -874,6 +1002,14 @@ tree
 * nội động từ
 - tán gái
 - đi nhà thổ (đàn ông); làm đĩ (đàn bà)
+
+
+
+
+
+
+
+
 
 
 
