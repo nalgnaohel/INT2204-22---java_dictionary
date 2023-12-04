@@ -8,24 +8,26 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class EditWindow {
+public class InsertWindow {
     private Stage stage;
-    private EditController editController;
+
+    private InsertController insertController;
     private MutualController controller;
     public void display() throws IOException {
         stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/edit.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxml/insert.fxml"));
         AnchorPane root = fxmlLoader.load();
-        editController = fxmlLoader.getController();
-        editController.setEditWindow(this);
+        insertController = fxmlLoader.getController();
+        //insertController.initialize();
+        insertController.setInsertWindow(this);
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.showAndWait();
     }
 
-    public EditController getEditController() {
-        return this.editController;
+    public InsertController getInsertController() {
+        return this.insertController;
     }
 
     public MutualController getController() {

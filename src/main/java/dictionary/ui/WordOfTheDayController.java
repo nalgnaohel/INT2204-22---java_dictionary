@@ -28,7 +28,7 @@ public class WordOfTheDayController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         LocalDate localDate = LocalDate.now();
-        localDate = localDate.plusDays(1);
+        //localDate = localDate.plusDays(1);
         int idWord = (localDate.getDayOfYear() + 2010 + (localDate.getDayOfMonth() * localDate.getMonth().getValue())) % 1000;
         date.setText(localDate.toString());
         wordTarget.setText(dict.getAllWords().get(idWord).getWordTarget());

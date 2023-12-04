@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 public abstract class Dictionary {
 
+    protected int numOfInsertedWords = 0;
     protected History history;
     protected Favorites favorites;
     public void init() throws SQLException {}
@@ -134,12 +135,17 @@ public abstract class Dictionary {
             if(insertWord(engWord, meaning)) {
                 id++;
             }
+            numOfInsertedWords = id;
             System.out.println("Done importing!");
         } catch (IOException e) {
             System.out.println("Cannot find the file!\n");
         } catch (Exception e) {
             System.out.println("Something went wrong: " + e);
         }
+    }
+
+    public int getNumOfInsertedWords() {
+        return numOfInsertedWords;
     }
 
     public History getHistory() {

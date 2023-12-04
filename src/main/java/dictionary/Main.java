@@ -35,9 +35,12 @@ public class Main extends Application {
         stage.setResizable(false); // không cho phóng to, thu nhỏ cửa sổ
         stage.setScene(scene);
         stage.setOnCloseRequest(windowEvent -> {
-            dict.close();
             dict.getHistory().export();
             dict.getFavorites().export();
+            if (dict instanceof TxtDictionary) {
+                ((TxtDictionary) dict).exportToFiles("src/main/resources/data/demo.txt");
+            }
+            dict.close();
             Platform.exit();
             System.exit(0);
         });

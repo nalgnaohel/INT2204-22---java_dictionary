@@ -118,6 +118,9 @@ public class DtbDictionary extends Dictionary{
      * Insert.
      */
     public boolean insertWord(final String target, String meaning) {
+        if (!lookUpWord(target).equals("Not found!\n")) {
+            return false;
+        }
         final String sqlQuery = "INSERT INTO " + dtbTable + " (English, Vietnamese) VALUES (?, ?)";
         try {
             PreparedStatement prs = connection.prepareStatement(sqlQuery);
@@ -128,6 +131,9 @@ public class DtbDictionary extends Dictionary{
                 if (inserted < 0) {
                     return false;
                 }
+            } catch (SQLIntegrityConstraintViolationException e) {
+                // `word` is already in database
+                return false;
             } finally {
                 prs.close();
             }

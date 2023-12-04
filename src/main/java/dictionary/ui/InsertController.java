@@ -9,7 +9,7 @@ import java.util.Optional;
 
 import static dictionary.Main.dict;
 
-public class EditController {
+public class InsertController {
     @FXML
     private TextField wordTarget;
 
@@ -19,7 +19,7 @@ public class EditController {
     @FXML
     private Button cfButton;
 
-    private EditWindow editWindow;
+    private InsertWindow insertWindow;
 
 //    public void initialize() {
 //
@@ -30,61 +30,61 @@ public class EditController {
 //        wordTarget.setEditable(false);
 //    }
 
-    public void setEditWindow(EditWindow editWindow) {
-        this.editWindow = editWindow;
+    public void setInsertWindow(InsertWindow insertWindow) {
+        this.insertWindow = insertWindow;
     }
 
-    public void checkEdit(MouseEvent event) {
+    public void checkInsert(MouseEvent event) {
         String target = wordTarget.getText();
         String meaning = wordMeaning.getText();
         if (target == null || target.isEmpty() || meaning == null || meaning.isEmpty()) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Loi");
-            alert.setHeaderText("Chua nhap tu de sua");
+            alert.setHeaderText("Chua nhap tu de them");
             alert.showAndWait();
         } else {
-            if (dict.lookUpWord(target).equals("Not found!\n")) {
+            if (!dict.lookUpWord(target).equals("Not found!\n")) {
                 Alert al = new Alert(Alert.AlertType.CONFIRMATION);
                 al.setTitle("Thong bao");
-                al.setHeaderText("Tu " + target + " khong co trong tu dien.\nBan co muon them tu nay khong?");
+                al.setHeaderText("Tu " + target + " da co trong tu dien.\nBan co muon sua nghia tu nay khong?");
                 ButtonType dtb = new ButtonType("Có");
                 ButtonType noDtb = new ButtonType("Không");
                 al.getButtonTypes().clear();
                 al.getButtonTypes().addAll(dtb, noDtb);
                 Optional<ButtonType> opt = al.showAndWait();
                 if (opt.get() == dtb) {
-                    if (dict.insertWord(target, meaning)) {
+                    if (dict.updateWordMeaning(target, meaning)) {
                         Alert alert = new Alert(Alert.AlertType.INFORMATION);
                         alert.setTitle("Thong bao");
-                        alert.setHeaderText("Them tu " + target + " thanh cong!");
+                        alert.setHeaderText("Sua nghia tu " + target + " thanh cong!");
                         alert.showAndWait();
+                        if (insertWindow.getController().currentWord.equals(target)) {
+                            insertWindow.getController().wordMeaning.getChildren().clear();
+                            insertWindow.getController().wordMeaning.getChildren().add(new Text(meaning));
+                        }
                     } else {
                         Alert alert = new Alert(Alert.AlertType.ERROR);
                         alert.setTitle("Loi");
-                        alert.setHeaderText("Khong them duoc tu " + target + "!");
+                        alert.setHeaderText("Khong sua duoc nghia tu " + target + "!");
                         alert.showAndWait();
                     }
                 }
             } else {
-                if (dict.updateWordMeaning(target, meaning)) {
-                    editWindow.getController().editSuccess = true;
+                if (dict.insertWord(target, meaning)) {
+                    insertWindow.getController().editSuccess = true;
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     alert.setTitle("Thong bao");
-                    alert.setHeaderText("Sua tu " + target + " thanh cong!");
+                    alert.setHeaderText("Them tu " + target + " thanh cong!");
                     alert.showAndWait();
-                    if (editWindow.getController().currentWord.equals(target)) {
-                        editWindow.getController().wordMeaning.getChildren().clear();
-                        editWindow.getController().wordMeaning.getChildren().add(new Text(meaning));
-                    }
                 } else {
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("Loi");
-                    alert.setHeaderText("Khong sua duoc tu " + target + "!");
+                    alert.setHeaderText("Khong them duoc tu " + target + "!");
                     alert.showAndWait();
                 }
             }
         }
-        editWindow.quit();
+        insertWindow.quit();
     }
 
     public TextField getWordTarget() {

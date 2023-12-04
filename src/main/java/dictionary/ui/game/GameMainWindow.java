@@ -1,6 +1,7 @@
 package dictionary.ui.game;
 
 import dictionary.Main;
+import dictionary.backend.game.GameFunction;
 import dictionary.ui.game.finding.FindingMainWindow;
 import dictionary.ui.game.wordles.WordleMainWindow;
 import javafx.fxml.FXMLLoader;

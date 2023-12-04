@@ -48,7 +48,7 @@ public abstract class MutualController implements Initializable {
     @FXML
     protected Button saveButton;
     @FXML
-    private Button removeButton;
+    protected Button removeButton;
     @FXML
     protected Button editButton;
     @FXML
@@ -87,7 +87,6 @@ public abstract class MutualController implements Initializable {
                 wordsList.add(dict.getHistory().getWordTargetHistory().get(i));
             }
             ObservableList<String> items = FXCollections.observableArrayList(wordsList);
-            //show listview
             listView.setItems(items);
 
             // set history & favorite icon
@@ -193,6 +192,11 @@ public abstract class MutualController implements Initializable {
             ThesaurusInfo.setVisible(false);
         }
 
+        if (this instanceof LookUpTabController) {
+            wordsList.clear();
+            ObservableList<String> items = FXCollections.observableArrayList(wordsList);
+            listView.setItems(items);
+        }
         // Hiện word thesaurus
         /*ThesaurusInfo.getChildren().clear();
         Task<String> getThesaurus = new Task<String>() {
@@ -361,103 +365,6 @@ public abstract class MutualController implements Initializable {
         } else {
             saved.setVisible(false);
         }
-    }
-
-    public void delete(ActionEvent event) {
-        if (currentWord.isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Thông báo");
-            alert.setHeaderText("Bạn chưa chọn từ để xóa!");
-            alert.showAndWait();
-        } else {
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setTitle("Xác nhận xóa từ");
-            alert.setHeaderText("Bạn có chắc chắn muốn xóa từ " + currentWord +  "?");
-            ButtonType cf = new ButtonType("Có");
-            ButtonType canc = new ButtonType("Không");
-            alert.getButtonTypes().clear();
-            alert.getButtonTypes().addAll(cf, canc);
-            Optional<ButtonType> opt = alert.showAndWait();
-
-            if (opt.get() == cf) {
-                if (dict.deleteWord(currentWord)) {
-                    Alert successAlert = new Alert(Alert.AlertType.INFORMATION);
-                    successAlert.setTitle("Xóa từ thành công");
-                    successAlert.setHeaderText("Xóa từ " + currentWord + " thành công!");
-                    successAlert.showAndWait();
-                } else {
-                    Alert unsuccessAlert = new Alert(Alert.AlertType.ERROR);
-                    unsuccessAlert.setTitle("Xóa từ không thành công");
-                    unsuccessAlert.setHeaderText("Xóa từ " + currentWord + " không thành công!");
-                    unsuccessAlert.showAndWait();
-                }
-                SearchBar.setText("");
-                ShowList(currentWord);
-                currentWord = "";
-                wordTitle.getChildren().clear();
-                wordMeaning.getChildren().clear();
-                ThesaurusInfo.getChildren().clear();
-                ThesaurusLabel.setVisible(false);
-                DefinitionLabel.setVisible(false);
-            }
-        }
-    }
-
-    public void edit(ActionEvent event) {
-        EditWindow editWindow = new EditWindow();
-        editWindow.setController(this);
-        try {
-            editWindow.display();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println("Done editing!");
-        if (editSuccess && this instanceof FavoriteTabController) {
-            currentMeaning = dict.lookUpWord(currentWord);
-            dict.getFavorites().getAllFav().put(currentWord, currentMeaning);
-            System.out.println(currentMeaning);
-            wordMeaning.getChildren().clear();
-            wordMeaning.getChildren().add(new Text(currentMeaning));
-        }
-    }
-
-    public String getCurrentWord() {
-        return currentWord;
-    }
-
-    @FXML
-    void addWord(ActionEvent event) throws IOException {
-        Alert formatAlert = new Alert(Alert.AlertType.WARNING);
-        formatAlert.setTitle("LƯU Ý");
-        formatAlert.setHeaderText("Hãy chắc chắn rằng luôn có kí tự | trước mỗi từ bạn muốn thêm vào từ điển. Ví dụ:\n" +
-                "| Hello\n*Xin chào\n| Goodbye\n*Tạm biệt");
-        formatAlert.showAndWait();
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        FileChooser fc = new FileChooser();
-        fc.setTitle("Choose a text file");
-        fc.setInitialDirectory(new File(System.getProperty("user.home")));
-        FileChooser.ExtensionFilter Filter = new FileChooser.ExtensionFilter("Text file", "*.txt");
-        fc.getExtensionFilters().add(Filter);
-        File file = fc.showOpenDialog(stage);
-
-        Alert successAlert = new Alert(Alert.AlertType.INFORMATION);
-        if (file == null) {
-            return;
-        } else if (!file.exists()) {
-            successAlert.setTitle("Thêm từ không thành công");
-            successAlert.setHeaderText("Đường dẫn đến file không đúng hoặc không tồn tại");
-        } else if (file.length() == 0) {
-            successAlert.setTitle("Thêm từ không thành công");
-            successAlert.setHeaderText("File " + file.getName() + " rỗng");
-        } else {
-            dict.importDataFromFile(file.getPath());
-            successAlert.setTitle("Thêm từ thành công");
-            successAlert.setHeaderText("Đã thêm từ từ file: " + file.getName());
-        }
-        successAlert.showAndWait();
-        ShowList("");
-        ShowList(currentWord);
     }
 
 }
