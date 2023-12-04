@@ -96,12 +96,14 @@ public class Main extends Application {
                 failedDtbAlert.showAndWait();
                 dict = new TxtDictionary();
                 dict.initUtilsFile();
-                dict.importDataFromFile("src/main/resources/data/dictionaries.txt");
+                dict.importDataFromFile("src/main/resources/data/demo.txt");
+                dict.importDataFromFile("src/main/resources/data/favorites.txt");
             }
         } else if (opt.get() == noDtb) {
             dict = new TxtDictionary();
             dict.initUtilsFile();
-            dict.importDataFromFile("src/main/resources/data/dictionaries.txt");
+            dict.importDataFromFile("src/main/resources/data/demo.txt");
+            dict.importDataFromFile("src/main/resources/data/favorites.txt");
         }
         dict.export5Words();
     }
