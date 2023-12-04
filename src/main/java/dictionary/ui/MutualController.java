@@ -180,6 +180,7 @@ public abstract class MutualController implements Initializable {
             if (info.equals("antonyms: \nsynonyms: \n") || info.isEmpty()) {
                 throw new Exception();
             } else {
+                ThesaurusInfo.getChildren().clear();
                 ThesaurusLabel.setVisible(true);
                 ThesaurusInfo.setVisible(true);
                 ThesaurusInfo.getChildren().add(new Text(info));
@@ -187,6 +188,7 @@ public abstract class MutualController implements Initializable {
         } catch (Exception e) {
             System.out.println("No synonyms or antonyms");
             info = "Không tìm thấy kết quả";
+            ThesaurusInfo.getChildren().clear();
             ThesaurusLabel.setVisible(false);
             ThesaurusInfo.setVisible(false);
         }
