@@ -123,6 +123,8 @@ public class LookUpTabController extends MutualController {
                 ThesaurusInfo.getChildren().clear();
                 ThesaurusLabel.setVisible(false);
                 DefinitionLabel.setVisible(false);
+                saved.setVisible(false);
+                changeSaveButton("");
             }
         }
     }

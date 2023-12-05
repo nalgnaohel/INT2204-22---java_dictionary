@@ -1,20 +1,28 @@
-|'cellist
+| 
+
+| 'cellist
 - người chơi viôlôngxen, người chơi xelô
-|'chutist
+
+| 'chutist
 *danh từ
 - (vt của parachutist) lính nhảy dù
-|'d
+
+| 'd
 - (thông tục)
 - (viết tắt) của had,  should,  would
-|'em
+
+| 'em
 *danh từ
 - (thông tục) (viết tắt) của them
-|'gainst
+
+| 'gainst
 *giới từ
 - (thơ ca) (như) against
-|'ll
+
+| 'll
 - (vt của will)
-|'s
+
+| 's
 - (viết tắt) của is,  has,  us,  does
 - (thông tục) (như) is
 =  it 's raining+trời mưa
@@ -27,29 +35,104 @@
 - nào chúng ta đi thôi
 - (thông tục) (như) does
 =  what 's he say about it?+ý kiến của anh ấy về việc đó như thế nào?
-|'shun
+
+| 'shun
 - interj
 - ((viết tắt) của attention) nghiêm!
-|'tec
+
+| 'tec
 - xem tec
-|'tis
+
+| 'tis
 - (vt của it is)
-|'twas
+
+| 'twas
 - (vt của it was)
-|'tween
+
+| 'tween
 *giới từ
 - (vt của between)
-|'twere
+
+| 'twere
 - (vt của it were)
-|'twill
+
+| 'twill
 - (viết tắt) của it will
-|'twixt
+
+| 'twixt
 *giới từ
 - (vt của betwixt)
-|trochophore
+
+| black
+/blæk/
+* tính từ
+- đen
+- mặc quần áo đen
+- da đen
+= a black woman+ người đàn bà da đen
+- tối; tối tăm
+= black as ink+ tối như mực
+= black night+ đêm tối tăm
+- dơ bẩn, bẩn thỉu
+= black hands+ những bàn tay dơ bẩn
+- đen tối, ảm đạm, buồn rầu, vô hy vọng
+= things look black+ sự việc có vẻ đen tối vô hy vọng
+= black tidings+ tin buồn
+- xấu xa, độc ác; kinh tởm, ghê tởm
+= black crimes+ những tội ác ghê tởm
+!to beat black and blue
+- (xem) beat
+!to give someone a black look
+- lườm nguýt người nào
+!he is not so balck as he is painted
+- nó cũng không đến nỗi xấu (tồi tệ) như người ta nói đâu
+* danh từ
+- màu đen
+- sơn đen
+- quần áo đen, áo tang
+= to be in black+ mặc quần áo đen; mặc áo tang
+- người da đen
+- bụi bẩn, mồ hóng
+* ngoại động từ
+- làm đen, bôi đen
+- đánh xi đen (giày)
+!to black out
+- bôi đen để xoá đi
+- (sân khấu) tắt đèn
+- che kín ánh đèn, tắt đèn phòng không
+- thoáng ngất đi; thoáng mất trí nhớ; thoáng hoa mắt
+- (từ Mỹ,nghĩa Mỹ) che giấu đi, ỉm đi
+- (từ Mỹ,nghĩa Mỹ) kiểm duyệt
+
+| cream
+/kri:m/
+* danh từ
+- kem (lấy từ sữa)
+- kem (que, cốc)
+- kem (để bôi)
+- kem (đánh giầy)
+- tinh hoa, tinh tuý, phần tốt nhất, phần hay nhất
+= the cream of society+ tinh hoa của xã hội
+= the cream of the story+ phần hay nhất của câu chuyện
+- màu kem
+* ngoại động từ
+- gạn lấy kem (ở sữa); gạn lấy phần tốt nhất
+- cho kem (vào cà phê...)
+- làm cho nổi kem, làm cho nổi váng
+- thoa kem (lên mặt)
+* nội động từ
+- nổi kem (sữa), nổi váng
+
+| like-mindedness
+/'laik'maindidnis/
+* danh từ
+- sự cùng một khuynh hướng, sự cùng một mục đích, sự có ý kiến giống nhau; sự giống tính nhau
+
+| trochophore
 *danh từ
 - (động vật học) luân trùng; ấu trùng bánh xe
-|trod
+
+| trod
 /tred/
 * danh từ
 - bước đi, cách đi, dáng đi
@@ -147,7 +230,8 @@
 - (nghĩa bóng) chà đạp, giày xéo; khinh rẻ
 !to tread water
 - bơi đứng
-|trodden
+
+| trodden
 /tred/
 * danh từ
 - bước đi, cách đi, dáng đi
@@ -245,7 +329,8 @@
 - (nghĩa bóng) chà đạp, giày xéo; khinh rẻ
 !to tread water
 - bơi đứng
-|trolley
+
+| trolley
 /'trɔli/
 * danh từ
 - xe hai bánh đẩy tay
@@ -254,35 +339,43 @@
 - (ngành đường sắt) goòng
 - bánh vẹt (bánh xe nhỏ ở đầu cần vẹt của xe điện)
 - (từ Mỹ,nghĩa Mỹ) xe điện
-|trolley-bus
+
+| trolley-bus
 /'trɔlibʌs/
 * danh từ
 - ô tô điện
-|trolley-car
+
+| trolley-car
 /'trɔli'kɑ:/
 * danh từ
 - (từ Mỹ,nghĩa Mỹ) xe điện
-|trolley-pole
+
+| trolley-pole
 /'trɔlipoul/
 * danh từ
 - cần xe ô tô điện
-|trolley-wheel
+
+| trolley-wheel
 *danh từ
 - bánh vẹt (bánh xe nhỏ hay loại thiết bị khác làm vật tiếp xúc giữa một xe chạy điện và dây cáp điện trên cao)
-|trolling-spoon
+
+| trolling-spoon
 /'trɔliɳspu:n/
 * danh từ
 - mồi (câu hình) thìa ((cũng) troll)
-|trollop
+
+| trollop
 /'trɔləp/
 * danh từ
 - người đàn bà lôi thôi lếch thếch, người đàn bà nhếch nhác
 - gái điếm, đĩ
-|trollopy
+
+| trollopy
 *tính từ
 - (thuộc) người đàn bà nhếch nhác
 - (thuộc) gái điếm
-|trolly
+
+| trolly
 /'trɔli/
 * danh từ
 - xe hai bánh đẩy tay
@@ -291,32 +384,40 @@
 - (ngành đường sắt) goòng
 - bánh vẹt (bánh xe nhỏ ở đầu cần vẹt của xe điện)
 - (từ Mỹ,nghĩa Mỹ) xe điện
-|trombone
+
+| trombone
 /trɔm'boun/
 * danh từ
 - (âm nhạc) Trombon
-|trombonist
+
+| trombonist
 /trɔm'bounist/
 * danh từ
 - người thổi trombon
-|trommel
+
+| trommel
 /'trɔməl/
 * danh từ
 - (ngành mỏ) sàng quay, thùng sàng
-|tromometer
+
+| tromometer
 *danh từ
 - máy đo địa chấn
-|tron
+
+| tron
 *danh từ
 - (Xcôtlân) chợ
 - (Xcôtlân) cái cân dùng ở chợ
-|trona
+
+| trona
 *danh từ
 - (khoáng vật học) trona
-|trone
+
+| trone
 *danh từ
 - (Xcôtlân) xem tron
-|troop
+
+| troop
 /tru:p/
 * danh từ
 - đoàn, lũ, đàn, đám, bọn, toán
@@ -337,20 +438,24 @@
 - tập trung đông
 !to troop up
 - lũ lượt kéo đến
-|troop-carrier
+
+| troop-carrier
 *danh từ
 - tàu bay chuyên chở quân đội
-|troop-horse
+
+| troop-horse
 /'tru:phɔ:s/
 * danh từ
 - ngựa của kỵ binh
-|troop-transport
+
+| troop-transport
 /'tru:pʃip/
 -transport)
 /'tru:ptræns'pɔ:t/
 * danh từ
 - tàu chở lính
-|trooper
+
+| trooper
 /'tru:pə/
 * danh từ
 - kỵ binh; lính đơn vị thiết giáp
@@ -359,54 +464,66 @@
 - tàu chở lính
 !to swear like a trooper
 - mở mồm ra là chửi rủa, chửi rủa luôn mồm
-|troopship
+
+| troopship
 /'tru:pʃip/
 -transport)
 /'tru:ptræns'pɔ:t/
 * danh từ
 - tàu chở lính
-|troostite
+
+| troostite
 *danh từ
 - (khoáng vật học) trustit
-|trop-
+
+| trop-
 - hình thái ghép có nghĩa
 - thay đổi, quay
 =  troposphere+tầng đối lưu
 - tính hướng
 - tropic
 - thuộc nhiệt đới
-|trope
+
+| trope
 /troup/
 * danh từ
 - (văn học) phép chuyển nghĩa
-|trophallactic
+
+| trophallactic
 *tính từ
 - dinh dưỡng tương hỗ; nuôi lẫn nhau; trao đổi qua lại thức ăn
-|trophallaxis
+
+| trophallaxis
 *danh từ
 - sự dinh dưỡng tương hỗ, sự trao đổi thức ăn
-|trophic
+
+| trophic
 /'trɔfik/
 * tính từ
 - dinh dưỡng
 = trophic nerves+ thần kinh dinh dưỡng
-|trophoblast
+
+| trophoblast
 *danh từ
 - (sinh vật học) lá nuôi phôi
-|trophoblastic
+
+| trophoblastic
 *tính từ
 - (thuộc) lá nuôi phôi
-|trophozoite
+
+| trophozoite
 *danh từ
 - (sinh vật học) cá thể dinh dưỡng (giai đoạn trưởng thành của bào tử động)
-|trophy
+
+| trophy
 /'troufi/
 * danh từ
 - vật kỷ niệm chiến công, chiến tích ((nghĩa đen) &amp;amp; (nghĩa bóng))
 - đồ trần thiết ở tường
 - (thể dục,thể thao) giải thưởng, cúp
 = tennis trophies+ những giải thưởng quần vợt
-|tropic
+
+| tropic
 /'trɔpik/
 * danh từ
 - (địa lý,địa chất) chí tuyến
@@ -416,7 +533,8 @@
 * tính từ
 - (thuộc) chí tuyến
 - (thuộc) vùng nhiệt đới
-|tropical
+
+| tropical
 /'trɔpikəl/
 * tính từ
 - nhiệt đới
@@ -424,62 +542,73 @@
 = tropical heat+ nóng nhiệt đới
 - (nghĩa bóng) nồng cháy, nồng nhiệt
 
-tropical
-- vl(đại số) nhiệt đới
-|tropicalise
+| tropicalise
 /'trɔpikəlaiz/
 * ngoại động từ
 - nhiệt đới hoá
-|tropine
+
+| tropine
 *danh từ
 - (sinh vật học) tropin; opxonin
-|tropism
+
+| tropism
 /'troupizm/
 * danh từ
 - (thực vật học) tính hướng
-|tropist
+
+| tropist
 *danh từ
 - người giỏi sáng tác ẩn dụ, tỷ dụ
 - người giải thích các ẩn dụ trong Thánh Kinh
-|tropistic
+
+| tropistic
 *tính từ
 - thuộc tính hướng kích thích (của cây)
-|tropocollagen
+
+| tropocollagen
 *danh từ
 - (sinh vật học) tropocolagen
-|tropologic
+
+| tropologic
 - Cách viết khác : tropological
-|tropological
+
+| tropological
 - Cách viết khác : tropologic
-|tropology
+
+| tropology
 *danh từ
 - cách sử dụng chuyển nghĩa của từ
 - cách giải thích các chuyển nghĩa trong Thánh kinh
-|tropomyosin
+
+| tropomyosin
 *danh từ
 - (sinh vật học) tropomiozin
-|tropopause
+
+| tropopause
 *danh từ
 - vùng đỉnh của tầng đối lưu
-|tropophil
+
+| tropophil
 - Cách viết khác : tropophilous
-|tropophilous
+
+| tropophilous
 - Cách viết khác : tropophil
-|tropophyte
+
+| tropophyte
 *danh từ
 - thực vật thích nghi với thay đổi mùa, thực vật thích nghi với mọi điều kiện
 - thực vật nhiệt đới
-|troposphere
+
+| troposphere
 /'trɔpəsfiə/
 * danh từ
 - (địa lý,địa chất) tầng đối lưu
 
-troposphere
-- vl(đại số) tầng đối lưu
-|troppo
+| troppo
 *tính từ
 - (Ôxtrâylia,  (thông tục)) thần kinh bị nhiễu loạn bởi nhiệt độ của nhiệt đới
-|trot
+
+| trot
 /trɔt/
 * danh từ
 - nước kiệu
@@ -506,3 +635,52 @@ troposphere
 - (thông tục) trưng bày, khoe, phô trương
 = to trot out one's knowledge+ phô trương kiến thức của mình
 = to trot out a new hat+ khoe cái mũ mới
+
+| try
+/trai/
+* danh từ
+- sự thử, sự làm thử
+= to have a try at...+ thử làm...
+* ngoại động từ
+- thử, thử xem, làm thử
+= to try a new car+ thử một cái xe mới
+= try your strength+ hãy thử sức anh
+= let's try which way takes longest+ chúng ta hãy đi thử xem đường nào dài nhất
+- dùng thử
+= to try a remedy+ dùng thử một phương thuốc
+= to try someone for a job+ dùng thử một người trong một công việc
+- thử thách
+= to try someone's courage+ thử thách lòng can đảm của ai
+- cố gắng, gắng sức, gắng làm
+= to try an impossible feat+ cố gắng lập một kỳ công không thể có được
+= to try one's best+ gắng hết sức mình
+- xử, xét xử
+= to try a case+ xét xử một vu kiện
+- làm mệt mỏi
+= small print try the eyes+ chữ in nhỏ làm mỏi mắt
+* nội động từ
+- thử, thử làm; toan làm, chực làm
+= it's no use trying+ thử làm gì vô ích
+= he tried to persuade me+ nó chực thuyết phục tôi
+= try and see+ thử xem
+- cố, cố gắng, cố làm
+= I don't think I can do it but I'll try+ tôi không nghĩ rằng tôi có thể làm việc đó, nhưng tôi sẽ cố gắng
+= to try to behave better+ cố gắng ăn ở tốt hơn
+!to try after (for)
+- cố gắng cho có được; tìm cách để đạt được
+= he tries for the prize by did not get it+ nó cố tranh giải nhưng không được
+!to try back
+- lùi trở lại (vấn đề)
+!to try on
+- mặc thử (áo), đi thử (giày...)
+!to try out
+- thử (một cái máy); thử xem có được quần chúng thích không (vở kịch)
+- (hoá học) tính chế
+= to try out fat+ tinh chế mỡ
+!to try over
+- thử (một khúc nhạc)
+!to try up
+- bào (một tấm ván)
+!to try it on with someone
+- (thông tục) thử cái gì vào ai
+

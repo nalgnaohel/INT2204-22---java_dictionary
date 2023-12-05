@@ -39,14 +39,14 @@ public class InsertController {
         String meaning = wordMeaning.getText();
         if (target == null || target.isEmpty() || meaning == null || meaning.isEmpty()) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Loi");
-            alert.setHeaderText("Chua nhap tu de them");
+            alert.setTitle("Lỗi");
+            alert.setHeaderText("Chưa nhập từ để thêm");
             alert.showAndWait();
         } else {
             if (!dict.lookUpWord(target).equals("Not found!\n")) {
                 Alert al = new Alert(Alert.AlertType.CONFIRMATION);
-                al.setTitle("Thong bao");
-                al.setHeaderText("Tu " + target + " da co trong tu dien.\nBan co muon sua nghia tu nay khong?");
+                al.setTitle("Thông báo");
+                al.setHeaderText("Từ " + target + " đã có trong từ điển. \nBạn có muốn sửa nghĩa từ này không?");
                 ButtonType dtb = new ButtonType("Có");
                 ButtonType noDtb = new ButtonType("Không");
                 al.getButtonTypes().clear();
@@ -55,8 +55,8 @@ public class InsertController {
                 if (opt.get() == dtb) {
                     if (dict.updateWordMeaning(target, meaning)) {
                         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                        alert.setTitle("Thong bao");
-                        alert.setHeaderText("Sua nghia tu " + target + " thanh cong!");
+                        alert.setTitle("Thông báo");
+                        alert.setHeaderText("Sửa nghĩa của từ " + target + " thành công!");
                         alert.showAndWait();
                         if (insertWindow.getController().currentWord.equals(target)) {
                             insertWindow.getController().wordMeaning.getChildren().clear();
@@ -64,8 +64,8 @@ public class InsertController {
                         }
                     } else {
                         Alert alert = new Alert(Alert.AlertType.ERROR);
-                        alert.setTitle("Loi");
-                        alert.setHeaderText("Khong sua duoc nghia tu " + target + "!");
+                        alert.setTitle("Lỗi");
+                        alert.setHeaderText("Không sửa được nghĩa của từ " + target + "!");
                         alert.showAndWait();
                     }
                 }
@@ -73,13 +73,13 @@ public class InsertController {
                 if (dict.insertWord(target, meaning)) {
                     insertWindow.getController().editSuccess = true;
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setTitle("Thong bao");
-                    alert.setHeaderText("Them tu " + target + " thanh cong!");
+                    alert.setTitle("Thông báo");
+                    alert.setHeaderText("Thêm từ " + target + " thành công!");
                     alert.showAndWait();
                 } else {
                     Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setTitle("Loi");
-                    alert.setHeaderText("Khong them duoc tu " + target + "!");
+                    alert.setTitle("Lỗi");
+                    alert.setHeaderText("Không thêm được từ " + target + "!");
                     alert.showAndWait();
                 }
             }

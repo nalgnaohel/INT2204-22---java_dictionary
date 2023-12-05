@@ -115,7 +115,7 @@ public abstract class Dictionary {
             int id = 0;
             System.out.println("Importing " + path + "... Please wait!");
             while ((line = br.readLine()) != null) {
-                if (!line.startsWith("|")) {
+                if (!line.startsWith("|") && !line.isEmpty()) {
                     meaning += line.trim() + "\n";
                 } else {
                     //an E word

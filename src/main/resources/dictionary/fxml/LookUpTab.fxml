@@ -85,7 +85,7 @@
                               <Insets top="25.0" />
                            </HBox.margin>
                            <graphic>
-                              <ImageView fitHeight="18.0" fitWidth="18.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="19.0" fitWidth="19.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../icon/volume.png" />
                                  </image>
@@ -97,7 +97,7 @@
                         </Button>
                         <Button id="save" fx:id="saveButton" mnemonicParsing="false" onAction="#setFavorite" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
                            <graphic>
-                              <ImageView fitHeight="18.0" fitWidth="18.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="19.0" fitWidth="19.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../icon/Bookmark.png" />
                                  </image>
@@ -127,14 +127,14 @@
                         </Button>
                         <Button id="edit" fx:id="editButton" mnemonicParsing="false" onAction="#edit" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
                            <graphic>
-                              <ImageView fitHeight="18.0" fitWidth="18.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="19.0" fitWidth="19.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../icon/Edit.png" />
                                  </image>
                               </ImageView>
                            </graphic>
                            <HBox.margin>
-                              <Insets left="385.0" top="25.0" />
+                              <Insets left="339.0" top="25.0" />
                            </HBox.margin>
                            <cursor>
                               <Cursor fx:constant="HAND" />
@@ -142,7 +142,7 @@
                         </Button>
                         <Button id="remove" fx:id="addButton" mnemonicParsing="false" onAction="#addWord" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
                            <graphic>
-                              <ImageView fitHeight="20.0" fitWidth="20.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="23.0" fitWidth="23.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../icon/add.png" />
                                  </image>
@@ -157,7 +157,7 @@
                         </Button>
                         <Button id="edit" fx:id="insertButton" mnemonicParsing="false" onAction="#insert" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/LookUpstyle.css">
                            <graphic>
-                              <ImageView fitHeight="18.0" fitWidth="18.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="21.0" fitWidth="21.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../icon/insert.png" />
                                  </image>
