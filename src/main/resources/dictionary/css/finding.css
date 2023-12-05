@@ -1,7 +1,7 @@
 .multiple-choice {
     -fx-font-family: Barlow;
     -fx-font-weight: bold;
-    -fx-font-size: 15px;
+    -fx-font-size: 17px;
     -fx-text-fill: #ffffff;
     -fx-border-radius: 9px;
     -fx-border-width: 2px;
@@ -42,4 +42,10 @@
 
 .text-area .scroll-pane:fitToWidth:fitToHeight .scroll-bar:vertical .track {
     -fx-pref-width: 1px;
+}
+
+.mybox {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
 }
