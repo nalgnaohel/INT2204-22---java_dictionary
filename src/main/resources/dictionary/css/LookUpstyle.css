@@ -12,7 +12,7 @@
     -fx-background-color: white;
 }
 
-list-view:vertical .virtual-flow .scroll-bar:vertical .thumb {
+.list-view:vertical .virtual-flow .scroll-bar:vertical .thumb {
     -fx-background-color: #9a9a9a;
     -fx-background-insets : 2.0, 0.0, 0.0;
     -fx-background-radius : 2.0em;

@@ -162,7 +162,6 @@ public class LookUpTabController extends MutualController {
         }
         successAlert.showAndWait();
         ShowList("");
-        ShowList(currentWord);
     }
     public void updateHistory() {
         wordsList.clear();
